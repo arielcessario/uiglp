@@ -182,6 +182,8 @@ html {
 
     width: 100%;
 
+
+
     @media (min-width: 800px) {
 
       -webkit-flex-direction: row; /* works with row or column */
@@ -199,6 +201,7 @@ html {
       flex-direction: row;
       justify-content: center;
       width: 100%;
+      max-width: 380px;
       .servicio-texto {
         margin: 10px;
         width: 100%;
@@ -207,6 +210,7 @@ html {
         color: #16374a;
         .servicio-titulo {
           font-size: 24px;
+          font-family: 'Lato Heavy', serif;
 
         }
         .servicio-detalle {
@@ -609,4 +613,11 @@ html {
   font-style: normal;
   font-weight: normal;
   src: local('Montserrat Regular'), url('Montserrat-Regular.otf') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lato-Heavy'), url('Lato-Heavy.ttf') format('ttf');
 }
