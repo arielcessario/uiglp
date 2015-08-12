@@ -1,0 +1,679 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 16, ../sass/screen.scss */
+body {
+  font-family: 'Lato Regular', serif;
+}
+
+/* line 20, ../sass/screen.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 24, ../sass/screen.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 28, ../sass/screen.scss */
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #17384A;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+/* line 37, ../sass/screen.scss */
+.nav-button {
+  flex: 1;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+/* line 42, ../sass/screen.scss */
+.nav-button div {
+  cursor: pointer;
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  margin: 2px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 57, ../sass/screen.scss */
+.menu-mobile {
+  display: flex;
+  height: 100%;
+  z-index: 100;
+}
+
+/* line 68, ../sass/screen.scss */
+.header-separator {
+  height: 40px;
+  margin-top: 5px;
+  width: 2px;
+  background-color: white;
+}
+
+/* line 75, ../sass/screen.scss */
+.logo {
+  flex: 5;
+}
+
+/* line 81, ../sass/screen.scss */
+.section-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+  background-color: #406276;
+}
+/* line 93, ../sass/screen.scss */
+.section-title .decorator-01 {
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 5px;
+  width: 5px;
+  background-color: white;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+/* line 103, ../sass/screen.scss */
+.section-title .decorator-02 {
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 9px;
+  width: 9px;
+  background-color: white;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+/* line 113, ../sass/screen.scss */
+.section-title .decorator-03 {
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* line 125, ../sass/screen.scss */
+#slider {
+  top: 0;
+  width: 100%;
+  height: 640px;
+  background-color: #000000;
+}
+/* line 130, ../sass/screen.scss */
+#slider #slider-main {
+  width: 100%;
+  height: 600px;
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+}
+/* line 140, ../sass/screen.scss */
+#slider #slider-footer {
+  min-height: 40px;
+  height: 40px !important;
+  width: 100%;
+  background-color: #17384B;
+  display: flex;
+  justify-content: center;
+  border: 0px solid;
+  border-top-width: 1px;
+  border-top-color: white;
+}
+/* line 152, ../sass/screen.scss */
+#slider #slider-footer div {
+  margin: 10px;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #ffffff;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* line 164, ../sass/screen.scss */
+#servicios {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+/* line 170, ../sass/screen.scss */
+#servicios span {
+  text-align: center;
+  color: #ffffff;
+}
+/* line 174, ../sass/screen.scss */
+#servicios #servicios-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  /* works with row or column */
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  /* line 174, ../sass/screen.scss */
+  #servicios #servicios-list {
+    -webkit-flex-direction: row;
+    /* works with row or column */
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+/* line 195, ../sass/screen.scss */
+#servicios #servicios-list #servicio-01,
+#servicios #servicios-list #servicio-02 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+/* line 202, ../sass/screen.scss */
+#servicios #servicios-list #servicio-01 .servicio-texto,
+#servicios #servicios-list #servicio-02 .servicio-texto {
+  margin: 10px;
+  width: 100%;
+  min-height: 100px;
+  max-width: 280px;
+  color: #16374a;
+}
+/* line 208, ../sass/screen.scss */
+#servicios #servicios-list #servicio-01 .servicio-texto .servicio-titulo,
+#servicios #servicios-list #servicio-02 .servicio-texto .servicio-titulo {
+  font-size: 24px;
+}
+/* line 212, ../sass/screen.scss */
+#servicios #servicios-list #servicio-01 .servicio-texto .servicio-detalle,
+#servicios #servicios-list #servicio-02 .servicio-texto .servicio-detalle {
+  font-size: 18px;
+}
+/* line 217, ../sass/screen.scss */
+#servicios #servicios-list #servicio-01 .servicio-icono,
+#servicios #servicios-list #servicio-02 .servicio-icono {
+  border-radius: 100px;
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: #b3d4fc;
+  margin-top: 10px;
+  -webkit-box-shadow: 5px 5px 10px black;
+  -moz-box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px black;
+}
+/* line 229, ../sass/screen.scss */
+#servicios #servicios-list #servicios-action-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  /* line 229, ../sass/screen.scss */
+  #servicios #servicios-list #servicios-action-bar {
+    -webkit-flex-direction: column;
+    /* works with row or column */
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+/* line 243, ../sass/screen.scss */
+#servicios #servicios-list #servicios-action-bar #servicios-separator {
+  background-color: #133548;
+  height: 2px;
+  width: 100px;
+  margin-right: 5px;
+}
+@media (min-width: 800px) {
+  /* line 243, ../sass/screen.scss */
+  #servicios #servicios-list #servicios-action-bar #servicios-separator {
+    height: 50px;
+    width: 2px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+}
+
+/* line 265, ../sass/screen.scss */
+.btn-leer-mas {
+  border: 2px solid #133548;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  padding: 4px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* line 275, ../sass/screen.scss */
+#noticias {
+  background-color: #17384B;
+  display: flex;
+  flex-direction: column;
+}
+/* line 281, ../sass/screen.scss */
+#noticias span {
+  text-align: center;
+  color: #ffffff;
+}
+/* line 285, ../sass/screen.scss */
+#noticias #noticias-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  /* line 285, ../sass/screen.scss */
+  #noticias #noticias-list {
+    -webkit-flex-direction: row;
+    /* works with row or column */
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+/* line 307, ../sass/screen.scss */
+#noticias #noticias-list .noticia {
+  width: 300px;
+  height: 400px;
+  margin: 30px;
+  max-width: 80%;
+  background-color: #17384B;
+  border: 4px solid white;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 10px black;
+  -moz-box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 325, ../sass/screen.scss */
+#noticias #noticias-list .noticia h2 {
+  width: 80%;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 21px;
+  line-height: 22px;
+  color: #FFFFFF;
+  color: white;
+}
+/* line 336, ../sass/screen.scss */
+#noticias #noticias-list .noticia img {
+  width: 80%;
+  height: 30%;
+  margin-top: 4%;
+  margin-bottom: 15px;
+  max-height: 150px;
+  background-color: #cccccc;
+  border: 4px solid white;
+  outline: 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+/* line 350, ../sass/screen.scss */
+#noticias #noticias-list .noticia p {
+  font-family: 'Montserrat Regular', serif;
+  width: 80%;
+  margin-bottom: 15px;
+  text-align: left;
+  max-height: 155px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 14px;
+  color: #FFFFFF;
+  color: white;
+}
+/* line 363, ../sass/screen.scss */
+#noticias #noticias-list .noticia .btn-leer-mas {
+  max-width: 100px;
+  color: white;
+  border-color: white;
+}
+
+/* line 374, ../sass/screen.scss */
+#agendas {
+  background-color: #888888;
+  display: flex;
+  flex-direction: column;
+}
+/* line 380, ../sass/screen.scss */
+#agendas #agendas-title {
+  text-align: center;
+  color: #17384B;
+  background-color: white;
+}
+/* line 384, ../sass/screen.scss */
+#agendas #agendas-title .decorator-01,
+#agendas #agendas-title .decorator-02,
+#agendas #agendas-title .decorator-03 {
+  background-color: #17384B;
+}
+/* line 390, ../sass/screen.scss */
+#agendas #agendas-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  /* works with row or column */
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  /* line 390, ../sass/screen.scss */
+  #agendas #agendas-list {
+    -webkit-flex-direction: row;
+    /* works with row or column */
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+/* line 415, ../sass/screen.scss */
+#agendas #agendas-list #agenda-calendar-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+/* line 425, ../sass/screen.scss */
+#agendas #agendas-list #agenda-calendar-header span {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+/* line 432, ../sass/screen.scss */
+#agendas #agendas-list #agenda-calendar {
+  border: 4px solid white;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFjM2U1MiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNmNjE3NSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1c3e52), color-stop(100%, #3f6175));
+  background-image: -moz-linear-gradient(left, #1c3e52, #3f6175);
+  background-image: -webkit-linear-gradient(left, #1c3e52, #3f6175);
+  background-image: linear-gradient(to right, #1c3e52, #3f6175);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 441, ../sass/screen.scss */
+#agendas #agendas-list .agenda-dias {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  max-width: 80%;
+  background-color: #b3d4fc;
+  -webkit-box-shadow: 5px 5px 10px black;
+  -moz-box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px black;
+}
+@media (min-width: 800px) {
+  /* line 441, ../sass/screen.scss */
+  #agendas #agendas-list .agenda-dias {
+    margin-right: 0px;
+  }
+}
+/* line 454, ../sass/screen.scss */
+#agendas #agendas-list .agenda-dias #agenda-calendar-container {
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px;
+  width: 85%;
+  height: 65%;
+}
+/* line 464, ../sass/screen.scss */
+#agendas #agendas-list .agenda-dias #agenda-calendar-container table {
+  width: 100%;
+  height: 100%;
+}
+/* line 465, ../sass/screen.scss */
+#agendas #agendas-list .agenda-dias #agenda-calendar-container table th {
+  font-weight: bold;
+}
+/* line 474, ../sass/screen.scss */
+#agendas #agendas-list img {
+  width: 300px;
+  height: 300px;
+  max-height: 300px;
+  background-color: #ffffff;
+}
+@media (min-width: 800px) {
+  /* line 474, ../sass/screen.scss */
+  #agendas #agendas-list img {
+    margin-left: 10px;
+  }
+}
+/* line 484, ../sass/screen.scss */
+#agendas #agendas-list #agenda-detail {
+  width: 270px;
+  height: 300px;
+  margin: 30px;
+  max-width: 80%;
+  background-color: white;
+  border: 4px solid #1c3e52;
+  padding: 15px;
+  -webkit-box-shadow: 5px 5px 10px black;
+  -moz-box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px black;
+}
+@media (min-width: 800px) {
+  /* line 484, ../sass/screen.scss */
+  #agendas #agendas-list #agenda-detail {
+    margin-left: 10px;
+    height: 270px;
+  }
+}
+/* line 500, ../sass/screen.scss */
+#agendas #agendas-list #agenda-detail h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+/* line 504, ../sass/screen.scss */
+#agendas #agendas-list #agenda-detail #agenda-separator {
+  width: 90%;
+  height: 2px;
+  background-color: #1c3e52;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 511, ../sass/screen.scss */
+#agendas #agendas-list #agenda-detail p {
+  max-height: 150px;
+  overflow: hidden;
+}
+
+/* line 521, ../sass/screen.scss */
+#empresas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 527, ../sass/screen.scss */
+#empresas #empresas-title {
+  color: white;
+}
+/* line 531, ../sass/screen.scss */
+#empresas #empresas-carrousel {
+  height: 320px;
+  background-color: white;
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+}
+@media (min-width: 800px) {
+  /* line 531, ../sass/screen.scss */
+  #empresas #empresas-carrousel {
+    width: 800px;
+    max-width: 800px;
+  }
+}
+/* line 543, ../sass/screen.scss */
+#empresas #empresas-carrousel #empresas-list {
+  display: flex;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  width: 1600px;
+  max-width: 1600px;
+}
+/* line 550, ../sass/screen.scss */
+#empresas #empresas-carrousel #empresas-list .empresa {
+  height: 150px;
+  width: 150px;
+  background-color: lightgray;
+  margin: 5px;
+}
+
+/* line 560, ../sass/screen.scss */
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 565, ../sass/screen.scss */
+#contacto #contacto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+/* line 571, ../sass/screen.scss */
+#contacto #contacto-container div {
+  max-width: 80%;
+  min-width: 80%;
+}
+/* line 574, ../sass/screen.scss */
+#contacto #contacto-container div input[type=text],
+#contacto #contacto-container div textarea {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 587, ../sass/screen.scss */
+#footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* #### Generated By: http://www.cufonfonts.com #### */
+@font-face {
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Regular"), url("Lato-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'Montserrat Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat Regular"), url("Montserrat-Regular.otf") format("woff");
+}
