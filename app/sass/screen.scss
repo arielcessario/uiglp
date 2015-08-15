@@ -84,37 +84,35 @@ html {
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  padding: 5px;
 
-  height: 40px;
+  height: 60px;
   width: 100%;
-  font-size: 20px;
+  font-size: 22px;
   background-color: #406276;
 
   .decorator-01 {
-    margin-right: 5px;
-    margin-left: 5px;
-    height: 5px;
-    width: 5px;
+    margin: 6px;
+    height: 3px;
+    width: 3px;
     background-color: white;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
   }
   .decorator-02 {
-    margin-right: 5px;
-    margin-left: 5px;
-    height: 9px;
-    width: 9px;
+    margin: 6px;
+    height: 6px;
+    width: 6px;
     background-color: white;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
   }
   .decorator-03 {
-    margin-right: 5px;
-    margin-left: 5px;
-    height: 13px;
-    width: 13px;
+   margin: 6px;
+    height: 9px;
+    width: 9px;
     background-color: white;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -151,12 +149,12 @@ html {
 
     div {
       margin: 10px;
-      height: 20px;
-      width: 20px;
+      height: 18px;
+      width: 18px;
       border: 2px solid #ffffff;
-      -webkit-border-radius: 30px;
-      -moz-border-radius: 30px;
-      border-radius: 30px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
     }
   }
 }
@@ -197,37 +195,72 @@ html {
 
       margin-top: 50px;
       margin-bottom: 50px;
+      left: 5px;
+      right: 5px;
       display: flex;
       flex-direction: row;
       justify-content: center;
       width: 100%;
       max-width: 380px;
+
+
       .servicio-texto {
         margin: 10px;
         width: 100%;
         min-height: 100px;
         max-width: 280px;
         color: #16374a;
+
+
         .servicio-titulo {
-          font-size: 38px;
+          font-size: 30px;
+          padding-bottom: 10px;
           font-family: 'Lato Heavy', serif;
           font-variant: small-caps;
 
-        }
+          @media (min-width: 800px) {
+            font-size: 34px;
+
+          }
+
+
+          }
+
         .servicio-detalle {
 
-          font-size: 18px;
+          font-family: 'Lato Regular', serif;
+          font-size: 20px;
+          color: black;
+          line-height: 22px;
+
+
+          @media (min-width: 800px) {
+            font-size: 25px;
+            min-width: 250px;
+
+          }
+
+
         }
       }
+
+
       .servicio-icono {
+
         border-radius: 150px;
         min-width: 150px;
         width: 150px;
         height: 150px;
         background-color: #b3d4fc;
-        margin-top: 10px;
-
+        margin: 5px;
         @include sombras();
+
+        @media (min-width: 800px) {
+          width: 180px;
+          height: 180px;
+          min-width: 180px;
+
+        }
       }
     }
 
@@ -247,12 +280,14 @@ html {
 
       #servicios-separator {
         background-color: #133548;
-        height: 2px;
-        width: 100px;
+        height: 3px;
+        min-width: 2px;
+        width: 250px;
         margin-right: 5px;
+
         @media (min-width: 800px) {
 
-          height: 50px;
+          height: 200px;
           width: 2px;
           margin-right: 0px;
           margin-bottom: 5px;
@@ -268,14 +303,19 @@ html {
 }
 
 .btn-leer-mas {
-  border: 2px solid #133548;
+  width: 110px;
+  font-family: 'Lato Heavy', serif;
+  font-size: 16px;
+  margin: 10px;
+  border: 1px solid #133548;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
-  padding: 4px;
+  padding: 8px;
   white-space: nowrap;
   text-align: center;
 }
+
 
 #noticias {
 
@@ -310,9 +350,9 @@ html {
     }
 
     .noticia {
-      width: 300px;
-      height: 400px;
-      margin: 30px;
+      width: 290px;
+      height: 420px;
+      margin: 10px;
       max-width: 80%;
       background-color: #17384B;
       border: 4px solid white;
@@ -329,18 +369,18 @@ html {
 
       h2 {
 
-        width: 80%;
-        margin-bottom: 15px;
+        width: 90%;
+        margin-bottom: 5px;
         text-align: left;
-        font-size: 21px;
-        line-height: 22px;
+        font-size: 25px;
+        line-height: 25px;
         color: #FFFFFF;
         color: rgb(255, 255, 255);
       }
 
       img {
-        width: 80%;
-        height: 30%;
+        width: 90%;
+        height: 40%;
         margin-top: 4%;
         margin-bottom: 15px;
         max-height: 150px;
@@ -353,21 +393,22 @@ html {
       }
 
       p {
-        font-family: 'Montserrat Regular', serif;
-        width: 80%;
-        margin-bottom: 15px;
+        font-family: 'Montserrat Light', serif;
+        width: 90%;
+        margin-bottom: 10px;
         text-align: left;
         max-height: 155px;
         overflow: hidden;
-        font-size: 16px;
-        line-height: 14px;
+        font-size: 12px;
+        line-height: 15px;
         color: #FFFFFF;
         color: rgb(255, 255, 255);
       }
 
       .btn-leer-mas {
-        max-width: 100px;
+        max-width: 110px;
         color: white;
+        font-size: 12px;
         border-color: white;
       }
 
@@ -378,7 +419,7 @@ html {
 
 #agendas {
 
-  background-color: #888888;
+  background-color: #406276;
   display: flex;
   flex-direction: column;
   //  justify-content: center;
@@ -440,6 +481,7 @@ html {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-top: 25px;
 
     }
 
@@ -465,7 +507,7 @@ html {
         padding-bottom: 20px;
         margin: 10px;
         width: 85%;
-        height: 65%;
+        height: 75%;
         table {
           th {
             font-weight: bold;
@@ -487,7 +529,7 @@ html {
     }
 
     #agenda-detail {
-      width: 270px;
+      width: 300px;
       height: 300px;
       margin: 30px;
       max-width: 80%;
@@ -499,7 +541,7 @@ html {
 
       @media (min-width: 800px) {
         margin-left: 10px;
-        height: 270px;
+        height: 300px;
       }
 
       h2 {
@@ -514,7 +556,7 @@ html {
         margin-bottom: 10px;
       }
       p {
-        max-height: 150px;
+        max-height: 220px;
         overflow: hidden;
       }
 
@@ -531,6 +573,7 @@ html {
 
   #empresas-title {
     color: white;
+    background-color: black;
   }
 
   #empresas-carrousel {
@@ -563,6 +606,7 @@ html {
 }
 
 #contacto {
+  background-color: #133548;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -579,6 +623,11 @@ html {
       align-items: flex-start;
     }
 
+  #contacto h1 {
+    color: red;
+    font-size: 40px;
+  }
+
     div {
       max-width: 80%;
       min-width: 80%;
@@ -588,7 +637,8 @@ html {
       }
       input[type=text],
       textarea {
-        width: 100%;
+        width: 90%;
+        right: 5px;
         margin-top: 5px;
         margin-bottom: 5px;
         @media(min-width: 800px) {
@@ -611,6 +661,11 @@ html {
           width: 0px;
           visibility: collapse;
           display: none;
+
+
+
+
+
         }
       }
 
@@ -652,4 +707,18 @@ html {
   font-style: normal;
   font-weight: normal;
   src: local('Lato-Heavy'), url('Lato-Heavy.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Lato Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lato- Light'), url('Lato-Light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Montserrat-Light'), url('Montserrar-Light.ttf') format('ttf');
 }
