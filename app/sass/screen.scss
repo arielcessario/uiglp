@@ -32,6 +32,11 @@ html {
   position: fixed;
   top: 0;
   z-index: 1000;
+  @media (min-width: 600px) {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
 }
 
 .nav-button {
@@ -63,20 +68,82 @@ html {
   z-index: 100;
   //  left: 20px;
   //  top: 10px;
+
+  .header-separator {
+    height: 40px;
+    margin-top: 5px;
+    width: 2px;
+    background-color: white;
+  }
+
+  .logo {
+    flex: 5;
+
+    //background-color: green;
+  }
 }
 
-.header-separator {
-  height: 40px;
-  margin-top: 5px;
-  width: 2px;
-  background-color: white;
+
+.menu-type-desktop{
+  @media (max-width: 599px) {
+    visibility: collapse;
+    display: none;
+  }
 }
 
-.logo {
-  flex: 5;
-
-  //background-color: green;
+.menu-type-mobile{
+  @media (min-width: 600px) {
+    visibility: collapse;
+    display: none;
+  }
 }
+
+.menu-desktop{
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+  max-width: 1200px;
+  min-width: 600px;
+  width: 800px;
+  #menu-desktop-logo{
+    flex: 2;
+
+  }
+
+  #menu-desktop-right{
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    #menu-desktop-upper{
+
+      flex: 1;
+    }
+
+    #menu-desktop-lower{
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex: 1;
+      max-height: 50px;
+
+      div{
+        cursor: pointer;
+        margin-top: 10px;
+        padding: 5px;
+
+      }
+      div:hover{
+        color: white;
+        background-color: #406276;
+      }
+
+    }
+  }
+
+}
+
 
 .section-title {
 
@@ -720,5 +787,5 @@ html {
   font-family: 'Montserrat Light';
   font-style: normal;
   font-weight: normal;
-  src: local('Montserrat Light'), url('Montserrar-Light.otf') format('woff');
+  src: local('Montserrat Light'), url('Montserrat-Light.otf') format('woff');
 }

@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="stylesheets/screen.css">
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body>
+<body ng-controller="MainController as mainCtrl">
 
 <div class="header">
-    <div class="menu-mobile">
+    <div class="menu-mobile menu-type-mobile" >
         <div class="nav-button"
              ng-click="mainCtrl.menu_mobile_open = !mainCtrl.menu_mobile_open;"
              ng-class="{'nav-button-transformed':navCtrl.closed}">
@@ -32,8 +32,16 @@
         <div class="header-separator"></div>
         <div class="logo"></div>
     </div>
-    <div>
+    <div class="menu-desktop menu-type-desktop">
 
+        <div id="menu-desktop-logo"></div>
+        <div id="menu-desktop-right">
+            <div id="menu-desktop-upper"></div>
+            <div id="menu-desktop-lower">
+
+                <div ng-repeat="link in mainCtrl.links" ng-click="mainCtrl.goTo(link.path);"> {{link.nombre}}</div>
+            </div>
+        </div>
     </div>
 
 </div>
