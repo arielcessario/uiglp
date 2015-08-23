@@ -1,6 +1,6 @@
 <div ng-controller="AdministracionController as administracionCtrl" id="administracion">
     <div id="administracion-titulo" class="administracion-title">
-        HOLA {{administracionCtrl.usuario}}
+        HOLA {{administracionCtrl.usuario.nombre}}
     </div>
 
     <div id="administracion-form">
@@ -8,57 +8,66 @@
         <div class="administracion-inputs">
             <div class="administracion-input">
                 <span>NOMBRE</span>
-                <input type="text">
+                <input type="text" ng-model="administracionCtrl.usuario.nombre">
+            </div>
+            <div class="administracion-input">
+                <span>APELLIDO</span>
+                <input type="text" ng-model="administracionCtrl.usuario.apellido">
             </div>
             <div class="administracion-input">
                 <span>CUIT</span>
-                <input type="password">
+                <input type="text" ng-model="administracionCtrl.usuario.nro_doc">
             </div>
             <div class="administracion-input">
                 <span>TELEFONO</span>
-                <input type="password">
+                <input type="text" ng-model="administracionCtrl.usuario.telefono">
             </div>
             <div class="administracion-input">
                 <span>CONTRASEÑA</span>
-                <input type="password">
+                <input type="password" ng-model="administracionCtrl.usuario.password">
             </div>
             <div class="administracion-input">
                 <span>DIRECCION</span>
-                <input type="password">
+                <input type="text" ng-model="administracionCtrl.usuario.direccion">
             </div>
             <div class="administracion-input">
                 <span>MAIL</span>
-                <input type="password">
+                <input type="email" ng-model="administracionCtrl.usuario.mail">
             </div>
+            <div class="administracion-input">
+                <span>ROL</span>
+                <select ng-model="administracionCtrl.usuario.rol_id">
+                    <option value="0">Usuario</option>
+                    <option value="1">Administrador</option>
+                </select>
+            </div>
+
         </div>
 
-        <div  class="administracion-button-bar">
-            <button>GUARDAR</button>
+        <div class="administracion-button-bar">
+            <button ng-click="administracionCtrl.saveUsuario();">GUARDAR</button>
+            <button ng-click="administracionCtrl.usuario = administracionCtrl.logged;">CANCELAR</button>
         </div>
         <table id="administracion-usuarios-tabla" class="table table-striped">
             <thead>
             <tr>
-                <th>Fecha</th>
-                <th >Titulo</th>
-                <th style="width: 5%;text-align: center" colspan="2">Acciones</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>CUIT</th>
+                <th style="width: 5%;text-align: center" colspan="1">Acciones</th>
             </tr>
             </thead>
             <tbody>
 
-            <tr ng-repeat="row in listadoNoticiasCtrl.noticias | filter:listadoNoticiasCtrl.filtro">
+            <tr ng-repeat="row in administracionCtrl.usuarios | filter:administracionCtrl.filtro">
 
-                <td class="">{{row.fecha | date}}</td>
-                <td class="">{{row.titulo}}</td>
+                <td class="">{{row.nombre | date}}</td>
+                <td class="">{{row.apellido}}</td>
+                <td class="">{{row.nro_doc}}</td>
                 <td class="">
-                    <div class="btn">
-                        <button class="btn-medium btn-archive" ng-click="listadoNoticiasCtrl.cancelarDeuda();"></button>
-                        <label>Cancelar Deuda</label>
-                    </div>
-                </td>
-                <td class="">
-                    <button ng-click="listadoNoticiasCtrl.detalle(row.noticia_id);"
+                    <button ng-click="administracionCtrl.usuario = row; administracionCtrl.usuario.rol_id = '' + administracionCtrl.usuario.rol_id;"
                             class="btn-medium btn-visibility"></button>
-                    <label>Ver Detalle</label>
+                    <label>Modificar</label>
                 </td>
 
             </tr>
@@ -75,9 +84,9 @@
         </div>
         <div class="administracion-input">
             <span>DESCRIPCIÓN</span>
-            <textarea ></textarea>
+            <textarea></textarea>
         </div>
-        <div  class="administracion-button-bar">
+        <div class="administracion-button-bar">
             <button>GUARDAR</button>
         </div>
     </div>
@@ -92,27 +101,31 @@
             <div class="administracion-fotos">
                 <div class="administracion-foto">
                     <span>FOTO1</span>
+
                     <div></div>
                 </div>
                 <div class="administracion-foto">
                     <span>FOTO1</span>
+
                     <div></div>
                 </div>
                 <div class="administracion-foto">
                     <span>FOTO1</span>
+
                     <div></div>
                 </div>
                 <div class="administracion-foto">
                     <span>FOTO1</span>
+
                     <div></div>
                 </div>
             </div>
         </div>
         <div class="administracion-input">
             <span>DESCRIPCIÓN</span>
-            <textarea ></textarea>
+            <textarea></textarea>
         </div>
-        <div  class="administracion-button-bar">
+        <div class="administracion-button-bar">
             <button>GUARDAR</button>
             <button>BORRAR</button>
         </div>
@@ -122,7 +135,7 @@
                 <thead>
                 <tr>
                     <th>Fecha</th>
-                    <th >Titulo</th>
+                    <th>Titulo</th>
                     <th style="width: 5%;text-align: center" colspan="2">Acciones</th>
                 </tr>
                 </thead>
@@ -134,7 +147,8 @@
                     <td class="">{{row.titulo}}</td>
                     <td class="">
                         <div class="btn">
-                            <button class="btn-medium btn-archive" ng-click="listadoNoticiasCtrl.cancelarDeuda();"></button>
+                            <button class="btn-medium btn-archive"
+                                    ng-click="listadoNoticiasCtrl.cancelarDeuda();"></button>
                             <label>Cancelar Deuda</label>
                         </div>
                     </td>
@@ -151,7 +165,7 @@
                 <thead>
                 <tr>
                     <th>Fecha</th>
-                    <th >Titulo</th>
+                    <th>Titulo</th>
                     <th style="width: 5%;text-align: center" colspan="2">Acciones</th>
                 </tr>
                 </thead>
@@ -163,7 +177,8 @@
                     <td class="">{{row.titulo}}</td>
                     <td class="">
                         <div class="btn">
-                            <button class="btn-medium btn-archive" ng-click="listadoNoticiasCtrl.cancelarDeuda();"></button>
+                            <button class="btn-medium btn-archive"
+                                    ng-click="listadoNoticiasCtrl.cancelarDeuda();"></button>
                             <label>Cancelar Deuda</label>
                         </div>
                     </td>
@@ -181,7 +196,6 @@
     </div>
 
 
-
     <div class="administracion-separator"></div>
     <div id="administracion-slider">
         <div class="administracion-sub-title">SUBIR OFERTA LABORAL</div>
@@ -191,9 +205,9 @@
         </div>
         <div class="administracion-input">
             <span>DESCRIPCIÓN</span>
-            <textarea ></textarea>
+            <textarea></textarea>
         </div>
-        <div  class="administracion-button-bar">
+        <div class="administracion-button-bar">
             <button>GUARDAR</button>
         </div>
     </div>

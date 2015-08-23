@@ -12,10 +12,36 @@
         .controller('AdministracionController', AdministracionController);
 
 
-    AdministracionController.$inject = [];
-    function AdministracionController() {
+    AdministracionController.$inject = ['LoginService'];
+    function AdministracionController(LoginService) {
 
         var vm = this;
+        vm.usuario = {
+            cliente_id: -1,
+            nombre:'',
+            apellido:'',
+            nro_doc:'',
+            telefono:'',
+            password:'',
+            direccion:'',
+            mail:''
+        };
+        vm.usuarios=[];
+
+
+        vm.saveUsuario = saveUsuario;
+
+        LoginService.getClientes(function(data){
+            vm.usuarios = data;
+        });
+
+
+        function saveUsuario(){
+
+        }
+
+
+
 
     }
 })();
