@@ -4,7 +4,7 @@
     var currentScriptPath = scripts[scripts.length-1].src;
     angular.module('uiglp.main', ['ngRoute'])
     .config(['$routeProvider', function ($routeProvider) {
-            $routeProvider.when('/main', {
+            $routeProvider.when('/', {
                 templateUrl: currentScriptPath.replace('.js', '.html'),
                 controller: 'MainController'
             });
@@ -35,6 +35,8 @@
             {nombre:'', foto:''},
             {nombre:'', foto:''}
         ];
+
+
 
         function alerta(){
             var r = confirm('hoa');
