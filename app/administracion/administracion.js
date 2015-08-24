@@ -30,13 +30,30 @@
 
 
         vm.saveUsuario = saveUsuario;
+        vm.updateUsuario = updateUsuario;
+        vm.modificarUsuario = modificarUsuario;
 
         LoginService.getClientes(function(data){
             vm.usuarios = data;
         });
 
 
+        function modificarUsuario(usuario){
+            vm.usuario = angular.copy(usuario);
+            vm.usuario.rol_id = '' + vm.usuario.rol_id;
+        }
+
         function saveUsuario(){
+            LoginService.create(vm.usuario, function(data){
+                console.log(data);
+            });
+
+        }
+
+        function updateUsuario(){
+            LoginService.updateCliente(vm.usuario, function(data){
+                console.log(data);
+            });
 
         }
 

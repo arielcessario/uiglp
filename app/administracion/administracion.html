@@ -45,7 +45,7 @@
         </div>
 
         <div class="administracion-button-bar">
-            <button ng-click="administracionCtrl.saveUsuario();">GUARDAR</button>
+            <button ng-click="administracionCtrl.updateUsuario();">GUARDAR</button>
             <button ng-click="administracionCtrl.usuario = administracionCtrl.logged;">CANCELAR</button>
         </div>
         <table id="administracion-usuarios-tabla" class="table table-striped">
@@ -61,11 +61,11 @@
 
             <tr ng-repeat="row in administracionCtrl.usuarios | filter:administracionCtrl.filtro">
 
-                <td class="">{{row.nombre | date}}</td>
+                <td class="">{{row.nombre}}</td>
                 <td class="">{{row.apellido}}</td>
                 <td class="">{{row.nro_doc}}</td>
                 <td class="">
-                    <button ng-click="administracionCtrl.usuario = row; administracionCtrl.usuario.rol_id = '' + administracionCtrl.usuario.rol_id;"
+                    <button ng-click="administracionCtrl.modificarUsuario(row);"
                             class="btn-medium btn-visibility"></button>
                     <label>Modificar</label>
                 </td>
