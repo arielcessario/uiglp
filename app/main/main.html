@@ -20,10 +20,10 @@
                 </div>
             </div>
             <div id="slider-footer">
-                <div ng-click="selectImage(0);"></div>
-                <div ng-click="selectImage(1);"></div>
-                <div ng-click="selectImage(2);"></div>
-                <div ng-click="selectImage(3);"></div>
+                <div ng-click="mainCtrl.selectImage(1);" ng-class="{'slider-footer-selected': mainCtrl.slideSelected == 1}"></div>
+                <div ng-click="mainCtrl.selectImage(2);" ng-class="{'slider-footer-selected': mainCtrl.slideSelected == 2}"></div>
+                <div ng-click="mainCtrl.selectImage(3);" ng-class="{'slider-footer-selected': mainCtrl.slideSelected == 3}"></div>
+                <div ng-click="mainCtrl.selectImage(4);" ng-class="{'slider-footer-selected': mainCtrl.slideSelected == 4}"></div>
             </div>
         </div>
         <div id="servicios">

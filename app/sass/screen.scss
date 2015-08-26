@@ -15,6 +15,7 @@
 
 body {
   font-family: 'Lato Regular', serif;
+  overflow-x: hidden;
 }
 
 html {
@@ -243,37 +244,57 @@ html {
       background: black url(../img/img-04.jpg) 50% 50% no-repeat;
     }
 
-    //.slide-shown .ng-add{
-    //  -webkit-animation: show-slide .4s;
-    //  -o-animation: show-slide .4s;
-    //  animation: show-slide .4s;
-    //}
+    .slide-shown-add{
+      -webkit-animation: show-slide .4s;
+      -o-animation: show-slide .4s;
+      animation: show-slide .4s;
+    }
 
     .slide-shown{
       opacity: 1 !important;
     }
 
-    //.slide-shown .ng-remove{
-    //  -webkit-animation: hide-slide .4s;
-    //  -o-animation: hide-slide .4s;
-    //  animation: hide-slide .4s;
-    //}
+    .slide-shown-remove{
+      -webkit-animation: hide-slide .4s;
+      -o-animation: hide-slide .4s;
+      animation: hide-slide .4s;
+    }
 
     @keyframes show-slide {
       0%{
         opacity: 0;
+        -webkit-transform: translate3d(-200%,0,0);
+        -moz-transform: translate3d(-200%,0,0);
+        -ms-transform: translate3d(-200%,0,0);
+        -o-transform: translate3d(-200%,0,0);
+        transform: translate3d(-200%,0,0);
       }
       100%{
         opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
       }
     }
 
     @keyframes hide-slide {
       0%{
         opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
       }
       100%{
         opacity: 0;
+        -webkit-transform: translate3d(200%,0,0);
+        -moz-transform: translate3d(200%,0,0);
+        -ms-transform: translate3d(200%,0,0);
+        -o-transform: translate3d(200%,0,0);
+        transform: translate3d(200%,0,0);
       }
     }
   }
@@ -298,6 +319,10 @@ html {
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
       border-radius: 15px;
+    }
+
+    .slider-footer-selected{
+      background-color: white;
     }
   }
 }
