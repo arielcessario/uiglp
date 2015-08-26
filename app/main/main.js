@@ -6,14 +6,14 @@
     .config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/', {
                 templateUrl: currentScriptPath.replace('.js', '.html'),
-                controller: 'MainController'
+                controllerAs: 'mainCtrl'
             });
         }])
         .controller('MainController', MainController);
 
 
-    MainController.$inject = [];
-    function MainController() {
+    MainController.$inject = ['$interval'];
+    function MainController($interval) {
 
         var vm = this;
         vm.agendaMes = 'DICIEMBRE';
@@ -36,7 +36,19 @@
             {nombre:'', foto:''}
         ];
 
+        vm.slideSelected = 1;
 
+        console.log('loodod');
+        $interval(autoChangeSlide, 3000);
+
+        function autoChangeSlide(){
+            console.log('loodod');
+            vm.slideSelected = (vm.slideSelected + 1 > 4)? 1 : vm.slideSelected + 1;
+        }
+
+        function selectImage(slide){
+            vm.slideSelected = slide;
+        }
 
         function alerta(){
             var r = confirm('hoa');
@@ -45,10 +57,5 @@
             }
         }
 
-
-
-        function selectImage(id){
-            console.log(id);
-        }
     }
 })();

@@ -207,6 +207,68 @@ html {
     color: #ffffff;
     //padding-top: 200px;
     text-align: center;
+    #slide-01,
+    #slide-02,
+    #slide-03,
+    #slide-04
+    {
+      //position: absolute;
+      //top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+
+    #slide-01{
+      background: black url(../img/img-01.jpg) 50% 50% no-repeat;
+    }
+    #slide-02{
+      background: black url(../img/img-02.jpg) 50% 50% no-repeat;
+    }
+    #slide-03{
+      background: black url(../img/img-03.jpg) 50% 50% no-repeat;
+    }
+    #slide-04{
+      background: black url(../img/img-01.jpg) 50% 50% no-repeat;
+    }
+
+    .slide-shown.ng-add{
+      -webkit-animation: show-slide .4s;
+      -o-animation: show-slide .4s;
+      animation: show-slide .4s;
+    }
+
+    .slide-shown{
+      opacity: 1 !important;
+    }
+
+    .slide-shown.ng-remove{
+      -webkit-animation: hide-slide .4s;
+      -o-animation: hide-slide .4s;
+      animation: hide-slide .4s;
+    }
+
+    @keyframes show-slide {
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+
+    @keyframes hide-slide {
+      0%{
+        opacity: 1;
+      }
+      100%{
+        opacity: 0;
+      }
+    }
   }
 
   #slider-footer {

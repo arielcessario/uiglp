@@ -3,6 +3,7 @@
 // Declare app level module which depends on views, and components
 angular.module('uiglp', [
     'ngRoute',
+    'ngAnimate',
     'login.login',
     'uiglp.main',
     'uiglp.ingreso',
@@ -11,11 +12,11 @@ angular.module('uiglp', [
     config(['$routeProvider', function ($routeProvider) {
         //$routeProvider.otherwise({redirectTo: '/main'});
     }])
-    .controller('MainController', MainController);
+    .controller('AppController', AppController);
 
 
-MainController.$inject = ['LoginService', '$location', '$rootScope'];
-function MainController(LoginService, $location, $rootScope) {
+AppController.$inject = ['LoginService', '$location', '$rootScope'];
+function AppController(LoginService, $location, $rootScope) {
 
     var vm = this;
     vm.goTo = goTo;

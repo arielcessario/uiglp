@@ -18,12 +18,12 @@
     <link rel="stylesheet" href="stylesheets/screen.css">
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body ng-controller="MainController as mainCtrl">
+<body ng-controller="AppController as appCtrl">
 
 <div class="header">
     <div class="menu-mobile menu-type-mobile" >
         <div class="nav-button"
-             ng-click="mainCtrl.menu_mobile_open = !mainCtrl.menu_mobile_open;"
+             ng-click="appCtrl.menu_mobile_open = !appCtrl.menu_mobile_open;"
              ng-class="{'nav-button-transformed':navCtrl.closed}">
             <div ng-class="{'nav-button-top-transformed':navCtrl.closed}"></div>
             <div ng-class="{'nav-button-mid-transformed':navCtrl.closed}"></div>
@@ -39,7 +39,7 @@
             <div id="menu-desktop-upper"></div>
             <div id="menu-desktop-lower">
 
-                <div ng-repeat="link in mainCtrl.links" ng-click="mainCtrl.goTo(link.path);"> {{link.nombre}}</div>
+                <div ng-repeat="link in appCtrl.links" ng-click="appCtrl.goTo(link.path);"> {{link.nombre}}</div>
             </div>
         </div>
     </div>
@@ -96,6 +96,7 @@
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-route/angular-route.min.js"></script>
 <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
 <script src="bower_components/ac-angular-login-carrito/app/login.js"></script>
 <script src="app.js"></script>
 <script src="main/main.js"></script>

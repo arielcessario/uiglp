@@ -1,7 +1,24 @@
 <div ng-controller="MainController as mainCtrl">
     <div id="main">
         <div id="slider">
-            <div id="slider-main">SLIDER</div>
+            <div id="slider-main">
+                <div id="slide-01" ng-class="{'slide-shown': mainCtrl.slideSelected == 1}">
+                    <div class="slide-titulo">UIGLP</div>
+                    <div class="slide-descr">DESCRIPCIÓN DE LA FOTO</div>
+                </div>
+                <div id="slide-02" ng-class="{'slide-shown': mainCtrl.slideSelected == 2}">
+                    <div class="slide-titulo">UIGLP</div>
+                    <div class="slide-descr">DESCRIPCIÓN DE LA FOTO</div>
+                </div>
+                <div id="slide-03" ng-class="{'slide-shown': mainCtrl.slideSelected == 3}">
+                    <div class="slide-titulo">UIGLP</div>
+                    <div class="slide-descr">DESCRIPCIÓN DE LA FOTO</div>
+                </div>
+                <div id="slide-04" ng-class="{'slide-shown': mainCtrl.slideSelected == 4}">
+                    <div class="slide-titulo">UIGLP</div>
+                    <div class="slide-descr">DESCRIPCIÓN DE LA FOTO</div>
+                </div>
+            </div>
             <div id="slider-footer">
                 <div ng-click="selectImage(0);"></div>
                 <div ng-click="selectImage(1);"></div>
@@ -25,6 +42,7 @@
             <div id="servicios-list">
                 <div id="servicio-01" class="servicio">
                     <img src="" class="servicio-icono">
+
                     <div class="servicio-texto">
                         <div class="servicio-titulo">Financiamiento</div>
                         <div class="servicio-detalle">Alternativa más económica al momento de sellar sus documentos.
@@ -234,6 +252,7 @@
                 <div class="decorator-02"></div>
                 <div class="decorator-03"></div>
                 <span>NUESTRA EMPRESA</span>
+
                 <div class="decorator-03"></div>
                 <div class="decorator-02"></div>
                 <div class="decorator-01"></div>
