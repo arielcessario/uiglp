@@ -38,11 +38,9 @@
 
         vm.slideSelected = 1;
 
-        console.log('loodod');
         $interval(autoChangeSlide, 3000);
 
         function autoChangeSlide(){
-            console.log('loodod');
             vm.slideSelected = (vm.slideSelected + 1 > 4)? 1 : vm.slideSelected + 1;
         }
 
