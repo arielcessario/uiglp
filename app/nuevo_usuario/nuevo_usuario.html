@@ -1,0 +1,54 @@
+<div ng-controller="NuevoUsuarioController as nuevoUsuarioCtrl" id="nuevoUsuario">
+    <div id="nuevoUsuario-titulo" class="nuevoUsuario-title">
+        HOLA {{nuevoUsuarioCtrl.usuario.nombre}}
+    </div>
+
+    <div id="nuevoUsuario-form">
+        <div class="nuevoUsuario-sub-title">DETALLE DE TU INFORMACION</div>
+        <div class="nuevoUsuario-inputs">
+            <div class="nuevoUsuario-input">
+                <span>NOMBRE</span>
+                <input type="text" ng-model="nuevoUsuarioCtrl.usuario.nombre">
+            </div>
+            <div class="nuevoUsuario-input">
+                <span>APELLIDO</span>
+                <input type="text" ng-model="nuevoUsuarioCtrl.usuario.apellido">
+            </div>
+            <div class="nuevoUsuario-input">
+                <span>CUIT</span>
+                <input type="text" ng-model="nuevoUsuarioCtrl.usuario.nro_doc">
+            </div>
+            <div class="nuevoUsuario-input">
+                <span>TELEFONO</span>
+                <input type="text" ng-model="nuevoUsuarioCtrl.usuario.telefono">
+            </div>
+            <div class="nuevoUsuario-input">
+                <span>CONTRASEÑA</span>
+                <input type="password" ng-model="nuevoUsuarioCtrl.usuario.password">
+            </div>
+            <div class="nuevoUsuario-input">
+                <span>DIRECCION</span>
+                <input type="text" ng-model="nuevoUsuarioCtrl.usuario.direccion">
+            </div>
+            <div class="nuevoUsuario-input">
+                <span>MAIL</span>
+                <input type="email" ng-model="nuevoUsuarioCtrl.usuario.mail">
+            </div>
+            <div class="nuevoUsuario-input">
+                <span>ROL</span>
+                <select ng-model="nuevoUsuarioCtrl.usuario.rol_id">
+                    <option value="0">Usuario</option>
+                    <option value="1">Administrador</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="nuevoUsuario-button-bar">
+            <button ng-click="nuevoUsuarioCtrl.saveUsuario();">GUARDAR</button>
+            <button ng-click="nuevoUsuarioCtrl.usuario = nuevoUsuarioCtrl.logged;">CANCELAR</button>
+        </div>
+
+
+    </div>
+</div>

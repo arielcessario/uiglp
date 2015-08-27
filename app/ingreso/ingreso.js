@@ -18,11 +18,16 @@
 
         var vm = this;
         vm.login = login;
+        vm.nuevoUsuario = nuevoUsuario;
         vm.mail = '';
         vm.password = '';
 
         if(store.get('jwt')){
             $location.path('/administracion');
+        }
+
+        function nuevoUsuario(){
+            $location.path('/nuevo_usuario');
         }
 
         function login(){

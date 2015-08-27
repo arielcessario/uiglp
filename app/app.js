@@ -11,6 +11,7 @@ angular.module('uiglp', [
     'uiglp.ingreso',
     'uiglp.administracion',
     'uiglp.institucional',
+    'uiglp.nuevoUsuario',
     'ofertasLaborales'
 ]).
     config(['$routeProvider', 'jwtInterceptorProvider', '$httpProvider',
