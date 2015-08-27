@@ -37,6 +37,11 @@ html {
   position: fixed;
   top: 0;
   z-index: 1000;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
   @media (min-width: 600px) {
     display: flex;
     justify-content: center;
