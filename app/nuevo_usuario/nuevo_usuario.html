@@ -1,40 +1,40 @@
 <div ng-controller="NuevoUsuarioController as nuevoUsuarioCtrl" id="nuevoUsuario">
-    <div id="nuevoUsuario-titulo" class="nuevoUsuario-title">
+    <div id="nuevo-usuario-titulo" class="nuevo-usuario-title">
         HOLA {{nuevoUsuarioCtrl.usuario.nombre}}
     </div>
 
-    <div id="nuevoUsuario-form">
-        <div class="nuevoUsuario-sub-title">DETALLE DE TU INFORMACION</div>
-        <div class="nuevoUsuario-inputs">
-            <div class="nuevoUsuario-input">
+    <div id="nuevo-usuario-form">
+        <div class="nuevo-usuario-sub-title">DETALLE DE TU INFORMACION</div>
+        <div class="nuevo-usuario-inputs">
+            <div class="nuevo-usuario-input">
                 <span>NOMBRE</span>
                 <input type="text" ng-model="nuevoUsuarioCtrl.usuario.nombre">
             </div>
-            <div class="nuevoUsuario-input">
+            <div class="nuevo-usuario-input">
                 <span>APELLIDO</span>
                 <input type="text" ng-model="nuevoUsuarioCtrl.usuario.apellido">
             </div>
-            <div class="nuevoUsuario-input">
+            <div class="nuevo-usuario-input">
                 <span>CUIT</span>
                 <input type="text" ng-model="nuevoUsuarioCtrl.usuario.nro_doc">
             </div>
-            <div class="nuevoUsuario-input">
+            <div class="nuevo-usuario-input">
                 <span>TELEFONO</span>
                 <input type="text" ng-model="nuevoUsuarioCtrl.usuario.telefono">
             </div>
-            <div class="nuevoUsuario-input">
+            <div class="nuevo-usuario-input">
                 <span>CONTRASEÑA</span>
                 <input type="password" ng-model="nuevoUsuarioCtrl.usuario.password">
             </div>
-            <div class="nuevoUsuario-input">
+            <div class="nuevo-usuario-input">
                 <span>DIRECCION</span>
                 <input type="text" ng-model="nuevoUsuarioCtrl.usuario.direccion">
             </div>
-            <div class="nuevoUsuario-input">
+            <div class="nuevo-usuario-input">
                 <span>MAIL</span>
                 <input type="email" ng-model="nuevoUsuarioCtrl.usuario.mail">
             </div>
-            <div class="nuevoUsuario-input">
+            <div class="nuevo-usuario-input">
                 <span>ROL</span>
                 <select ng-model="nuevoUsuarioCtrl.usuario.rol_id">
                     <option value="0">Usuario</option>
@@ -44,7 +44,7 @@
 
         </div>
 
-        <div class="nuevoUsuario-button-bar">
+        <div class="nuevo-usuario-button-bar">
             <button ng-click="nuevoUsuarioCtrl.saveUsuario();">GUARDAR</button>
             <button ng-click="nuevoUsuarioCtrl.usuario = nuevoUsuarioCtrl.logged;">CANCELAR</button>
         </div>

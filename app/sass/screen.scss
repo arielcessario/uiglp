@@ -923,15 +923,23 @@ html {
 
 .administracion-title,
 #administracion-form,
-.administracion-separator{
+.administracion-separator,
+.nuevo-usuario-title,
+#nuevo-usuario-form,
+.nuevo-usuario-separator
+{
   max-width: 800px;
 }
 
-#administracion-form{
+#administracion-form,
+#nuevo-usuario-form
+{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  .administracion-inputs{
+  .administracion-inputs,
+  .nuevo-usuario-inputs
+  {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -950,7 +958,9 @@ html {
 }
 
 
-.administracion-title {
+.administracion-title,
+.nuevo-usuario-title,
+{
   width: 100%;
   font-size: 83px;
   font-family: "Montserrat Regular", sans-serif;
@@ -963,7 +973,9 @@ html {
   }
 }
 
-.administracion-input {
+.administracion-input ,
+.nuevo-usuario-input
+{
   display: flex;
   flex-direction: column;
   span {
@@ -983,7 +995,9 @@ html {
 
 }
 
-.administracion-button-bar {
+.administracion-button-bar,
+.nuevo-usuario-button-bar,
+{
   display: flex;
   flex-direction: row;
 
@@ -996,7 +1010,8 @@ html {
   }
 }
 
-.administracion-separator {
+.administracion-separator
+{
   width: 100%;
   height: 2px !important;
   min-height: 2px;

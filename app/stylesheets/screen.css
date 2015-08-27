@@ -1012,24 +1012,31 @@ html {
 /* line 924, ../sass/screen.scss */
 .administracion-title,
 #administracion-form,
-.administracion-separator {
+.administracion-separator,
+.nuevo-usuario-title,
+#nuevo-usuario-form,
+.nuevo-usuario-separator {
   max-width: 800px;
 }
 
-/* line 930, ../sass/screen.scss */
-#administracion-form {
+/* line 934, ../sass/screen.scss */
+#administracion-form,
+#nuevo-usuario-form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-/* line 934, ../sass/screen.scss */
-#administracion-form .administracion-inputs {
+/* line 940, ../sass/screen.scss */
+#administracion-form .administracion-inputs,
+#administracion-form .nuevo-usuario-inputs,
+#nuevo-usuario-form .administracion-inputs,
+#nuevo-usuario-form .nuevo-usuario-inputs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 942, ../sass/screen.scss */
+/* line 950, ../sass/screen.scss */
 #administracion-oferta,
 #administracion-noticias,
 #administracion-slider {
@@ -1040,8 +1047,9 @@ html {
   justify-content: flex-start;
 }
 
-/* line 953, ../sass/screen.scss */
-.administracion-title {
+/* line 961, ../sass/screen.scss */
+.administracion-title,
+.nuevo-usuario-title {
   width: 100%;
   font-size: 83px;
   font-family: "Montserrat Regular", sans-serif;
@@ -1055,20 +1063,24 @@ html {
   background-image: linear-gradient(to right, #dedede, #ffffff);
 }
 @media (max-width: 600px) {
-  /* line 953, ../sass/screen.scss */
-  .administracion-title {
+  /* line 961, ../sass/screen.scss */
+  .administracion-title,
+  .nuevo-usuario-title {
     font-size: 42px;
   }
 }
 
-/* line 966, ../sass/screen.scss */
-.administracion-input {
+/* line 976, ../sass/screen.scss */
+.administracion-input,
+.nuevo-usuario-input {
   display: flex;
   flex-direction: column;
 }
-/* line 973, ../sass/screen.scss */
+/* line 985, ../sass/screen.scss */
 .administracion-input input,
-.administracion-input select {
+.administracion-input select,
+.nuevo-usuario-input input,
+.nuevo-usuario-input select {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -1077,22 +1089,25 @@ html {
   background-color: transparent;
 }
 
-/* line 986, ../sass/screen.scss */
-.administracion-button-bar {
+/* line 998, ../sass/screen.scss */
+.administracion-button-bar,
+.nuevo-usuario-button-bar {
   display: flex;
   flex-direction: row;
 }
-/* line 990, ../sass/screen.scss */
-.administracion-button-bar button {
+/* line 1004, ../sass/screen.scss */
+.administracion-button-bar button,
+.nuevo-usuario-button-bar button {
   background-color: transparent;
   border: 1px solid transparent;
 }
-/* line 994, ../sass/screen.scss */
-.administracion-button-bar button:hover {
+/* line 1008, ../sass/screen.scss */
+.administracion-button-bar button:hover,
+.nuevo-usuario-button-bar button:hover {
   border-bottom-color: #17384B;
 }
 
-/* line 999, ../sass/screen.scss */
+/* line 1013, ../sass/screen.scss */
 .administracion-separator {
   width: 100%;
   height: 2px !important;
