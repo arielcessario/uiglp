@@ -335,6 +335,18 @@ html {
   }
 }
 
+.slide-titulo{
+  font-size: 150px;
+  font-family: 'Lato Heavy', serif;
+  opacity: .4;
+  }
+
+.slide-descr{
+  font-size: 50px;
+  font-family: 'Lato Regular', serif;
+  opacity: .4;
+}
+
 #servicios {
   margin-top: 600px;
   background-color: #ffffff;
@@ -431,7 +443,9 @@ html {
           min-width: 180px;
 
         }
-      }
+
+       }
+
     }
 
     #servicios-action-bar {
@@ -484,6 +498,12 @@ html {
   padding: 8px;
   white-space: nowrap;
   text-align: center;
+}
+
+.btn-leer-mas:hover{
+  color: white;
+  background-color: #133548;
+
 }
 
 #noticias {
@@ -579,6 +599,12 @@ html {
         color: white;
         font-size: 12px;
         border-color: white;
+      }
+
+      .btn-leer-mas:hover{
+        background-color: white;
+        color: #133548;
+
       }
 
     }
