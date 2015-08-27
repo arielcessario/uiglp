@@ -6,14 +6,15 @@
         .config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/administracion', {
                 templateUrl: currentScriptPath.replace('.js', '.html'),
-                controller: 'AdministracionController'
+                controller: 'AdministracionController',
+                data: {requiresLogin:true}
             });
         }])
         .controller('AdministracionController', AdministracionController);
 
 
-    AdministracionController.$inject = ['LoginService'];
-    function AdministracionController(LoginService) {
+    AdministracionController.$inject = ['LoginService', 'LoginState', 'store', '$location', 'OfertasLaboralesService'];
+    function AdministracionController(LoginService, LoginState, store, $location, OfertasLaboralesService) {
 
         var vm = this;
 
@@ -45,6 +46,14 @@
         vm.updateOfertaLaboral = updateOfertaLaboral;
         vm.modificarOfertaLaboral = modificarOfertaLaboral;
         vm.removeOfertaLaboral = removeOfertaLaboral;
+
+        vm.logout = logout;
+
+        function logout(){
+            LoginState = false;
+            store.remove('jwt');
+            $location.path('/ingreso');
+        }
 
         LoginService.getClientes(function (data) {
             vm.usuarios = data;

@@ -10,6 +10,7 @@ angular.module('uiglp', [
     'uiglp.main',
     'uiglp.ingreso',
     'uiglp.administracion',
+    'uiglp.institucional',
     'ofertasLaborales'
 ]).
     config(['$routeProvider', 'jwtInterceptorProvider', '$httpProvider',
@@ -26,7 +27,9 @@ angular.module('uiglp', [
             //if (!store.get('jwt')) {
             //    console.log('data');
             //}
-            if (to.data && to.data.requiresLogin) {
+
+
+            if (to && to.data && to.data.requiresLogin) {
                 //if (!store.get('jwt') || jwtHelper.isTokenExpired(store.get('jwt'))) {
                 if (!store.get('jwt')) {
                     e.preventDefault();
@@ -45,22 +48,22 @@ function AppController(LoginState, $location, $rootScope) {
     vm.goTo = goTo;
     vm.links = [
         {nombre: 'INICIO', path: '/'},
-        {nombre: 'INSTITUCIONAL', path: '#/institucional'},
-        {nombre: 'BUSQUEDA LABORAL', path: '#/busqueda'},
-        {nombre: 'AGENDA', path: '#/agenda'},
-        {nombre: 'CONTACTO', path: '#/contacto'},
-        {nombre: 'REVISTA', path: '#/revista'},
+        {nombre: 'INSTITUCIONAL', path: '/institucional'},
+        {nombre: 'BUSQUEDA LABORAL', path: '/busqueda'},
+        {nombre: 'AGENDA', path: '/agenda'},
+        {nombre: 'CONTACTO', path: '/contacto'},
+        {nombre: 'REVISTA', path: '/revista'},
         {nombre: 'INGRESO', path: '/ingreso'}
     ];
 
 
-    $rootScope.$on("$routeChangeStart", function (event, next, current) {
-
-
-        if (next.$$route.originalPath !== '/ingreso' && !LoginState.isLogged) {
-            $location.path('/ingreso');
-        }
-    });
+    //$rootScope.$on("$routeChangeStart", function (event, next, current) {
+    //
+    //
+    //    if (next.$$route.originalPath !== '/ingreso' && !LoginState.isLogged) {
+    //        $location.path('/ingreso');
+    //    }
+    //});
 
     function goTo(location) {
 

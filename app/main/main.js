@@ -6,7 +6,8 @@
     .config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/', {
                 templateUrl: currentScriptPath.replace('.js', '.html'),
-                controllerAs: 'mainCtrl'
+                controllerAs: 'mainCtrl',
+                data: {requiresLogin:false}
             });
         }])
         .controller('MainController', MainController);

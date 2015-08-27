@@ -6,7 +6,8 @@
     .config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/ingreso', {
                 templateUrl: currentScriptPath.replace('.js', '.html'),
-                controller: 'IngresoController'
+                controller: 'IngresoController',
+                data: {requiresLogin:false}
             });
         }])
         .controller('IngresoController', IngresoController);
@@ -20,7 +21,7 @@
         vm.mail = '';
         vm.password = '';
 
-        if(LoginState.isLogged){
+        if(store.get('jwt')){
             $location.path('/administracion');
         }
 
@@ -28,8 +29,10 @@
             LoginService.login(vm.mail, vm.password, function(data){
 
                 if(data != -1){
+                    console.log(data);
                     LoginState.isLogged = true;
                     store.set('jwt', data);
+                    $location.path('/administracion');
                 }else{
                     LoginState.isLogged = false;
                 }

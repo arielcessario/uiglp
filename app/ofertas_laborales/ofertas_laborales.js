@@ -22,10 +22,10 @@
 
         function get(callback) {
             $http.get(url + '?function=get')
-                .success(function () {
+                .success(function (data) {
                     callback(data)
                 })
-                .error(function () {
+                .error(function (data) {
                     callback(data)
                 });
         }
