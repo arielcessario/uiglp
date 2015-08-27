@@ -1,9 +1,9 @@
 (function () {
     'use strict';
     var scripts = document.getElementsByTagName("script")
-    var currentScriptPath = scripts[scripts.length-1].src;
+    var currentScriptPath = scripts[scripts.length - 1].src;
     angular.module('uiglp.administracion', ['ngRoute'])
-    .config(['$routeProvider', function ($routeProvider) {
+        .config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/administracion', {
                 templateUrl: currentScriptPath.replace('.js', '.html'),
                 controller: 'AdministracionController'
@@ -16,48 +16,89 @@
     function AdministracionController(LoginService) {
 
         var vm = this;
+
         vm.usuario = {
             cliente_id: -1,
-            nombre:'',
-            apellido:'',
-            nro_doc:'',
-            telefono:'',
-            password:'',
-            direccion:'',
-            mail:''
+            nombre: '',
+            apellido: '',
+            nro_doc: '',
+            telefono: '',
+            password: '',
+            direccion: '',
+            mail: ''
         };
-        vm.usuarios=[];
 
+        vm.oferta_laboral = {
+            oferta_laboral_id: -1,
+            titulo: '',
+            detalle: ''
+        };
+
+        vm.usuarios = [];
+        vm.ofertas_laborales = [];
 
         vm.saveUsuario = saveUsuario;
         vm.updateUsuario = updateUsuario;
         vm.modificarUsuario = modificarUsuario;
 
-        LoginService.getClientes(function(data){
+        vm.saveOfertaLaboral = saveOfertaLaboral;
+        vm.updateOfertaLaboral = updateOfertaLaboral;
+        vm.modificarOfertaLaboral = modificarOfertaLaboral;
+        vm.removeOfertaLaboral = removeOfertaLaboral;
+
+        LoginService.getClientes(function (data) {
             vm.usuarios = data;
         });
 
+        OfertasLaboralesService.get(function (data) {
+            vm.ofertas_laborales = data;
+        });
 
-        function modificarUsuario(usuario){
+
+        function modificarUsuario(usuario) {
             vm.usuario = angular.copy(usuario);
             vm.usuario.rol_id = '' + vm.usuario.rol_id;
         }
 
-        function saveUsuario(){
-            LoginService.create(vm.usuario, function(data){
+        function saveUsuario() {
+            LoginService.create(vm.usuario, function (data) {
                 console.log(data);
             });
 
         }
 
-        function updateUsuario(){
-            LoginService.updateCliente(vm.usuario, function(data){
+        function updateUsuario() {
+            LoginService.updateCliente(vm.usuario, function (data) {
                 console.log(data);
             });
 
         }
 
+        function modificarOfertaLaboral(usuario) {
+            vm.usuario = angular.copy(usuario);
+            vm.usuario.rol_id = '' + vm.usuario.rol_id;
+        }
 
+        function saveOfertaLaboral() {
+            LoginService.create(vm.usuario, function (data) {
+                console.log(data);
+            });
+
+        }
+
+        function updateOfertaLaboral() {
+            LoginService.updateCliente(vm.usuario, function (data) {
+                console.log(data);
+            });
+
+        }
+
+        function removeOfertaLaboral() {
+            LoginService.updateCliente(vm.usuario, function (data) {
+                console.log(data);
+            });
+
+        }
 
 
     }
