@@ -48,6 +48,7 @@ function AppController(LoginState, $location, $rootScope) {
 
     var vm = this;
     vm.goTo = goTo;
+    vm.selectedPage = 'INICIO';
     vm.links = [
         {nombre: 'INICIO', path: '/'},
         {nombre: 'INSTITUCIONAL', path: '/institucional'},
@@ -69,6 +70,7 @@ function AppController(LoginState, $location, $rootScope) {
 
     function goTo(location) {
 
-        $location.path(location);
+        $location.path(location.path);
+        vm.selectedPage = location.nombre;
     }
 }

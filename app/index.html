@@ -43,7 +43,11 @@
             <div id="menu-desktop-upper"></div>
             <div id="menu-desktop-lower">
 
-                <div class="menu-desktop-btn ac-ripple" ng-repeat="link in appCtrl.links" ng-click="appCtrl.goTo(link.path);"> {{link.nombre}}</div>
+                <div class="menu-desktop-btn ac-ripple"
+                     ng-class="{'menu-desktop-btn-selected':appCtrl.selectedPage == link.nombre}"
+                     ripple-color="#ffffff"
+                     ng-repeat="link in appCtrl.links"
+                     ng-click="appCtrl.goTo(link);"> {{link.nombre}}</div>
             </div>
         </div>
     </div>

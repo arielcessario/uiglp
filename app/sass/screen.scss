@@ -159,6 +159,7 @@ html {
       max-height: 35px;
       margin-left: 10px;
       padding: 5px;
+      padding-bottom: 0px;
 
       .menu-desktop-btn {
         cursor: pointer;
@@ -169,7 +170,8 @@ html {
         position: relative;
 
       }
-      .menu-desktop-btn:hover {
+      .menu-desktop-btn:hover,
+      .menu-desktop-btn-selected{
         color: white;
         background-color: #406276;
       }

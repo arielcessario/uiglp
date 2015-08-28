@@ -15,7 +15,7 @@
             restrict: 'C',
             scope: {
 
-                rippleColor: '='
+                rippleColor: '@'
             },
             controller: AcRippleController,
             link: function (scope, element, attrs) {
@@ -34,8 +34,8 @@
                     $ripple.css("height", element[0].clientHeight);
                     $ripple.css("width", element[0].clientHeight);
                     $div.css({
-                        top: yPos - ( element[0].clientHeight / 2),
-                        left: xPos - ( element[0].clientWidth / 2),
+                        top: yPos + 'px',
+                        left: xPos + 'px',
                         background: scope.rippleColor
                     });
                     element.append($div);
