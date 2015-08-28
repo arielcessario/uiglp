@@ -37,11 +37,6 @@ html {
   position: fixed;
   top: 0;
   z-index: 1000;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   @media (min-width: 600px) {
     display: flex;
     justify-content: center;
@@ -226,7 +221,6 @@ html {
   height: 600px;
   z-index: 0;
   background-color: black;
-  overflow: hidden;
 
   #slider-main {
     //    margin-top: 200px;
@@ -923,23 +917,15 @@ html {
 
 .administracion-title,
 #administracion-form,
-.administracion-separator,
-.nuevo-usuario-title,
-#nuevo-usuario-form,
-.nuevo-usuario-separator
-{
+.administracion-separator{
   max-width: 800px;
 }
 
-#administracion-form,
-#nuevo-usuario-form
-{
+#administracion-form{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  .administracion-inputs,
-  .nuevo-usuario-inputs
-  {
+  .administracion-inputs{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -958,9 +944,7 @@ html {
 }
 
 
-.administracion-title,
-.nuevo-usuario-title,
-{
+.administracion-title {
   width: 100%;
   font-size: 83px;
   font-family: "Montserrat Regular", sans-serif;
@@ -973,9 +957,7 @@ html {
   }
 }
 
-.administracion-input ,
-.nuevo-usuario-input
-{
+.administracion-input {
   display: flex;
   flex-direction: column;
   span {
@@ -995,9 +977,7 @@ html {
 
 }
 
-.administracion-button-bar,
-.nuevo-usuario-button-bar,
-{
+.administracion-button-bar {
   display: flex;
   flex-direction: row;
 
@@ -1010,8 +990,7 @@ html {
   }
 }
 
-.administracion-separator
-{
+.administracion-separator {
   width: 100%;
   height: 2px !important;
   min-height: 2px;

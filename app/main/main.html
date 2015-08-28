@@ -1,275 +1,275 @@
-<div ng-controller="MainController as mainCtrl">
-    <div id="main">
-        <div id="slider">
-            <div id="slider-main">
-                <div id="slide-01" ng-class="{'slide-shown': mainCtrl.slideSelected == 1}">
-                    <div class="slide-titulo">UIGLP</div>
-                    <div class="slide-descr">DESCRIPCIÓN DE LA FOTO</div>
-                </div>
-                <div id="slide-02" ng-class="{'slide-shown': mainCtrl.slideSelected == 2}">
-                    <div class="slide-titulo">UIGLP</div>
-                    <div class="slide-descr">DESCRIPCIÓN DE LA FOTO</div>
-                </div>
-                <div id="slide-03" ng-class="{'slide-shown': mainCtrl.slideSelected == 3}">
-                    <div class="slide-titulo">UIGLP</div>
-                    <div class="slide-descr">DESCRIPCIÓN DE LA FOTO</div>
-                </div>
-                <div id="slide-04" ng-class="{'slide-shown': mainCtrl.slideSelected == 4}">
-                    <div class="slide-titulo">UIGLP</div>
-                    <div class="slide-descr">DESCRIPCIÓN DE LA FOTO</div>
-                </div>
-            </div>
-            <div id="slider-footer">
-                <div ng-click="mainCtrl.selectImage(1);" ng-class="{'slider-footer-selected': mainCtrl.slideSelected == 1}"></div>
-                <div ng-click="mainCtrl.selectImage(2);" ng-class="{'slider-footer-selected': mainCtrl.slideSelected == 2}"></div>
-                <div ng-click="mainCtrl.selectImage(3);" ng-class="{'slider-footer-selected': mainCtrl.slideSelected == 3}"></div>
-                <div ng-click="mainCtrl.selectImage(4);" ng-class="{'slider-footer-selected': mainCtrl.slideSelected == 4}"></div>
-            </div>
-        </div>
-        <div id="servicios">
-            <div class="section-title">
-                <div class="decorator-01"></div>
-                <div class="decorator-02"></div>
-                <div class="decorator-03"></div>
-                <span>SERVICIOS</span>
-
-                <div class="decorator-03"></div>
-                <div class="decorator-02"></div>
-                <div class="decorator-01"></div>
-
-            </div>
-
-            <div id="servicios-list">
-                <div id="servicio-01" class="servicio">
-                    <img src="img/servicio_01.svg" class="servicio-icono">
-
-                    <div class="servicio-texto">
-                        <div class="servicio-titulo">Financiamiento</div>
-                        <div class="servicio-detalle">Alternativa más económica al momento de sellar sus documentos.
-                        </div>
-                    </div>
-                </div>
-                <div id="servicios-action-bar">
-                    <div id="servicios-separator"></div>
-                    <div id="servicios-leer-mas" class="btn-leer-mas" ng-click="mainCtrl.alerta();">LEER MAS</div>
-                </div>
-                <div id="servicio-02" class="servicio">
-                    <div class="servicio-texto">
-                        <div class="servicio-titulo">Sellados</div>
-                        <div class="servicio-detalle">Beneficiese sellando sus contratos y órdenes de compra en la UIGLP
-                            a un menor costo.
-                        </div>
-                    </div>
-                    <div class="servicio-icono"></div>
-                </div>
-            </div>
-        </div>
-        <div id="noticias">
-            <div class="section-title">
-                <div class="decorator-01"></div>
-                <div class="decorator-02"></div>
-                <div class="decorator-03"></div>
-                <span>NOTICIAS</span>
-
-                <div class="decorator-03"></div>
-                <div class="decorator-02"></div>
-                <div class="decorator-01"></div>
-
-            </div>
-
-            <div id="noticias-list">
-                <div id="noticia-01" class="noticia">
-                    <img src="" alt=""/>
-
-                    <h2>La unión industrial criticó los acuerdos económicos con China</h2>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis metus lorem. Vivamus lobortis,
-                        felis ut feugiat commodo, sapien libero rhoncus tortor, molestie condimentum tortor nisi in
-                        tellus. Proin at pellentesque mauris, in dapibus augue. Nullam eget pellentesque nisl, quis
-                        posuere augue. Cras accumsan iaculis placerat. Cras at erat eget tortor semper ornare et nec
-                        diam. Nullam mattis lectus purus, id imperdiet ipsum imperdiet at. Integer ornare placerat
-                        ipsum, nec hendrerit odio consectetur a. Fusce sit amet enim viverra, tincidunt erat ut,
-                        fermentum tellus. Phasellus arcu lorem, luctus ac tempus a, tristique eget justo. Phasellus
-                        ipsum justo, feugiat id mi et, luctus ornare ligula. In aliquet lorem non diam sollicitudin,
-                        eget gravida mi commodo. Phasellus aliquam, mi ut vestibulum rutrum, lectus purus condimentum
-                        libero, condimentum condimentum nibh orci eget nisi. Sed blandit euismod tellus aliquet
-                        hendrerit.</p>
-
-                    <div class="btn-leer-mas">LEER MAS</div>
-                </div>
-                <div id="noticia-02" class="noticia">
-                    <img src="" alt=""/>
-
-                    <h2>La unión industrial criticó los acuerdos económicos con China</h2>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis metus lorem. Vivamus lobortis,
-                        felis ut feugiat commodo, sapien libero rhoncus tortor, molestie condimentum tortor nisi in
-                        tellus. Proin at pellentesque mauris, in dapibus augue. Nullam eget pellentesque nisl, quis
-                        posuere augue. Cras accumsan iaculis placerat. Cras at erat eget tortor semper ornare et nec
-                        diam. Nullam mattis lectus purus, id imperdiet ipsum imperdiet at. Integer ornare placerat
-                        ipsum, nec hendrerit odio consectetur a. Fusce sit amet enim viverra, tincidunt erat ut,
-                        fermentum tellus. Phasellus arcu lorem, luctus ac tempus a, tristique eget justo. Phasellus
-                        ipsum justo, feugiat id mi et, luctus ornare ligula. In aliquet lorem non diam sollicitudin,
-                        eget gravida mi commodo. Phasellus aliquam, mi ut vestibulum rutrum, lectus purus condimentum
-                        libero, condimentum condimentum nibh orci eget nisi. Sed blandit euismod tellus aliquet
-                        hendrerit.</p>
-
-                    <div class="btn-leer-mas">LEER MAS</div>
-                </div>
-                <div id="noticia-03" class="noticia">
-                    <img src="" alt=""/>
-
-                    <h2>La unión industrial criticó los acuerdos económicos con China</h2>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis metus lorem. Vivamus lobortis,
-                        felis ut feugiat commodo, sapien libero rhoncus tortor, molestie condimentum tortor nisi in
-                        tellus. Proin at pellentesque mauris, in dapibus augue. Nullam eget pellentesque nisl, quis
-                        posuere augue. Cras accumsan iaculis placerat. Cras at erat eget tortor semper ornare et nec
-                        diam. Nullam mattis lectus purus, id imperdiet ipsum imperdiet at. Integer ornare placerat
-                        ipsum, nec hendrerit odio consectetur a. Fusce sit amet enim viverra, tincidunt erat ut,
-                        fermentum tellus. Phasellus arcu lorem, luctus ac tempus a, tristique eget justo. Phasellus
-                        ipsum justo, feugiat id mi et, luctus ornare ligula. In aliquet lorem non diam sollicitudin,
-                        eget gravida mi commodo. Phasellus aliquam, mi ut vestibulum rutrum, lectus purus condimentum
-                        libero, condimentum condimentum nibh orci eget nisi. Sed blandit euismod tellus aliquet
-                        hendrerit.</p>
-
-                    <div class="btn-leer-mas">LEER MAS</div>
-                </div>
-            </div>
-        </div>
-        <div id="agendas">
-            <div class="section-title" id="agendas-title">
-                <div class="decorator-01"></div>
-                <div class="decorator-02"></div>
-                <div class="decorator-03"></div>
-                <span>AGENDA</span>
-
-                <div class="decorator-03"></div>
-                <div class="decorator-02"></div>
-                <div class="decorator-01"></div>
-
-            </div>
-
-
-            <div id="agendas-list">
-                <div id="agenda-calendar" class="agenda-dias">
-                    <div id="agenda-calendar-header">
-                        <div><</div>
-                        <span>{{mainCtrl.agendaMes}}</span>
-
-                        <div>></div>
-                    </div>
-
-                    <div id="agenda-calendar-container">
-                        <table>
-                            <thead>
-                            <tr>
-                                <th>Do</th>
-                                <th>Lu</th>
-                                <th>Ma</th>
-                                <th>Mi</th>
-                                <th>Ju</th>
-                                <th>Vi</th>
-                                <th>Sa</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                            </tr>
-                            <tr>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
-                                <td>18</td>
-                                <td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                            </tr>
-                            <tr>
-                                <td>22</td>
-                                <td>23</td>
-                                <td>24</td>
-                                <td>25</td>
-                                <td>26</td>
-                                <td>27</td>
-                                <td>28</td>
-                            </tr>
-                            <tr>
-                                <td>29</td>
-                                <td>30</td>
-                                <td>31</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-
-                            </tbody>
-
-                        </table>
-                    </div>
-                </div>
-                <img src="" alt=""/>
-
-                <div id="agenda-detail" class="agenda">
-                    <h2>Noticia</h2>
-
-                    <div id="agenda-separator"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis metus lorem. Vivamus lobortis,
-                        felis ut feugiat commodo, sapien libero rhoncus tortor, molestie condimentum tortor nisi in
-                        tellus. Proin at pellentesque mauris, in dapibus augue. Nullam eget pellentesque nisl, quis
-                        posuere augue. Cras accumsan iaculis placerat. Cras at erat eget tortor semper ornare et nec
-                        diam. Nullam mattis lectus purus, id imperdiet ipsum imperdiet at. Integer ornare placerat
-                        ipsum, nec hendrerit odio consectetur a. Fusce sit amet enim viverra, tincidunt erat ut,
-                        fermentum tellus. Phasellus arcu lorem, luctus ac tempus a, tristique eget justo. Phasellus
-                        ipsum justo, feugiat id mi et, luctus ornare ligula. In aliquet lorem non diam sollicitudin,
-                        eget gravida mi commodo. Phasellus aliquam, mi ut vestibulum rutrum, lectus purus condimentum
-                        libero, condimentum condimentum nibh orci eget nisi. Sed blandit euismod tellus aliquet
-                        hendrerit.</p>
-                </div>
-
-            </div>
-        </div>
-        <div id="empresas">
-            <div class="section-title" id="empresas-title">
-                <div class="decorator-01"></div>
-                <div class="decorator-02"></div>
-                <div class="decorator-03"></div>
-                <span>NUESTRA EMPRESA</span>
-
-                <div class="decorator-03"></div>
-                <div class="decorator-02"></div>
-                <div class="decorator-01"></div>
-
-            </div>
-            <div id="empresas-carrousel">
-                <div id="empresas-list">
-
-                    <div class="empresa" ng-repeat="empresa in mainCtrl.empresas">
-                        <img src="img/empresa.png.png" alt="empresa.nombre">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-    </div>
-
+<div ng-controller="MainController as mainCtrl">
+    <div id="main">
+        <div id="slider">
+            <div id="slider-main">
+                <div id="slide-01" ng-class="{'slide-shown': mainCtrl.slideSelected == 1}">
+                    <div class="slide-titulo">UIGLP</div>
+                    <div class="slide-descr">DESCRIPCIÓN DE LA FOTO</div>
+                </div>
+                <div id="slide-02" ng-class="{'slide-shown': mainCtrl.slideSelected == 2}">
+                    <div class="slide-titulo">UIGLP</div>
+                    <div class="slide-descr">DESCRIPCIÓN DE LA FOTO</div>
+                </div>
+                <div id="slide-03" ng-class="{'slide-shown': mainCtrl.slideSelected == 3}">
+                    <div class="slide-titulo">UIGLP</div>
+                    <div class="slide-descr">DESCRIPCIÓN DE LA FOTO</div>
+                </div>
+                <div id="slide-04" ng-class="{'slide-shown': mainCtrl.slideSelected == 4}">
+                    <div class="slide-titulo">UIGLP</div>
+                    <div class="slide-descr">DESCRIPCIÓN DE LA FOTO</div>
+                </div>
+            </div>
+            <div id="slider-footer">
+                <div ng-click="mainCtrl.selectImage(1);" ng-class="{'slider-footer-selected': mainCtrl.slideSelected == 1}"></div>
+                <div ng-click="mainCtrl.selectImage(2);" ng-class="{'slider-footer-selected': mainCtrl.slideSelected == 2}"></div>
+                <div ng-click="mainCtrl.selectImage(3);" ng-class="{'slider-footer-selected': mainCtrl.slideSelected == 3}"></div>
+                <div ng-click="mainCtrl.selectImage(4);" ng-class="{'slider-footer-selected': mainCtrl.slideSelected == 4}"></div>
+            </div>
+        </div>
+        <div id="servicios">
+            <div class="section-title">
+                <div class="decorator-01"></div>
+                <div class="decorator-02"></div>
+                <div class="decorator-03"></div>
+                <span>SERVICIOS</span>
+
+                <div class="decorator-03"></div>
+                <div class="decorator-02"></div>
+                <div class="decorator-01"></div>
+
+            </div>
+
+            <div id="servicios-list">
+                <div id="servicio-01" class="servicio">
+                    <img src="img/servicio_01.svg" class="servicio-icono">
+
+                    <div class="servicio-texto">
+                        <div class="servicio-titulo">Financiamiento</div>
+                        <div class="servicio-detalle">Alternativa más económica al momento de sellar sus documentos.
+                        </div>
+                    </div>
+                </div>
+                <div id="servicios-action-bar">
+                    <div id="servicios-separator"></div>
+                    <div id="servicios-leer-mas" class="btn-leer-mas" ng-click="mainCtrl.alerta();">LEER MAS</div>
+                </div>
+                <div id="servicio-02" class="servicio">
+                    <div class="servicio-texto">
+                        <div class="servicio-titulo">Sellados</div>
+                        <div class="servicio-detalle">Beneficiese sellando sus contratos y órdenes de compra en la UIGLP
+                            a un menor costo.
+                        </div>
+                    </div>
+                    <div class="servicio-icono"></div>
+                </div>
+            </div>
+        </div>
+        <div id="noticias">
+            <div class="section-title">
+                <div class="decorator-01"></div>
+                <div class="decorator-02"></div>
+                <div class="decorator-03"></div>
+                <span>NOTICIAS</span>
+
+                <div class="decorator-03"></div>
+                <div class="decorator-02"></div>
+                <div class="decorator-01"></div>
+
+            </div>
+
+            <div id="noticias-list">
+                <div id="noticia-01" class="noticia">
+                    <img src="" alt=""/>
+
+                    <h2>La unión industrial criticó los acuerdos económicos con China</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis metus lorem. Vivamus lobortis,
+                        felis ut feugiat commodo, sapien libero rhoncus tortor, molestie condimentum tortor nisi in
+                        tellus. Proin at pellentesque mauris, in dapibus augue. Nullam eget pellentesque nisl, quis
+                        posuere augue. Cras accumsan iaculis placerat. Cras at erat eget tortor semper ornare et nec
+                        diam. Nullam mattis lectus purus, id imperdiet ipsum imperdiet at. Integer ornare placerat
+                        ipsum, nec hendrerit odio consectetur a. Fusce sit amet enim viverra, tincidunt erat ut,
+                        fermentum tellus. Phasellus arcu lorem, luctus ac tempus a, tristique eget justo. Phasellus
+                        ipsum justo, feugiat id mi et, luctus ornare ligula. In aliquet lorem non diam sollicitudin,
+                        eget gravida mi commodo. Phasellus aliquam, mi ut vestibulum rutrum, lectus purus condimentum
+                        libero, condimentum condimentum nibh orci eget nisi. Sed blandit euismod tellus aliquet
+                        hendrerit.</p>
+
+                    <div class="btn-leer-mas">LEER MAS</div>
+                </div>
+                <div id="noticia-02" class="noticia">
+                    <img src="" alt=""/>
+
+                    <h2>La unión industrial criticó los acuerdos económicos con China</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis metus lorem. Vivamus lobortis,
+                        felis ut feugiat commodo, sapien libero rhoncus tortor, molestie condimentum tortor nisi in
+                        tellus. Proin at pellentesque mauris, in dapibus augue. Nullam eget pellentesque nisl, quis
+                        posuere augue. Cras accumsan iaculis placerat. Cras at erat eget tortor semper ornare et nec
+                        diam. Nullam mattis lectus purus, id imperdiet ipsum imperdiet at. Integer ornare placerat
+                        ipsum, nec hendrerit odio consectetur a. Fusce sit amet enim viverra, tincidunt erat ut,
+                        fermentum tellus. Phasellus arcu lorem, luctus ac tempus a, tristique eget justo. Phasellus
+                        ipsum justo, feugiat id mi et, luctus ornare ligula. In aliquet lorem non diam sollicitudin,
+                        eget gravida mi commodo. Phasellus aliquam, mi ut vestibulum rutrum, lectus purus condimentum
+                        libero, condimentum condimentum nibh orci eget nisi. Sed blandit euismod tellus aliquet
+                        hendrerit.</p>
+
+                    <div class="btn-leer-mas">LEER MAS</div>
+                </div>
+                <div id="noticia-03" class="noticia">
+                    <img src="" alt=""/>
+
+                    <h2>La unión industrial criticó los acuerdos económicos con China</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis metus lorem. Vivamus lobortis,
+                        felis ut feugiat commodo, sapien libero rhoncus tortor, molestie condimentum tortor nisi in
+                        tellus. Proin at pellentesque mauris, in dapibus augue. Nullam eget pellentesque nisl, quis
+                        posuere augue. Cras accumsan iaculis placerat. Cras at erat eget tortor semper ornare et nec
+                        diam. Nullam mattis lectus purus, id imperdiet ipsum imperdiet at. Integer ornare placerat
+                        ipsum, nec hendrerit odio consectetur a. Fusce sit amet enim viverra, tincidunt erat ut,
+                        fermentum tellus. Phasellus arcu lorem, luctus ac tempus a, tristique eget justo. Phasellus
+                        ipsum justo, feugiat id mi et, luctus ornare ligula. In aliquet lorem non diam sollicitudin,
+                        eget gravida mi commodo. Phasellus aliquam, mi ut vestibulum rutrum, lectus purus condimentum
+                        libero, condimentum condimentum nibh orci eget nisi. Sed blandit euismod tellus aliquet
+                        hendrerit.</p>
+
+                    <div class="btn-leer-mas">LEER MAS</div>
+                </div>
+            </div>
+        </div>
+        <div id="agendas">
+            <div class="section-title" id="agendas-title">
+                <div class="decorator-01"></div>
+                <div class="decorator-02"></div>
+                <div class="decorator-03"></div>
+                <span>AGENDA</span>
+
+                <div class="decorator-03"></div>
+                <div class="decorator-02"></div>
+                <div class="decorator-01"></div>
+
+            </div>
+
+
+            <div id="agendas-list">
+                <div id="agenda-calendar" class="agenda-dias">
+                    <div id="agenda-calendar-header">
+                        <div><</div>
+                        <span>{{mainCtrl.agendaMes}}</span>
+
+                        <div>></div>
+                    </div>
+
+                    <div id="agenda-calendar-container">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Do</th>
+                                <th>Lu</th>
+                                <th>Ma</th>
+                                <th>Mi</th>
+                                <th>Ju</th>
+                                <th>Vi</th>
+                                <th>Sa</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+                <img src="" alt=""/>
+
+                <div id="agenda-detail" class="agenda">
+                    <h2>Noticia</h2>
+
+                    <div id="agenda-separator"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis metus lorem. Vivamus lobortis,
+                        felis ut feugiat commodo, sapien libero rhoncus tortor, molestie condimentum tortor nisi in
+                        tellus. Proin at pellentesque mauris, in dapibus augue. Nullam eget pellentesque nisl, quis
+                        posuere augue. Cras accumsan iaculis placerat. Cras at erat eget tortor semper ornare et nec
+                        diam. Nullam mattis lectus purus, id imperdiet ipsum imperdiet at. Integer ornare placerat
+                        ipsum, nec hendrerit odio consectetur a. Fusce sit amet enim viverra, tincidunt erat ut,
+                        fermentum tellus. Phasellus arcu lorem, luctus ac tempus a, tristique eget justo. Phasellus
+                        ipsum justo, feugiat id mi et, luctus ornare ligula. In aliquet lorem non diam sollicitudin,
+                        eget gravida mi commodo. Phasellus aliquam, mi ut vestibulum rutrum, lectus purus condimentum
+                        libero, condimentum condimentum nibh orci eget nisi. Sed blandit euismod tellus aliquet
+                        hendrerit.</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="empresas">
+            <div class="section-title" id="empresas-title">
+                <div class="decorator-01"></div>
+                <div class="decorator-02"></div>
+                <div class="decorator-03"></div>
+                <span>NUESTRA EMPRESA</span>
+
+                <div class="decorator-03"></div>
+                <div class="decorator-02"></div>
+                <div class="decorator-01"></div>
+
+            </div>
+            <div id="empresas-carrousel">
+                <div id="empresas-list">
+
+                    <div class="empresa" ng-repeat="empresa in mainCtrl.empresas">
+                        <img src="img/empresa.png.png" alt="empresa.nombre">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
 </div>
