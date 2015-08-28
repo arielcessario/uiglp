@@ -190,7 +190,7 @@ html {
   min-height: 100%;
   max-width: 1200px;
   min-width: 600px;
-  width: 820px;
+  width: 1020px;
 }
 /* line 135, ../sass/screen.scss */
 .menu-desktop #menu-desktop-logo {
@@ -983,8 +983,11 @@ html {
 /* line 902, ../sass/screen.scss */
 #ingreso {
   margin-top: 100px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 600px) {
   /* line 902, ../sass/screen.scss */
@@ -993,7 +996,7 @@ html {
   }
 }
 
-/* line 911, ../sass/screen.scss */
+/* line 914, ../sass/screen.scss */
 #administracion {
   display: flex;
   align-items: center;
@@ -1003,58 +1006,61 @@ html {
   margin-top: 100px;
 }
 @media (max-width: 600px) {
-  /* line 911, ../sass/screen.scss */
+  /* line 914, ../sass/screen.scss */
   #administracion {
     margin-top: 50px;
   }
 }
 
-/* line 924, ../sass/screen.scss */
-#administracion-main {
-  display: flex;
-  flex-direction: column;
-  max-width: 800px;
-}
-
-/* line 930, ../sass/screen.scss */
+/* line 938, ../sass/screen.scss */
 .administracion-title,
 #administracion-form,
 .administracion-separator,
 .nuevo-usuario-title,
 #nuevo-usuario-form,
-.nuevo-usuario-separator {
-  max-width: 800px;
+.nuevo-usuario-separator,
+.ingreso-title,
+#ingreso-form {
+  max-width: 1000px;
 }
 
-/* line 940, ../sass/screen.scss */
+/* line 950, ../sass/screen.scss */
+#ingreso-form {
+  width: 100%;
+}
+
+/* line 954, ../sass/screen.scss */
 #administracion-form,
-#nuevo-usuario-form {
+#nuevo-usuario-form,
+#ingres-form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-/* line 946, ../sass/screen.scss */
+/* line 961, ../sass/screen.scss */
 #administracion-form .administracion-inputs,
 #administracion-form .nuevo-usuario-inputs,
 #nuevo-usuario-form .administracion-inputs,
-#nuevo-usuario-form .nuevo-usuario-inputs {
+#nuevo-usuario-form .nuevo-usuario-inputs,
+#ingres-form .administracion-inputs,
+#ingres-form .nuevo-usuario-inputs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 956, ../sass/screen.scss */
+/* line 971, ../sass/screen.scss */
 #administracion-oferta,
 #administracion-noticias,
 #administracion-slider {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-/* line 967, ../sass/screen.scss */
+/* line 982, ../sass/screen.scss */
 .administracion-title,
 .nuevo-usuario-title {
   width: 100%;
@@ -1070,20 +1076,20 @@ html {
   background-image: linear-gradient(to right, #dedede, #ffffff);
 }
 @media (max-width: 600px) {
-  /* line 967, ../sass/screen.scss */
+  /* line 982, ../sass/screen.scss */
   .administracion-title,
   .nuevo-usuario-title {
     font-size: 42px;
   }
 }
 
-/* line 982, ../sass/screen.scss */
+/* line 997, ../sass/screen.scss */
 .administracion-input,
 .nuevo-usuario-input {
   display: flex;
   flex-direction: column;
 }
-/* line 991, ../sass/screen.scss */
+/* line 1006, ../sass/screen.scss */
 .administracion-input input,
 .administracion-input select,
 .nuevo-usuario-input input,
@@ -1096,25 +1102,25 @@ html {
   background-color: transparent;
 }
 
-/* line 1004, ../sass/screen.scss */
+/* line 1019, ../sass/screen.scss */
 .administracion-button-bar,
 .nuevo-usuario-button-bar {
   display: flex;
   flex-direction: row;
 }
-/* line 1010, ../sass/screen.scss */
+/* line 1025, ../sass/screen.scss */
 .administracion-button-bar button,
 .nuevo-usuario-button-bar button {
   background-color: transparent;
   border: 1px solid transparent;
 }
-/* line 1014, ../sass/screen.scss */
+/* line 1029, ../sass/screen.scss */
 .administracion-button-bar button:hover,
 .nuevo-usuario-button-bar button:hover {
   border-bottom-color: #17384B;
 }
 
-/* line 1019, ../sass/screen.scss */
+/* line 1034, ../sass/screen.scss */
 .administracion-separator {
   width: 100%;
   height: 2px !important;

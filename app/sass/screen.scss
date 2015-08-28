@@ -131,7 +131,7 @@ html {
   min-height: 100%;
   max-width: 1200px;
   min-width: 600px;
-  width: 820px;
+  width: 1020px;
   #menu-desktop-logo {
     flex: 2;
     min-width: 100px;
@@ -901,14 +901,17 @@ html {
 /*SECCIONES DE ADMINISTRACION*/
 #ingreso {
   margin-top: 100px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @media (max-width: 600px) {
     margin-top: 50px;
   }
 }
 
-#administracion {
+#administracion{
 
   display: flex;
   align-items: center;
@@ -921,24 +924,36 @@ html {
   }
 }
 
-#administracion-main{
-  display: flex;
-  flex-direction: column;
-  max-width: 800px;
-}
+//#administracion-main,
+//#ingreso-main,
+//{
+//  display: flex;
+//  flex-direction: column;
+//
+//  align-items: center;
+//  justify-content: center;
+//  max-width: 800px;
+//}
 
 .administracion-title,
 #administracion-form,
 .administracion-separator,
 .nuevo-usuario-title,
 #nuevo-usuario-form,
-.nuevo-usuario-separator
+.nuevo-usuario-separator,
+.ingreso-title,
+#ingreso-form
 {
-  max-width: 800px;
+  max-width: 1000px;
+}
+
+#ingreso-form{
+  width: 100%;
 }
 
 #administracion-form,
-#nuevo-usuario-form
+#nuevo-usuario-form,
+#ingres-form
 {
   display: flex;
   flex-direction: column;
@@ -956,7 +971,7 @@ html {
 #administracion-oferta,
 #administracion-noticias,
 #administracion-slider{
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   display: flex;
   flex-direction: column;
