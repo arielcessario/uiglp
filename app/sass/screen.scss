@@ -160,14 +160,16 @@ html {
       margin-left: 10px;
       padding: 5px;
 
-      div {
+      .menu-desktop-btn {
         cursor: pointer;
         margin-top: 10px;
         padding: 5px;
         font-size: 16px;
+        max-height: 26px;
+        position: relative;
 
       }
-      div:hover {
+      .menu-desktop-btn:hover {
         color: white;
         background-color: #406276;
       }

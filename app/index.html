@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
     <link rel="stylesheet" href="stylesheets/screen.css">
+    <link rel="stylesheet" href="ac-ripple-button/ac-ripple-button.css">
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body ng-controller="AppController as appCtrl">
@@ -42,7 +43,7 @@
             <div id="menu-desktop-upper"></div>
             <div id="menu-desktop-lower">
 
-                <div ng-repeat="link in appCtrl.links" ng-click="appCtrl.goTo(link.path);"> {{link.nombre}}</div>
+                <div class="menu-desktop-btn ac-ripple" ng-repeat="link in appCtrl.links" ng-click="appCtrl.goTo(link.path);"> {{link.nombre}}</div>
             </div>
         </div>
     </div>
@@ -108,6 +109,7 @@
 <script src="bower_components/a0-angular-storage/dist/angular-storage.min.js"></script>
 <script src="bower_components/angular-jwt/dist/angular-jwt.min.js"></script>
 <script src="bower_components/ac-angular-login-carrito/app/login.js"></script>
+<script src="ac-ripple-button/ac-ripple-button.js"></script>
 <script src="app.js"></script>
 <script src="main/main.js"></script>
 <script src="ingreso/ingreso.js"></script>

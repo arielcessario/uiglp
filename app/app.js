@@ -7,6 +7,7 @@ angular.module('uiglp', [
     'angular-storage',
     'angular-jwt',
     'login.login',
+    'acRipple',
     'uiglp.main',
     'uiglp.ingreso',
     'uiglp.administracion',
