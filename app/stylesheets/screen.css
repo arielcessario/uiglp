@@ -519,9 +519,9 @@ html {
   height: 150px;
   background-color: #b3d4fc;
   margin: 5px;
-  -webkit-box-shadow: 5px 5px 10px black;
-  -moz-box-shadow: 5px 5px 10px black;
-  box-shadow: 5px 5px 10px black;
+  -webkit-box-shadow: 5px 5px 5px darkgrey;
+  -moz-box-shadow: 5px 5px 5px darkgrey;
+  box-shadow: 5px 5px 5px darkgrey;
 }
 @media (min-width: 800px) {
   /* line 450, ../sass/screen.scss */
@@ -1204,4 +1204,3 @@ table{
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
