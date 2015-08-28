@@ -56,6 +56,7 @@
         }
 
         LoginService.getClientes(function (data) {
+            console.log(data);
             vm.usuarios = data;
         });
 
