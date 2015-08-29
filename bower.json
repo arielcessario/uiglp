@@ -6,6 +6,8 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "ac-angular-noticias": "*",
+    "ac-angular-slider-manager": "*",
     "angular": "~1.4.0",
     "angular-animate": "~1.4.4",
     "angular-loader": "~1.4.0",
