@@ -14,7 +14,8 @@ angular.module('uiglp', [
     'uiglp.institucional',
     'uiglp.nuevoUsuario',
     'uiglp.noticias',
-    'ofertasLaborales'
+    'ofertasLaborales',
+    'uiglp.busquedasLaborales'
 ]).
     config(['$routeProvider', 'jwtInterceptorProvider', '$httpProvider',
         function ($routeProvider, jwtInterceptorProvider, $httpProvider) {
@@ -53,7 +54,7 @@ function AppController(LoginState, $location, $rootScope, $routeParams) {
     vm.links = [
         {nombre: 'INICIO', path: '/'},
         {nombre: 'INSTITUCIONAL', path: '/institucional'},
-        {nombre: 'BUSQUEDA LABORAL', path: '/busqueda'},
+        {nombre: 'BUSQUEDA LABORAL', path: '/busquedas_laborales'},
         {nombre: 'NOTICIAS', path: '/noticias'},
         {nombre: 'CONTACTO', path: '/contacto'},
         {nombre: 'REVISTA', path: '/revista'},
