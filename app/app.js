@@ -7,12 +7,15 @@ angular.module('uiglp', [
     'angular-storage',
     'angular-jwt',
     'login.login',
+    'acRipple',
     'uiglp.main',
     'uiglp.ingreso',
     'uiglp.administracion',
     'uiglp.institucional',
     'uiglp.nuevoUsuario',
-    'ofertasLaborales'
+    'uiglp.noticias',
+    'ofertasLaborales',
+    'uiglp.busquedasLaborales'
 ]).
     config(['$routeProvider', 'jwtInterceptorProvider', '$httpProvider',
         function ($routeProvider, jwtInterceptorProvider, $httpProvider) {
@@ -42,21 +45,33 @@ angular.module('uiglp', [
     .controller('AppController', AppController);
 
 
-AppController.$inject = ['LoginService', '$location', '$rootScope'];
-function AppController(LoginState, $location, $rootScope) {
+AppController.$inject = ['LoginService', '$location', '$rootScope','$routeParams'];
+function AppController(LoginState, $location, $rootScope, $routeParams) {
 
     var vm = this;
     vm.goTo = goTo;
+    vm.selectedPage = 'INICIO';
     vm.links = [
         {nombre: 'INICIO', path: '/'},
         {nombre: 'INSTITUCIONAL', path: '/institucional'},
-        {nombre: 'BUSQUEDA LABORAL', path: '/busqueda'},
-        {nombre: 'AGENDA', path: '/agenda'},
+        {nombre: 'BUSQUEDA LABORAL', path: '/busquedas_laborales'},
+        {nombre: 'NOTICIAS', path: '/noticias'},
         {nombre: 'CONTACTO', path: '/contacto'},
         {nombre: 'REVISTA', path: '/revista'},
         {nombre: 'INGRESO', path: '/ingreso'}
     ];
 
+
+    vm.selectedPage = vm.links.filter(function(elem, index, array){
+
+        var response = elem.path == $location.$$path;
+        if($location.$$path == '/administracion'){
+            response = {nombre: 'INGRESO', path: '/ingreso'};
+        }
+        return response;
+    })[0].nombre;
+
+    //console.log(vm.selectedPage);
 
     //$rootScope.$on("$routeChangeStart", function (event, next, current) {
     //
@@ -68,6 +83,8 @@ function AppController(LoginState, $location, $rootScope) {
 
     function goTo(location) {
 
-        $location.path(location);
+        $location.path(location.path);
+        vm.selectedPage = location.nombre;
+
     }
 }
