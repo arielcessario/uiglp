@@ -1,12 +1,19 @@
-<div ng-controller="BusquedasLaboralesController as busquedasLaboralesCtrl" id="busquedasLaborales">
+<div ng-controller="BusquedasLaboralesController as busquedasLaboralesCtrl" id="busquedas-laborales">
 
     <div id="busquedas-laborales-titulo" class="busquedas-laborales-title">
 
         BUSQUEDAS LABORALES
 
     </div>
+    <div id="busqueda-laboral-search">
+        <input type="text" placeholder="Ingrese los terminos relacionados a su búsqueda...">
+    </div>
     <div id="busquedas-laborales-form">
-
+        <div class="busqueda-laboral" ng-repeat="busqueda in busquedasLaboralesCtrl.busquedas">
+            <div class="busqueda-laboral-title">{{busqueda.titulo}}</div>
+            <div class="busqueda-laboral-texto">{{busqueda.detalle}}</div>
+            <div class="busqueda-laboral-contacto">{{busqueda.contacto}}</div>
+        </div>
 
     </div>
 </div>
