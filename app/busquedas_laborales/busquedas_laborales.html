@@ -10,9 +10,9 @@
     </div>
     <div id="busquedas-laborales-form">
         <div class="busqueda-laboral" ng-repeat="busqueda in busquedasLaboralesCtrl.busquedas | filter:busquedasLaboralesCtrl.filter">
-            <div class="busqueda-laboral-title">{{busqueda.titulo}}</div>
+            <div class="busqueda-laboral-title">{{busqueda.titulo}} {{busqueda.fecha}}</div>
             <div class="busqueda-laboral-texto">{{busqueda.detalle}}</div>
-            <div class="busqueda-laboral-contacto">{{busqueda.contacto}}</div>
+            <div class="busqueda-laboral-contacto">{{busqueda.cliente.mail}}</div>
         </div>
 
     </div>
