@@ -20,9 +20,9 @@
         var vm = this;
         vm.busquedas = [
             {
-                titulo: 'BÚSQUEDA LABORAL',
+                titulo: 'BÚSQUEDA LABORAL prueba',
                 contacto: 'alala@alala.com',
-                detalle: 'Eum erant convenire eu, te est insolens sadipscing concludaturque, te has atqui consul possit. Mei causae evertitur gloriatur te, ex erat democritum pro, novum tollit maluisset at his. Inveri ullum accumsan eos, detraxit tacimates an vis. Elitr aperiam tractatos est cu.'
+                detalle: 'Prueba Eum erant convenire eu, te est insolens sadipscing concludaturque, te has atqui consul possit. Mei causae evertitur gloriatur te, ex erat democritum pro, novum tollit maluisset at his. Inveri ullum accumsan eos, detraxit tacimates an vis. Elitr aperiam tractatos est cu.'
             },
             {
                 titulo: 'BÚSQUEDA LABORAL',
