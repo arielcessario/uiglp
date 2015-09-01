@@ -1149,14 +1149,44 @@ html {
   border-bottom: dashed 1px #17384B;
 }
 
+/* line 1053, ../sass/screen.scss */
+.administracion-fotos {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 1058, ../sass/screen.scss */
+.input-foto {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  background-color: lightgrey;
+  border: 1px solid darkgray;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 1067, ../sass/screen.scss */
+.input-foto input {
+  opacity: 0;
+  height: 50px;
+  width: 50px;
+}
+/* line 1072, ../sass/screen.scss */
+.input-foto img {
+  position: absolute;
+  max-height: 50px;
+  clip: rect(0px, 50px, 50px, 0px);
+}
+
 /*NOTICIAS*/
-/* line 1054, ../sass/screen.scss */
+/* line 1082, ../sass/screen.scss */
 #noticias-filtro {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-/* line 1058, ../sass/screen.scss */
+/* line 1086, ../sass/screen.scss */
 #noticias-filtro select {
   max-width: 30%;
   min-width: 30%;
@@ -1168,12 +1198,12 @@ html {
   background-color: transparent;
 }
 
-/* line 1100, ../sass/screen.scss */
+/* line 1128, ../sass/screen.scss */
 #noticias-main {
   background-color: #133548;
 }
 
-/* line 1105, ../sass/screen.scss */
+/* line 1133, ../sass/screen.scss */
 #noticias-form {
   max-width: 1000px;
   width: 100%;
@@ -1184,29 +1214,29 @@ html {
 }
 
 @media (min-width: 600px) {
-  /* line 1115, ../sass/screen.scss */
+  /* line 1143, ../sass/screen.scss */
   #noticias-panel-fotos {
     max-width: 50%;
   }
 }
-/* line 1119, ../sass/screen.scss */
+/* line 1147, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-main {
   overflow: hidden;
 }
-/* line 1121, ../sass/screen.scss */
+/* line 1149, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-main img {
   max-height: 400px;
 }
-/* line 1126, ../sass/screen.scss */
+/* line 1154, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-thumbs img {
   max-width: 25%;
 }
 
-/* line 1132, ../sass/screen.scss */
+/* line 1160, ../sass/screen.scss */
 #noticias-panel-texto {
   color: white;
 }
-/* line 1134, ../sass/screen.scss */
+/* line 1162, ../sass/screen.scss */
 #noticias-panel-texto #noticias-panel-titulo {
   width: 90%;
   margin-bottom: 5px;
@@ -1215,7 +1245,7 @@ html {
   line-height: 25px;
   color: #FFFFFF;
 }
-/* line 1144, ../sass/screen.scss */
+/* line 1172, ../sass/screen.scss */
 #noticias-panel-texto #noticias-panel-detalle {
   font-family: 'Montserrat Light', serif;
   width: 90%;
@@ -1229,52 +1259,52 @@ html {
 }
 
 @media (min-width: 600px) {
-  /* line 1157, ../sass/screen.scss */
+  /* line 1185, ../sass/screen.scss */
   #noticias-panel {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
-/* line 1164, ../sass/screen.scss */
+/* line 1192, ../sass/screen.scss */
 #noticias-nuevo-comentario {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-/* line 1169, ../sass/screen.scss */
+/* line 1197, ../sass/screen.scss */
 #noticias-nuevo-comentario textarea {
   width: 90%;
   right: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 1176, ../sass/screen.scss */
+/* line 1204, ../sass/screen.scss */
 #noticias-nuevo-comentario div {
   width: 90%;
   position: relative;
   margin-top: -45px;
   margin-bottom: 20px;
 }
-/* line 1181, ../sass/screen.scss */
+/* line 1209, ../sass/screen.scss */
 #noticias-nuevo-comentario div #noticias-nuevo-btn {
   margin-left: 10px;
 }
 
-/* line 1187, ../sass/screen.scss */
+/* line 1215, ../sass/screen.scss */
 #noticias-comentarios {
   background-color: #133548;
   color: white;
 }
-/* line 1190, ../sass/screen.scss */
+/* line 1218, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-list {
   max-width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 1197, ../sass/screen.scss */
+/* line 1225, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-title {
   width: 90%;
   margin-bottom: 5px;
@@ -1282,23 +1312,23 @@ html {
   font-size: 25px;
   line-height: 25px;
 }
-/* line 1205, ../sass/screen.scss */
+/* line 1233, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario {
   max-width: 90%;
 }
-/* line 1208, ../sass/screen.scss */
+/* line 1236, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-user {
   line-height: 24px;
   font-size: 23px;
 }
-/* line 1213, ../sass/screen.scss */
+/* line 1241, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-detalle {
   line-height: 18px;
   font-size: 17px;
 }
 
 /*BUSQUEDAS LABORALES*/
-/* line 1224, ../sass/screen.scss */
+/* line 1252, ../sass/screen.scss */
 #busquedas-laborales {
   background-color: white;
   display: flex;
@@ -1309,16 +1339,16 @@ html {
   margin-top: 100px;
 }
 @media (max-width: 600px) {
-  /* line 1224, ../sass/screen.scss */
+  /* line 1252, ../sass/screen.scss */
   #busquedas-laborales {
     margin-top: 50px;
   }
 }
-/* line 1236, ../sass/screen.scss */
+/* line 1264, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:nth-child(odd) {
   background-color: #17384B;
 }
-/* line 1241, ../sass/screen.scss */
+/* line 1269, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:hover {
   -webkit-transform: scale(1.1, 1.1);
   -moz-transform: scale(1.1, 1.1);
@@ -1326,7 +1356,7 @@ html {
   -o-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
-/* line 1249, ../sass/screen.scss */
+/* line 1277, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral {
   color: white;
   background-color: #406276;
@@ -1339,22 +1369,22 @@ html {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 1265, ../sass/screen.scss */
+/* line 1293, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-title {
   font-size: 25px;
   font-weight: bold;
   padding: 5px;
 }
-/* line 1271, ../sass/screen.scss */
+/* line 1299, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-texto {
   padding: 5px;
 }
-/* line 1274, ../sass/screen.scss */
+/* line 1302, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-contacto {
   padding: 5px;
 }
 
-/* line 1280, ../sass/screen.scss */
+/* line 1308, ../sass/screen.scss */
 #busqueda-laboral-search {
   width: 100%;
   background-color: #000000;
@@ -1363,7 +1393,7 @@ html {
   justify-content: center;
   align-items: center;
 }
-/* line 1287, ../sass/screen.scss */
+/* line 1315, ../sass/screen.scss */
 #busqueda-laboral-search input {
   background-color: transparent;
   max-width: 800px;
@@ -1377,26 +1407,26 @@ html {
   margin: 10px;
   padding: 10px;
 }
-/* line 1300, ../sass/screen.scss */
+/* line 1328, ../sass/screen.scss */
 #busqueda-laboral-search input ::-webkit-input-placeholder {
   color: #99C1DA;
 }
-/* line 1304, ../sass/screen.scss */
+/* line 1332, ../sass/screen.scss */
 #busqueda-laboral-search input :-moz-placeholder {
   /* Firefox 18- */
   color: #99C1DA;
 }
-/* line 1309, ../sass/screen.scss */
+/* line 1337, ../sass/screen.scss */
 #busqueda-laboral-search input ::-moz-placeholder {
   /* Firefox 19+ */
   color: #99C1DA;
 }
-/* line 1314, ../sass/screen.scss */
+/* line 1342, ../sass/screen.scss */
 #busqueda-laboral-search input :-ms-input-placeholder {
   color: #99C1DA;
 }
 @media (max-width: 800px) {
-  /* line 1287, ../sass/screen.scss */
+  /* line 1315, ../sass/screen.scss */
   #busqueda-laboral-search input {
     max-width: 95px;
     min-width: 95%;
