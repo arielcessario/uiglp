@@ -8,6 +8,7 @@ angular.module('uiglp', [
     'angular-jwt',
     'login.login',
     'acRipple',
+    'ac.noticias',
     'uiglp.main',
     'uiglp.ingreso',
     'uiglp.administracion',
