@@ -136,7 +136,8 @@ html {
     flex: 2;
     min-width: 100px;
     max-width: 100px;
-    padding-left: -15px;
+    margin-right: 10px;
+    margin-left: 10px;
 
   }
 
@@ -157,13 +158,15 @@ html {
       align-items: flex-end;
       flex: 1;
       max-height: 35px;
-      margin-left: 10px;
       padding: 5px;
-      padding-bottom: 0px;
+
 
       .menu-desktop-btn {
         cursor: pointer;
+        font-family: 'Lato Regular', serif;
+        font-weight: bolder;
         margin-top: 10px;
+        margin-right: 15px;
         padding: 5px;
         font-size: 16px;
         max-height: 26px;
@@ -179,6 +182,7 @@ html {
       .menu-desktop-btn-selected {
         color: white;
         background-color: #406276;
+        font-size: 18px;
       }
 
     }
@@ -393,6 +397,7 @@ html {
     flex-direction: column;
     -webkit-align-items: center;
     align-items: center;
+    margin-top: 5%;
 
     width: 100%;
 
@@ -461,9 +466,7 @@ html {
         min-width: 150px;
         width: 150px;
         height: 150px;
-        background-color: #b3d4fc;
         margin: 5px;
-        @include sombras();
 
         @media (min-width: 800px) {
           width: 180px;
@@ -536,7 +539,7 @@ html {
 
 #noticias {
 
-  background-color: white;
+  background-color: #17384B;
   display: flex;
   flex-direction: column;
   //  justify-content: center;
@@ -552,6 +555,8 @@ html {
     flex-direction: column;
     -webkit-align-items: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     //height: 1300px;
     width: 100%;
@@ -833,6 +838,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
 
   #contacto-container {
     display: flex;
@@ -844,11 +850,6 @@ html {
       flex-direction: row;
       max-width: 800px;
       align-items: flex-start;
-    }
-
-    #contacto h1 {
-      color: red;
-      font-size: 40px;
     }
 
     div {
@@ -896,15 +897,30 @@ html {
 
 #footer {
   margin: 10px;
-
+  cursor: pointer;
+  font-family: 'Lato Regular', serif;
+  font-weight: bolder;
+  font-size: 16px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  div {
+   div {
     margin: 5px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*SECCIONES DE ADMINISTRACION*/
 #ingreso {
@@ -996,10 +1012,11 @@ html {
 .busquedas-laborales-title,
 {
   width: 100%;
-  font-size: 83px;
-  font-family: "Montserrat Regular", sans-serif;
+  font-size: 70px;
+  font-family: "Montserrat Semibold", sans-serif;
   font-weight: 400;
   color: #17384B;
+  padding: 10px;
   @include background-image(linear-gradient(left, #DEDEDE, #ffffff));
 
   @media (max-width: 600px) {
@@ -1011,7 +1028,9 @@ html {
 .nuevo-usuario-input {
   display: flex;
   flex-direction: column;
+  padding: 10px;
   span {
+    margin: 5px;
 
   }
 
@@ -1022,8 +1041,9 @@ html {
     -moz-border-radius: 10px;
     border-radius: 10px;
     border: 1px solid #17384B;
-    max-width: 360px;
+    max-width: 300px;
     background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 5px;
   }
 
 }
@@ -1036,7 +1056,8 @@ html {
 
   button {
     background-color: rgba(0, 0, 0, 0);
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0);
+    margin-bottom: 10px;
   }
   button:hover {
     border-bottom-color: #17384B;
@@ -1081,11 +1102,13 @@ html {
 /*NOTICIAS*/
 #noticias-filtro {
   display: flex;
+  padding: 20px;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: left;
   select {
-    max-width: 30%;
-    min-width: 30%;
+    margin-right: 2%;
+    height: 32px;
+    width: 173px;
     color: white;
     border: 1px solid white;
     -webkit-border-radius: 4px;
@@ -1140,41 +1163,56 @@ html {
 
 }
 
+#noticias-panel{
+  margin: 35px;
+
+}
+
 #noticias-panel-fotos {
-  @media (min-width: 600px) {
+  @media (min-width: 385px) {
     max-width: 50%;
   }
   #noticias-panel-fotos-main {
     overflow: hidden;
     img {
-      max-height: 400px;
+      margin-left: 15px;
+      border-radius: 5px;
+      border: 3px solid white;
+      max-height: 90%;
+      max-width: 90%;
     }
   }
   #noticias-panel-fotos-thumbs {
     img {
-      max-width: 25%;
+      margin-left: 15px;
+      margin-top: 5px;
+      max-width: 15%;
+      border: 1px solid white;
+      border-radius: 2px;
     }
   }
 }
 
 #noticias-panel-texto {
   color: white;
+  padding: 5px;
   #noticias-panel-titulo {
 
-    width: 90%;
-    margin-bottom: 5px;
+    width: 100%;
+    margin-bottom: 15px;
     text-align: left;
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 29px;
+    line-height: 32px;
     color: #FFFFFF;
+    font-family: 'Lato Heavy', serif;
 
   }
   #noticias-panel-detalle {
     font-family: 'Montserrat Light', serif;
-    width: 90%;
+    width: 95%;
     margin-bottom: 10px;
     text-align: left;
-    max-height: 155px;
+    max-height: 400px;
     overflow: hidden;
     font-size: 12px;
     line-height: 15px;
@@ -1195,10 +1233,15 @@ html {
   align-items: center;
   width: 100%;
   textarea {
-    width: 90%;
+    width: 100%;
     right: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: 3px solid #133548;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
   }
 
   div {
@@ -1207,13 +1250,24 @@ html {
     margin-top: -45px;
     margin-bottom: 20px;
     #noticias-nuevo-btn {
-      margin-left: 10px;
+      width: 110px;
+      background-color: white;
+      font-family: 'Lato Heavy', serif;
+      font-size: 16px;
+      border: 1px solid #133548;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+      padding: 8px;
+      white-space: nowrap;
+      text-align: center;
+
     }
   }
 }
 
 #noticias-comentarios {
-  background-color: #133548;
+  background-color: #3f6175;
   color: white;
   #noticias-comentarios-list {
 
@@ -1224,14 +1278,19 @@ html {
   }
   #noticias-comentarios-title {
     width: 90%;
-    margin-bottom: 5px;
+    font-family: 'Lato Heavy', serif;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-left: 35px;
+    color: white;
     text-align: left;
-    font-size: 25px;
+    font-size: 38px;
     line-height: 25px;
   }
 
   .noticias-comentario {
     max-width: 90%;
+    margin-bottom: 20px;
 
     .noticia-comentario-user {
 
@@ -1239,8 +1298,10 @@ html {
       font-size: 23px;
     }
     .noticia-comentario-detalle {
-      line-height: 18px;
+      line-height: 20px;
       font-size: 17px;
+      margin-bottom: 15px;
+      font-family: 'Montserrat Light', serif;
 
     }
   }
@@ -1292,12 +1353,15 @@ html {
 
     .busqueda-laboral-title {
 
-      font-size: 25px;
-      font-weight: bold;
-      padding: 5px;
+      font-family: 'Lato Heavy', serif;
+      font-variant: small-caps;
+      font-size: 38px;
+      padding: 15px;
     }
     .busqueda-laboral-texto {
       padding: 5px;
+      font-family: 'Lato Regular', serif;
+      font-size: 16px;
     }
     .busqueda-laboral-contacto {
       padding: 5px;
@@ -1312,10 +1376,11 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 80px;
   input {
     background-color: rgba(0, 0, 0, 0);
     max-width: 800px;
-    min-width: 80%;
+    min-width: 70%;
     font-size: 18px;
     color: white;
     border: 1px solid white;
@@ -1348,6 +1413,15 @@ html {
       min-width: 95%;
     }
   }
+}
+
+#contacto h1{
+  font-family: 'Lato Heavy', serif;
+  color: white;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 }
 
 /* #### Generated By: http://www.cufonfonts.com #### */
@@ -1384,4 +1458,19 @@ html {
   font-style: normal;
   font-weight: normal;
   src: local('Montserrat Light'), url('Montserrat-Light.otf') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Montserrat Semibold'), url('Montserrat-Semibold.ttf') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Lato Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lato Black'), url('Lato-Black.ttf') format('woff');
 }
