@@ -17,6 +17,7 @@ angular.module('uiglp', [
     'uiglp.noticias',
     'ofertasLaborales',
     'uiglp.busquedasLaborales'
+
 ]).
     config(['$routeProvider', 'jwtInterceptorProvider', '$httpProvider',
         function ($routeProvider, jwtInterceptorProvider, $httpProvider) {

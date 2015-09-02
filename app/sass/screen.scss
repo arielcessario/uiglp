@@ -160,7 +160,6 @@ html {
       max-height: 35px;
       padding: 5px;
 
-
       .menu-desktop-btn {
         cursor: pointer;
         font-family: 'Lato Regular', serif;
@@ -539,7 +538,17 @@ html {
 
 #noticias {
 
+  background-color: white;
+}
+
+#noticias-main {
   background-color: #17384B;
+
+}
+
+#noticias,
+#noticias-main {
+
   display: flex;
   flex-direction: column;
   //  justify-content: center;
@@ -905,22 +914,10 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-   div {
+  div {
     margin: 5px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*SECCIONES DE ADMINISTRACION*/
 #ingreso {
@@ -1071,12 +1068,12 @@ html {
   border-bottom: dashed 1px #17384B;
 }
 
-.administracion-fotos{
+.administracion-fotos {
   display: flex;
   flex-direction: row;
 }
 
-.input-foto{
+.input-foto {
   height: 50px;
   width: 50px;
   overflow: hidden;
@@ -1085,19 +1082,20 @@ html {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  input{
+  input {
     opacity: 0;
     height: 50px;
     width: 50px;
   }
-  img{
+  img {
     position: absolute;
-    max-height: 50px;
-    clip: rect(0px,50px,50px,0px);
+    max-height: 49px;
+    clip: rect(0px, 50px, 50px, 0px);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
   }
 }
-
-
 
 /*NOTICIAS*/
 #noticias-filtro {
@@ -1163,7 +1161,7 @@ html {
 
 }
 
-#noticias-panel{
+#noticias-panel {
   margin: 35px;
 
 }
@@ -1415,7 +1413,7 @@ html {
   }
 }
 
-#contacto h1{
+#contacto h1 {
   font-family: 'Lato Heavy', serif;
   color: white;
   font-size: 40px;
@@ -1466,7 +1464,6 @@ html {
   font-weight: normal;
   src: local('Montserrat Semibold'), url('Montserrat-Semibold.ttf') format('woff');
 }
-
 
 @font-face {
   font-family: 'Lato Black';
