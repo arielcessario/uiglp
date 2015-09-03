@@ -916,6 +916,11 @@ table{
       padding: 10px;
 
     }
+
+    td{
+
+      padding: 10px;
+    }
 }
 
 #footer {
@@ -1059,7 +1064,8 @@ table{
 
 }
 
- textarea{
+ .administracion-input{
+        textarea{
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -1069,7 +1075,9 @@ table{
   margin-bottom: 5px;
    max-height: 300px;
 
-}
+  }
+    }
+
 
 .administracion-button-bar,
 .nuevo-usuario-button-bar,
