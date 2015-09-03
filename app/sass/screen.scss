@@ -909,7 +909,11 @@ table{
   font-size: 15px;
   margin-top: 25px;
   margin-bottom: 25px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   background-color: lightgrey;
+
 
 
     th{
