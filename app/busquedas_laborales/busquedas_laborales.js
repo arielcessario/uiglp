@@ -5,7 +5,7 @@
     angular.module('uiglp.busquedasLaborales', ['ngRoute'])
         .config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/busquedas_laborales', {
-                templateUrl: currentScriptPath.replace('.min.js', '.html'),
+                templateUrl: currentScriptPath.replace('.js', '.html'),
                 controller: 'BusquedasLaboralesController',
 
                 data: {requiresLogin: false}
