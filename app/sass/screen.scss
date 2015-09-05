@@ -271,16 +271,16 @@ html {
     }
 
     #slide-01 {
-      background: black url(../img/img-01.jpg) 50% 50% no-repeat;
+      //background: black url(../img/img-01.jpg) 50% 50% no-repeat;
     }
     #slide-02 {
-      background: black url(../img/img-02.jpg) 50% 50% no-repeat;
+      //background: black url(../img/img-02.jpg) 50% 50% no-repeat;
     }
     #slide-03 {
-      background: black url(../img/img-03.jpg) 50% 50% no-repeat;
+      //background: black url(../img/img-03.jpg) 50% 50% no-repeat;
     }
     #slide-04 {
-      background: black url(../img/img-04.jpg) 50% 50% no-repeat;
+      //background: black url(../img/img-04.jpg) 50% 50% no-repeat;
     }
 
     .slide-shown-add {
@@ -904,15 +904,16 @@ html {
 
 }
 
-table{
-  font-family: "Montserrat Semibold", sans-serif;
-  font-size: 15px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  background-color: lightgrey;
+#administracion{
+  table{
+    font-family: "Montserrat Semibold", sans-serif;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: lightgrey;
 
 
 
@@ -925,7 +926,9 @@ table{
 
       padding: 10px;
     }
+  }
 }
+
 
 #footer {
   margin: 10px;
@@ -1018,7 +1021,7 @@ table{
 
 #administracion-oferta,
 #administracion-noticias,
-#administracion-slider {
+#administracion-sliders {
   max-width: 1000px;
   width: 100%;
   display: flex;
@@ -1226,12 +1229,15 @@ table{
   }
   #noticias-panel-fotos-main {
     overflow: hidden;
+    min-height: 400px;
+    min-width: 300px;
     img {
       margin-left: 15px;
       border-radius: 5px;
       border: 3px solid white;
       max-height: 90%;
-      max-width: 90%;
+      max-width: 300px;
+      min-width: 300px;
     }
   }
   #noticias-panel-fotos-thumbs {
@@ -1517,7 +1523,7 @@ table{
   font-family: 'Montserrat Semibold';
   font-style: normal;
   font-weight: normal;
-  src: local('Montserrat Semibold'), url('Montserrat-Semibold.otf') format('woff');
+  src: local('Montserrat Semibold'), url('Montserrat-SemiBold.otf') format('woff');
 }
 
 @font-face {

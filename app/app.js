@@ -9,6 +9,7 @@ angular.module('uiglp', [
     'login.login',
     'acRipple',
     'ac.noticias',
+    'slider.manager',
     'uiglp.main',
     'uiglp.ingreso',
     'uiglp.administracion',
