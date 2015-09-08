@@ -34,7 +34,6 @@
             LoginService.login(vm.mail, vm.password, function(data){
 
                 if(data != -1){
-                    console.log(data);
                     LoginState.isLogged = true;
                     store.set('jwt', data);
                     $location.path('/administracion');
