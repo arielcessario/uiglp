@@ -17,7 +17,8 @@ angular.module('uiglp', [
     'uiglp.nuevoUsuario',
     'uiglp.noticias',
     'ofertasLaborales',
-    'uiglp.busquedasLaborales'
+    'uiglp.busquedasLaborales',
+    'uiglp.servicios'
 
 ]).
     config(['$routeProvider', 'jwtInterceptorProvider', '$httpProvider',
@@ -70,6 +71,10 @@ function AppController(LoginState, $location, $rootScope, $routeParams) {
         var response = elem.path == $location.$$path;
         if($location.$$path == '/administracion'){
             response = {nombre: 'INGRESO', path: '/ingreso'};
+        }
+
+        if($location.$$path == '/servicios'){
+            response = {nombre: 'SERVICIOS', path: '/servicios'};
         }
         return response;
     })[0].nombre;

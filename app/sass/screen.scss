@@ -519,6 +519,7 @@ html {
 .btn-leer-mas {
   width: 110px;
   font-family: 'Lato Heavy', serif;
+  color: #133548;
   font-size: 16px;
   margin: 10px;
   border: 1px solid #133548;
@@ -528,11 +529,14 @@ html {
   padding: 8px;
   white-space: nowrap;
   text-align: center;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .btn-leer-mas:hover {
   color: white;
   background-color: #133548;
+
 
 }
 
@@ -926,6 +930,22 @@ html {
 
       padding: 10px;
     }
+
+    .administracion-row:hover,
+    .tr-selected{
+      background-color: #1c3e52;
+      color: white;
+    }
+
+    //:last-child:hover,
+    //.tr-selected:last-child{
+    //  border-bottom-right-radius: 10px;
+    //}
+    //:first-child:hover,
+    //.tr-selected:first-child{
+    //  border-bottom-left-radius: 10px;
+    //}
+
   }
 }
 
@@ -946,7 +966,7 @@ html {
 }
 
 /*SECCIONES DE ADMINISTRACION*/
-#ingreso {
+#ingreso{
   margin-top: 100px;
   max-width: 100%;
   display: flex;
@@ -959,7 +979,8 @@ html {
 }
 
 #administracion,
-#noticias {
+#noticias,
+#servicios-inner {
 
   display: flex;
   align-items: center;

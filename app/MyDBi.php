@@ -12,7 +12,8 @@
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU Public License
  * @version   2.0
  * */
-class MysqliDb {
+class MysqliDb
+{
 
     /**
      * Static instance of self
@@ -23,7 +24,7 @@ class MysqliDb {
 
     /**
      * Table prefix
-     * 
+     *
      * @var string
      */
     protected static $_prefix;
@@ -118,12 +119,14 @@ class MysqliDb {
      * @param int $port
      */
 //    public function __construct($host = 'localhost', $username = 'root', $password = 'concentrador', $db = 'uiglp', $port = NULL) {
-public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp', $password = 'o0]@e2-;z+!D', $db = 'arielces_uiglp', $port = NULL) {
+    public function __construct($host = '192.185.4.175', $username = 'arielces_uiglp', $password = 'o0]@e2-;z+!D', $db = 'arielces_uiglp', $port = NULL)
+    {
+
+
         $this->host = $host;
         $this->username = $username;
         $this->password = $password;
         $this->db = $db;
-
 
 
         if ($port == NULL)
@@ -170,12 +173,13 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      * A method to connect to the database
      *
      */
-    public function connect() {
+    public function connect()
+    {
         if ($this->isSubQuery)
             return;
 
         $this->_mysqli = new mysqli($this->host, $this->username, $this->password, $this->db, $this->port)
-                or die('There was a problem connecting to the database');
+        or die('There was a problem connecting to the database');
 
         $this->_mysqli->set_charset('utf8');
     }
@@ -189,7 +193,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return object Returns the current instance.
      */
-    public static function getInstance() {
+    public static function getInstance()
+    {
         return self::$_instance;
     }
 
@@ -198,7 +203,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return object Returns the current instance.
      */
-    protected function reset() {
+    protected function reset()
+    {
         $this->_where = array();
         $this->_join = array();
         $this->_orderBy = array();
@@ -210,10 +216,11 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
 
     /**
      * Method to set a prefix
-     * 
-     * @param string $prefix     Contains a tableprefix
+     *
+     * @param string $prefix Contains a tableprefix
      */
-    public function setPrefix($prefix = '') {
+    public function setPrefix($prefix = '')
+    {
         self::$_prefix = $prefix;
         return $this;
     }
@@ -221,13 +228,14 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
     /**
      * Pass in a raw query and an array containing the parameters to bind to the prepaird statement.
      *
-     * @param string $query      Contains a user-provided query.
-     * @param array  $bindParams All variables to bind to the SQL statment.
-     * @param bool   $sanitize   If query should be filtered before execution
+     * @param string $query Contains a user-provided query.
+     * @param array $bindParams All variables to bind to the SQL statment.
+     * @param bool $sanitize If query should be filtered before execution
      *
      * @return array Contains the returned rows from the query.
      */
-    public function rawQuery($query, $bindParams = null, $sanitize = true) {
+    public function rawQuery($query, $bindParams = null, $sanitize = true)
+    {
         $this->_query = $query;
         if ($sanitize)
             $this->_query = filter_var($query, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
@@ -252,12 +260,13 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
 
     /**
      *
-     * @param string $query   Contains a user-provided select query.
-     * @param int    $numRows The number of rows total to return.
+     * @param string $query Contains a user-provided select query.
+     * @param int $numRows The number of rows total to return.
      *
      * @return array Contains the returned rows from the query.
      */
-    public function query($query, $numRows = null) {
+    public function query($query, $numRows = null)
+    {
         $this->_query = filter_var($query, FILTER_SANITIZE_STRING);
         $stmt = $this->_buildQuery($numRows);
         $stmt->execute();
@@ -270,12 +279,13 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
     /**
      * A convenient SELECT * function.
      *
-     * @param string  $tableName The name of the database table to work with.
-     * @param integer $numRows   The number of rows total to return.
+     * @param string $tableName The name of the database table to work with.
+     * @param integer $numRows The number of rows total to return.
      *
      * @return array Contains the returned rows from the select query.
      */
-    public function get($tableName, $numRows = null, $columns = '*') {
+    public function get($tableName, $numRows = null, $columns = '*')
+    {
         if (empty($columns))
             $columns = '*';
 
@@ -296,11 +306,12 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
     /**
      * A convenient SELECT * function to get one record.
      *
-     * @param string  $tableName The name of the database table to work with.
+     * @param string $tableName The name of the database table to work with.
      *
      * @return array Contains the returned rows from the select query.
      */
-    public function getOne($tableName, $columns = '*') {
+    public function getOne($tableName, $columns = '*')
+    {
         $res = $this->get($tableName, 1, $columns);
 
         if (is_object($res))
@@ -319,7 +330,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return boolean Boolean indicating whether the insert query was completed succesfully.
      */
-    public function insert($tableName, $insertData) {
+    public function insert($tableName, $insertData)
+    {
         if ($this->isSubQuery)
             return;
 
@@ -336,11 +348,12 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      * Update query. Be sure to first call the "where" method.
      *
      * @param string $tableName The name of the database table to work with.
-     * @param array  $tableData Array of data to update the desired row.
+     * @param array $tableData Array of data to update the desired row.
      *
      * @return boolean
      */
-    public function update($tableName, $tableData) {
+    public function update($tableName, $tableData)
+    {
         if ($this->isSubQuery)
             return;
 
@@ -358,12 +371,13 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
     /**
      * Delete query. Call the "where" method first.
      *
-     * @param string  $tableName The name of the database table to work with.
-     * @param integer $numRows   The number of rows to delete.
+     * @param string $tableName The name of the database table to work with.
+     * @param integer $numRows The number of rows to delete.
      *
      * @return boolean Indicates success. 0 or 1.
      */
-    public function delete($tableName, $numRows = null) {
+    public function delete($tableName, $numRows = null)
+    {
         if ($this->isSubQuery)
             return;
 
@@ -382,12 +396,13 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @uses $MySqliDb->where('id', 7)->where('title', 'MyTitle');
      *
-     * @param string $whereProp  The name of the database field.
-     * @param mixed  $whereValue The value of the database field.
+     * @param string $whereProp The name of the database field.
+     * @param mixed $whereValue The value of the database field.
      *
      * @return MysqliDb
      */
-    public function where($whereProp, $whereValue = null, $operator = null) {
+    public function where($whereProp, $whereValue = null, $operator = null)
+    {
         if ($operator)
             $whereValue = Array($operator => $whereValue);
 
@@ -400,12 +415,13 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @uses $MySqliDb->orWhere('id', 7)->orWhere('title', 'MyTitle');
      *
-     * @param string $whereProp  The name of the database field.
-     * @param mixed  $whereValue The value of the database field.
+     * @param string $whereProp The name of the database field.
+     * @param mixed $whereValue The value of the database field.
      *
      * @return MysqliDb
      */
-    public function orWhere($whereProp, $whereValue = null, $operator = null) {
+    public function orWhere($whereProp, $whereValue = null, $operator = null)
+    {
         if ($operator)
             $whereValue = Array($operator => $whereValue);
 
@@ -424,7 +440,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return MysqliDb
      */
-    public function join($joinTable, $joinCondition, $joinType = '') {
+    public function join($joinTable, $joinCondition, $joinType = '')
+    {
         $allowedTypes = array('LEFT', 'RIGHT', 'OUTER', 'INNER', 'LEFT OUTER', 'RIGHT OUTER');
         $joinType = strtoupper(trim($joinType));
         $joinTable = filter_var($joinTable, FILTER_SANITIZE_STRING);
@@ -447,7 +464,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return MysqliDb
      */
-    public function orderBy($orderByField, $orderbyDirection = "DESC") {
+    public function orderBy($orderByField, $orderbyDirection = "DESC")
+    {
         $allowedDirection = Array("ASC", "DESC");
         $orderbyDirection = strtoupper(trim($orderbyDirection));
         $orderByField = preg_replace("/[^-a-z0-9\.\(\),_]+/i", '', $orderByField);
@@ -468,7 +486,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return MysqliDb
      */
-    public function groupBy($groupByField) {
+    public function groupBy($groupByField)
+    {
         $groupByField = preg_replace("/[^-a-z0-9\.\(\),_]+/i", '', $groupByField);
 
         $this->_groupBy[] = $groupByField;
@@ -480,7 +499,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return integer The last inserted item ID.
      */
-    public function getInsertId() {
+    public function getInsertId()
+    {
         return $this->_mysqli->insert_id;
     }
 
@@ -491,7 +511,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return string The escaped string.
      */
-    public function escape($str) {
+    public function escape($str)
+    {
         return $this->_mysqli->real_escape_string($str);
     }
 
@@ -503,7 +524,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return bool True if connection is up
      */
-    public function ping() {
+    public function ping()
+    {
         return $this->_mysqli->ping();
     }
 
@@ -517,7 +539,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return string The joined parameter types.
      */
-    protected function _determineType($item) {
+    protected function _determineType($item)
+    {
         switch (gettype($item)) {
             case 'NULL':
             case 'string':
@@ -545,7 +568,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @param string Variable value
      */
-    protected function _bindParam($value) {
+    protected function _bindParam($value)
+    {
         $this->_bindParams[0] .= $this->_determineType($value);
         array_push($this->_bindParams, $value);
     }
@@ -555,7 +579,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @param Array Variable with values
      */
-    protected function _bindParams($values) {
+    protected function _bindParams($values)
+    {
         foreach ($values as $value)
             $this->_bindParam($value);
     }
@@ -567,7 +592,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @param Array Variable with values
      */
-    protected function _buildPair($operator, $value) {
+    protected function _buildPair($operator, $value)
+    {
         if (!is_object($value)) {
             $this->_bindParam($value);
             return ' ' . $operator . ' ? ';
@@ -584,12 +610,13 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      * any passed update data, and the desired rows.
      * It then builds the SQL query.
      *
-     * @param int   $numRows   The number of rows total to return.
+     * @param int $numRows The number of rows total to return.
      * @param array $tableData Should contain an array of data for updating the database.
      *
      * @return mysqli_stmt Returns the $stmt object.
      */
-    protected function _buildQuery($numRows = null, $tableData = null) {
+    protected function _buildQuery($numRows = null, $tableData = null)
+    {
         $this->_buildJoin();
         $this->_buildTableData($tableData);
         $this->_buildWhere();
@@ -620,7 +647,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return array The results of the SQL fetch.
      */
-    protected function _dynamicBindResults(mysqli_stmt $stmt) {
+    protected function _dynamicBindResults(mysqli_stmt $stmt)
+    {
         $parameters = array();
         $results = array();
 
@@ -635,7 +663,7 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
         $row = array();
         while ($field = $meta->fetch_field()) {
             $row[$field->name] = null;
-            $parameters[] = & $row[$field->name];
+            $parameters[] = &$row[$field->name];
         }
 
         // avoid out of memory bug in php 5.2 and 5.3
@@ -660,7 +688,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
     /**
      * Abstraction method that will build an JOIN part of the query
      */
-    protected function _buildJoin() {
+    protected function _buildJoin()
+    {
         if (empty($this->_join))
             return;
 
@@ -671,7 +700,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
     /**
      * Abstraction method that will build an INSERT or UPDATE part of the query
      */
-    protected function _buildTableData($tableData) {
+    protected function _buildTableData($tableData)
+    {
         if (!is_array($tableData))
             return;
 
@@ -730,7 +760,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
     /**
      * Abstraction method that will build the part of the WHERE conditions
      */
-    protected function _buildWhere() {
+    protected function _buildWhere()
+    {
         if (empty($this->_where))
             return;
 
@@ -786,7 +817,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      * Abstraction method that will build the GROUP BY part of the WHERE statement
      *
      */
-    protected function _buildGroupBy() {
+    protected function _buildGroupBy()
+    {
         if (empty($this->_groupBy))
             return;
 
@@ -800,9 +832,10 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
     /**
      * Abstraction method that will build the LIMIT part of the WHERE statement
      *
-     * @param int   $numRows   The number of rows total to return.
+     * @param int $numRows The number of rows total to return.
      */
-    protected function _buildOrderBy() {
+    protected function _buildOrderBy()
+    {
         if (empty($this->_orderBy))
             return;
 
@@ -816,16 +849,17 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
     /**
      * Abstraction method that will build the LIMIT part of the WHERE statement
      *
-     * @param int   $numRows   The number of rows total to return.
+     * @param int $numRows The number of rows total to return.
      */
-    protected function _buildLimit($numRows) {
+    protected function _buildLimit($numRows)
+    {
         if (!isset($numRows))
             return;
 
         if (is_array($numRows))
-            $this->_query .= ' LIMIT ' . (int) $numRows[0] . ', ' . (int) $numRows[1];
+            $this->_query .= ' LIMIT ' . (int)$numRows[0] . ', ' . (int)$numRows[1];
         else
-            $this->_query .= ' LIMIT ' . (int) $numRows;
+            $this->_query .= ' LIMIT ' . (int)$numRows;
     }
 
     /**
@@ -834,7 +868,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return mysqli_stmt
      */
-    protected function _prepareQuery() {
+    protected function _prepareQuery()
+    {
         if (!$stmt = $this->_mysqli->prepare($this->_query)) {
             trigger_error("Problem preparing query ($this->_query) " . $this->_mysqli->error, E_USER_ERROR);
         }
@@ -844,7 +879,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
     /**
      * Close connection
      */
-    public function __destruct() {
+    public function __destruct()
+    {
         if (!$this->isSubQuery)
             return;
         if ($this->_mysqli)
@@ -856,12 +892,13 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return array
      */
-    protected function refValues($arr) {
+    protected function refValues($arr)
+    {
         //Reference is required for PHP 5.3+
         if (strnatcmp(phpversion(), '5.3') >= 0) {
             $refs = array();
             foreach ($arr as $key => $value) {
-                $refs[$key] = & $arr[$key];
+                $refs[$key] = &$arr[$key];
             }
             return $refs;
         }
@@ -875,7 +912,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return string
      */
-    protected function replacePlaceHolders($str, $vals) {
+    protected function replacePlaceHolders($str, $vals)
+    {
         $i = 1;
         $newStr = "";
 
@@ -894,26 +932,29 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return string
      */
-    public function getLastQuery() {
+    public function getLastQuery()
+    {
         return $this->_lastQuery;
     }
 
     /**
      * Method returns mysql error
-     * 
+     *
      * @return string
      */
-    public function getLastError() {
+    public function getLastError()
+    {
         return $this->_stmtError . " " . $this->_mysqli->error;
     }
 
     /**
      * Mostly internal method to get query and its params out of subquery object
      * after get() and getAll()
-     * 
+     *
      * @return array
      */
-    public function getSubQuery() {
+    public function getSubQuery()
+    {
         if (!$this->isSubQuery)
             return null;
 
@@ -938,7 +979,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return string
      */
-    public function interval($diff, $func = "NOW()") {
+    public function interval($diff, $func = "NOW()")
+    {
         $types = Array("s" => "second", "m" => "minute", "h" => "hour", "d" => "day", "M" => "month", "Y" => "year");
         $incr = '+';
         $items = '';
@@ -969,7 +1011,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @return array
      */
-    public function now($diff = null, $func = "NOW()") {
+    public function now($diff = null, $func = "NOW()")
+    {
         return Array("[F]" => Array($this->interval($diff, $func)));
     }
 
@@ -977,38 +1020,43 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      * Method generates incremental function call
      * @param int increment amount. 1 by default
      */
-    public function inc($num = 1) {
-        return Array("[I]" => "+" . (int) $num);
+    public function inc($num = 1)
+    {
+        return Array("[I]" => "+" . (int)$num);
     }
 
     /**
      * Method generates decrimental function call
      * @param int increment amount. 1 by default
      */
-    public function dec($num = 1) {
-        return Array("[I]" => "-" . (int) $num);
+    public function dec($num = 1)
+    {
+        return Array("[I]" => "-" . (int)$num);
     }
 
     /**
      * Method generates change boolean function call
      * @param string column name. null by default
      */
-    public function not($col = null) {
-        return Array("[N]" => (string) $col);
+    public function not($col = null)
+    {
+        return Array("[N]" => (string)$col);
     }
 
     /**
      * Method generates user defined function call
      * @param string user function body
      */
-    public function func($expr, $bindParams = null) {
+    public function func($expr, $bindParams = null)
+    {
         return Array("[F]" => Array($expr, $bindParams));
     }
 
     /**
      * Method creates new mysqlidb object for a subquery generation
      */
-    public static function subQuery() {
+    public static function subQuery()
+    {
         return new MysqliDb();
     }
 
@@ -1017,7 +1065,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @param object new mysqlidb object
      */
-    public function copy() {
+    public function copy()
+    {
         return clone $this;
     }
 
@@ -1027,7 +1076,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      * @uses mysqli->autocommit(false)
      * @uses register_shutdown_function(array($this, "_transaction_shutdown_check"))
      */
-    public function startTransaction() {
+    public function startTransaction()
+    {
         $this->_mysqli->autocommit(false);
         $this->_transaction_in_progress = true;
         register_shutdown_function(array($this, "_transaction_status_check"));
@@ -1039,7 +1089,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      * @uses mysqli->commit();
      * @uses mysqli->autocommit(true);
      */
-    public function commit() {
+    public function commit()
+    {
         $this->_mysqli->commit();
         $this->_transaction_in_progress = false;
         $this->_mysqli->autocommit(true);
@@ -1051,7 +1102,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      * @uses mysqli->rollback();
      * @uses mysqli->autocommit(true);
      */
-    public function rollback() {
+    public function rollback()
+    {
         $this->_mysqli->rollback();
         $this->_transaction_in_progress = false;
         $this->_mysqli->autocommit(true);
@@ -1063,7 +1115,8 @@ public function __construct($host ='192.185.4.175', $username = 'arielces_uiglp'
      *
      * @uses mysqli->rollback();
      */
-    public function _transaction_status_check() {
+    public function _transaction_status_check()
+    {
         if (!$this->_transaction_in_progress)
             return;
         $this->rollback();
