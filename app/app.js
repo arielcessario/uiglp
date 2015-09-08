@@ -49,8 +49,8 @@ angular.module('uiglp', [
     .controller('AppController', AppController);
 
 
-AppController.$inject = ['LoginService', '$location', '$rootScope','$routeParams'];
-function AppController(LoginState, $location, $rootScope, $routeParams) {
+AppController.$inject = ['LoginService', '$location', '$rootScope', '$routeParams', 'store'];
+function AppController(LoginState, $location, $rootScope, $routeParams, store) {
 
     var vm = this;
     vm.goTo = goTo;
@@ -59,22 +59,28 @@ function AppController(LoginState, $location, $rootScope, $routeParams) {
         {nombre: 'INICIO', path: '/'},
         {nombre: 'INSTITUCIONAL', path: '/institucional'},
         {nombre: 'BUSQUEDA LABORAL', path: '/busquedas_laborales'},
-        {nombre: 'NOTICIAS', path: '/noticias'},
+        {nombre: 'NOTICIAS', path: '/noticias/0'},
         {nombre: 'CONTACTO', path: '/contacto'},
         {nombre: 'REVISTA', path: '/revista'},
         {nombre: 'INGRESO', path: '/ingreso'}
     ];
+    //store.remove('jwt');
 
-
-    vm.selectedPage = vm.links.filter(function(elem, index, array){
+    vm.selectedPage = vm.links.filter(function (elem, index, array) {
 
         var response = elem.path == $location.$$path;
-        if($location.$$path == '/administracion'){
+
+
+        if ($location.$$path == '/administracion') {
             response = {nombre: 'INGRESO', path: '/ingreso'};
         }
 
-        if($location.$$path == '/servicios'){
+        if ($location.$$path == '/servicios') {
             response = {nombre: 'SERVICIOS', path: '/servicios'};
+        }
+
+        if ($location.$$path.indexOf('/noticias') > -1) {
+            response = '/' + $location.$$path.split('/')[1];
         }
         return response;
     })[0].nombre;
