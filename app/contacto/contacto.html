@@ -1,22 +1,22 @@
 <div ng-controller="ContactoController as contactoCtrl" id="contacto-inner">
     <div id="contacto-titulo" class="contacto-title">
-        HOLA {{contactoCtrl.usuario.nombre}}
+        Contacto
     </div>
     <h1>Contacto</h1>
 
     <div id="contacto-container">
 
         <div>
-            <input type="text" id="nombre">
-            <input type="text" id="apellido">
-            <input type="text" id="mail">
-            <button id="contacto-enviar-desktop">Enviar</button>
+            <input ng-model="contactoCtrl.nombre" type="text" id="nombre">
+            <input ng-model="contactoCtrl.email"  type="text" id="mail">
+            <input ng-model="contactoCtrl.asunto"  type="text" id="asunto">
+            <button id="contacto-enviar-desktop" ng-click="contactoCtrl.sendMail();">Enviar</button>
         </div>
         <div>
-            <textarea name="" id="consulta" rows="10"></textarea>
+            <textarea ng-model="contactoCtrl.mensaje" name="" id="consulta" rows="10"></textarea>
         </div>
         <div>
-            <button id="contacto-enviar-mobile">Enviar</button>
+            <button id="contacto-enviar-mobile" ng-click="contactoCtrl.sendMail();">Enviar</button>
         </div>
     </div>
 
