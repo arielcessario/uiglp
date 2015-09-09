@@ -19,7 +19,8 @@ angular.module('uiglp', [
     'ofertasLaborales',
     'uiglp.busquedasLaborales',
     'uiglp.servicios',
-    'uiglp.revistas'
+    'uiglp.revistas',
+    'uiglp.contacto'
 
 ]).
     config(['$routeProvider', 'jwtInterceptorProvider', '$httpProvider',

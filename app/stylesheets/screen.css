@@ -943,9 +943,18 @@ html {
   flex-direction: column;
   align-items: center;
   padding-bottom: 40px;
+  color: white;
 }
-/* line 882, ../sass/screen.scss */
-#contacto #contacto-container {
+
+/* line 884, ../sass/screen.scss */
+#contacto-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+/* line 891, ../sass/screen.scss */
+#contacto-inner #contacto-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -953,43 +962,43 @@ html {
   text-align: left;
 }
 @media (min-width: 800px) {
-  /* line 882, ../sass/screen.scss */
-  #contacto #contacto-container {
+  /* line 891, ../sass/screen.scss */
+  #contacto-inner #contacto-container {
     flex-direction: row;
     max-width: 800px;
     align-items: flex-start;
   }
 }
-/* line 894, ../sass/screen.scss */
-#contacto #contacto-container div {
+/* line 903, ../sass/screen.scss */
+#contacto-inner #contacto-container div {
   max-width: 80%;
   min-width: 80%;
 }
 @media (min-width: 800px) {
-  /* line 894, ../sass/screen.scss */
-  #contacto #contacto-container div {
+  /* line 903, ../sass/screen.scss */
+  #contacto-inner #contacto-container div {
     max-width: 350px;
     min-width: 350px;
   }
 }
-/* line 901, ../sass/screen.scss */
-#contacto #contacto-container div input[type=text],
-#contacto #contacto-container div textarea {
+/* line 910, ../sass/screen.scss */
+#contacto-inner #contacto-container div input[type=text],
+#contacto-inner #contacto-container div textarea {
   width: 90%;
   right: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 @media (min-width: 800px) {
-  /* line 901, ../sass/screen.scss */
-  #contacto #contacto-container div input[type=text],
-  #contacto #contacto-container div textarea {
+  /* line 910, ../sass/screen.scss */
+  #contacto-inner #contacto-container div input[type=text],
+  #contacto-inner #contacto-container div textarea {
     max-width: 350px;
   }
 }
 @media (min-width: 800px) {
-  /* line 912, ../sass/screen.scss */
-  #contacto #contacto-container div #contacto-enviar-mobile {
+  /* line 921, ../sass/screen.scss */
+  #contacto-inner #contacto-container div #contacto-enviar-mobile {
     height: 0px;
     width: 0px;
     visibility: collapse;
@@ -997,8 +1006,8 @@ html {
   }
 }
 @media (max-width: 800px) {
-  /* line 921, ../sass/screen.scss */
-  #contacto #contacto-container div #contacto-enviar-desktop {
+  /* line 930, ../sass/screen.scss */
+  #contacto-inner #contacto-container div #contacto-enviar-desktop {
     height: 0px;
     width: 0px;
     visibility: collapse;
@@ -1006,7 +1015,7 @@ html {
   }
 }
 
-/* line 938, ../sass/screen.scss */
+/* line 947, ../sass/screen.scss */
 #administracion table {
   font-family: "Montserrat Semibold", sans-serif;
   font-size: 15px;
@@ -1018,26 +1027,26 @@ html {
   border-radius: 10px;
   background-color: #2f96b4;
 }
-/* line 951, ../sass/screen.scss */
+/* line 960, ../sass/screen.scss */
 #administracion table th {
   padding: 10px;
   font-family: "Montserrat Semibold", sans-serif;
   font-size: 17px;
 }
-/* line 958, ../sass/screen.scss */
+/* line 967, ../sass/screen.scss */
 #administracion table td {
   padding: 10px;
   font-family: 'Montserrat Light', serif;
   font-size: 14px;
 }
-/* line 965, ../sass/screen.scss */
+/* line 974, ../sass/screen.scss */
 #administracion table .administracion-row:hover,
 #administracion table .tr-selected {
   background-color: #1c3e52;
   color: white;
 }
 
-/* line 984, ../sass/screen.scss */
+/* line 993, ../sass/screen.scss */
 #footer {
   margin: 10px;
   cursor: pointer;
@@ -1049,13 +1058,13 @@ html {
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 994, ../sass/screen.scss */
+/* line 1003, ../sass/screen.scss */
 #footer div {
   margin: 5px;
 }
 
 /*SECCIONES DE ADMINISTRACION*/
-/* line 1000, ../sass/screen.scss */
+/* line 1009, ../sass/screen.scss */
 #ingreso {
   margin-top: 100px;
   max-width: 100%;
@@ -1065,13 +1074,13 @@ html {
   justify-content: center;
 }
 @media (max-width: 600px) {
-  /* line 1000, ../sass/screen.scss */
+  /* line 1009, ../sass/screen.scss */
   #ingreso {
     margin-top: 50px;
   }
 }
 
-/* line 1012, ../sass/screen.scss */
+/* line 1021, ../sass/screen.scss */
 #administracion,
 #noticias,
 #servicios-inner,
@@ -1084,7 +1093,7 @@ html {
   margin-top: 100px;
 }
 @media (max-width: 600px) {
-  /* line 1012, ../sass/screen.scss */
+  /* line 1021, ../sass/screen.scss */
   #administracion,
   #noticias,
   #servicios-inner,
@@ -1093,7 +1102,7 @@ html {
   }
 }
 
-/* line 1039, ../sass/screen.scss */
+/* line 1048, ../sass/screen.scss */
 .administracion-title,
 #administracion-form,
 .administracion-separator,
@@ -1108,21 +1117,23 @@ html {
 #busquedas-laborales-form,
 .busquedas-laborales-title,
 #revistas-form,
-.revistas-title {
+.revistas-title,
+#contacto-container,
+.contacto-title {
   max-width: 1000px;
 }
 
-/* line 1058, ../sass/screen.scss */
+/* line 1069, ../sass/screen.scss */
 #revistas-form {
   width: 100%;
 }
 
-/* line 1062, ../sass/screen.scss */
+/* line 1073, ../sass/screen.scss */
 #ingreso-form {
   width: 100%;
 }
 
-/* line 1066, ../sass/screen.scss */
+/* line 1077, ../sass/screen.scss */
 #administracion-form,
 #nuevo-usuario-form,
 #ingreso-form {
@@ -1130,7 +1141,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
 }
-/* line 1072, ../sass/screen.scss */
+/* line 1083, ../sass/screen.scss */
 #administracion-form .administracion-inputs,
 #administracion-form .nuevo-usuario-inputs,
 #nuevo-usuario-form .administracion-inputs,
@@ -1142,7 +1153,7 @@ html {
   flex-wrap: wrap;
 }
 
-/* line 1081, ../sass/screen.scss */
+/* line 1092, ../sass/screen.scss */
 #administracion-oferta,
 #administracion-noticias,
 #administracion-sliders {
@@ -1153,7 +1164,7 @@ html {
   justify-content: flex-start;
 }
 
-/* line 1093, ../sass/screen.scss */
+/* line 1104, ../sass/screen.scss */
 .administracion-title,
 .nuevo-usuario-title,
 .noticias-title,
@@ -1172,7 +1183,7 @@ html {
   background-image: linear-gradient(to right, #dedede, #ffffff);
 }
 @media (max-width: 600px) {
-  /* line 1093, ../sass/screen.scss */
+  /* line 1104, ../sass/screen.scss */
   .administracion-title,
   .nuevo-usuario-title,
   .noticias-title,
@@ -1181,19 +1192,19 @@ html {
   }
 }
 
-/* line 1111, ../sass/screen.scss */
+/* line 1122, ../sass/screen.scss */
 .administracion-input,
 .nuevo-usuario-input {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-/* line 1116, ../sass/screen.scss */
+/* line 1127, ../sass/screen.scss */
 .administracion-input span,
 .nuevo-usuario-input span {
   margin: 5px;
 }
-/* line 1121, ../sass/screen.scss */
+/* line 1132, ../sass/screen.scss */
 .administracion-input input,
 .administracion-input select,
 .nuevo-usuario-input input,
@@ -1207,7 +1218,7 @@ html {
   margin-bottom: 5px;
 }
 
-/* line 1136, ../sass/screen.scss */
+/* line 1147, ../sass/screen.scss */
 .administracion-input textarea {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -1220,13 +1231,13 @@ html {
   min-height: 300px;
 }
 
-/* line 1151, ../sass/screen.scss */
+/* line 1162, ../sass/screen.scss */
 .administracion-button-bar,
 .nuevo-usuario-button-bar {
   display: flex;
   flex-direction: row;
 }
-/* line 1157, ../sass/screen.scss */
+/* line 1168, ../sass/screen.scss */
 .administracion-button-bar button,
 .nuevo-usuario-button-bar button {
   background-color: transparent;
@@ -1234,13 +1245,13 @@ html {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-/* line 1163, ../sass/screen.scss */
+/* line 1174, ../sass/screen.scss */
 .administracion-button-bar button:hover,
 .nuevo-usuario-button-bar button:hover {
   border-bottom-color: #17384B;
 }
 
-/* line 1168, ../sass/screen.scss */
+/* line 1179, ../sass/screen.scss */
 .administracion-separator {
   width: 100%;
   height: 2px !important;
@@ -1250,7 +1261,7 @@ html {
   margin-bottom: 50px;
 }
 
-/* line 1177, ../sass/screen.scss */
+/* line 1188, ../sass/screen.scss */
 .administracion-fotos {
   display: flex;
   flex-direction: row;
@@ -1258,7 +1269,7 @@ html {
   margin-bottom: 10px;
 }
 
-/* line 1185, ../sass/screen.scss */
+/* line 1196, ../sass/screen.scss */
 .administracion-fotos span {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -1267,7 +1278,7 @@ html {
   font-size: 15px;
 }
 
-/* line 1194, ../sass/screen.scss */
+/* line 1205, ../sass/screen.scss */
 .input-foto {
   height: 39px;
   width: 39px;
@@ -1280,13 +1291,13 @@ html {
   margin-bottom: 5px;
   margin-top: 5px;
 }
-/* line 1206, ../sass/screen.scss */
+/* line 1217, ../sass/screen.scss */
 .input-foto input {
   opacity: 0;
   height: 39px;
   width: 39px;
 }
-/* line 1211, ../sass/screen.scss */
+/* line 1222, ../sass/screen.scss */
 .input-foto img {
   position: absolute;
   max-height: 38px;
@@ -1296,7 +1307,7 @@ html {
   border-radius: 2px;
 }
 
-/* line 1221, ../sass/screen.scss */
+/* line 1232, ../sass/screen.scss */
 .administracion-sub-title {
   font-family: "Montserrat Semibold", sans-serif;
   font-size: 25px;
@@ -1307,14 +1318,14 @@ html {
 }
 
 /*NOTICIAS*/
-/* line 1233, ../sass/screen.scss */
+/* line 1244, ../sass/screen.scss */
 #noticias-filtro {
   display: flex;
   padding: 20px;
   flex-direction: row;
   justify-content: left;
 }
-/* line 1238, ../sass/screen.scss */
+/* line 1249, ../sass/screen.scss */
 #noticias-filtro select {
   margin-right: 2%;
   height: 32px;
@@ -1327,12 +1338,12 @@ html {
   background-color: transparent;
 }
 
-/* line 1281, ../sass/screen.scss */
+/* line 1292, ../sass/screen.scss */
 #noticias-main {
   background-color: #133548;
 }
 
-/* line 1286, ../sass/screen.scss */
+/* line 1297, ../sass/screen.scss */
 #noticias-form {
   max-width: 1000px;
   width: 100%;
@@ -1342,24 +1353,24 @@ html {
   background-color: white;
 }
 
-/* line 1296, ../sass/screen.scss */
+/* line 1307, ../sass/screen.scss */
 #noticias-panel {
   margin: 35px;
 }
 
 @media (min-width: 385px) {
-  /* line 1301, ../sass/screen.scss */
+  /* line 1312, ../sass/screen.scss */
   #noticias-panel-fotos {
     max-width: 50%;
   }
 }
-/* line 1305, ../sass/screen.scss */
+/* line 1316, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-main {
   overflow: hidden;
   min-height: 400px;
   min-width: 300px;
 }
-/* line 1309, ../sass/screen.scss */
+/* line 1320, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-main img {
   margin-left: 15px;
   border-radius: 5px;
@@ -1368,7 +1379,7 @@ html {
   max-width: 300px;
   min-width: 300px;
 }
-/* line 1319, ../sass/screen.scss */
+/* line 1330, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-thumbs img {
   margin-left: 15px;
   margin-top: 5px;
@@ -1377,12 +1388,12 @@ html {
   border-radius: 2px;
 }
 
-/* line 1329, ../sass/screen.scss */
+/* line 1340, ../sass/screen.scss */
 #noticias-panel-texto {
   color: white;
   padding: 5px;
 }
-/* line 1332, ../sass/screen.scss */
+/* line 1343, ../sass/screen.scss */
 #noticias-panel-texto #noticias-panel-titulo {
   width: 100%;
   margin-bottom: 15px;
@@ -1392,7 +1403,7 @@ html {
   color: #FFFFFF;
   font-family: 'Lato Heavy', serif;
 }
-/* line 1343, ../sass/screen.scss */
+/* line 1354, ../sass/screen.scss */
 #noticias-panel-texto #noticias-panel-detalle {
   font-family: 'Montserrat Light', serif;
   width: 95%;
@@ -1406,21 +1417,21 @@ html {
 }
 
 @media (min-width: 600px) {
-  /* line 1356, ../sass/screen.scss */
+  /* line 1367, ../sass/screen.scss */
   #noticias-panel {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
-/* line 1363, ../sass/screen.scss */
+/* line 1374, ../sass/screen.scss */
 #noticias-nuevo-comentario {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-/* line 1368, ../sass/screen.scss */
+/* line 1379, ../sass/screen.scss */
 #noticias-nuevo-comentario textarea {
   width: 100%;
   right: 5px;
@@ -1431,14 +1442,14 @@ html {
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
-/* line 1380, ../sass/screen.scss */
+/* line 1391, ../sass/screen.scss */
 #noticias-nuevo-comentario div {
   width: 90%;
   position: relative;
   margin-top: -45px;
   margin-bottom: 20px;
 }
-/* line 1385, ../sass/screen.scss */
+/* line 1396, ../sass/screen.scss */
 #noticias-nuevo-comentario div #noticias-nuevo-btn {
   width: 110px;
   background-color: white;
@@ -1453,19 +1464,19 @@ html {
   text-align: center;
 }
 
-/* line 1402, ../sass/screen.scss */
+/* line 1413, ../sass/screen.scss */
 #noticias-comentarios {
   background-color: #3f6175;
   color: white;
 }
-/* line 1405, ../sass/screen.scss */
+/* line 1416, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-list {
   max-width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 1412, ../sass/screen.scss */
+/* line 1423, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-title {
   width: 90%;
   font-family: 'Lato Heavy', serif;
@@ -1477,17 +1488,17 @@ html {
   font-size: 38px;
   line-height: 25px;
 }
-/* line 1424, ../sass/screen.scss */
+/* line 1435, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario {
   max-width: 90%;
   margin-bottom: 20px;
 }
-/* line 1428, ../sass/screen.scss */
+/* line 1439, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-user {
   line-height: 24px;
   font-size: 23px;
 }
-/* line 1433, ../sass/screen.scss */
+/* line 1444, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-detalle {
   line-height: 20px;
   font-size: 17px;
@@ -1496,9 +1507,10 @@ html {
 }
 
 /*BUSQUEDAS LABORALES*/
-/* line 1446, ../sass/screen.scss */
+/* line 1457, ../sass/screen.scss */
 #busquedas-laborales,
-#revistas {
+#revistas,
+#contacto-inner {
   background-color: white;
   display: flex;
   align-items: center;
@@ -1508,29 +1520,33 @@ html {
   margin-top: 100px;
 }
 @media (max-width: 600px) {
-  /* line 1446, ../sass/screen.scss */
+  /* line 1457, ../sass/screen.scss */
   #busquedas-laborales,
-  #revistas {
+  #revistas,
+  #contacto-inner {
     margin-top: 50px;
   }
 }
-/* line 1459, ../sass/screen.scss */
+/* line 1471, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:nth-child(odd),
-#revistas .busqueda-laboral:nth-child(odd) {
+#revistas .busqueda-laboral:nth-child(odd),
+#contacto-inner .busqueda-laboral:nth-child(odd) {
   background-color: #17384B;
 }
-/* line 1464, ../sass/screen.scss */
+/* line 1476, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:hover,
-#revistas .busqueda-laboral:hover {
+#revistas .busqueda-laboral:hover,
+#contacto-inner .busqueda-laboral:hover {
   -webkit-transform: scale(1.1, 1.1);
   -moz-transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
   -o-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
-/* line 1472, ../sass/screen.scss */
+/* line 1484, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral,
-#revistas .busqueda-laboral {
+#revistas .busqueda-laboral,
+#contacto-inner .busqueda-laboral {
   color: white;
   background-color: #406276;
   -webkit-transition: all .2s;
@@ -1542,28 +1558,31 @@ html {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 1488, ../sass/screen.scss */
+/* line 1500, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-title,
-#revistas .busqueda-laboral .busqueda-laboral-title {
+#revistas .busqueda-laboral .busqueda-laboral-title,
+#contacto-inner .busqueda-laboral .busqueda-laboral-title {
   font-family: 'Lato Heavy', serif;
   font-variant: small-caps;
   font-size: 38px;
   padding: 15px;
 }
-/* line 1495, ../sass/screen.scss */
+/* line 1507, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-texto,
-#revistas .busqueda-laboral .busqueda-laboral-texto {
+#revistas .busqueda-laboral .busqueda-laboral-texto,
+#contacto-inner .busqueda-laboral .busqueda-laboral-texto {
   padding: 5px;
   font-family: 'Lato Regular', serif;
   font-size: 16px;
 }
-/* line 1500, ../sass/screen.scss */
+/* line 1512, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-contacto,
-#revistas .busqueda-laboral .busqueda-laboral-contacto {
+#revistas .busqueda-laboral .busqueda-laboral-contacto,
+#contacto-inner .busqueda-laboral .busqueda-laboral-contacto {
   padding: 5px;
 }
 
-/* line 1506, ../sass/screen.scss */
+/* line 1518, ../sass/screen.scss */
 #busqueda-laboral-search {
   width: 100%;
   background-color: #000000;
@@ -1573,7 +1592,7 @@ html {
   align-items: center;
   min-height: 80px;
 }
-/* line 1514, ../sass/screen.scss */
+/* line 1526, ../sass/screen.scss */
 #busqueda-laboral-search input {
   background-color: transparent;
   max-width: 800px;
@@ -1587,33 +1606,33 @@ html {
   margin: 10px;
   padding: 10px;
 }
-/* line 1527, ../sass/screen.scss */
+/* line 1539, ../sass/screen.scss */
 #busqueda-laboral-search input ::-webkit-input-placeholder {
   color: #99C1DA;
 }
-/* line 1531, ../sass/screen.scss */
+/* line 1543, ../sass/screen.scss */
 #busqueda-laboral-search input :-moz-placeholder {
   /* Firefox 18- */
   color: #99C1DA;
 }
-/* line 1536, ../sass/screen.scss */
+/* line 1548, ../sass/screen.scss */
 #busqueda-laboral-search input ::-moz-placeholder {
   /* Firefox 19+ */
   color: #99C1DA;
 }
-/* line 1541, ../sass/screen.scss */
+/* line 1553, ../sass/screen.scss */
 #busqueda-laboral-search input :-ms-input-placeholder {
   color: #99C1DA;
 }
 @media (max-width: 800px) {
-  /* line 1514, ../sass/screen.scss */
+  /* line 1526, ../sass/screen.scss */
   #busqueda-laboral-search input {
     max-width: 95px;
     min-width: 95%;
   }
 }
 
-/* line 1552, ../sass/screen.scss */
+/* line 1564, ../sass/screen.scss */
 #contacto h1 {
   font-family: 'Lato Heavy', serif;
   color: white;
@@ -1622,7 +1641,7 @@ html {
   margin-bottom: 20px;
 }
 
-/* line 1562, ../sass/screen.scss */
+/* line 1574, ../sass/screen.scss */
 #revistas-listado {
   width: 100%;
   max-width: 1000px;

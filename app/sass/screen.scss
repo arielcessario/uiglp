@@ -872,8 +872,17 @@ html {
   }
 }
 
-#contacto {
+#contacto{
   background-color: #133548;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  color: white;
+}
+
+#contacto-inner {
+  //background-color: #133548;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1051,6 +1060,8 @@ html {
 .busquedas-laborales-title,
 #revistas-form,
 .revistas-title,
+#contacto-container,
+.contacto-title,
 {
   max-width: 1000px;
 }
@@ -1444,7 +1455,8 @@ html {
 /*BUSQUEDAS LABORALES*/
 
 #busquedas-laborales,
-#revistas{
+#revistas,
+#contacto-inner{
   background-color: white;
   display: flex;
   align-items: center;

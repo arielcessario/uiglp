@@ -1,0 +1,23 @@
+<div ng-controller="ContactoController as contactoCtrl" id="contacto-inner">
+    <div id="contacto-titulo" class="contacto-title">
+        HOLA {{contactoCtrl.usuario.nombre}}
+    </div>
+    <h1>Contacto</h1>
+
+    <div id="contacto-container">
+
+        <div>
+            <input type="text" id="nombre">
+            <input type="text" id="apellido">
+            <input type="text" id="mail">
+            <button id="contacto-enviar-desktop">Enviar</button>
+        </div>
+        <div>
+            <textarea name="" id="consulta" rows="10"></textarea>
+        </div>
+        <div>
+            <button id="contacto-enviar-mobile">Enviar</button>
+        </div>
+    </div>
+
+</div>
