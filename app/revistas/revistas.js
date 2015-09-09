@@ -3,19 +3,19 @@
     var scripts = document.getElementsByTagName("script");
     var currentScriptPath = scripts[scripts.length - 1].src;
     currentScriptPath = currentScriptPath.replace('.min', '');
-    angular.module('uiglp.servicios', ['ngRoute'])
+    angular.module('uiglp.revistas', ['ngRoute'])
         .config(['$routeProvider', function ($routeProvider) {
-            $routeProvider.when('/servicios', {
+            $routeProvider.when('/revistas', {
                 templateUrl: currentScriptPath.replace('.js', '.html'),
-                controller: 'ServiciosController',
+                controller: 'RevistasController',
                 data: {requiresLogin:false}
             });
         }])
-        .controller('ServiciosController', ServiciosController);
+        .controller('RevistasController', RevistasController);
 
 
-    ServiciosController.$inject = ['LoginService', 'LoginState', 'store', '$location'];
-    function ServiciosController(LoginService, LoginState, store, $location) {
+    RevistasController.$inject = ['LoginService', 'LoginState', 'store', '$location'];
+    function RevistasController(LoginService, LoginState, store, $location) {
 
         var vm = this;
 

@@ -18,7 +18,8 @@ angular.module('uiglp', [
     'uiglp.noticias',
     'ofertasLaborales',
     'uiglp.busquedasLaborales',
-    'uiglp.servicios'
+    'uiglp.servicios',
+    'uiglp.revistas'
 
 ]).
     config(['$routeProvider', 'jwtInterceptorProvider', '$httpProvider',
@@ -61,7 +62,7 @@ function AppController(LoginState, $location, $rootScope, $routeParams, store) {
         {nombre: 'BUSQUEDA LABORAL', path: '/busquedas_laborales'},
         {nombre: 'NOTICIAS', path: '/noticias/0'},
         {nombre: 'CONTACTO', path: '/contacto'},
-        {nombre: 'REVISTA', path: '/revista'},
+        {nombre: 'REVISTA', path: '/revistas'},
         {nombre: 'INGRESO', path: '/ingreso'}
     ];
     //store.remove('jwt');
