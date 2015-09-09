@@ -4,10 +4,13 @@
     </div>
 
     <div id="revistas-listado">
-        <iframe ng-repeat="link in revistasCtrl.links"
-                width="300"
-                height="200"
-                ng-src="{{link}}" frameborder="0" allowfullscreen></iframe>
+        <div ng-repeat="link in revistasCtrl.links">
+            <div>{{link.nombre}}</div>
+            <iframe
+                    width="300"
+                    height="200"
+                    ng-src="{{link.link}}" frameborder="0" allowfullscreen></iframe>
+        </div>
 
 
     </div>

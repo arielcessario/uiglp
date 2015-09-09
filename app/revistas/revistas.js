@@ -27,7 +27,7 @@
 
             vm.links = [];
             for (var i = 0; i < data.length; i++) {
-                vm.links.push($sce.trustAsResourceUrl('//e.issuu.com/embed.html#' + data[i].link));
+                vm.links.push({link:$sce.trustAsResourceUrl('//e.issuu.com/embed.html#' + data[i].link), nombre: data[i].nombre});
             }
 
 
