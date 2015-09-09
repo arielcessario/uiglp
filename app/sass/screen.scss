@@ -938,23 +938,28 @@ html {
   table{
     font-family: "Montserrat Semibold", sans-serif;
     font-size: 15px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    color: white;
+    max-width: 95%;
+    margin-left: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    background-color: lightgrey;
+    background-color: #2f96b4;
 
 
 
     th{
       padding: 10px;
+      font-family: "Montserrat Semibold", sans-serif;
+      font-size: 17px;
 
     }
 
     td{
 
       padding: 10px;
+      font-family: 'Montserrat Light', serif;
+      font-size: 14px;
     }
 
     .administracion-row:hover,
@@ -1076,6 +1081,8 @@ html {
   justify-content: flex-start;
 }
 
+
+
 .administracion-title,
 .nuevo-usuario-title,
 .noticias-title,
@@ -1128,6 +1135,7 @@ html {
   background-color: rgba(0, 0, 0, 0);
   margin-bottom: 5px;
    max-height: 300px;
+   min-height: 300px;
 
   }
     }
@@ -1162,28 +1170,41 @@ html {
 .administracion-fotos {
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.administracion-fotos span{
+  margin-top:20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-family: 'Montserrat Light', serif;
+  font-size: 15px;
+
 }
 
 .input-foto {
-  height: 50px;
-  width: 50px;
+  height: 39px;
+  width: 39px;
   overflow: hidden;
-  background-color: #133548;
   border: 1px solid darkgray;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
   input {
     opacity: 0;
-    height: 50px;
-    width: 50px;
-    background-color: #133548;
+    height: 39px;
+    width: 39px;
   }
   img {
     position: absolute;
-    background-color: #133548;
-    max-height: 49px;
-    clip: rect(0px, 50px, 50px, 0px);
+    max-height: 38px;
+    clip: rect(0px, 39px, 39px, 0px);
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
