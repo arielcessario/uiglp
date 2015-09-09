@@ -3,10 +3,14 @@
         HOLA {{revistasCtrl.usuario.nombre}}
     </div>
 
+    <div id="revistas-listado">
+        <iframe ng-repeat="link in revistasCtrl.links"
+                width="300"
+                height="200"
+                ng-src="{{link}}" frameborder="0" allowfullscreen></iframe>
 
-    <div data-configid="9112363/15317091" style="width:400px; height:229px;" class="issuuembed"></div>
-    <div data-configid="9112363/15317091" style="width:400px; height:229px;" class="issuuembed"></div>
 
+    </div>
 
 
 </div>
