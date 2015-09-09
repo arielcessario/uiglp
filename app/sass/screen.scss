@@ -537,7 +537,6 @@ html {
   color: white;
   background-color: #133548;
 
-
 }
 
 #noticias {
@@ -754,10 +753,10 @@ html {
         width: 85%;
         height: 75%;
 
-        #calendario{
+        #calendario {
           width: 100%;
           height: 100%;
-          #calendario-header{
+          #calendario-header {
             font-weight: bold;
             display: flex;
             flex-direction: row;
@@ -765,16 +764,16 @@ html {
             min-height: 20px;
             min-width: 20px;
           }
-          #calendario-dias{
+          #calendario-dias {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             flex-wrap: wrap;
-            .calendario-dia-with-event{
+            .calendario-dia-with-event {
               font-weight: bold;
               cursor: pointer;
             }
-            .calendario-dia{
+            .calendario-dia {
               min-height: 28px;
               min-width: 30px;
               text-align: center;
@@ -872,7 +871,7 @@ html {
   }
 }
 
-#contacto{
+#contacto {
   background-color: #133548;
   display: flex;
   flex-direction: column;
@@ -943,8 +942,8 @@ html {
 
 }
 
-#administracion{
-  table{
+#administracion {
+  table {
     font-family: "Montserrat Semibold", sans-serif;
     font-size: 15px;
     color: white;
@@ -955,16 +954,14 @@ html {
     border-radius: 10px;
     background-color: #2f96b4;
 
-
-
-    th{
+    th {
       padding: 10px;
       font-family: "Montserrat Semibold", sans-serif;
       font-size: 17px;
 
     }
 
-    td{
+    td {
 
       padding: 10px;
       font-family: 'Montserrat Light', serif;
@@ -972,7 +969,7 @@ html {
     }
 
     .administracion-row:hover,
-    .tr-selected{
+    .tr-selected {
       background-color: #1c3e52;
       color: white;
     }
@@ -988,7 +985,6 @@ html {
 
   }
 }
-
 
 #footer {
   margin: 10px;
@@ -1006,7 +1002,7 @@ html {
 }
 
 /*SECCIONES DE ADMINISTRACION*/
-#ingreso{
+#ingreso {
   margin-top: 100px;
   max-width: 100%;
   display: flex;
@@ -1021,7 +1017,7 @@ html {
 #administracion,
 #noticias,
 #servicios-inner,
-#revistas{
+#revistas {
 
   display: flex;
   align-items: center;
@@ -1062,11 +1058,13 @@ html {
 .revistas-title,
 #contacto-container,
 .contacto-title,
+#servicios-main-container,
+.servicios-title,
 {
   max-width: 1000px;
 }
 
-#revistas-form{
+#revistas-form {
   width: 100%;
 }
 
@@ -1099,12 +1097,11 @@ html {
   justify-content: flex-start;
 }
 
-
-
 .administracion-title,
 .nuevo-usuario-title,
 .noticias-title,
 .busquedas-laborales-title,
+.servicios-title,
 {
   width: 100%;
   font-size: 70px;
@@ -1143,21 +1140,20 @@ html {
 
 }
 
- .administracion-input{
-        textarea{
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  border: 1px solid #17384B;
-  max-width: 800px;
-  background-color: rgba(0, 0, 0, 0);
-  margin-bottom: 5px;
-   max-height: 300px;
-   min-height: 300px;
+.administracion-input {
+  textarea {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #17384B;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 5px;
+    max-height: 300px;
+    min-height: 300px;
 
   }
-    }
-
+}
 
 .administracion-button-bar,
 .nuevo-usuario-button-bar,
@@ -1193,8 +1189,8 @@ html {
 
 }
 
-.administracion-fotos span{
-  margin-top:20px;
+.administracion-fotos span {
+  margin-top: 20px;
   margin-bottom: 10px;
   margin-left: 10px;
   font-family: 'Montserrat Light', serif;
@@ -1229,7 +1225,7 @@ html {
   }
 }
 
-.administracion-sub-title{
+.administracion-sub-title {
   font-family: "Montserrat Semibold", sans-serif;
   font-size: 25px;
   color: #133548;
@@ -1237,8 +1233,6 @@ html {
   margin-bottom: 20px;
   margin-left: 10px;
 }
-
-
 
 /*NOTICIAS*/
 #noticias-filtro {
@@ -1456,7 +1450,7 @@ html {
 
 #busquedas-laborales,
 #revistas,
-#contacto-inner{
+#contacto-inner {
   background-color: white;
   display: flex;
   align-items: center;
@@ -1570,8 +1564,7 @@ html {
 
 }
 
-
-#revistas-listado{
+#revistas-listado {
   width: 100%;
   max-width: 1000px;
   display: flex;
@@ -1581,6 +1574,86 @@ html {
   align-items: flex-start;
 }
 
+#servicios-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #financiamiento,
+  #sellados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 600px) {
+
+      flex-direction: row;
+    }
+    div{
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media (min-width: 600px) {
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  #sellados {
+    @media (min-width: 600px) {
+
+      flex-direction: row-reverse;
+    }
+  }
+
+  #servicios-inner-separator{
+    width: 90%;
+    height: 3px;
+    background-color: #133548;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .servicio-main-icon {
+    height: 200px;
+    width: 200px;
+    min-width: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+    //background-color: #2f96b4;
+    margin: 10px;
+
+    @media (min-width: 600px) {
+      height: 400px;
+      width: 400px;
+      min-width: 400px;
+      -webkit-border-radius: 400px;
+      -moz-border-radius: 400px;
+      border-radius: 400px;
+    }
+  }
+
+  h1 {
+    font-variant: small-caps;
+  }
+  h2{
+
+  }
+  h1, h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    @media (min-width: 600px) {
+
+      text-align: left;
+    }
+  }
+}
 
 /* #### Generated By: http://www.cufonfonts.com #### */
 @font-face {
