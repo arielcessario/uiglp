@@ -886,8 +886,18 @@ html {
   flex-direction: column;
   align-items: center;
   padding-bottom: 40px;
+  h1{
+      font-family: 'Lato Heavy', serif;
+      color: #133548;
+      font-size: 26px;
+      text-align: left;
+    }
 
   #contacto-container {
+    font-family: 'Lato Regular', serif;
+    color: #133548;
+    font-size: 20px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -897,7 +907,11 @@ html {
       flex-direction: row;
       max-width: 800px;
       align-items: flex-start;
-    }
+       }
+
+
+
+
 
     div {
       max-width: 80%;
@@ -947,7 +961,7 @@ html {
     font-family: "Montserrat Semibold", sans-serif;
     font-size: 15px;
     color: white;
-    max-width: 95%;
+    max-width: 98%;
     margin-left: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -1041,27 +1055,75 @@ html {
 //  max-width: 800px;
 //}
 
+
 .administracion-title,
-#administracion-form,
 .administracion-separator,
 .nuevo-usuario-title,
-#nuevo-usuario-form,
 .nuevo-usuario-separator,
 .ingreso-title,
-#ingreso-form,
 .ingreso-title,
-#noticias-form,
 .noticias-title,
-#busquedas-laborales-form,
 .busquedas-laborales-title,
-#revistas-form,
 .revistas-title,
 #contacto-container,
 .contacto-title,
-#servicios-main-container,
-.servicios-title,
-{
+.servicios-title,{
   max-width: 1000px;
+}
+
+#financiamiento div h1,
+#sellados div h1{
+  font-family: 'Lato Heavy', serif;
+  color: #133548;
+  font-size: 45px;
+
+}
+
+#financiamiento div  h2,
+#sellados div  h2{
+  font-family: 'Montserrat Light', serif;
+  color: black;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+#financiamiento div button,
+#sellados div button{
+  width: 110px;
+  font-family: 'Lato Heavy', serif;
+  background-color: white;
+  color: #133548;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #133548;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  padding: 8px;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#financiamiento div button:hover,
+#sellados div button:hover {
+  color: white;
+  background-color: #133548;
+
+}
+
+
+#administracion-form,
+#servicios-main-container,
+#noticias-form,
+#nuevo-usuario-form,
+#revistas-form,
+#busquedas-laborales-form,
+#ingreso-form,{
+  max-width: 1000px;
+
 }
 
 #revistas-form {
@@ -1101,6 +1163,8 @@ html {
 .nuevo-usuario-title,
 .noticias-title,
 .busquedas-laborales-title,
+.revistas-title,
+.contacto-title,
 .servicios-title,
 {
   width: 100%;
@@ -1140,13 +1204,13 @@ html {
 
 }
 
-.administracion-input {
+.administracion-input{
   textarea {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     border: 1px solid #17384B;
-    max-width: 800px;
+    max-width: 1000px;
     background-color: rgba(0, 0, 0, 0);
     margin-bottom: 5px;
     max-height: 300px;
@@ -1172,7 +1236,8 @@ html {
   }
 }
 
-.administracion-separator {
+.administracion-separator,
+#servicios-inner-separator {
   width: 100%;
   height: 2px !important;
   min-height: 2px;
@@ -1192,20 +1257,16 @@ html {
 .administracion-fotos span {
   margin-top: 20px;
   margin-bottom: 10px;
-  margin-left: 10px;
+  margin-left: 30px;
   font-family: 'Montserrat Light', serif;
   font-size: 15px;
 
 }
 
-.input-foto {
+.input-foto{
   height: 39px;
   width: 39px;
   overflow: hidden;
-  border: 1px solid darkgray;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
   margin-left: 10px;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -1219,13 +1280,11 @@ html {
     position: absolute;
     max-height: 38px;
     clip: rect(0px, 39px, 39px, 0px);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
   }
 }
 
-.administracion-sub-title {
+.administracion-sub-title,
+.revistas-sub-title{
   font-family: "Montserrat Semibold", sans-serif;
   font-size: 25px;
   color: #133548;
@@ -1458,6 +1517,21 @@ html {
   flex-direction: column;
   max-width: 100%;
   margin-top: 100px;
+  input {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #17384B;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 5px;
+
+  }
+
+
+
+
+
   @media (max-width: 600px) {
     margin-top: 50px;
   }
@@ -1519,7 +1593,7 @@ html {
   min-height: 80px;
   input {
     background-color: rgba(0, 0, 0, 0);
-    max-width: 800px;
+    max-width: 1000px;
     min-width: 70%;
     font-size: 18px;
     color: white;
@@ -1610,13 +1684,7 @@ html {
     }
   }
 
-  #servicios-inner-separator{
-    width: 90%;
-    height: 3px;
-    background-color: #133548;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+
 
   .servicio-main-icon {
     height: 200px;
@@ -1629,12 +1697,12 @@ html {
     margin: 10px;
 
     @media (min-width: 600px) {
-      height: 400px;
-      width: 400px;
-      min-width: 400px;
-      -webkit-border-radius: 400px;
-      -moz-border-radius: 400px;
-      border-radius: 400px;
+      height: 300px;
+      width: 300px;
+      min-width: 300px;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 300px;
+      border-radius: 300px;
     }
   }
 
@@ -1654,6 +1722,34 @@ html {
     }
   }
 }
+
+
+#contacto-container button{
+    width: 110px;
+    font-family: 'Lato Heavy', serif;
+    color: #133548;
+  background-color: white;
+    font-size: 16px;
+    margin-top: 10px;
+  margin-bottom: 10px;
+    border: 1px solid #133548;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 8px;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  #contacto-container button:hover {
+    color: white;
+    background-color: #133548;
+
+  }
+
+
 
 /* #### Generated By: http://www.cufonfonts.com #### */
 @font-face {
