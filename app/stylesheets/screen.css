@@ -1731,16 +1731,17 @@ html {
 #revistas-form .administracion-inputs {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
-/* line 1647, ../sass/screen.scss */
+/* line 1648, ../sass/screen.scss */
 #servicios-main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* line 1653, ../sass/screen.scss */
+/* line 1654, ../sass/screen.scss */
 #servicios-main-container #financiamiento,
 #servicios-main-container #sellados {
   display: flex;
@@ -1749,13 +1750,13 @@ html {
   align-items: center;
 }
 @media (min-width: 600px) {
-  /* line 1653, ../sass/screen.scss */
+  /* line 1654, ../sass/screen.scss */
   #servicios-main-container #financiamiento,
   #servicios-main-container #sellados {
     flex-direction: row;
   }
 }
-/* line 1663, ../sass/screen.scss */
+/* line 1664, ../sass/screen.scss */
 #servicios-main-container #financiamiento div,
 #servicios-main-container #sellados div {
   display: flex;
@@ -1764,7 +1765,7 @@ html {
   align-items: center;
 }
 @media (min-width: 600px) {
-  /* line 1663, ../sass/screen.scss */
+  /* line 1664, ../sass/screen.scss */
   #servicios-main-container #financiamiento div,
   #servicios-main-container #sellados div {
     align-items: flex-start;
@@ -1772,12 +1773,12 @@ html {
   }
 }
 @media (min-width: 600px) {
-  /* line 1676, ../sass/screen.scss */
+  /* line 1677, ../sass/screen.scss */
   #servicios-main-container #sellados {
     flex-direction: row-reverse;
   }
 }
-/* line 1683, ../sass/screen.scss */
+/* line 1684, ../sass/screen.scss */
 #servicios-main-container .servicio-main-icon {
   height: 200px;
   width: 200px;
@@ -1788,7 +1789,7 @@ html {
   margin: 10px;
 }
 @media (min-width: 600px) {
-  /* line 1683, ../sass/screen.scss */
+  /* line 1684, ../sass/screen.scss */
   #servicios-main-container .servicio-main-icon {
     height: 300px;
     width: 300px;
@@ -1798,24 +1799,24 @@ html {
     border-radius: 300px;
   }
 }
-/* line 1703, ../sass/screen.scss */
+/* line 1704, ../sass/screen.scss */
 #servicios-main-container h1 {
   font-variant: small-caps;
 }
-/* line 1709, ../sass/screen.scss */
+/* line 1710, ../sass/screen.scss */
 #servicios-main-container h1, #servicios-main-container h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
 }
 @media (min-width: 600px) {
-  /* line 1709, ../sass/screen.scss */
+  /* line 1710, ../sass/screen.scss */
   #servicios-main-container h1, #servicios-main-container h2 {
     text-align: left;
   }
 }
 
-/* line 1720, ../sass/screen.scss */
+/* line 1721, ../sass/screen.scss */
 #contacto-container button {
   width: 110px;
   font-family: 'Lato Heavy', serif;
@@ -1835,13 +1836,13 @@ html {
   text-decoration: none;
 }
 
-/* line 1739, ../sass/screen.scss */
+/* line 1740, ../sass/screen.scss */
 #contacto-container button:hover {
   color: white;
   background-color: #133548;
 }
 
-/* line 1747, ../sass/screen.scss */
+/* line 1748, ../sass/screen.scss */
 .administracion-slider {
   display: flex;
   flex-direction: row;
@@ -1849,7 +1850,7 @@ html {
   margin-bottom: 10px;
 }
 
-/* line 1755, ../sass/screen.scss */
+/* line 1756, ../sass/screen.scss */
 .administracion-slider .administracion-input {
   padding-top: 0px !important;
 }
