@@ -1051,18 +1051,9 @@ html {
 //  max-width: 800px;
 //}
 
-.administracion-title,
 .administracion-separator,
-.nuevo-usuario-title,
 .nuevo-usuario-separator,
-.ingreso-title,
-.ingreso-title,
-.noticias-title,
-.busquedas-laborales-title,
-.revistas-title,
-#contacto-container,
-.contacto-title,
-.servicios-title, {
+#contacto-container {
   max-width: 1000px;
 }
 
@@ -1161,13 +1152,21 @@ html {
 .contacto-title,
 .servicios-title,
 {
-  width: 100%;
+  width: 100% !important;
   font-size: 70px;
   font-family: "Montserrat Semibold", sans-serif;
   font-weight: 400;
   color: #17384B;
   padding: 10px;
   @include background-image(linear-gradient(left, #DEDEDE, #ffffff));
+
+
+  display: flex;
+  justify-content: center;
+  div{
+    width: 100%;
+    max-width: 1000px;
+  }
 
   @media (max-width: 600px) {
     font-size: 42px;
