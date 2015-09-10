@@ -1847,10 +1847,11 @@ html {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
 
-/* line 1756, ../sass/screen.scss */
+/* line 1757, ../sass/screen.scss */
 .administracion-slider .administracion-input {
   padding-top: 0px !important;
 }
