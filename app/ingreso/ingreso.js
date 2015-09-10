@@ -19,11 +19,23 @@
         var vm = this;
         vm.login = login;
         vm.nuevoUsuario = nuevoUsuario;
+        vm.recuperarPassword = recuperarPassword;
         vm.mail = '';
         vm.password = '';
 
         if (store.get('jwt')) {
             $location.path('/administracion');
+        }
+
+
+        function recuperarPassword() {
+            if (!AcUtilsService.validateEmail(vm.mail)) {
+                AcUtilsService.validations('mail', 'El mail es incorrecto');
+                return;
+            }
+            LoginService.forgotPassword(vm.mail, function (data) {
+                console.log(data);
+            });
         }
 
         function nuevoUsuario() {
@@ -43,7 +55,7 @@
                 conErrores = true;
             }
 
-            if(conErrores){
+            if (conErrores) {
                 return;
             }
 
@@ -55,7 +67,7 @@
                     $location.path('/administracion');
                 } else {
                     LoginState.isLogged = false;
-                        AcUtilsService.validations('password', 'Mail o password incorrectos');
+                    AcUtilsService.validations('password', 'Mail o password incorrectos');
                 }
             });
         }
