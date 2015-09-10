@@ -33,13 +33,13 @@
         function login() {
             var conErrores = false;
 
-            if (vm.usuario.password.trim().length == 0) {
+            if (vm.password.trim().length == 0) {
                 AcUtilsService.validations('password', 'El password es obligatorio');
                 conErrores = true;
             }
 
-            if (!AcUtilsService.validateEmail(vm.usuario.mail)) {
-                AcUtilsService.validations('email', 'El mail es incorrecto');
+            if (!AcUtilsService.validateEmail(vm.mail)) {
+                AcUtilsService.validations('mail', 'El mail es incorrecto');
                 conErrores = true;
             }
 
@@ -55,11 +55,7 @@
                     $location.path('/administracion');
                 } else {
                     LoginState.isLogged = false;
-
-                    if (!AcUtilsService.validateEmail(vm.usuario.mail)) {
-                        AcUtilsService.validations('email', 'Mail o password incorrectos');
-                        conErrores = true;
-                    }
+                        AcUtilsService.validations('password', 'Mail o password incorrectos');
                 }
             });
         }
