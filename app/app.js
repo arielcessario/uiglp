@@ -8,6 +8,7 @@ angular.module('uiglp', [
     'angular-jwt',
     'login.login',
     'acRipple',
+    'acUtils',
     'ac.noticias',
     'slider.manager',
     'uiglp.main',
@@ -81,6 +82,10 @@ function AppController(LoginState, $location, $rootScope, $routeParams, store) {
             response = {nombre: 'SERVICIOS', path: '/servicios'};
         }
 
+        if ($location.$$path == '/nuevo_usuario') {
+            response = {nombre: 'INGRESO', path: '/ingreso'};
+        }
+
         if ($location.$$path.indexOf('/noticias') > -1) {
             response = '/' + $location.$$path.split('/')[1];
         }
@@ -96,6 +101,8 @@ function AppController(LoginState, $location, $rootScope, $routeParams, store) {
     //        $location.path('/ingreso');
     //    }
     //});
+
+
 
     function goTo(location) {
 

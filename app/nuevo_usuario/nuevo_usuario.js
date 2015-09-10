@@ -7,14 +7,14 @@
             $routeProvider.when('/nuevo_usuario', {
                 templateUrl: currentScriptPath.replace('.js', '.html'),
                 controller: 'NuevoUsuarioController',
-                data: {requiresLogin:false}
+                data: {requiresLogin: false}
             });
         }])
         .controller('NuevoUsuarioController', NuevoUsuarioController);
 
 
-    NuevoUsuarioController.$inject = ['LoginService', 'LoginState', 'store', '$location', 'OfertasLaboralesService'];
-    function NuevoUsuarioController(LoginService, LoginState, store, $location, OfertasLaboralesService) {
+    NuevoUsuarioController.$inject = ['LoginService', 'LoginState', 'store', '$location', 'AcUtilsService', '$scope'];
+    function NuevoUsuarioController(LoginService, LoginState, store, $location, AcUtilsService, $scope) {
 
         var vm = this;
 
@@ -26,17 +26,81 @@
             telefono: '',
             password: '',
             direccion: '',
-            mail: ''
+            mail: '',
+            rol_id: 0
         };
 
         vm.saveUsuario = saveUsuario;
 
 
-
         function saveUsuario() {
-            LoginService.create(vm.usuario, function (data) {
-                console.log(data);
-            });
+
+            var conErrores = false;
+
+            if (vm.usuario.nombre.trim().length == 0) {
+               AcUtilsService.validations('nombre', 'El nombre es obligatorio');
+                conErrores = true;
+            }
+
+            if (vm.usuario.apellido.trim().length == 0) {
+                AcUtilsService.validations('apellido', 'El apellido es obligatorio');
+                conErrores = true;
+            }
+
+            if (vm.usuario.nro_doc.trim().length == 0) {
+                AcUtilsService.validations('cuit', 'El CUIT es obligatorio');
+                conErrores = true;
+            }
+
+            if (vm.usuario.telefono.trim().length == 0) {
+                AcUtilsService.validations('telefono', 'El teléfono es obligatorio');
+                conErrores = true;
+            }
+            if (vm.usuario.password.trim().length == 0) {
+                AcUtilsService.validations('password', 'El password es obligatorio');
+                conErrores = true;
+            }
+            if (vm.usuario.direccion.trim().length == 0) {
+                AcUtilsService.validations('direccion', 'La dirección es obligatoria');
+                conErrores = true;
+            }
+            if (vm.usuario.mail.trim().length == 0) {
+                AcUtilsService.validations('email', 'El mail es obligatorio');
+                conErrores = true;
+            }
+
+            if (AcUtilsService.validateEmail(vm.usuario.mail)) {
+                AcUtilsService.validations('email', 'El mail es incorrecto');
+                conErrores = true;
+            }
+
+
+            if(conErrores){
+                return;
+            }
+            //LoginService.existeCliente(vm.usuario.mail, function(data){
+            //
+            //    if(data == 'true'){
+            //        console.log('Existe cliente');
+            //    }else{
+            //        LoginService.create(vm.usuario, function (data) {
+            //
+            //            if(data == 'true'){
+            //                LoginService.login(vm.usuario.mail, vm.usuario.password,function(data){
+            //                    if(data != -1){
+            //                        LoginState.isLogged = true;
+            //                        store.set('jwt', data);
+            //                        $location.path('/administracion');
+            //                    }else{
+            //                        LoginState.isLogged = false;
+            //                    }
+            //                });
+            //
+            //            }
+            //        });
+            //    }
+            //});
+
 
         }
 
