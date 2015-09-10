@@ -13,8 +13,8 @@
         .controller('NuevoUsuarioController', NuevoUsuarioController);
 
 
-    NuevoUsuarioController.$inject = ['LoginService', 'LoginState', 'store', '$location', 'AcUtilsService', '$scope'];
-    function NuevoUsuarioController(LoginService, LoginState, store, $location, AcUtilsService, $scope) {
+    NuevoUsuarioController.$inject = ['LoginService', 'LoginState', 'store', '$location', 'AcUtilsService'];
+    function NuevoUsuarioController(LoginService, LoginState, store, $location, AcUtilsService) {
 
         var vm = this;
 
@@ -64,42 +64,37 @@
                 AcUtilsService.validations('direccion', 'La dirección es obligatoria');
                 conErrores = true;
             }
-            if (vm.usuario.mail.trim().length == 0) {
-                AcUtilsService.validations('email', 'El mail es obligatorio');
-                conErrores = true;
-            }
 
-            if (AcUtilsService.validateEmail(vm.usuario.mail)) {
+            if (!AcUtilsService.validateEmail(vm.usuario.mail)) {
                 AcUtilsService.validations('email', 'El mail es incorrecto');
                 conErrores = true;
             }
 
-
             if(conErrores){
                 return;
             }
-            //LoginService.existeCliente(vm.usuario.mail, function(data){
-            //
-            //    if(data == 'true'){
-            //        console.log('Existe cliente');
-            //    }else{
-            //        LoginService.create(vm.usuario, function (data) {
-            //
-            //            if(data == 'true'){
-            //                LoginService.login(vm.usuario.mail, vm.usuario.password,function(data){
-            //                    if(data != -1){
-            //                        LoginState.isLogged = true;
-            //                        store.set('jwt', data);
-            //                        $location.path('/administracion');
-            //                    }else{
-            //                        LoginState.isLogged = false;
-            //                    }
-            //                });
-            //
-            //            }
-            //        });
-            //    }
-            //});
+            LoginService.existeCliente(vm.usuario.mail, function(data){
+
+                if(data == 'true'){
+                    AcUtilsService.validations('email', 'El usuario ya existe');
+                }else{
+                    LoginService.create(vm.usuario, function (data) {
+
+                        if(data == 'true'){
+                            LoginService.login(vm.usuario.mail, vm.usuario.password,function(data){
+                                if(data != -1){
+                                    LoginState.isLogged = true;
+                                    store.set('jwt', data);
+                                    $location.path('/administracion');
+                                }else{
+                                    LoginState.isLogged = false;
+                                }
+                            });
+
+                        }
+                    });
+                }
+            });
 
 
         }

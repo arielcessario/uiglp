@@ -23,12 +23,15 @@
                 <input type="text" id="direccion" ng-model="nuevoUsuarioCtrl.usuario.direccion">
             </div>
             <div class="nuevo-usuario-input"><span>MAIL</span>
-                <input type="email" id="email" ng-model="nuevoUsuarioCtrl.usuario.mail"></div>
+                <input type="email" id="email" ng-model="nuevoUsuarioCtrl.usuario.mail">
+            </div>
             <!--<div class="nuevo-usuario-input">-->
-                <!--<span>ROL</span> <select ng-model="nuevoUsuarioCtrl.usuario.rol_id">-->
-                <!--<option value="0">Usuario</option>-->
-                <!--<option value="1">Administrador</option>-->
-            <!--</select></div>-->
+                <!--<span>ROL</span>-->
+                <!--<select ng-model="nuevoUsuarioCtrl.usuario.rol_id">-->
+                    <!--<option value="0">Usuario</option>-->
+                    <!--<option value="1">Administrador</option>-->
+                <!--</select>-->
+            <!--</div>-->
         </div>
         <div class="nuevo-usuario-button-bar">
             <button ng-click="nuevoUsuarioCtrl.saveUsuario();">GUARDAR</button>
