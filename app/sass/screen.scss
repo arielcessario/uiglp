@@ -876,8 +876,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 40px;
   color: white;
+  padding: 10px;
 }
 
 #contacto-inner {
@@ -968,6 +968,7 @@ html {
       padding: 10px;
       font-family: "Montserrat Semibold", sans-serif;
       font-size: 17px;
+      text-align: center;
 
     }
 
@@ -1009,6 +1010,13 @@ html {
   div {
     margin: 5px;
   }
+}
+
+.issuu{
+  background-color: transparent;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
 }
 
 /*SECCIONES DE ADMINISTRACION*/
@@ -1061,7 +1069,7 @@ html {
 #sellados div h1 {
   font-family: 'Lato Heavy', serif;
   color: #133548;
-  font-size: 45px;
+  font-size: 40px;
 
 }
 
@@ -1247,9 +1255,9 @@ html {
 }
 
 .administracion-fotos span {
-  margin-top: 20px;
+  //margin-top: 30px;
   margin-bottom: 10px;
-  margin-left: 30px;
+  margin-left: 10px;
   font-family: 'Montserrat Light', serif;
   font-size: 15px;
 
@@ -1259,7 +1267,6 @@ html {
   height: 39px;
   width: 39px;
   overflow: hidden;
-  margin-left: 10px;
   margin-bottom: 5px;
   margin-top: 5px;
 
@@ -1272,13 +1279,15 @@ html {
     position: absolute;
     max-height: 38px;
     clip: rect(0px, 39px, 39px, 0px);
+    border-bottom: double 2px #133548;
+
   }
 }
 
 .administracion-sub-title,
 .revistas-sub-title {
   font-family: "Montserrat Semibold", sans-serif;
-  font-size: 25px;
+  font-size: 35px;
   color: #133548;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1618,8 +1627,10 @@ html {
   }
 }
 
+
 #contacto h1 {
   font-family: 'Lato Heavy', serif;
+  text-align: center;
   color: white;
   font-size: 40px;
   margin-top: 20px;
@@ -1628,6 +1639,11 @@ html {
 }
 
 #revistas-listado {
+  font-family: "Montserrat Semibold", sans-serif;
+  color: #133548;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 100%;
   max-width: 1000px;
   display: flex;
