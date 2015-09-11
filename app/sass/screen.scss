@@ -920,6 +920,7 @@ html {
       textarea {
         width: 90%;
         right: 5px;
+        padding: 5px;
         margin-top: 5px;
         margin-bottom: 5px;
         @media(min-width: 800px) {
@@ -957,18 +958,22 @@ html {
     font-family: "Montserrat Semibold", sans-serif;
     font-size: 15px;
     color: white;
-    max-width: 98%;
+    max-width: 95%;
     margin-left: 10px;
+    margin-right: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #2f96b4;
 
     th {
+      border-bottom: .5px dotted white;
+      border-left: .5px dotted white;
       padding: 10px;
       font-family: "Montserrat Semibold", sans-serif;
       font-size: 17px;
-      text-align: center;
+      margin-bottom: 15px;
+
 
     }
 
@@ -977,6 +982,7 @@ html {
       padding: 10px;
       font-family: 'Montserrat Light', serif;
       font-size: 14px;
+      border-left: .5px dotted white;
     }
 
     .administracion-row:hover,
@@ -1045,6 +1051,7 @@ html {
   margin-top: 100px;
   @media (max-width: 600px) {
     margin-top: 50px;
+
   }
 }
 
@@ -1200,6 +1207,7 @@ html {
     max-width: 300px;
     background-color: rgba(0, 0, 0, 0);
     margin-bottom: 5px;
+    padding: 5px;
   }
 
 }
@@ -1215,6 +1223,7 @@ html {
     margin-bottom: 5px;
     max-height: 300px;
     min-height: 300px;
+    padding: 5px;
 
   }
 }
@@ -1254,9 +1263,9 @@ html {
 
 }
 
-.administracion-fotos span {
-  //margin-top: 30px;
+.administracion-foto span {
   margin-bottom: 10px;
+  color: #2f96b4;
   margin-left: 10px;
   font-family: 'Montserrat Light', serif;
   font-size: 15px;
@@ -1269,6 +1278,7 @@ html {
   overflow: hidden;
   margin-bottom: 5px;
   margin-top: 5px;
+  margin-left: 10px;
 
   input {
     opacity: 0;
@@ -1285,6 +1295,7 @@ html {
 }
 
 .administracion-sub-title,
+.nuevo-usuario-sub-title,
 .revistas-sub-title {
   font-family: "Montserrat Semibold", sans-serif;
   font-size: 35px;
@@ -1440,6 +1451,8 @@ html {
     -moz-border-radius: 15px;
     border-radius: 15px;
 
+    padding: 5px;
+
   }
 
   div {
@@ -1527,6 +1540,7 @@ html {
     max-width: 300px;
     background-color: rgba(0, 0, 0, 0);
     margin-bottom: 5px;
+    padding: 5px;
 
   }
 
@@ -1600,7 +1614,7 @@ html {
     -moz-border-radius: 4px;
     border-radius: 4px;
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
 
     ::-webkit-input-placeholder {
       color: #99C1DA;
