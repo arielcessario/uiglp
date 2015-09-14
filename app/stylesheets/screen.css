@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -1037,12 +1037,12 @@ html {
   flex-direction: column;
   align-items: center;
 }
-/* line 977, ../sass/screen.scss */
+/* line 976, ../sass/screen.scss */
 #empresas #empresas-title {
   color: white;
   background-color: black;
 }
-/* line 982, ../sass/screen.scss */
+/* line 981, ../sass/screen.scss */
 #empresas #empresas-carrousel {
   height: 190px;
   background-color: white;
@@ -1051,39 +1051,69 @@ html {
   overflow: hidden;
 }
 @media (min-width: 800px) {
-  /* line 982, ../sass/screen.scss */
+  /* line 981, ../sass/screen.scss */
   #empresas #empresas-carrousel {
     width: 1000px;
     max-width: 1000px;
   }
 }
-/* line 994, ../sass/screen.scss */
+/* line 993, ../sass/screen.scss */
 #empresas #empresas-carrousel #empresas-list {
   display: flex;
-  flex-direction: row;
-  -ms-flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  width: 1600px;
-  max-width: 1600px;
-  position: relative;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  width: 6000px;
+  max-width: 6000px;
+  max-height: 100%;
 }
-/* line 1002, ../sass/screen.scss */
+/* line 1001, ../sass/screen.scss */
 #empresas #empresas-carrousel #empresas-list .empresa {
-  position: absolute;
-  width: auto;
-  background-color: lightgray;
+  width: 180px;
+  max-width: 180px;
+  max-height: 70px;
   margin: 10px;
+  background-color: lightgray;
 }
 /* line 1007, ../sass/screen.scss */
 #empresas #empresas-carrousel #empresas-list .empresa img {
-  min-height: 140px;
+  max-width: 150px;
+  max-height: 50px;
 }
 
-/* line 1017, ../sass/screen.scss */
-.empresa {
-  -webkit-animation: move-slide-empresa 20s infinite;
-  -o-animation: move-slide-empresa 20s infinite;
-  animation: move-slide-empresa 20s infinite;
+/* line 1018, ../sass/screen.scss */
+.empresa.ng-enter,
+.empresa.ng-leave {
+  -webkit-transition: 0.4s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -moz-transition: 0.4s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -ms-transition: 0.4s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -o-transition: 0.4s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  transition: 0.4s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  position: relative;
+}
+
+/* line 1028, ../sass/screen.scss */
+.empresa.ng-enter {
+  left: 0px;
+  width: 180px !important;
+}
+
+/* line 1033, ../sass/screen.scss */
+.empresa.ng-leave.ng-leave-active {
+  left: -300px;
+  width: 0px !important;
+}
+
+/* line 1038, ../sass/screen.scss */
+.empresa.ng-leave {
+  left: 0px;
+  width: 180px !important;
+}
+
+/* line 1043, ../sass/screen.scss */
+.empresa.ng-enter.ng-enter-active {
+  left: -300px;
+  width: 0px !important;
 }
 
 @keyframes move-slide-empresa {
@@ -1125,7 +1155,7 @@ html {
     transform: translate(0px, 0);
   }
 }
-/* line 1072, ../sass/screen.scss */
+/* line 1103, ../sass/screen.scss */
 #contacto {
   background-color: #133548;
   display: flex;
@@ -1135,21 +1165,21 @@ html {
   padding: 10px;
 }
 
-/* line 1081, ../sass/screen.scss */
+/* line 1112, ../sass/screen.scss */
 #contacto-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 40px;
 }
-/* line 1087, ../sass/screen.scss */
+/* line 1118, ../sass/screen.scss */
 #contacto-inner h1 {
   font-family: 'Lato Heavy', serif;
   color: #133548;
   font-size: 26px;
   text-align: left;
 }
-/* line 1094, ../sass/screen.scss */
+/* line 1125, ../sass/screen.scss */
 #contacto-inner #contacto-container {
   font-family: 'Lato Regular', serif;
   color: #133548;
@@ -1162,26 +1192,26 @@ html {
   text-align: left;
 }
 @media (min-width: 800px) {
-  /* line 1094, ../sass/screen.scss */
+  /* line 1125, ../sass/screen.scss */
   #contacto-inner #contacto-container {
     flex-direction: row;
     max-width: 800px;
     align-items: flex-start;
   }
 }
-/* line 1110, ../sass/screen.scss */
+/* line 1141, ../sass/screen.scss */
 #contacto-inner #contacto-container div {
   max-width: 80%;
   min-width: 80%;
 }
 @media (min-width: 800px) {
-  /* line 1110, ../sass/screen.scss */
+  /* line 1141, ../sass/screen.scss */
   #contacto-inner #contacto-container div {
     max-width: 350px;
     min-width: 350px;
   }
 }
-/* line 1117, ../sass/screen.scss */
+/* line 1148, ../sass/screen.scss */
 #contacto-inner #contacto-container div input[type=text],
 #contacto-inner #contacto-container div textarea {
   width: 90%;
@@ -1191,14 +1221,14 @@ html {
   margin-bottom: 5px;
 }
 @media (min-width: 800px) {
-  /* line 1117, ../sass/screen.scss */
+  /* line 1148, ../sass/screen.scss */
   #contacto-inner #contacto-container div input[type=text],
   #contacto-inner #contacto-container div textarea {
     max-width: 350px;
   }
 }
 @media (min-width: 800px) {
-  /* line 1129, ../sass/screen.scss */
+  /* line 1160, ../sass/screen.scss */
   #contacto-inner #contacto-container div #contacto-enviar-mobile {
     height: 0px;
     width: 0px;
@@ -1207,7 +1237,7 @@ html {
   }
 }
 @media (max-width: 800px) {
-  /* line 1138, ../sass/screen.scss */
+  /* line 1169, ../sass/screen.scss */
   #contacto-inner #contacto-container div #contacto-enviar-desktop {
     height: 0px;
     width: 0px;
@@ -1216,7 +1246,7 @@ html {
   }
 }
 
-/* line 1155, ../sass/screen.scss */
+/* line 1186, ../sass/screen.scss */
 #administracion table {
   font-family: "Montserrat Semibold", sans-serif;
   font-size: 15px;
@@ -1229,7 +1259,7 @@ html {
   border-radius: 10px;
   background-color: #2f96b4;
 }
-/* line 1167, ../sass/screen.scss */
+/* line 1198, ../sass/screen.scss */
 #administracion table th {
   border-bottom: .5px dotted white;
   border-left: .5px dotted white;
@@ -1238,21 +1268,21 @@ html {
   font-size: 17px;
   margin-bottom: 15px;
 }
-/* line 1177, ../sass/screen.scss */
+/* line 1208, ../sass/screen.scss */
 #administracion table td {
   padding: 10px;
   font-family: 'Montserrat Light', serif;
   font-size: 14px;
   border-left: .5px dotted white;
 }
-/* line 1185, ../sass/screen.scss */
+/* line 1216, ../sass/screen.scss */
 #administracion table .administracion-row:hover,
 #administracion table .tr-selected {
   background-color: #1c3e52;
   color: white;
 }
 
-/* line 1203, ../sass/screen.scss */
+/* line 1234, ../sass/screen.scss */
 #footer {
   margin: 10px;
   cursor: pointer;
@@ -1264,12 +1294,12 @@ html {
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 1213, ../sass/screen.scss */
+/* line 1244, ../sass/screen.scss */
 #footer div {
   margin: 5px;
 }
 
-/* line 1218, ../sass/screen.scss */
+/* line 1249, ../sass/screen.scss */
 .issuu {
   background-color: transparent;
   margin-bottom: 10px;
@@ -1277,7 +1307,7 @@ html {
 }
 
 /*SECCIONES DE ADMINISTRACION*/
-/* line 1226, ../sass/screen.scss */
+/* line 1257, ../sass/screen.scss */
 #ingreso {
   margin-top: 100px;
   max-width: 100%;
@@ -1287,13 +1317,13 @@ html {
   justify-content: center;
 }
 @media (max-width: 600px) {
-  /* line 1226, ../sass/screen.scss */
+  /* line 1257, ../sass/screen.scss */
   #ingreso {
     margin-top: 50px;
   }
 }
 
-/* line 1238, ../sass/screen.scss */
+/* line 1269, ../sass/screen.scss */
 #administracion,
 #noticias,
 #servicios-inner,
@@ -1306,7 +1336,7 @@ html {
   margin-top: 100px;
 }
 @media (max-width: 600px) {
-  /* line 1238, ../sass/screen.scss */
+  /* line 1269, ../sass/screen.scss */
   #administracion,
   #noticias,
   #servicios-inner,
@@ -1315,14 +1345,14 @@ html {
   }
 }
 
-/* line 1266, ../sass/screen.scss */
+/* line 1297, ../sass/screen.scss */
 .administracion-separator,
 .nuevo-usuario-separator,
 #contacto-container {
   max-width: 1000px;
 }
 
-/* line 1272, ../sass/screen.scss */
+/* line 1303, ../sass/screen.scss */
 #financiamiento div h1,
 #sellados div h1 {
   font-family: 'Lato Heavy', serif;
@@ -1330,7 +1360,7 @@ html {
   font-size: 40px;
 }
 
-/* line 1280, ../sass/screen.scss */
+/* line 1311, ../sass/screen.scss */
 #financiamiento div h2,
 #sellados div h2 {
   font-family: 'Montserrat Light', serif;
@@ -1339,7 +1369,7 @@ html {
   line-height: 22px;
 }
 
-/* line 1288, ../sass/screen.scss */
+/* line 1319, ../sass/screen.scss */
 #financiamiento div button,
 #sellados div button {
   width: 110px;
@@ -1360,14 +1390,14 @@ html {
   text-decoration: none;
 }
 
-/* line 1308, ../sass/screen.scss */
+/* line 1339, ../sass/screen.scss */
 #financiamiento div button:hover,
 #sellados div button:hover {
   color: white;
   background-color: #133548;
 }
 
-/* line 1315, ../sass/screen.scss */
+/* line 1346, ../sass/screen.scss */
 #administracion-form,
 #servicios-main-container,
 #noticias-form,
@@ -1378,17 +1408,17 @@ html {
   max-width: 1000px;
 }
 
-/* line 1326, ../sass/screen.scss */
+/* line 1357, ../sass/screen.scss */
 #revistas-form {
   width: 100%;
 }
 
-/* line 1330, ../sass/screen.scss */
+/* line 1361, ../sass/screen.scss */
 #ingreso-form {
   width: 100%;
 }
 
-/* line 1334, ../sass/screen.scss */
+/* line 1365, ../sass/screen.scss */
 #administracion-form,
 #nuevo-usuario-form,
 #ingreso-form {
@@ -1396,7 +1426,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
 }
-/* line 1340, ../sass/screen.scss */
+/* line 1371, ../sass/screen.scss */
 #administracion-form .administracion-inputs,
 #administracion-form .nuevo-usuario-inputs,
 #nuevo-usuario-form .administracion-inputs,
@@ -1408,7 +1438,7 @@ html {
   flex-wrap: wrap;
 }
 
-/* line 1349, ../sass/screen.scss */
+/* line 1380, ../sass/screen.scss */
 #administracion-oferta,
 #administracion-noticias,
 #administracion-sliders {
@@ -1419,7 +1449,7 @@ html {
   justify-content: flex-start;
 }
 
-/* line 1359, ../sass/screen.scss */
+/* line 1390, ../sass/screen.scss */
 .administracion-title,
 .nuevo-usuario-title,
 .noticias-title,
@@ -1442,7 +1472,7 @@ html {
   display: flex;
   justify-content: center;
 }
-/* line 1377, ../sass/screen.scss */
+/* line 1408, ../sass/screen.scss */
 .administracion-title div,
 .nuevo-usuario-title div,
 .noticias-title div,
@@ -1454,7 +1484,7 @@ html {
   max-width: 1000px;
 }
 @media (max-width: 600px) {
-  /* line 1359, ../sass/screen.scss */
+  /* line 1390, ../sass/screen.scss */
   .administracion-title,
   .nuevo-usuario-title,
   .noticias-title,
@@ -1466,19 +1496,19 @@ html {
   }
 }
 
-/* line 1387, ../sass/screen.scss */
+/* line 1418, ../sass/screen.scss */
 .administracion-input,
 .nuevo-usuario-input {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-/* line 1392, ../sass/screen.scss */
+/* line 1423, ../sass/screen.scss */
 .administracion-input span,
 .nuevo-usuario-input span {
   margin: 5px;
 }
-/* line 1397, ../sass/screen.scss */
+/* line 1428, ../sass/screen.scss */
 .administracion-input input,
 .administracion-input select,
 .nuevo-usuario-input input,
@@ -1493,7 +1523,7 @@ html {
   padding: 5px;
 }
 
-/* line 1413, ../sass/screen.scss */
+/* line 1444, ../sass/screen.scss */
 .administracion-input textarea {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -1507,13 +1537,13 @@ html {
   padding: 5px;
 }
 
-/* line 1428, ../sass/screen.scss */
+/* line 1459, ../sass/screen.scss */
 .administracion-button-bar,
 .nuevo-usuario-button-bar {
   display: flex;
   flex-direction: row;
 }
-/* line 1434, ../sass/screen.scss */
+/* line 1465, ../sass/screen.scss */
 .administracion-button-bar button,
 .nuevo-usuario-button-bar button {
   background-color: transparent;
@@ -1521,13 +1551,13 @@ html {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-/* line 1440, ../sass/screen.scss */
+/* line 1471, ../sass/screen.scss */
 .administracion-button-bar button:hover,
 .nuevo-usuario-button-bar button:hover {
   border-bottom-color: #17384B;
 }
 
-/* line 1445, ../sass/screen.scss */
+/* line 1476, ../sass/screen.scss */
 .administracion-separator,
 #servicios-inner-separator {
   width: 100%;
@@ -1538,7 +1568,7 @@ html {
   margin-bottom: 50px;
 }
 
-/* line 1455, ../sass/screen.scss */
+/* line 1486, ../sass/screen.scss */
 .administracion-fotos {
   display: flex;
   flex-direction: row;
@@ -1546,7 +1576,7 @@ html {
   margin-bottom: 10px;
 }
 
-/* line 1463, ../sass/screen.scss */
+/* line 1494, ../sass/screen.scss */
 .administracion-foto span {
   margin-bottom: 10px;
   color: #2f96b4;
@@ -1555,7 +1585,7 @@ html {
   font-size: 15px;
 }
 
-/* line 1472, ../sass/screen.scss */
+/* line 1503, ../sass/screen.scss */
 .input-foto {
   height: 39px;
   width: 39px;
@@ -1564,13 +1594,13 @@ html {
   margin-top: 5px;
   margin-left: 10px;
 }
-/* line 1480, ../sass/screen.scss */
+/* line 1511, ../sass/screen.scss */
 .input-foto input {
   opacity: 0;
   height: 39px;
   width: 39px;
 }
-/* line 1485, ../sass/screen.scss */
+/* line 1516, ../sass/screen.scss */
 .input-foto img {
   position: absolute;
   max-height: 38px;
@@ -1578,7 +1608,7 @@ html {
   border-bottom: double 2px #133548;
 }
 
-/* line 1494, ../sass/screen.scss */
+/* line 1525, ../sass/screen.scss */
 .administracion-sub-title,
 .nuevo-usuario-sub-title,
 .revistas-sub-title {
@@ -1591,14 +1621,14 @@ html {
 }
 
 /*NOTICIAS*/
-/* line 1506, ../sass/screen.scss */
+/* line 1537, ../sass/screen.scss */
 #noticias-filtro {
   display: flex;
   padding: 20px;
   flex-direction: row;
   justify-content: left;
 }
-/* line 1511, ../sass/screen.scss */
+/* line 1542, ../sass/screen.scss */
 #noticias-filtro select {
   margin-right: 2%;
   height: 32px;
@@ -1611,12 +1641,12 @@ html {
   background-color: transparent;
 }
 
-/* line 1554, ../sass/screen.scss */
+/* line 1585, ../sass/screen.scss */
 #noticias-main {
   background-color: #133548;
 }
 
-/* line 1559, ../sass/screen.scss */
+/* line 1590, ../sass/screen.scss */
 #noticias-form {
   max-width: 1000px;
   width: 100%;
@@ -1626,31 +1656,31 @@ html {
   background-color: white;
 }
 
-/* line 1569, ../sass/screen.scss */
+/* line 1600, ../sass/screen.scss */
 #noticias-panel {
   margin: 35px;
 }
 @media (max-width: 500px) {
-  /* line 1569, ../sass/screen.scss */
+  /* line 1600, ../sass/screen.scss */
   #noticias-panel {
     margin: 20px;
   }
 }
 
 @media (min-width: 385px) {
-  /* line 1578, ../sass/screen.scss */
+  /* line 1609, ../sass/screen.scss */
   #noticias-panel-fotos {
     max-width: 50%;
   }
 }
-/* line 1582, ../sass/screen.scss */
+/* line 1613, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-main {
   overflow: hidden;
   margin-top: 10px;
   min-height: 200px;
   min-width: 350px;
 }
-/* line 1587, ../sass/screen.scss */
+/* line 1618, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-main img {
   margin-left: 15px;
   border-radius: 5px;
@@ -1660,17 +1690,17 @@ html {
   min-width: 300px;
 }
 @media (max-width: 500px) {
-  /* line 1587, ../sass/screen.scss */
+  /* line 1618, ../sass/screen.scss */
   #noticias-panel-fotos #noticias-panel-fotos-main img {
     width: 92%;
     margin-left: 0px;
   }
 }
-/* line 1602, ../sass/screen.scss */
+/* line 1633, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-thumbs {
   margin-top: 5px;
 }
-/* line 1604, ../sass/screen.scss */
+/* line 1635, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-thumbs img {
   margin-left: 15px;
   max-width: 15%;
@@ -1679,19 +1709,19 @@ html {
   border-radius: 2px;
 }
 @media (max-width: 500px) {
-  /* line 1604, ../sass/screen.scss */
+  /* line 1635, ../sass/screen.scss */
   #noticias-panel-fotos #noticias-panel-fotos-thumbs img {
     margin-left: 0px;
     margin-top: 5px;
   }
 }
 
-/* line 1619, ../sass/screen.scss */
+/* line 1650, ../sass/screen.scss */
 #noticias-panel-texto {
   color: white;
   padding: 5px;
 }
-/* line 1622, ../sass/screen.scss */
+/* line 1653, ../sass/screen.scss */
 #noticias-panel-texto #noticias-panel-titulo {
   width: 100%;
   margin-bottom: 15px;
@@ -1701,7 +1731,7 @@ html {
   color: #FFFFFF;
   font-family: 'Lato Heavy', serif;
 }
-/* line 1633, ../sass/screen.scss */
+/* line 1664, ../sass/screen.scss */
 #noticias-panel-texto #noticias-panel-detalle {
   font-family: 'Montserrat Light', serif;
   width: 95%;
@@ -1715,21 +1745,21 @@ html {
 }
 
 @media (min-width: 600px) {
-  /* line 1646, ../sass/screen.scss */
+  /* line 1677, ../sass/screen.scss */
   #noticias-panel {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
-/* line 1653, ../sass/screen.scss */
+/* line 1684, ../sass/screen.scss */
 #noticias-nuevo-comentario {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-/* line 1658, ../sass/screen.scss */
+/* line 1689, ../sass/screen.scss */
 #noticias-nuevo-comentario textarea {
   width: 100%;
   right: 5px;
@@ -1742,19 +1772,19 @@ html {
   padding: 5px;
 }
 @media (max-width: 500px) {
-  /* line 1658, ../sass/screen.scss */
+  /* line 1689, ../sass/screen.scss */
   #noticias-nuevo-comentario textarea {
     width: 95%;
   }
 }
-/* line 1674, ../sass/screen.scss */
+/* line 1705, ../sass/screen.scss */
 #noticias-nuevo-comentario div {
   width: 90%;
   position: relative;
   margin-top: -45px;
   margin-bottom: 20px;
 }
-/* line 1679, ../sass/screen.scss */
+/* line 1710, ../sass/screen.scss */
 #noticias-nuevo-comentario div #noticias-nuevo-btn {
   width: 110px;
   background-color: white;
@@ -1769,19 +1799,19 @@ html {
   text-align: center;
 }
 
-/* line 1696, ../sass/screen.scss */
+/* line 1727, ../sass/screen.scss */
 #noticias-comentarios {
   background-color: #3f6175;
   color: white;
 }
-/* line 1699, ../sass/screen.scss */
+/* line 1730, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-list {
   max-width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 1706, ../sass/screen.scss */
+/* line 1737, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-title {
   width: 90%;
   font-family: 'Lato Heavy', serif;
@@ -1793,17 +1823,17 @@ html {
   font-size: 38px;
   line-height: 32px;
 }
-/* line 1718, ../sass/screen.scss */
+/* line 1749, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario {
   max-width: 90%;
   margin-bottom: 20px;
 }
-/* line 1722, ../sass/screen.scss */
+/* line 1753, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-user {
   line-height: 24px;
   font-size: 23px;
 }
-/* line 1727, ../sass/screen.scss */
+/* line 1758, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-detalle {
   line-height: 20px;
   font-size: 17px;
@@ -1812,7 +1842,7 @@ html {
 }
 
 /*BUSQUEDAS LABORALES*/
-/* line 1740, ../sass/screen.scss */
+/* line 1771, ../sass/screen.scss */
 #busquedas-laborales,
 #revistas,
 #contacto-inner,
@@ -1825,7 +1855,7 @@ html {
   max-width: 100%;
   margin-top: 100px;
 }
-/* line 1751, ../sass/screen.scss */
+/* line 1782, ../sass/screen.scss */
 #busquedas-laborales input,
 #revistas input,
 #contacto-inner input,
@@ -1840,7 +1870,7 @@ html {
   padding: 5px;
 }
 @media (max-width: 600px) {
-  /* line 1740, ../sass/screen.scss */
+  /* line 1771, ../sass/screen.scss */
   #busquedas-laborales,
   #revistas,
   #contacto-inner,
@@ -1848,14 +1878,14 @@ html {
     margin-top: 50px;
   }
 }
-/* line 1767, ../sass/screen.scss */
+/* line 1798, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:nth-child(odd),
 #revistas .busqueda-laboral:nth-child(odd),
 #contacto-inner .busqueda-laboral:nth-child(odd),
 #nuevo-usuario .busqueda-laboral:nth-child(odd) {
   background-color: #17384B;
 }
-/* line 1772, ../sass/screen.scss */
+/* line 1803, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:hover,
 #revistas .busqueda-laboral:hover,
 #contacto-inner .busqueda-laboral:hover,
@@ -1866,7 +1896,7 @@ html {
   -o-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
-/* line 1780, ../sass/screen.scss */
+/* line 1811, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral,
 #revistas .busqueda-laboral,
 #contacto-inner .busqueda-laboral,
@@ -1882,7 +1912,7 @@ html {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 1796, ../sass/screen.scss */
+/* line 1827, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-title,
 #revistas .busqueda-laboral .busqueda-laboral-title,
 #contacto-inner .busqueda-laboral .busqueda-laboral-title,
@@ -1892,7 +1922,7 @@ html {
   font-size: 38px;
   padding: 15px;
 }
-/* line 1803, ../sass/screen.scss */
+/* line 1834, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-texto,
 #revistas .busqueda-laboral .busqueda-laboral-texto,
 #contacto-inner .busqueda-laboral .busqueda-laboral-texto,
@@ -1901,7 +1931,7 @@ html {
   font-family: 'Lato Regular', serif;
   font-size: 16px;
 }
-/* line 1808, ../sass/screen.scss */
+/* line 1839, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-contacto,
 #revistas .busqueda-laboral .busqueda-laboral-contacto,
 #contacto-inner .busqueda-laboral .busqueda-laboral-contacto,
@@ -1909,7 +1939,7 @@ html {
   padding: 5px;
 }
 
-/* line 1814, ../sass/screen.scss */
+/* line 1845, ../sass/screen.scss */
 #busqueda-laboral-search {
   width: 100%;
   background-color: #000000;
@@ -1919,7 +1949,7 @@ html {
   align-items: center;
   min-height: 80px;
 }
-/* line 1822, ../sass/screen.scss */
+/* line 1853, ../sass/screen.scss */
 #busqueda-laboral-search input {
   background-color: transparent;
   max-width: 1000px;
@@ -1933,33 +1963,33 @@ html {
   margin: 10px;
   padding: 5px;
 }
-/* line 1835, ../sass/screen.scss */
+/* line 1866, ../sass/screen.scss */
 #busqueda-laboral-search input ::-webkit-input-placeholder {
   color: #99C1DA;
 }
-/* line 1839, ../sass/screen.scss */
+/* line 1870, ../sass/screen.scss */
 #busqueda-laboral-search input :-moz-placeholder {
   /* Firefox 18- */
   color: #99C1DA;
 }
-/* line 1844, ../sass/screen.scss */
+/* line 1875, ../sass/screen.scss */
 #busqueda-laboral-search input ::-moz-placeholder {
   /* Firefox 19+ */
   color: #99C1DA;
 }
-/* line 1849, ../sass/screen.scss */
+/* line 1880, ../sass/screen.scss */
 #busqueda-laboral-search input :-ms-input-placeholder {
   color: #99C1DA;
 }
 @media (max-width: 800px) {
-  /* line 1822, ../sass/screen.scss */
+  /* line 1853, ../sass/screen.scss */
   #busqueda-laboral-search input {
     max-width: 95px;
     min-width: 95%;
   }
 }
 
-/* line 1860, ../sass/screen.scss */
+/* line 1891, ../sass/screen.scss */
 #contacto h1 {
   font-family: 'Lato Heavy', serif;
   text-align: center;
@@ -1969,7 +1999,7 @@ html {
   margin-bottom: 20px;
 }
 
-/* line 1870, ../sass/screen.scss */
+/* line 1901, ../sass/screen.scss */
 #revistas-listado {
   font-family: "Montserrat Semibold", sans-serif;
   color: #133548;
@@ -1985,21 +2015,21 @@ html {
   align-items: flex-start;
 }
 
-/* line 1885, ../sass/screen.scss */
+/* line 1916, ../sass/screen.scss */
 #revistas-form .administracion-inputs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 1891, ../sass/screen.scss */
+/* line 1922, ../sass/screen.scss */
 #servicios-main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* line 1897, ../sass/screen.scss */
+/* line 1928, ../sass/screen.scss */
 #servicios-main-container #financiamiento,
 #servicios-main-container #sellados {
   display: flex;
@@ -2008,13 +2038,13 @@ html {
   align-items: center;
 }
 @media (min-width: 600px) {
-  /* line 1897, ../sass/screen.scss */
+  /* line 1928, ../sass/screen.scss */
   #servicios-main-container #financiamiento,
   #servicios-main-container #sellados {
     flex-direction: row;
   }
 }
-/* line 1907, ../sass/screen.scss */
+/* line 1938, ../sass/screen.scss */
 #servicios-main-container #financiamiento div,
 #servicios-main-container #sellados div {
   display: flex;
@@ -2023,7 +2053,7 @@ html {
   align-items: center;
 }
 @media (min-width: 600px) {
-  /* line 1907, ../sass/screen.scss */
+  /* line 1938, ../sass/screen.scss */
   #servicios-main-container #financiamiento div,
   #servicios-main-container #sellados div {
     align-items: flex-start;
@@ -2031,12 +2061,12 @@ html {
   }
 }
 @media (min-width: 600px) {
-  /* line 1920, ../sass/screen.scss */
+  /* line 1951, ../sass/screen.scss */
   #servicios-main-container #sellados {
     flex-direction: row-reverse;
   }
 }
-/* line 1927, ../sass/screen.scss */
+/* line 1958, ../sass/screen.scss */
 #servicios-main-container .servicio-main-icon {
   height: 200px;
   width: 200px;
@@ -2047,7 +2077,7 @@ html {
   margin: 10px;
 }
 @media (min-width: 600px) {
-  /* line 1927, ../sass/screen.scss */
+  /* line 1958, ../sass/screen.scss */
   #servicios-main-container .servicio-main-icon {
     height: 300px;
     width: 300px;
@@ -2057,24 +2087,24 @@ html {
     border-radius: 300px;
   }
 }
-/* line 1947, ../sass/screen.scss */
+/* line 1978, ../sass/screen.scss */
 #servicios-main-container h1 {
   font-variant: small-caps;
 }
-/* line 1953, ../sass/screen.scss */
+/* line 1984, ../sass/screen.scss */
 #servicios-main-container h1, #servicios-main-container h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
 }
 @media (min-width: 600px) {
-  /* line 1953, ../sass/screen.scss */
+  /* line 1984, ../sass/screen.scss */
   #servicios-main-container h1, #servicios-main-container h2 {
     text-align: left;
   }
 }
 
-/* line 1964, ../sass/screen.scss */
+/* line 1995, ../sass/screen.scss */
 #contacto-container button {
   width: 110px;
   font-family: 'Lato Heavy', serif;
@@ -2094,13 +2124,13 @@ html {
   text-decoration: none;
 }
 
-/* line 1983, ../sass/screen.scss */
+/* line 2014, ../sass/screen.scss */
 #contacto-container button:hover {
   color: white;
   background-color: #133548;
 }
 
-/* line 1991, ../sass/screen.scss */
+/* line 2022, ../sass/screen.scss */
 .administracion-slider {
   display: flex;
   flex-direction: row;
@@ -2109,17 +2139,17 @@ html {
   margin-bottom: 10px;
 }
 
-/* line 2000, ../sass/screen.scss */
+/* line 2031, ../sass/screen.scss */
 .administracion-slider .administracion-input {
   padding-top: 0px !important;
 }
 
-/* line 2004, ../sass/screen.scss */
+/* line 2035, ../sass/screen.scss */
 .error-input {
   border-color: red !important;
 }
 
-/* line 2008, ../sass/screen.scss */
+/* line 2039, ../sass/screen.scss */
 .error-message {
   position: absolute;
   background: #406276;
