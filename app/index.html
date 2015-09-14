@@ -42,11 +42,13 @@
             <div id="menu-desktop-upper"></div>
             <div id="menu-desktop-lower">
 
-                <div class="menu-desktop-btn ac-ripple"
-                     ng-class="{'menu-desktop-btn-selected':appCtrl.selectedPage.indexOf(link.nombre) > -1 }"
-                     ripple-color="#ffffff"
-                     ng-repeat="link in appCtrl.links"
-                     ng-click="appCtrl.goTo(link);"> {{link.nombre}}</div>
+                <div id="menu-desktop-lower-inner">
+                    <div class="menu-desktop-btn ac-ripple"
+                         ng-class="{'menu-desktop-btn-selected':appCtrl.selectedPage.indexOf(link.nombre) > -1 }"
+                         ripple-color="#ffffff"
+                         ng-repeat="link in appCtrl.links"
+                         ng-click="appCtrl.goTo(link);"> {{link.nombre}}</div>
+                </div>
             </div>
         </div>
     </div>

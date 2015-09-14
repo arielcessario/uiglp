@@ -67,7 +67,7 @@ html {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-.nav-button-transformed{
+.nav-button-transformed {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -103,8 +103,6 @@ html {
     -o-transition: all 0.4s;
     transition: all 0.4s;
   }
-  
-
 
   .nav-button-top-transformed {
     -webkit-transform: rotate(45deg);
@@ -261,6 +259,7 @@ html {
     max-width: 100px;
     margin-right: 10px;
     margin-left: 10px;
+    z-index: 401;
 
   }
 
@@ -275,18 +274,26 @@ html {
 
     #menu-desktop-lower {
       background-color: white;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: flex-end;
+
       flex: 1;
       max-height: 35px;
       padding: 5px;
       position: fixed;
-      top: 25px;
+      top: 33px;
       left: 0px;
       right: 0px;
-
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      #menu-desktop-lower-inner {
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
 
       .menu-desktop-btn {
         cursor: pointer;
