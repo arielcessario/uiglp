@@ -90,18 +90,19 @@
 
 </div>
 <div id="footer">
-    <div>INICIO</div>
+
+    <div ng-click="appCtrl.goTo({nombre: 'INICIO', path: '/'});">INICIO</div>
     -
-    <div>INSTITUCIONAL</div>
+    <div ng-click="appCtrl.goTo({nombre: 'INSTITUCIONAL', path: '/institucional'});">INSTITUCIONAL</div>
     -
-    <div>CLASIFICADOS</div>
+    <div ng-click="appCtrl.goTo({nombre: 'BUSQUEDA LABORAL', path: '/busquedas_laborales'});">CLASIFICADOS</div>
     -
-    <div>AGENDA</div>
+    <div ng-click="appCtrl.goTo({nombre: 'NOTICIAS', path: '/noticias/0'});">AGENDA</div>
     -
-    <div>CONTACTO</div>
+    <div ng-click="appCtrl.goTo({nombre: 'CONTACTO', path: '/contacto'});">CONTACTO</div>
     -
-    <div>REVISTA</div>
-    <div>INGRESO</div>
+    <div ng-click="appCtrl.goTo({nombre: 'REVISTA', path: '/revistas'});">REVISTA</div>
+    <div ng-click="appCtrl.goTo({nombre: 'INGRESO', path: '/ingreso'});">INGRESO</div>
 
 </div>
 
