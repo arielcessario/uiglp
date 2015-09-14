@@ -343,8 +343,12 @@ html {
   flex: 1;
   max-height: 35px;
   padding: 5px;
+  position: fixed;
+  top: 25px;
+  left: 0px;
+  right: 0px;
 }
-/* line 286, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .menu-desktop #menu-desktop-right #menu-desktop-lower .menu-desktop-btn {
   cursor: pointer;
   font-family: 'Lato Regular', serif;
@@ -357,19 +361,19 @@ html {
   position: relative;
 }
 @media (max-width: 820px) {
-  /* line 286, ../sass/screen.scss */
+  /* line 291, ../sass/screen.scss */
   .menu-desktop #menu-desktop-right #menu-desktop-lower .menu-desktop-btn {
     font-size: 11px;
   }
 }
-/* line 303, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 .menu-desktop #menu-desktop-right #menu-desktop-lower .menu-desktop-btn:hover,
 .menu-desktop #menu-desktop-right #menu-desktop-lower .menu-desktop-btn-selected {
   color: white;
   background-color: #406276;
 }
 
-/* line 315, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 .section-title {
   display: flex;
   justify-content: center;
@@ -381,7 +385,7 @@ html {
   font-size: 22px;
   background-color: #406276;
 }
-/* line 328, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 .section-title .decorator-01 {
   margin: 6px;
   height: 3px;
@@ -391,7 +395,7 @@ html {
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-/* line 337, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 .section-title .decorator-02 {
   margin: 6px;
   height: 6px;
@@ -401,7 +405,7 @@ html {
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-/* line 346, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 .section-title .decorator-03 {
   margin: 6px;
   height: 9px;
@@ -412,7 +416,7 @@ html {
   border-radius: 30px;
 }
 
-/* line 357, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 #slider {
   position: absolute;
   top: 0;
@@ -422,7 +426,7 @@ html {
   background-color: black;
   overflow: hidden;
 }
-/* line 366, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 #slider #slider-main {
   width: 100%;
   height: 100%;
@@ -430,7 +434,7 @@ html {
   color: #ffffff;
   text-align: center;
 }
-/* line 375, ../sass/screen.scss */
+/* line 380, ../sass/screen.scss */
 #slider #slider-main #slide-01,
 #slider #slider-main #slide-02,
 #slider #slider-main #slide-03,
@@ -450,17 +454,17 @@ html {
   -o-transition: all 0.4s;
   transition: all 0.4s;
 }
-/* line 409, ../sass/screen.scss */
+/* line 414, ../sass/screen.scss */
 #slider #slider-main .slide-shown-add {
   -webkit-animation: show-slide .4s;
   -o-animation: show-slide .4s;
   animation: show-slide .4s;
 }
-/* line 415, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 #slider #slider-main .slide-shown {
   opacity: 1 !important;
 }
-/* line 419, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 #slider #slider-main .slide-shown-remove {
   -webkit-animation: hide-slide .4s;
   -o-animation: hide-slide .4s;
@@ -502,7 +506,7 @@ html {
     transform: translate3d(200%, 0, 0);
   }
 }
-/* line 464, ../sass/screen.scss */
+/* line 469, ../sass/screen.scss */
 #slider #slider-footer {
   min-height: 40px;
   height: 40px !important;
@@ -514,7 +518,7 @@ html {
   border-top-width: 1px;
   border-top-color: white;
 }
-/* line 476, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 #slider #slider-footer div {
   margin: 10px;
   height: 18px;
@@ -524,38 +528,38 @@ html {
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
-/* line 486, ../sass/screen.scss */
+/* line 491, ../sass/screen.scss */
 #slider #slider-footer .slider-footer-selected {
   background-color: white;
 }
 
-/* line 492, ../sass/screen.scss */
+/* line 497, ../sass/screen.scss */
 .slide-titulo {
   font-size: 150px;
   font-family: 'Lato Heavy', serif;
   opacity: .4;
 }
 
-/* line 498, ../sass/screen.scss */
+/* line 503, ../sass/screen.scss */
 .slide-descr {
   font-size: 50px;
   font-family: 'Lato Regular', serif;
   opacity: .4;
 }
 
-/* line 504, ../sass/screen.scss */
+/* line 509, ../sass/screen.scss */
 #servicios {
   margin-top: 600px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
-/* line 510, ../sass/screen.scss */
+/* line 515, ../sass/screen.scss */
 #servicios span {
   text-align: center;
   color: #ffffff;
 }
-/* line 514, ../sass/screen.scss */
+/* line 519, ../sass/screen.scss */
 #servicios #servicios-list {
   display: -webkit-flex;
   display: flex;
@@ -568,7 +572,7 @@ html {
   width: 100%;
 }
 @media (min-width: 800px) {
-  /* line 514, ../sass/screen.scss */
+  /* line 519, ../sass/screen.scss */
   #servicios #servicios-list {
     -webkit-flex-direction: row;
     /* works with row or column */
@@ -577,7 +581,7 @@ html {
     justify-content: center;
   }
 }
-/* line 536, ../sass/screen.scss */
+/* line 541, ../sass/screen.scss */
 #servicios #servicios-list #servicio-01,
 #servicios #servicios-list #servicio-02 {
   margin-top: 50px;
@@ -590,7 +594,7 @@ html {
   width: 100%;
   max-width: 380px;
 }
-/* line 549, ../sass/screen.scss */
+/* line 554, ../sass/screen.scss */
 #servicios #servicios-list #servicio-01 .servicio-texto,
 #servicios #servicios-list #servicio-02 .servicio-texto {
   margin: 10px;
@@ -599,7 +603,7 @@ html {
   max-width: 280px;
   color: #16374a;
 }
-/* line 556, ../sass/screen.scss */
+/* line 561, ../sass/screen.scss */
 #servicios #servicios-list #servicio-01 .servicio-texto .servicio-titulo,
 #servicios #servicios-list #servicio-02 .servicio-texto .servicio-titulo {
   font-size: 30px;
@@ -608,13 +612,13 @@ html {
   font-variant: small-caps;
 }
 @media (min-width: 800px) {
-  /* line 556, ../sass/screen.scss */
+  /* line 561, ../sass/screen.scss */
   #servicios #servicios-list #servicio-01 .servicio-texto .servicio-titulo,
   #servicios #servicios-list #servicio-02 .servicio-texto .servicio-titulo {
     font-size: 34px;
   }
 }
-/* line 569, ../sass/screen.scss */
+/* line 574, ../sass/screen.scss */
 #servicios #servicios-list #servicio-01 .servicio-texto .servicio-detalle,
 #servicios #servicios-list #servicio-02 .servicio-texto .servicio-detalle {
   font-family: 'Lato Regular', serif;
@@ -623,14 +627,14 @@ html {
   line-height: 22px;
 }
 @media (min-width: 800px) {
-  /* line 569, ../sass/screen.scss */
+  /* line 574, ../sass/screen.scss */
   #servicios #servicios-list #servicio-01 .servicio-texto .servicio-detalle,
   #servicios #servicios-list #servicio-02 .servicio-texto .servicio-detalle {
     font-size: 25px;
     min-width: 250px;
   }
 }
-/* line 585, ../sass/screen.scss */
+/* line 590, ../sass/screen.scss */
 #servicios #servicios-list #servicio-01 .servicio-icono,
 #servicios #servicios-list #servicio-02 .servicio-icono {
   border-radius: 150px;
@@ -640,7 +644,7 @@ html {
   margin: 5px;
 }
 @media (min-width: 800px) {
-  /* line 585, ../sass/screen.scss */
+  /* line 590, ../sass/screen.scss */
   #servicios #servicios-list #servicio-01 .servicio-icono,
   #servicios #servicios-list #servicio-02 .servicio-icono {
     width: 180px;
@@ -648,14 +652,14 @@ html {
     min-width: 180px;
   }
 }
-/* line 604, ../sass/screen.scss */
+/* line 609, ../sass/screen.scss */
 #servicios #servicios-list #servicios-action-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 @media (min-width: 800px) {
-  /* line 604, ../sass/screen.scss */
+  /* line 609, ../sass/screen.scss */
   #servicios #servicios-list #servicios-action-bar {
     -webkit-flex-direction: column;
     /* works with row or column */
@@ -664,7 +668,7 @@ html {
     justify-content: center;
   }
 }
-/* line 618, ../sass/screen.scss */
+/* line 623, ../sass/screen.scss */
 #servicios #servicios-list #servicios-action-bar #servicios-separator {
   background-color: #133548;
   height: 3px;
@@ -673,7 +677,7 @@ html {
   margin-right: 5px;
 }
 @media (min-width: 800px) {
-  /* line 618, ../sass/screen.scss */
+  /* line 623, ../sass/screen.scss */
   #servicios #servicios-list #servicios-action-bar #servicios-separator {
     height: 200px;
     width: 2px;
@@ -682,7 +686,7 @@ html {
   }
 }
 
-/* line 642, ../sass/screen.scss */
+/* line 647, ../sass/screen.scss */
 .btn-leer-mas {
   width: 110px;
   font-family: 'Lato Heavy', serif;
@@ -700,35 +704,35 @@ html {
   text-decoration: none;
 }
 
-/* line 659, ../sass/screen.scss */
+/* line 664, ../sass/screen.scss */
 .btn-leer-mas:hover {
   color: white;
   background-color: #133548;
 }
 
-/* line 665, ../sass/screen.scss */
+/* line 670, ../sass/screen.scss */
 #noticias {
   background-color: white;
 }
 
-/* line 670, ../sass/screen.scss */
+/* line 675, ../sass/screen.scss */
 #noticias-main {
   background-color: #17384B;
 }
 
-/* line 675, ../sass/screen.scss */
+/* line 680, ../sass/screen.scss */
 #noticias,
 #noticias-main {
   display: flex;
   flex-direction: column;
 }
-/* line 681, ../sass/screen.scss */
+/* line 686, ../sass/screen.scss */
 #noticias span,
 #noticias-main span {
   text-align: center;
   color: #ffffff;
 }
-/* line 685, ../sass/screen.scss */
+/* line 690, ../sass/screen.scss */
 #noticias #noticias-list,
 #noticias-main #noticias-list {
   display: -webkit-flex;
@@ -742,7 +746,7 @@ html {
   width: 100%;
 }
 @media (min-width: 800px) {
-  /* line 685, ../sass/screen.scss */
+  /* line 690, ../sass/screen.scss */
   #noticias #noticias-list,
   #noticias-main #noticias-list {
     -webkit-flex-direction: row;
@@ -752,7 +756,7 @@ html {
     justify-content: center;
   }
 }
-/* line 709, ../sass/screen.scss */
+/* line 714, ../sass/screen.scss */
 #noticias #noticias-list .noticia,
 #noticias-main #noticias-list .noticia {
   width: 290px;
@@ -772,7 +776,7 @@ html {
   justify-content: flex-start;
   align-items: center;
 }
-/* line 727, ../sass/screen.scss */
+/* line 732, ../sass/screen.scss */
 #noticias #noticias-list .noticia h2,
 #noticias-main #noticias-list .noticia h2 {
   width: 90%;
@@ -783,7 +787,7 @@ html {
   color: #FFFFFF;
   color: white;
 }
-/* line 738, ../sass/screen.scss */
+/* line 743, ../sass/screen.scss */
 #noticias #noticias-list .noticia img,
 #noticias-main #noticias-list .noticia img {
   width: 90%;
@@ -798,7 +802,7 @@ html {
   -moz-border-radius: 20px;
   border-radius: 20px;
 }
-/* line 752, ../sass/screen.scss */
+/* line 757, ../sass/screen.scss */
 #noticias #noticias-list .noticia p,
 #noticias-main #noticias-list .noticia p {
   font-family: 'Montserrat Light', serif;
@@ -812,7 +816,7 @@ html {
   color: #FFFFFF;
   color: white;
 }
-/* line 765, ../sass/screen.scss */
+/* line 770, ../sass/screen.scss */
 #noticias #noticias-list .noticia .btn-leer-mas,
 #noticias-main #noticias-list .noticia .btn-leer-mas {
   max-width: 110px;
@@ -820,32 +824,32 @@ html {
   font-size: 12px;
   border-color: white;
 }
-/* line 772, ../sass/screen.scss */
+/* line 777, ../sass/screen.scss */
 #noticias #noticias-list .noticia .btn-leer-mas:hover,
 #noticias-main #noticias-list .noticia .btn-leer-mas:hover {
   background-color: white;
   color: #133548;
 }
 
-/* line 783, ../sass/screen.scss */
+/* line 788, ../sass/screen.scss */
 #agendas {
   background-color: #406276;
   display: flex;
   flex-direction: column;
 }
-/* line 789, ../sass/screen.scss */
+/* line 794, ../sass/screen.scss */
 #agendas #agendas-title {
   text-align: center;
   color: #17384B;
   background-color: white;
 }
-/* line 793, ../sass/screen.scss */
+/* line 798, ../sass/screen.scss */
 #agendas #agendas-title .decorator-01,
 #agendas #agendas-title .decorator-02,
 #agendas #agendas-title .decorator-03 {
   background-color: #17384B;
 }
-/* line 799, ../sass/screen.scss */
+/* line 804, ../sass/screen.scss */
 #agendas #agendas-list {
   display: -webkit-flex;
   display: flex;
@@ -857,7 +861,7 @@ html {
   width: 100%;
 }
 @media (min-width: 800px) {
-  /* line 799, ../sass/screen.scss */
+  /* line 804, ../sass/screen.scss */
   #agendas #agendas-list {
     -webkit-flex-direction: row;
     /* works with row or column */
@@ -868,7 +872,7 @@ html {
     align-items: center;
   }
 }
-/* line 824, ../sass/screen.scss */
+/* line 829, ../sass/screen.scss */
 #agendas #agendas-list #agenda-calendar-header {
   display: flex;
   flex-direction: row;
@@ -880,12 +884,12 @@ html {
   margin-top: 10px;
   font-size: 20px;
 }
-/* line 834, ../sass/screen.scss */
+/* line 839, ../sass/screen.scss */
 #agendas #agendas-list #agenda-calendar-header span {
   margin-left: 30px;
   margin-right: 30px;
 }
-/* line 841, ../sass/screen.scss */
+/* line 846, ../sass/screen.scss */
 #agendas #agendas-list #agenda-calendar {
   border: 4px solid white;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFjM2U1MiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNmNjE3NSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -903,7 +907,7 @@ html {
   min-width: 300px;
   min-height: 300px;
 }
-/* line 855, ../sass/screen.scss */
+/* line 860, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias {
   width: 300px;
   height: 300px;
@@ -915,12 +919,12 @@ html {
   box-shadow: 5px 5px 10px black;
 }
 @media (min-width: 800px) {
-  /* line 855, ../sass/screen.scss */
+  /* line 860, ../sass/screen.scss */
   #agendas #agendas-list .agenda-dias {
     margin-right: 0px;
   }
 }
-/* line 868, ../sass/screen.scss */
+/* line 873, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias #agenda-calendar-container {
   background-color: white;
   padding-left: 10px;
@@ -931,12 +935,12 @@ html {
   width: 85%;
   height: 75%;
 }
-/* line 879, ../sass/screen.scss */
+/* line 884, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias #agenda-calendar-container #calendario {
   width: 100%;
   height: 100%;
 }
-/* line 882, ../sass/screen.scss */
+/* line 887, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias #agenda-calendar-container #calendario #calendario-header {
   font-weight: bold;
   display: flex;
@@ -945,25 +949,25 @@ html {
   min-height: 20px;
   min-width: 20px;
 }
-/* line 890, ../sass/screen.scss */
+/* line 895, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias #agenda-calendar-container #calendario #calendario-dias {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-/* line 895, ../sass/screen.scss */
+/* line 900, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias #agenda-calendar-container #calendario #calendario-dias .calendario-dia-with-event {
   font-weight: bold;
   cursor: pointer;
 }
-/* line 899, ../sass/screen.scss */
+/* line 904, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias #agenda-calendar-container #calendario #calendario-dias .calendario-dia {
   min-height: 28px;
   min-width: 30px;
   text-align: center;
 }
-/* line 910, ../sass/screen.scss */
+/* line 915, ../sass/screen.scss */
 #agendas #agendas-list img {
   width: 300px;
   height: 300px;
@@ -971,12 +975,12 @@ html {
   background-color: #ffffff;
 }
 @media (min-width: 800px) {
-  /* line 910, ../sass/screen.scss */
+  /* line 915, ../sass/screen.scss */
   #agendas #agendas-list img {
     margin-left: 10px;
   }
 }
-/* line 920, ../sass/screen.scss */
+/* line 925, ../sass/screen.scss */
 #agendas #agendas-list #agenda-detail {
   width: 300px;
   height: 300px;
@@ -990,18 +994,18 @@ html {
   box-shadow: 5px 5px 10px black;
 }
 @media (min-width: 800px) {
-  /* line 920, ../sass/screen.scss */
+  /* line 925, ../sass/screen.scss */
   #agendas #agendas-list #agenda-detail {
     margin-left: 10px;
     height: 300px;
   }
 }
-/* line 936, ../sass/screen.scss */
+/* line 941, ../sass/screen.scss */
 #agendas #agendas-list #agenda-detail h2 {
   font-weight: bold;
   font-size: 30px;
 }
-/* line 940, ../sass/screen.scss */
+/* line 945, ../sass/screen.scss */
 #agendas #agendas-list #agenda-detail #agenda-separator {
   width: 90%;
   height: 2px;
@@ -1009,25 +1013,25 @@ html {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 947, ../sass/screen.scss */
+/* line 952, ../sass/screen.scss */
 #agendas #agendas-list #agenda-detail p {
   max-height: 220px;
   overflow: hidden;
 }
 
-/* line 957, ../sass/screen.scss */
+/* line 962, ../sass/screen.scss */
 #empresas {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 963, ../sass/screen.scss */
+/* line 968, ../sass/screen.scss */
 #empresas #empresas-title {
   color: white;
   background-color: black;
 }
-/* line 968, ../sass/screen.scss */
+/* line 973, ../sass/screen.scss */
 #empresas #empresas-carrousel {
   height: 190px;
   background-color: white;
@@ -1036,13 +1040,13 @@ html {
   overflow: auto;
 }
 @media (min-width: 800px) {
-  /* line 968, ../sass/screen.scss */
+  /* line 973, ../sass/screen.scss */
   #empresas #empresas-carrousel {
     width: 900px;
     max-width: 1000px;
   }
 }
-/* line 980, ../sass/screen.scss */
+/* line 985, ../sass/screen.scss */
 #empresas #empresas-carrousel #empresas-list {
   display: flex;
   flex-direction: row;
@@ -1051,7 +1055,7 @@ html {
   width: 1600px;
   max-width: 1600px;
 }
-/* line 987, ../sass/screen.scss */
+/* line 992, ../sass/screen.scss */
 #empresas #empresas-carrousel #empresas-list .empresa {
   height: 60px;
   width: 150px;
@@ -1059,7 +1063,7 @@ html {
   margin: 10px;
 }
 
-/* line 997, ../sass/screen.scss */
+/* line 1002, ../sass/screen.scss */
 #contacto {
   background-color: #133548;
   display: flex;
@@ -1069,21 +1073,21 @@ html {
   padding: 10px;
 }
 
-/* line 1006, ../sass/screen.scss */
+/* line 1011, ../sass/screen.scss */
 #contacto-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 40px;
 }
-/* line 1012, ../sass/screen.scss */
+/* line 1017, ../sass/screen.scss */
 #contacto-inner h1 {
   font-family: 'Lato Heavy', serif;
   color: #133548;
   font-size: 26px;
   text-align: left;
 }
-/* line 1019, ../sass/screen.scss */
+/* line 1024, ../sass/screen.scss */
 #contacto-inner #contacto-container {
   font-family: 'Lato Regular', serif;
   color: #133548;
@@ -1096,26 +1100,26 @@ html {
   text-align: left;
 }
 @media (min-width: 800px) {
-  /* line 1019, ../sass/screen.scss */
+  /* line 1024, ../sass/screen.scss */
   #contacto-inner #contacto-container {
     flex-direction: row;
     max-width: 800px;
     align-items: flex-start;
   }
 }
-/* line 1035, ../sass/screen.scss */
+/* line 1040, ../sass/screen.scss */
 #contacto-inner #contacto-container div {
   max-width: 80%;
   min-width: 80%;
 }
 @media (min-width: 800px) {
-  /* line 1035, ../sass/screen.scss */
+  /* line 1040, ../sass/screen.scss */
   #contacto-inner #contacto-container div {
     max-width: 350px;
     min-width: 350px;
   }
 }
-/* line 1042, ../sass/screen.scss */
+/* line 1047, ../sass/screen.scss */
 #contacto-inner #contacto-container div input[type=text],
 #contacto-inner #contacto-container div textarea {
   width: 90%;
@@ -1125,14 +1129,14 @@ html {
   margin-bottom: 5px;
 }
 @media (min-width: 800px) {
-  /* line 1042, ../sass/screen.scss */
+  /* line 1047, ../sass/screen.scss */
   #contacto-inner #contacto-container div input[type=text],
   #contacto-inner #contacto-container div textarea {
     max-width: 350px;
   }
 }
 @media (min-width: 800px) {
-  /* line 1054, ../sass/screen.scss */
+  /* line 1059, ../sass/screen.scss */
   #contacto-inner #contacto-container div #contacto-enviar-mobile {
     height: 0px;
     width: 0px;
@@ -1141,7 +1145,7 @@ html {
   }
 }
 @media (max-width: 800px) {
-  /* line 1063, ../sass/screen.scss */
+  /* line 1068, ../sass/screen.scss */
   #contacto-inner #contacto-container div #contacto-enviar-desktop {
     height: 0px;
     width: 0px;
@@ -1150,7 +1154,7 @@ html {
   }
 }
 
-/* line 1080, ../sass/screen.scss */
+/* line 1085, ../sass/screen.scss */
 #administracion table {
   font-family: "Montserrat Semibold", sans-serif;
   font-size: 15px;
@@ -1163,7 +1167,7 @@ html {
   border-radius: 10px;
   background-color: #2f96b4;
 }
-/* line 1092, ../sass/screen.scss */
+/* line 1097, ../sass/screen.scss */
 #administracion table th {
   border-bottom: .5px dotted white;
   border-left: .5px dotted white;
@@ -1172,21 +1176,21 @@ html {
   font-size: 17px;
   margin-bottom: 15px;
 }
-/* line 1102, ../sass/screen.scss */
+/* line 1107, ../sass/screen.scss */
 #administracion table td {
   padding: 10px;
   font-family: 'Montserrat Light', serif;
   font-size: 14px;
   border-left: .5px dotted white;
 }
-/* line 1110, ../sass/screen.scss */
+/* line 1115, ../sass/screen.scss */
 #administracion table .administracion-row:hover,
 #administracion table .tr-selected {
   background-color: #1c3e52;
   color: white;
 }
 
-/* line 1128, ../sass/screen.scss */
+/* line 1133, ../sass/screen.scss */
 #footer {
   margin: 10px;
   cursor: pointer;
@@ -1198,12 +1202,12 @@ html {
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 1138, ../sass/screen.scss */
+/* line 1143, ../sass/screen.scss */
 #footer div {
   margin: 5px;
 }
 
-/* line 1143, ../sass/screen.scss */
+/* line 1148, ../sass/screen.scss */
 .issuu {
   background-color: transparent;
   margin-bottom: 10px;
@@ -1211,7 +1215,7 @@ html {
 }
 
 /*SECCIONES DE ADMINISTRACION*/
-/* line 1151, ../sass/screen.scss */
+/* line 1156, ../sass/screen.scss */
 #ingreso {
   margin-top: 100px;
   max-width: 100%;
@@ -1221,13 +1225,13 @@ html {
   justify-content: center;
 }
 @media (max-width: 600px) {
-  /* line 1151, ../sass/screen.scss */
+  /* line 1156, ../sass/screen.scss */
   #ingreso {
     margin-top: 50px;
   }
 }
 
-/* line 1163, ../sass/screen.scss */
+/* line 1168, ../sass/screen.scss */
 #administracion,
 #noticias,
 #servicios-inner,
@@ -1240,7 +1244,7 @@ html {
   margin-top: 100px;
 }
 @media (max-width: 600px) {
-  /* line 1163, ../sass/screen.scss */
+  /* line 1168, ../sass/screen.scss */
   #administracion,
   #noticias,
   #servicios-inner,
@@ -1249,14 +1253,14 @@ html {
   }
 }
 
-/* line 1191, ../sass/screen.scss */
+/* line 1196, ../sass/screen.scss */
 .administracion-separator,
 .nuevo-usuario-separator,
 #contacto-container {
   max-width: 1000px;
 }
 
-/* line 1197, ../sass/screen.scss */
+/* line 1202, ../sass/screen.scss */
 #financiamiento div h1,
 #sellados div h1 {
   font-family: 'Lato Heavy', serif;
@@ -1264,7 +1268,7 @@ html {
   font-size: 40px;
 }
 
-/* line 1205, ../sass/screen.scss */
+/* line 1210, ../sass/screen.scss */
 #financiamiento div h2,
 #sellados div h2 {
   font-family: 'Montserrat Light', serif;
@@ -1273,7 +1277,7 @@ html {
   line-height: 22px;
 }
 
-/* line 1213, ../sass/screen.scss */
+/* line 1218, ../sass/screen.scss */
 #financiamiento div button,
 #sellados div button {
   width: 110px;
@@ -1294,14 +1298,14 @@ html {
   text-decoration: none;
 }
 
-/* line 1233, ../sass/screen.scss */
+/* line 1238, ../sass/screen.scss */
 #financiamiento div button:hover,
 #sellados div button:hover {
   color: white;
   background-color: #133548;
 }
 
-/* line 1240, ../sass/screen.scss */
+/* line 1245, ../sass/screen.scss */
 #administracion-form,
 #servicios-main-container,
 #noticias-form,
@@ -1312,17 +1316,17 @@ html {
   max-width: 1000px;
 }
 
-/* line 1251, ../sass/screen.scss */
+/* line 1256, ../sass/screen.scss */
 #revistas-form {
   width: 100%;
 }
 
-/* line 1255, ../sass/screen.scss */
+/* line 1260, ../sass/screen.scss */
 #ingreso-form {
   width: 100%;
 }
 
-/* line 1259, ../sass/screen.scss */
+/* line 1264, ../sass/screen.scss */
 #administracion-form,
 #nuevo-usuario-form,
 #ingreso-form {
@@ -1330,7 +1334,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
 }
-/* line 1265, ../sass/screen.scss */
+/* line 1270, ../sass/screen.scss */
 #administracion-form .administracion-inputs,
 #administracion-form .nuevo-usuario-inputs,
 #nuevo-usuario-form .administracion-inputs,
@@ -1342,7 +1346,7 @@ html {
   flex-wrap: wrap;
 }
 
-/* line 1274, ../sass/screen.scss */
+/* line 1279, ../sass/screen.scss */
 #administracion-oferta,
 #administracion-noticias,
 #administracion-sliders {
@@ -1353,7 +1357,7 @@ html {
   justify-content: flex-start;
 }
 
-/* line 1284, ../sass/screen.scss */
+/* line 1289, ../sass/screen.scss */
 .administracion-title,
 .nuevo-usuario-title,
 .noticias-title,
@@ -1376,7 +1380,7 @@ html {
   display: flex;
   justify-content: center;
 }
-/* line 1302, ../sass/screen.scss */
+/* line 1307, ../sass/screen.scss */
 .administracion-title div,
 .nuevo-usuario-title div,
 .noticias-title div,
@@ -1388,7 +1392,7 @@ html {
   max-width: 1000px;
 }
 @media (max-width: 600px) {
-  /* line 1284, ../sass/screen.scss */
+  /* line 1289, ../sass/screen.scss */
   .administracion-title,
   .nuevo-usuario-title,
   .noticias-title,
@@ -1400,19 +1404,19 @@ html {
   }
 }
 
-/* line 1312, ../sass/screen.scss */
+/* line 1317, ../sass/screen.scss */
 .administracion-input,
 .nuevo-usuario-input {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-/* line 1317, ../sass/screen.scss */
+/* line 1322, ../sass/screen.scss */
 .administracion-input span,
 .nuevo-usuario-input span {
   margin: 5px;
 }
-/* line 1322, ../sass/screen.scss */
+/* line 1327, ../sass/screen.scss */
 .administracion-input input,
 .administracion-input select,
 .nuevo-usuario-input input,
@@ -1427,7 +1431,7 @@ html {
   padding: 5px;
 }
 
-/* line 1338, ../sass/screen.scss */
+/* line 1343, ../sass/screen.scss */
 .administracion-input textarea {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -1441,13 +1445,13 @@ html {
   padding: 5px;
 }
 
-/* line 1353, ../sass/screen.scss */
+/* line 1358, ../sass/screen.scss */
 .administracion-button-bar,
 .nuevo-usuario-button-bar {
   display: flex;
   flex-direction: row;
 }
-/* line 1359, ../sass/screen.scss */
+/* line 1364, ../sass/screen.scss */
 .administracion-button-bar button,
 .nuevo-usuario-button-bar button {
   background-color: transparent;
@@ -1455,13 +1459,13 @@ html {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-/* line 1365, ../sass/screen.scss */
+/* line 1370, ../sass/screen.scss */
 .administracion-button-bar button:hover,
 .nuevo-usuario-button-bar button:hover {
   border-bottom-color: #17384B;
 }
 
-/* line 1370, ../sass/screen.scss */
+/* line 1375, ../sass/screen.scss */
 .administracion-separator,
 #servicios-inner-separator {
   width: 100%;
@@ -1472,7 +1476,7 @@ html {
   margin-bottom: 50px;
 }
 
-/* line 1380, ../sass/screen.scss */
+/* line 1385, ../sass/screen.scss */
 .administracion-fotos {
   display: flex;
   flex-direction: row;
@@ -1480,7 +1484,7 @@ html {
   margin-bottom: 10px;
 }
 
-/* line 1388, ../sass/screen.scss */
+/* line 1393, ../sass/screen.scss */
 .administracion-foto span {
   margin-bottom: 10px;
   color: #2f96b4;
@@ -1489,7 +1493,7 @@ html {
   font-size: 15px;
 }
 
-/* line 1397, ../sass/screen.scss */
+/* line 1402, ../sass/screen.scss */
 .input-foto {
   height: 39px;
   width: 39px;
@@ -1498,13 +1502,13 @@ html {
   margin-top: 5px;
   margin-left: 10px;
 }
-/* line 1405, ../sass/screen.scss */
+/* line 1410, ../sass/screen.scss */
 .input-foto input {
   opacity: 0;
   height: 39px;
   width: 39px;
 }
-/* line 1410, ../sass/screen.scss */
+/* line 1415, ../sass/screen.scss */
 .input-foto img {
   position: absolute;
   max-height: 38px;
@@ -1512,7 +1516,7 @@ html {
   border-bottom: double 2px #133548;
 }
 
-/* line 1419, ../sass/screen.scss */
+/* line 1424, ../sass/screen.scss */
 .administracion-sub-title,
 .nuevo-usuario-sub-title,
 .revistas-sub-title {
@@ -1525,14 +1529,14 @@ html {
 }
 
 /*NOTICIAS*/
-/* line 1431, ../sass/screen.scss */
+/* line 1436, ../sass/screen.scss */
 #noticias-filtro {
   display: flex;
   padding: 20px;
   flex-direction: row;
   justify-content: left;
 }
-/* line 1436, ../sass/screen.scss */
+/* line 1441, ../sass/screen.scss */
 #noticias-filtro select {
   margin-right: 2%;
   height: 32px;
@@ -1545,12 +1549,12 @@ html {
   background-color: transparent;
 }
 
-/* line 1479, ../sass/screen.scss */
+/* line 1484, ../sass/screen.scss */
 #noticias-main {
   background-color: #133548;
 }
 
-/* line 1484, ../sass/screen.scss */
+/* line 1489, ../sass/screen.scss */
 #noticias-form {
   max-width: 1000px;
   width: 100%;
@@ -1560,31 +1564,31 @@ html {
   background-color: white;
 }
 
-/* line 1494, ../sass/screen.scss */
+/* line 1499, ../sass/screen.scss */
 #noticias-panel {
   margin: 35px;
 }
 @media (max-width: 500px) {
-  /* line 1494, ../sass/screen.scss */
+  /* line 1499, ../sass/screen.scss */
   #noticias-panel {
     margin: 20px;
   }
 }
 
 @media (min-width: 385px) {
-  /* line 1503, ../sass/screen.scss */
+  /* line 1508, ../sass/screen.scss */
   #noticias-panel-fotos {
     max-width: 50%;
   }
 }
-/* line 1507, ../sass/screen.scss */
+/* line 1512, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-main {
   overflow: hidden;
   margin-top: 10px;
   min-height: 200px;
   min-width: 350px;
 }
-/* line 1512, ../sass/screen.scss */
+/* line 1517, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-main img {
   margin-left: 15px;
   border-radius: 5px;
@@ -1594,17 +1598,17 @@ html {
   min-width: 300px;
 }
 @media (max-width: 500px) {
-  /* line 1512, ../sass/screen.scss */
+  /* line 1517, ../sass/screen.scss */
   #noticias-panel-fotos #noticias-panel-fotos-main img {
     width: 92%;
     margin-left: 0px;
   }
 }
-/* line 1527, ../sass/screen.scss */
+/* line 1532, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-thumbs {
   margin-top: 5px;
 }
-/* line 1529, ../sass/screen.scss */
+/* line 1534, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-thumbs img {
   margin-left: 15px;
   max-width: 15%;
@@ -1613,19 +1617,19 @@ html {
   border-radius: 2px;
 }
 @media (max-width: 500px) {
-  /* line 1529, ../sass/screen.scss */
+  /* line 1534, ../sass/screen.scss */
   #noticias-panel-fotos #noticias-panel-fotos-thumbs img {
     margin-left: 0px;
     margin-top: 5px;
   }
 }
 
-/* line 1544, ../sass/screen.scss */
+/* line 1549, ../sass/screen.scss */
 #noticias-panel-texto {
   color: white;
   padding: 5px;
 }
-/* line 1547, ../sass/screen.scss */
+/* line 1552, ../sass/screen.scss */
 #noticias-panel-texto #noticias-panel-titulo {
   width: 100%;
   margin-bottom: 15px;
@@ -1635,7 +1639,7 @@ html {
   color: #FFFFFF;
   font-family: 'Lato Heavy', serif;
 }
-/* line 1558, ../sass/screen.scss */
+/* line 1563, ../sass/screen.scss */
 #noticias-panel-texto #noticias-panel-detalle {
   font-family: 'Montserrat Light', serif;
   width: 95%;
@@ -1649,21 +1653,21 @@ html {
 }
 
 @media (min-width: 600px) {
-  /* line 1571, ../sass/screen.scss */
+  /* line 1576, ../sass/screen.scss */
   #noticias-panel {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
-/* line 1578, ../sass/screen.scss */
+/* line 1583, ../sass/screen.scss */
 #noticias-nuevo-comentario {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-/* line 1583, ../sass/screen.scss */
+/* line 1588, ../sass/screen.scss */
 #noticias-nuevo-comentario textarea {
   width: 100%;
   right: 5px;
@@ -1676,19 +1680,19 @@ html {
   padding: 5px;
 }
 @media (max-width: 500px) {
-  /* line 1583, ../sass/screen.scss */
+  /* line 1588, ../sass/screen.scss */
   #noticias-nuevo-comentario textarea {
     width: 95%;
   }
 }
-/* line 1599, ../sass/screen.scss */
+/* line 1604, ../sass/screen.scss */
 #noticias-nuevo-comentario div {
   width: 90%;
   position: relative;
   margin-top: -45px;
   margin-bottom: 20px;
 }
-/* line 1604, ../sass/screen.scss */
+/* line 1609, ../sass/screen.scss */
 #noticias-nuevo-comentario div #noticias-nuevo-btn {
   width: 110px;
   background-color: white;
@@ -1703,19 +1707,19 @@ html {
   text-align: center;
 }
 
-/* line 1621, ../sass/screen.scss */
+/* line 1626, ../sass/screen.scss */
 #noticias-comentarios {
   background-color: #3f6175;
   color: white;
 }
-/* line 1624, ../sass/screen.scss */
+/* line 1629, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-list {
   max-width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 1631, ../sass/screen.scss */
+/* line 1636, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-title {
   width: 90%;
   font-family: 'Lato Heavy', serif;
@@ -1727,17 +1731,17 @@ html {
   font-size: 38px;
   line-height: 32px;
 }
-/* line 1643, ../sass/screen.scss */
+/* line 1648, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario {
   max-width: 90%;
   margin-bottom: 20px;
 }
-/* line 1647, ../sass/screen.scss */
+/* line 1652, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-user {
   line-height: 24px;
   font-size: 23px;
 }
-/* line 1652, ../sass/screen.scss */
+/* line 1657, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-detalle {
   line-height: 20px;
   font-size: 17px;
@@ -1746,7 +1750,7 @@ html {
 }
 
 /*BUSQUEDAS LABORALES*/
-/* line 1665, ../sass/screen.scss */
+/* line 1670, ../sass/screen.scss */
 #busquedas-laborales,
 #revistas,
 #contacto-inner,
@@ -1759,7 +1763,7 @@ html {
   max-width: 100%;
   margin-top: 100px;
 }
-/* line 1676, ../sass/screen.scss */
+/* line 1681, ../sass/screen.scss */
 #busquedas-laborales input,
 #revistas input,
 #contacto-inner input,
@@ -1774,7 +1778,7 @@ html {
   padding: 5px;
 }
 @media (max-width: 600px) {
-  /* line 1665, ../sass/screen.scss */
+  /* line 1670, ../sass/screen.scss */
   #busquedas-laborales,
   #revistas,
   #contacto-inner,
@@ -1782,14 +1786,14 @@ html {
     margin-top: 50px;
   }
 }
-/* line 1692, ../sass/screen.scss */
+/* line 1697, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:nth-child(odd),
 #revistas .busqueda-laboral:nth-child(odd),
 #contacto-inner .busqueda-laboral:nth-child(odd),
 #nuevo-usuario .busqueda-laboral:nth-child(odd) {
   background-color: #17384B;
 }
-/* line 1697, ../sass/screen.scss */
+/* line 1702, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:hover,
 #revistas .busqueda-laboral:hover,
 #contacto-inner .busqueda-laboral:hover,
@@ -1800,7 +1804,7 @@ html {
   -o-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
-/* line 1705, ../sass/screen.scss */
+/* line 1710, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral,
 #revistas .busqueda-laboral,
 #contacto-inner .busqueda-laboral,
@@ -1816,7 +1820,7 @@ html {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 1721, ../sass/screen.scss */
+/* line 1726, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-title,
 #revistas .busqueda-laboral .busqueda-laboral-title,
 #contacto-inner .busqueda-laboral .busqueda-laboral-title,
@@ -1826,7 +1830,7 @@ html {
   font-size: 38px;
   padding: 15px;
 }
-/* line 1728, ../sass/screen.scss */
+/* line 1733, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-texto,
 #revistas .busqueda-laboral .busqueda-laboral-texto,
 #contacto-inner .busqueda-laboral .busqueda-laboral-texto,
@@ -1835,7 +1839,7 @@ html {
   font-family: 'Lato Regular', serif;
   font-size: 16px;
 }
-/* line 1733, ../sass/screen.scss */
+/* line 1738, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-contacto,
 #revistas .busqueda-laboral .busqueda-laboral-contacto,
 #contacto-inner .busqueda-laboral .busqueda-laboral-contacto,
@@ -1843,7 +1847,7 @@ html {
   padding: 5px;
 }
 
-/* line 1739, ../sass/screen.scss */
+/* line 1744, ../sass/screen.scss */
 #busqueda-laboral-search {
   width: 100%;
   background-color: #000000;
@@ -1853,7 +1857,7 @@ html {
   align-items: center;
   min-height: 80px;
 }
-/* line 1747, ../sass/screen.scss */
+/* line 1752, ../sass/screen.scss */
 #busqueda-laboral-search input {
   background-color: transparent;
   max-width: 1000px;
@@ -1867,33 +1871,33 @@ html {
   margin: 10px;
   padding: 5px;
 }
-/* line 1760, ../sass/screen.scss */
+/* line 1765, ../sass/screen.scss */
 #busqueda-laboral-search input ::-webkit-input-placeholder {
   color: #99C1DA;
 }
-/* line 1764, ../sass/screen.scss */
+/* line 1769, ../sass/screen.scss */
 #busqueda-laboral-search input :-moz-placeholder {
   /* Firefox 18- */
   color: #99C1DA;
 }
-/* line 1769, ../sass/screen.scss */
+/* line 1774, ../sass/screen.scss */
 #busqueda-laboral-search input ::-moz-placeholder {
   /* Firefox 19+ */
   color: #99C1DA;
 }
-/* line 1774, ../sass/screen.scss */
+/* line 1779, ../sass/screen.scss */
 #busqueda-laboral-search input :-ms-input-placeholder {
   color: #99C1DA;
 }
 @media (max-width: 800px) {
-  /* line 1747, ../sass/screen.scss */
+  /* line 1752, ../sass/screen.scss */
   #busqueda-laboral-search input {
     max-width: 95px;
     min-width: 95%;
   }
 }
 
-/* line 1785, ../sass/screen.scss */
+/* line 1790, ../sass/screen.scss */
 #contacto h1 {
   font-family: 'Lato Heavy', serif;
   text-align: center;
@@ -1903,7 +1907,7 @@ html {
   margin-bottom: 20px;
 }
 
-/* line 1795, ../sass/screen.scss */
+/* line 1800, ../sass/screen.scss */
 #revistas-listado {
   font-family: "Montserrat Semibold", sans-serif;
   color: #133548;
@@ -1919,21 +1923,21 @@ html {
   align-items: flex-start;
 }
 
-/* line 1810, ../sass/screen.scss */
+/* line 1815, ../sass/screen.scss */
 #revistas-form .administracion-inputs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 1816, ../sass/screen.scss */
+/* line 1821, ../sass/screen.scss */
 #servicios-main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* line 1822, ../sass/screen.scss */
+/* line 1827, ../sass/screen.scss */
 #servicios-main-container #financiamiento,
 #servicios-main-container #sellados {
   display: flex;
@@ -1942,13 +1946,13 @@ html {
   align-items: center;
 }
 @media (min-width: 600px) {
-  /* line 1822, ../sass/screen.scss */
+  /* line 1827, ../sass/screen.scss */
   #servicios-main-container #financiamiento,
   #servicios-main-container #sellados {
     flex-direction: row;
   }
 }
-/* line 1832, ../sass/screen.scss */
+/* line 1837, ../sass/screen.scss */
 #servicios-main-container #financiamiento div,
 #servicios-main-container #sellados div {
   display: flex;
@@ -1957,7 +1961,7 @@ html {
   align-items: center;
 }
 @media (min-width: 600px) {
-  /* line 1832, ../sass/screen.scss */
+  /* line 1837, ../sass/screen.scss */
   #servicios-main-container #financiamiento div,
   #servicios-main-container #sellados div {
     align-items: flex-start;
@@ -1965,12 +1969,12 @@ html {
   }
 }
 @media (min-width: 600px) {
-  /* line 1845, ../sass/screen.scss */
+  /* line 1850, ../sass/screen.scss */
   #servicios-main-container #sellados {
     flex-direction: row-reverse;
   }
 }
-/* line 1852, ../sass/screen.scss */
+/* line 1857, ../sass/screen.scss */
 #servicios-main-container .servicio-main-icon {
   height: 200px;
   width: 200px;
@@ -1981,7 +1985,7 @@ html {
   margin: 10px;
 }
 @media (min-width: 600px) {
-  /* line 1852, ../sass/screen.scss */
+  /* line 1857, ../sass/screen.scss */
   #servicios-main-container .servicio-main-icon {
     height: 300px;
     width: 300px;
@@ -1991,24 +1995,24 @@ html {
     border-radius: 300px;
   }
 }
-/* line 1872, ../sass/screen.scss */
+/* line 1877, ../sass/screen.scss */
 #servicios-main-container h1 {
   font-variant: small-caps;
 }
-/* line 1878, ../sass/screen.scss */
+/* line 1883, ../sass/screen.scss */
 #servicios-main-container h1, #servicios-main-container h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
 }
 @media (min-width: 600px) {
-  /* line 1878, ../sass/screen.scss */
+  /* line 1883, ../sass/screen.scss */
   #servicios-main-container h1, #servicios-main-container h2 {
     text-align: left;
   }
 }
 
-/* line 1889, ../sass/screen.scss */
+/* line 1894, ../sass/screen.scss */
 #contacto-container button {
   width: 110px;
   font-family: 'Lato Heavy', serif;
@@ -2028,13 +2032,13 @@ html {
   text-decoration: none;
 }
 
-/* line 1908, ../sass/screen.scss */
+/* line 1913, ../sass/screen.scss */
 #contacto-container button:hover {
   color: white;
   background-color: #133548;
 }
 
-/* line 1916, ../sass/screen.scss */
+/* line 1921, ../sass/screen.scss */
 .administracion-slider {
   display: flex;
   flex-direction: row;
@@ -2043,17 +2047,17 @@ html {
   margin-bottom: 10px;
 }
 
-/* line 1925, ../sass/screen.scss */
+/* line 1930, ../sass/screen.scss */
 .administracion-slider .administracion-input {
   padding-top: 0px !important;
 }
 
-/* line 1929, ../sass/screen.scss */
+/* line 1934, ../sass/screen.scss */
 .error-input {
   border-color: red !important;
 }
 
-/* line 1933, ../sass/screen.scss */
+/* line 1938, ../sass/screen.scss */
 .error-message {
   position: absolute;
   background: #406276;

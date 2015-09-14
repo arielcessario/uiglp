@@ -282,6 +282,11 @@ html {
       flex: 1;
       max-height: 35px;
       padding: 5px;
+      position: fixed;
+      top: 25px;
+      left: 0px;
+      right: 0px;
+
 
       .menu-desktop-btn {
         cursor: pointer;
