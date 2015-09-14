@@ -25,15 +25,14 @@
     <div class="menu-mobile menu-type-mobile">
         <div class="nav-button"
              ng-click="appCtrl.menu_mobile_open = !appCtrl.menu_mobile_open;"
-             ng-class="{'nav-button-transformed':navCtrl.closed}">
-            <div ng-class="{'nav-button-top-transformed':navCtrl.closed}"></div>
-            <div ng-class="{'nav-button-mid-transformed':navCtrl.closed}"></div>
-            <div ng-class="{'nav-button-bot-transformed':navCtrl.closed}"></div>
+             ng-class="{'nav-button-transformed':appCtrl.menu_mobile_open}">
+            <div ng-class="{'nav-button-top-transformed':appCtrl.menu_mobile_open}"></div>
+            <div ng-class="{'nav-button-mid-transformed':appCtrl.menu_mobile_open}"></div>
+            <div ng-class="{'nav-button-bot-transformed':appCtrl.menu_mobile_open}"></div>
         </div>
         <div class="header-separator"></div>
         <div class="logo"></div>
     </div>
-
     <div class="menu-desktop menu-type-desktop">
 
         <div id="menu-desktop-logo">
@@ -52,6 +51,14 @@
         </div>
     </div>
 
+</div>
+
+<div class="menu-mobile-panel" ng-class="{'menu-mobile-panel-show':appCtrl.menu_mobile_open}">
+    <div class="menu-desktop-btn ac-ripple"
+         ng-class="{'menu-desktop-btn-selected':appCtrl.selectedPage.indexOf(link.nombre) > -1 }"
+         ripple-color="#ffffff"
+         ng-repeat="link in appCtrl.links"
+         ng-click="appCtrl.goTo(link); appCtrl.menu_mobile_open=false;"> {{link.nombre}}</div>
 </div>
 
 <!--[if lt IE 7]>

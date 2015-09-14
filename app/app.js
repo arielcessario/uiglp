@@ -58,6 +58,7 @@ function AppController(LoginState, $location, $rootScope, $routeParams, store) {
     var vm = this;
     vm.goTo = goTo;
     vm.selectedPage = 'INICIO';
+    vm.menu_mobile_open = false;
     vm.links = [
         {nombre: 'INICIO', path: '/'},
         {nombre: 'INSTITUCIONAL', path: '/institucional'},
