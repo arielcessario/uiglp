@@ -152,17 +152,22 @@ html {
 }
 
 .menu-mobile-panel {
-  width: 50%;
+  width: 70%;
   color: white;
-  background-color: #406276;
+  background-color: #17384B;
   position: fixed;
   bottom: 0px;
   top: 50px;
   z-index: 500;
-  height: 100%;
+  height: 60%;
+  //border: 5px solid white;
 
   .menu-desktop-btn {
     margin-top: 15px;
+    font-family: 'Lato Heavy', serif;
+    line-height: 18px;
+    padding: 5px;
+    font-variant: all-petite-caps;
   }
 
   -webkit-transform: translate(-1000px, 0);
@@ -685,6 +690,11 @@ html {
 
 }
 
+.noticia p{
+  text-align: justify;
+
+}
+
 #noticias,
 #noticias-main {
 
@@ -979,8 +989,8 @@ html {
   }
 
   #empresas-carrousel {
-    height: 190px;
-    background-color: white;
+    height: 150px;
+    background-color: transparent;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
@@ -1247,7 +1257,7 @@ html {
 }
 
 .issuu {
-  background-color: transparent;
+  background-color: white;
   margin-bottom: 10px;
   margin-top: 10px;
 
@@ -1314,6 +1324,11 @@ html {
   color: black;
   font-size: 16px;
   line-height: 22px;
+  @media(max-width: 500px){
+    padding: 20px;
+    text-align: justify;
+
+  }
 }
 
 #financiamiento div button,
@@ -1665,12 +1680,13 @@ html {
     font-family: 'Montserrat Light', serif;
     width: 95%;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: justify;
     max-height: 400px;
     overflow: hidden;
     font-size: 12px;
     line-height: 15px;
     color: #FFFFFF;
+
   }
 }
 
@@ -1732,14 +1748,18 @@ html {
     max-width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    @media (max-width: 500px){
+      align-items: center;
+
+    }
   }
   #noticias-comentarios-title {
     width: 90%;
     font-family: 'Lato Heavy', serif;
     margin-bottom: 20px;
     margin-top: 25px;
-    margin-left: 35px;
+    padding: 15px;
     color: white;
     text-align: left;
     font-size: 38px;
@@ -1749,6 +1769,7 @@ html {
   .noticias-comentario {
     max-width: 90%;
     margin-bottom: 20px;
+    margin-left: 10px;
 
     .noticia-comentario-user {
 
