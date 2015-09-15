@@ -1258,7 +1258,11 @@ html {
   background-color: white;
   margin-bottom: 10px;
   margin-top: 10px;
+  text-align: center;
+  @media(max-width: 500px){
+    margin: 20px;
 
+  }
 }
 
 /*SECCIONES DE ADMINISTRACION*/
@@ -1741,6 +1745,8 @@ html {
 #noticias-comentarios {
   background-color: #3f6175;
   color: white;
+
+
   #noticias-comentarios-list {
 
     max-width: 90%;
@@ -1783,6 +1789,29 @@ html {
     }
   }
 
+}
+
+.noticias-comentario button{
+  width: 120px;
+  font-family: 'Lato Heavy', serif;
+  color: white;
+  background-color: #3f6175;
+  font-size: 12px;
+  border: 1px solid white;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  white-space: nowrap;
+  text-align: center;
+  cursor: hand;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  .noticias-comentario button:hover{
+    background-color: #17384B;
+
+  }
 }
 
 /*BUSQUEDAS LABORALES*/
@@ -1930,6 +1959,10 @@ html {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  @media(max-width: 500px){
+    font-size: 20px;
+
+  }
 }
 
 #revistas-form .administracion-inputs {
