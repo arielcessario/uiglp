@@ -154,17 +154,22 @@ select option { color: black; }
 }
 
 .menu-mobile-panel {
-  width: 50%;
+  width: 70%;
   color: white;
-  background-color: #406276;
+  background-color: #17384B;
   position: fixed;
   bottom: 0px;
   top: 50px;
   z-index: 500;
-  height: 100%;
+  height: 60%;
+  //border: 5px solid white;
 
   .menu-desktop-btn {
     margin-top: 15px;
+    font-family: 'Lato Heavy', serif;
+    line-height: 18px;
+    padding: 5px;
+    font-variant: all-petite-caps;
   }
 
   -webkit-transform: translate(-1000px, 0);
@@ -534,8 +539,6 @@ select option { color: black; }
     flex-direction: column;
     -webkit-align-items: center;
     align-items: center;
-    margin-top: 5%;
-
     width: 100%;
 
     @media (min-width: 800px) {
@@ -684,6 +687,11 @@ select option { color: black; }
 
 #noticias-main {
   background-color: #17384B;
+
+}
+
+.noticia p{
+  text-align: justify;
 
 }
 
@@ -981,8 +989,8 @@ select option { color: black; }
   }
 
   #empresas-carrousel {
-    height: 190px;
-    background-color: white;
+    height: 150px;
+    background-color: transparent;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
@@ -1249,10 +1257,14 @@ select option { color: black; }
 }
 
 .issuu {
-  background-color: transparent;
+  background-color: white;
   margin-bottom: 10px;
   margin-top: 10px;
+  text-align: center;
+  @media(max-width: 500px){
+    margin: 20px;
 
+  }
 }
 
 /*SECCIONES DE ADMINISTRACION*/
@@ -1316,6 +1328,11 @@ select option { color: black; }
   color: black;
   font-size: 16px;
   line-height: 22px;
+  @media(max-width: 500px){
+    padding: 20px;
+    text-align: justify;
+
+  }
 }
 
 #financiamiento div button,
@@ -1667,12 +1684,13 @@ select option { color: black; }
     font-family: 'Montserrat Light', serif;
     width: 95%;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: justify;
     max-height: 400px;
     overflow: hidden;
     font-size: 12px;
     line-height: 15px;
     color: #FFFFFF;
+
   }
 }
 
@@ -1729,19 +1747,25 @@ select option { color: black; }
 #noticias-comentarios {
   background-color: #3f6175;
   color: white;
+
+
   #noticias-comentarios-list {
 
     max-width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    @media (max-width: 500px){
+      align-items: center;
+
+    }
   }
   #noticias-comentarios-title {
     width: 90%;
     font-family: 'Lato Heavy', serif;
     margin-bottom: 20px;
     margin-top: 25px;
-    margin-left: 35px;
+    padding: 15px;
     color: white;
     text-align: left;
     font-size: 38px;
@@ -1751,6 +1775,7 @@ select option { color: black; }
   .noticias-comentario {
     max-width: 90%;
     margin-bottom: 20px;
+    margin-left: 10px;
 
     .noticia-comentario-user {
 
@@ -1766,6 +1791,29 @@ select option { color: black; }
     }
   }
 
+}
+
+.noticias-comentario button{
+  width: 120px;
+  font-family: 'Lato Heavy', serif;
+  color: white;
+  background-color: #3f6175;
+  font-size: 12px;
+  border: 1px solid white;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  white-space: nowrap;
+  text-align: center;
+  cursor: hand;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  .noticias-comentario button:hover{
+    background-color: #17384B;
+
+  }
 }
 
 /*BUSQUEDAS LABORALES*/
@@ -1913,6 +1961,10 @@ select option { color: black; }
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  @media(max-width: 500px){
+    font-size: 20px;
+
+  }
 }
 
 #revistas-form .administracion-inputs {
