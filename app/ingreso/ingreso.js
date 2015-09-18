@@ -22,6 +22,14 @@
         vm.recuperarPassword = recuperarPassword;
         vm.mail = '';
         vm.password = '';
+        vm.loginPrev = loginPrev;
+
+
+        function loginPrev(event){
+            if(event.keyCode == 13){
+                login();
+            }
+        }
 
         if (store.get('jwt')) {
             $location.path('/administracion');

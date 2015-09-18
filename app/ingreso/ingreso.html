@@ -6,11 +6,11 @@
     <div id="ingreso-form">
         <div class="administracion-input">
             <span>NOMBRE DE USUARIO</span>
-            <input id="mail" type="email" ng-model="ingresoCtrl.mail">
+            <input id="mail" type="email" ng-model="ingresoCtrl.mail" ng-keypress="ingresoCtrl.loginPrev($event);">
         </div>
         <div class="administracion-input">
             <span>CONTRASEÑA</span>
-            <input id="password" type="password" ng-model="ingresoCtrl.password">
+            <input id="password" type="password" ng-model="ingresoCtrl.password" ng-keypress="ingresoCtrl.loginPrev($event);">
         </div>
         <div  class="administracion-button-bar">
             <button ng-click="ingresoCtrl.login();">OK</button>
