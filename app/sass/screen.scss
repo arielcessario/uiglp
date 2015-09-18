@@ -149,6 +149,9 @@ select option { color: black; }
 
   .logo {
     flex: 5;
+    margin-left: 5px;
+    padding: 5px;
+    text-align: right;
 
     //background-color: green;
   }
@@ -663,6 +666,7 @@ select option { color: black; }
   font-family: 'Lato Heavy', serif;
   color: #133548;
   font-size: 16px;
+
   margin: 10px;
   border: 1px solid #133548;
   -webkit-border-radius: 15px;
@@ -969,7 +973,7 @@ select option { color: black; }
         margin-bottom: 10px;
       }
       p {
-        max-height: 220px;
+        max-height: 170px;
         overflow: auto;
       }
 
@@ -1197,6 +1201,7 @@ select option { color: black; }
   table {
     font-family: "Montserrat Semibold", sans-serif;
     font-size: 15px;
+    cursor: pointer;
     color: white;
     max-width: 95%;
     margin-left: 10px;
@@ -1654,6 +1659,7 @@ select option { color: black; }
     margin-top: 5px;
     img {
       margin-left: 15px;
+      cursor: pointer;
       max-width: 15%;
       height: 30px;
       border: 1px solid white;
@@ -1730,6 +1736,7 @@ select option { color: black; }
     margin-bottom: 20px;
     #noticias-nuevo-btn {
       width: 110px;
+      cursor: pointer;
       background-color: white;
       font-family: 'Lato Heavy', serif;
       font-size: 16px;
