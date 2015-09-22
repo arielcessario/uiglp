@@ -45,7 +45,7 @@
                     vm.mensaje = '';
                     vm.asunto = '';
 
-                    goog_report_conversion('http://www.ac-desarrollos.com/#');
+                    //goog_report_conversion('http://www.ac-desarrollos.com/#');
                 })
                 .error(function (data) {
                     console.log(data);
