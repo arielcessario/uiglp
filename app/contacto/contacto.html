@@ -1,6 +1,9 @@
 <div ng-controller="ContactoController as contactoCtrl" id="contacto-inner">
     <div id="contacto-titulo" class="contacto-title">
-        <div>Contacto</div>
+        <div ng-class="{'contacto-enviado': contactoCtrl.enviado}" class="contacto-titulo-container">
+            <div class="contacto-original">Contacto</div>
+            <div class="contacto-mensaje-enviado">Su Mensaje ha sido enviado</div>
+        </div>
     </div>
     <div id="contacto-container">
 

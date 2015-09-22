@@ -8,7 +8,7 @@
             $routeProvider.when('/contacto', {
                 templateUrl: currentScriptPath.replace('.js', '.html'),
                 controller: 'ContactoController',
-                data: {requiresLogin:false}
+                data: {requiresLogin: false}
             });
         }])
         .controller('ContactoController', ContactoController);
@@ -18,9 +18,15 @@
     function ContactoController(LoginService, LoginState, store, $http, $timeout) {
 
         var vm = this;
+        vm.enviado = false;
         vm.sendMail = sendMail;
 
         function sendMail() {
+            //vm.enviado = true;
+            //$timeout(hideMessage, 3000);
+            //function hideMessage() {
+            //    vm.enviado = false;
+            //}
 
             //console.log(vm.mail);
             return $http.post('./contacto/contact.php',
