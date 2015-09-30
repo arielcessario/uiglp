@@ -1921,14 +1921,14 @@ select option {
   }
 }
 /* line 1807, ../sass/screen.scss */
-#noticias-nuevo-comentario div {
+#noticias-nuevo-comentario #noticias-button-container {
   width: 90%;
   position: relative;
   margin-top: -45px;
   margin-bottom: 20px;
 }
 /* line 1812, ../sass/screen.scss */
-#noticias-nuevo-comentario div #noticias-nuevo-btn {
+#noticias-nuevo-comentario #noticias-button-container #noticias-nuevo-btn {
   width: 110px;
   cursor: pointer;
   background-color: white;
