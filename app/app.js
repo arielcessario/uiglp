@@ -31,13 +31,37 @@ angular.module('uiglp', [
             };
             $httpProvider.interceptors.push('jwtInterceptor');
         }])
-    .run(function ($rootScope, store, jwtHelper, $location) {
+    .run(function ($rootScope, store, jwtHelper, $location, LinksService) {
         $rootScope.$on('$routeChangeStart', function (e, to) {
 
-            //console.log(to.data);
-            //if (!store.get('jwt')) {
-            //    console.log('data');
-            //}
+
+
+
+            if(store.get('jwt')){
+                LinksService.links = [
+                    {nombre: 'INICIO', path: '/'},
+                    {nombre: 'INSTITUCIONAL', path: '/institucional'},
+                    {nombre: 'BUSQUEDA LABORAL', path: '/busquedas_laborales'},
+                    {nombre: 'NOTICIAS', path: '/noticias/0'},
+                    {nombre: 'CONTACTO', path: '/contacto'},
+                    {nombre: 'REVISTA', path: '/revistas'},
+                    {nombre: 'MI CUENTA', path: '/ingreso'}
+                ];
+
+                $rootScope.$broadcast('links');
+            }else{
+                LinksService.links = [
+                    {nombre: 'INICIO', path: '/'},
+                    {nombre: 'INSTITUCIONAL', path: '/institucional'},
+                    {nombre: 'BUSQUEDA LABORAL', path: '/busquedas_laborales'},
+                    {nombre: 'NOTICIAS', path: '/noticias/0'},
+                    {nombre: 'CONTACTO', path: '/contacto'},
+                    {nombre: 'REVISTA', path: '/revistas'},
+                    {nombre: 'INGRESO', path: '/ingreso'}
+                ];
+
+                $rootScope.$broadcast('links');
+            }
 
 
             if (to && to.data && to.data.requiresLogin) {
@@ -49,17 +73,12 @@ angular.module('uiglp', [
             }
         });
     })
+    .service('LinksService', LinksService)
     .controller('AppController', AppController);
 
 
-AppController.$inject = ['LoginService', '$location', '$rootScope', '$routeParams', 'store'];
-function AppController(LoginState, $location, $rootScope, $routeParams, store) {
-
-    var vm = this;
-    vm.goTo = goTo;
-    vm.selectedPage = 'INICIO';
-    vm.menu_mobile_open = false;
-    vm.links = [
+function LinksService(){
+    this.links = [
         {nombre: 'INICIO', path: '/'},
         {nombre: 'INSTITUCIONAL', path: '/institucional'},
         {nombre: 'BUSQUEDA LABORAL', path: '/busquedas_laborales'},
@@ -68,6 +87,24 @@ function AppController(LoginState, $location, $rootScope, $routeParams, store) {
         {nombre: 'REVISTA', path: '/revistas'},
         {nombre: 'INGRESO', path: '/ingreso'}
     ];
+}
+
+
+
+AppController.$inject = ['LoginService', '$location', '$rootScope', '$scope', 'LinksService'];
+function AppController(LoginState, $location, $rootScope, $scope, LinksService) {
+
+    var vm = this;
+    vm.goTo = goTo;
+    vm.selectedPage = 'INICIO';
+    vm.menu_mobile_open = false;
+    vm.links = LinksService.links;
+
+    $scope.$on('links', function(event, args) {
+        vm.links = LinksService.links;
+    });
+
+
     //store.remove('jwt');
 
     vm.selectedPage = vm.links.filter(function (elem, index, array) {
