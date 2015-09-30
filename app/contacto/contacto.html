@@ -9,16 +9,16 @@
 
         <div>
             Nombre:
-            <input ng-model="contactoCtrl.nombre" type="text" id="nombre">
+            <input ng-model="contactoCtrl.nombre" type="text" id="contacto-nombre">
             Email:
-            <input ng-model="contactoCtrl.email"  type="text" id="mail">
+            <input ng-model="contactoCtrl.email"  type="text" id="contacto-mail">
             Asunto:
-            <input ng-model="contactoCtrl.asunto"  type="text" id="asunto">
+            <input ng-model="contactoCtrl.asunto"  type="text" id="contacto-asunto">
             <button id="contacto-enviar-desktop" ng-click="contactoCtrl.sendMail();">Enviar</button>
         </div>
         <div>
             Escriba Aqui su consulta:
-            <textarea ng-model="contactoCtrl.mensaje" name="" id="consulta" rows="10"></textarea>
+            <textarea ng-model="contactoCtrl.mensaje" name="" id="contacto-consulta" rows="10"></textarea>
         </div>
         <div>
             <button id="contacto-enviar-mobile" ng-click="contactoCtrl.sendMail();">Enviar</button>

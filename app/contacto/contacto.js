@@ -14,14 +14,39 @@
         .controller('ContactoController', ContactoController);
 
 
-    ContactoController.$inject = ['LoginService', 'LoginState', 'store', '$http', '$timeout'];
-    function ContactoController(LoginService, LoginState, store, $http, $timeout) {
+    ContactoController.$inject = ['LoginService', 'LoginState', 'store', '$http', '$timeout', 'AcUtilsService'];
+    function ContactoController(LoginService, LoginState, store, $http, $timeout,AcUtilsService) {
 
         var vm = this;
         vm.enviado = false;
         vm.sendMail = sendMail;
 
         function sendMail() {
+
+            var conErrores = false;
+            if (vm.email == undefined || vm.email.trim().length == 0 || !AcUtilsService.validateEmail(vm.email)) {
+                AcUtilsService.validations('contacto-mail', 'El mail no es válido');
+                conErrores = true;
+            }
+
+            if (vm.nombre == undefined || vm.nombre.trim().length == 0) {
+                AcUtilsService.validations('contacto-nombre', 'Debe ingrear su nombre');
+                conErrores = true;
+            }
+
+            if (vm.mensaje == undefined || vm.mensaje.trim().length == 0) {
+                AcUtilsService.validations('contacto-consulta', 'Debe ingresar un mensaje');
+                conErrores = true;
+            }
+
+            if (vm.asunto == undefined || vm.asunto.trim().length == 0) {
+                AcUtilsService.validations('contacto-asunto', 'Debe ingresar un asunto');
+                conErrores = true;
+            }
+
+            if (conErrores) {
+                return;
+            }
             //vm.enviado = true;
             //$timeout(hideMessage, 3000);
             //function hideMessage() {
