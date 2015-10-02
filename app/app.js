@@ -107,28 +107,37 @@ function AppController(LoginState, $location, $rootScope, $scope, LinksService) 
 
     //store.remove('jwt');
 
-    vm.selectedPage = vm.links.filter(function (elem, index, array) {
 
-        var response = elem.path == $location.$$path;
-
+    for(var i = 0; i<vm.links.length;i++){
+        console.log($location.$$path);
+        if(vm.links[i].path == $location.$$path){
+             vm.selectedPage = vm.links[i].nombre;
+         }
 
         if ($location.$$path == '/administracion') {
-            response = {nombre: 'INGRESO', path: '/ingreso'};
+            vm.selectedPage = 'INGRESO';
         }
 
         if ($location.$$path == '/servicios') {
-            response = {nombre: 'SERVICIOS', path: '/servicios'};
+            vm.selectedPage = 'INICIO';
         }
 
         if ($location.$$path == '/nuevo_usuario') {
-            response = {nombre: 'INGRESO', path: '/ingreso'};
+            vm.selectedPage = 'INGRESO';
         }
 
         if ($location.$$path.indexOf('/noticias') > -1) {
-            response = '/' + $location.$$path.split('/')[1];
+            //response = '/' + $location.$$path.split('/')[1];
+            vm.selectedPage = 'NOTICIAS';
         }
-        return response;
-    })[0].nombre;
+
+    }
+
+
+
+
+
+
 
     //console.log(vm.selectedPage);
 
