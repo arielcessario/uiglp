@@ -1286,6 +1286,17 @@ text-align: right;
     border-radius: 10px;
     background-color: #2f96b4;
 
+
+
+    max-height: 300px;
+    overflow: auto;
+    display: block;
+
+    tbody{
+      min-width: 100%;
+      display: table;
+    }
+
     th {
       border-bottom: .5px dotted white;
       border-left: .5px dotted white;
@@ -1309,6 +1320,7 @@ text-align: right;
       background-color: #1c3e52;
       color: white;
     }
+
 
     //:last-child:hover,
     //.tr-selected:last-child{
