@@ -145,7 +145,9 @@ function AppController(LoginState, $location, $rootScope, $scope, LinksService) 
     function goTo(location) {
 
         $location.path(location.path);
+
         vm.selectedPage = location.nombre;
+
 
     }
 }

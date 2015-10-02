@@ -19,8 +19,7 @@
     <link rel="stylesheet" href="ac-ripple-button/ac-ripple-button.css">
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body ng-controller="AppController as appCtrl">
-
+<body ng-controller="AppController as appCtrl" id="main-body">
 <div class="header">
     <div class="menu-mobile menu-type-mobile">
         <div class="nav-button"
@@ -78,7 +77,7 @@
 <!--NG-VIEW-->
 
 
-<div ng-view class="view-container"></div>
+<div ng-view class="view-container" autoscroll="true"></div>
 
 <div id="contacto">
 
