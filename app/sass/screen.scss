@@ -706,7 +706,6 @@ text-align: right;
 
 .noticia p{
   text-align: justify;
-
 }
 
 #noticias,
@@ -791,7 +790,7 @@ text-align: right;
         width: 90%;
         margin-bottom: 10px;
         text-align: left;
-        max-height: 155px;
+        height: 154px;
         overflow: auto;
         font-size: 12px;
         line-height: 15px;
@@ -856,6 +855,12 @@ text-align: right;
 
       -webkit-align-items: center;
       align-items: center;
+    }
+
+    .prev-m:hover,
+    .sig-m:hover{
+        color: #17384B;
+      cursor: pointer;
     }
 
     #agenda-calendar-header {
@@ -1033,11 +1038,14 @@ text-align: right;
         max-width: 180px;
         max-height: 70px;
         margin: 10px;
-        background-color: lightgray;
+        align-content: center;
+        text-align: center;
         img {
           //min-height: 140px;
           max-width: 150px;
           max-height: 50px;
+          margin: auto;
+          text-align: center;
 
         }
       }
@@ -2183,12 +2191,17 @@ text-align: right;
 
 .error-input {
   border-color: red !important;
+  width: 315px;
 }
+
+
 
 .error-message {
   position: absolute;
-  background: #406276;
+  background: red;
+  margin-top: 5px;
   color: white;
+  width: 300px;
   white-space: nowrap;
   padding: 5px;
   -webkit-border-radius: 5px;
