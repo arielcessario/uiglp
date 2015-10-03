@@ -109,7 +109,6 @@ function AppController(LoginState, $location, $rootScope, $scope, LinksService) 
 
 
     for(var i = 0; i<vm.links.length;i++){
-        console.log($location.$$path);
         if(vm.links[i].path == $location.$$path){
              vm.selectedPage = vm.links[i].nombre;
          }
