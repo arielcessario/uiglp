@@ -29,11 +29,26 @@
     AcUtilsService.$inject = [];
     function AcUtilsService() {
         var service = {};
+
         service.validateEmail = validateEmail;
         service.validations = validations;
 
         return service;
 
+
+        function verifyBrowser(){
+
+            var obj = {};
+            obj.isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+            // Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
+            obj.isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
+            obj.isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+            // At least Safari 3+: "[object HTMLElementConstructor]"
+            obj.isChrome = !!window.chrome && !isOpera;              // Chrome 1+
+            obj.isIE = /*@cc_on!@*/false || !!document.documentMode; // At least IE6
+
+            return obj;
+        }
 
         function validateEmail(email) {
             var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
@@ -100,10 +115,10 @@ var dateFormat = function () {
             mask = date;
             date = undefined;
         }
-
         // Passing date through Date applies Date.parse, if necessary
-        date = date ? new Date(date) : new Date;
-        if (isNaN(date)) throw SyntaxError("invalid date");
+        date = date ? new Date(date) : new Date();
+
+        if (isNaN(date) && !(typeof InstallTrigger !== 'undefined')) throw SyntaxError("invalid date");
 
         mask = String(dF.masks[mask] || mask || dF.masks["default"]);
 
