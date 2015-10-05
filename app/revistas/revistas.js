@@ -71,7 +71,7 @@
 
         function remove(revista, callback) {
             return $http.post(url,
-                {'function': 'remove', 'item': JSON.stringify(revista)})
+                {'function': 'delete', 'item': JSON.stringify(revista)})
                 .success(function (data) {
                     callback(data);
                 })
