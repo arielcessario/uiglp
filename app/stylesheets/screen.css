@@ -2346,16 +2346,14 @@ select option {
 /* line 2193, ../sass/screen.scss */
 .error-input {
   border-color: red !important;
-  width: 315px;
 }
 
-/* line 2200, ../sass/screen.scss */
+/* line 2199, ../sass/screen.scss */
 .error-message {
   position: absolute;
   background: red;
   margin-top: 5px;
   color: white;
-  width: 300px;
   white-space: nowrap;
   padding: 5px;
   -webkit-border-radius: 5px;
