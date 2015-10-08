@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -1446,7 +1446,7 @@ select option {
 
 /* line 1361, ../sass/screen.scss */
 .issuu {
-  background-color: white;
+  background-color: transparent;
   margin-bottom: 10px;
   margin-top: 10px;
   text-align: center;
@@ -1899,28 +1899,29 @@ select option {
   margin-bottom: 10px;
   text-align: justify;
   max-height: 400px;
-  overflow: auto;
+  min-height: 400px;
+  overflow: visible;
   font-size: 12px;
   line-height: 15px;
   color: #FFFFFF;
 }
 
 @media (min-width: 600px) {
-  /* line 1800, ../sass/screen.scss */
+  /* line 1801, ../sass/screen.scss */
   #noticias-panel {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
-/* line 1807, ../sass/screen.scss */
+/* line 1808, ../sass/screen.scss */
 #noticias-nuevo-comentario {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-/* line 1812, ../sass/screen.scss */
+/* line 1813, ../sass/screen.scss */
 #noticias-nuevo-comentario textarea {
   width: 100%;
   right: 5px;
@@ -1933,19 +1934,19 @@ select option {
   padding: 5px;
 }
 @media (max-width: 500px) {
-  /* line 1812, ../sass/screen.scss */
+  /* line 1813, ../sass/screen.scss */
   #noticias-nuevo-comentario textarea {
     width: 95%;
   }
 }
-/* line 1828, ../sass/screen.scss */
+/* line 1829, ../sass/screen.scss */
 #noticias-nuevo-comentario #noticias-button-container {
   width: 90%;
   position: relative;
   margin-top: -45px;
   margin-bottom: 20px;
 }
-/* line 1833, ../sass/screen.scss */
+/* line 1834, ../sass/screen.scss */
 #noticias-nuevo-comentario #noticias-button-container #noticias-nuevo-btn {
   width: 110px;
   cursor: pointer;
@@ -1961,12 +1962,12 @@ select option {
   text-align: center;
 }
 
-/* line 1851, ../sass/screen.scss */
+/* line 1852, ../sass/screen.scss */
 #noticias-comentarios {
   background-color: #3f6175;
   color: white;
 }
-/* line 1856, ../sass/screen.scss */
+/* line 1857, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-list {
   max-width: 90%;
   display: flex;
@@ -1974,12 +1975,12 @@ select option {
   align-items: left;
 }
 @media (max-width: 500px) {
-  /* line 1856, ../sass/screen.scss */
+  /* line 1857, ../sass/screen.scss */
   #noticias-comentarios #noticias-comentarios-list {
     align-items: center;
   }
 }
-/* line 1867, ../sass/screen.scss */
+/* line 1868, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-title {
   width: 90%;
   font-family: 'Lato Heavy', serif;
@@ -1991,18 +1992,18 @@ select option {
   font-size: 38px;
   line-height: 32px;
 }
-/* line 1879, ../sass/screen.scss */
+/* line 1880, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario {
   max-width: 90%;
   margin-bottom: 20px;
   margin-left: 10px;
 }
-/* line 1884, ../sass/screen.scss */
+/* line 1885, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-user {
   line-height: 24px;
   font-size: 23px;
 }
-/* line 1889, ../sass/screen.scss */
+/* line 1890, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-detalle {
   line-height: 20px;
   font-size: 17px;
@@ -2010,7 +2011,7 @@ select option {
   font-family: 'Montserrat Light', serif;
 }
 
-/* line 1900, ../sass/screen.scss */
+/* line 1901, ../sass/screen.scss */
 .noticias-comentario button {
   width: 120px;
   font-family: 'Lato Heavy', serif;
@@ -2029,13 +2030,13 @@ select option {
   margin-bottom: 10px;
   text-decoration: none;
 }
-/* line 1917, ../sass/screen.scss */
+/* line 1918, ../sass/screen.scss */
 .noticias-comentario button .noticias-comentario button:hover {
   background-color: #17384B;
 }
 
 /*BUSQUEDAS LABORALES*/
-/* line 1925, ../sass/screen.scss */
+/* line 1926, ../sass/screen.scss */
 #busquedas-laborales,
 #revistas,
 #contacto-inner,
@@ -2048,7 +2049,7 @@ select option {
   max-width: 100%;
   margin-top: 100px;
 }
-/* line 1936, ../sass/screen.scss */
+/* line 1937, ../sass/screen.scss */
 #busquedas-laborales input,
 #revistas input,
 #contacto-inner input,
@@ -2063,7 +2064,7 @@ select option {
   padding: 5px;
 }
 @media (max-width: 600px) {
-  /* line 1925, ../sass/screen.scss */
+  /* line 1926, ../sass/screen.scss */
   #busquedas-laborales,
   #revistas,
   #contacto-inner,
@@ -2071,14 +2072,14 @@ select option {
     margin-top: 50px;
   }
 }
-/* line 1952, ../sass/screen.scss */
+/* line 1953, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:nth-child(odd),
 #revistas .busqueda-laboral:nth-child(odd),
 #contacto-inner .busqueda-laboral:nth-child(odd),
 #nuevo-usuario .busqueda-laboral:nth-child(odd) {
   background-color: #17384B;
 }
-/* line 1957, ../sass/screen.scss */
+/* line 1958, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:hover,
 #revistas .busqueda-laboral:hover,
 #contacto-inner .busqueda-laboral:hover,
@@ -2089,7 +2090,7 @@ select option {
   -o-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
-/* line 1965, ../sass/screen.scss */
+/* line 1966, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral,
 #revistas .busqueda-laboral,
 #contacto-inner .busqueda-laboral,
@@ -2105,7 +2106,7 @@ select option {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 1981, ../sass/screen.scss */
+/* line 1982, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-title,
 #revistas .busqueda-laboral .busqueda-laboral-title,
 #contacto-inner .busqueda-laboral .busqueda-laboral-title,
@@ -2115,7 +2116,7 @@ select option {
   font-size: 38px;
   padding: 15px;
 }
-/* line 1988, ../sass/screen.scss */
+/* line 1989, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-texto,
 #revistas .busqueda-laboral .busqueda-laboral-texto,
 #contacto-inner .busqueda-laboral .busqueda-laboral-texto,
@@ -2124,7 +2125,7 @@ select option {
   font-family: 'Lato Regular', serif;
   font-size: 16px;
 }
-/* line 1993, ../sass/screen.scss */
+/* line 1994, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-contacto,
 #revistas .busqueda-laboral .busqueda-laboral-contacto,
 #contacto-inner .busqueda-laboral .busqueda-laboral-contacto,
@@ -2132,7 +2133,7 @@ select option {
   padding: 5px;
 }
 
-/* line 1999, ../sass/screen.scss */
+/* line 2000, ../sass/screen.scss */
 #busqueda-laboral-search {
   width: 100%;
   background-color: #000000;
@@ -2142,7 +2143,7 @@ select option {
   align-items: center;
   min-height: 80px;
 }
-/* line 2007, ../sass/screen.scss */
+/* line 2008, ../sass/screen.scss */
 #busqueda-laboral-search input {
   background-color: transparent;
   max-width: 1000px;
@@ -2156,33 +2157,33 @@ select option {
   margin: 10px;
   padding: 5px;
 }
-/* line 2020, ../sass/screen.scss */
+/* line 2021, ../sass/screen.scss */
 #busqueda-laboral-search input ::-webkit-input-placeholder {
   color: #99C1DA;
 }
-/* line 2024, ../sass/screen.scss */
+/* line 2025, ../sass/screen.scss */
 #busqueda-laboral-search input :-moz-placeholder {
   /* Firefox 18- */
   color: #99C1DA;
 }
-/* line 2029, ../sass/screen.scss */
+/* line 2030, ../sass/screen.scss */
 #busqueda-laboral-search input ::-moz-placeholder {
   /* Firefox 19+ */
   color: #99C1DA;
 }
-/* line 2034, ../sass/screen.scss */
+/* line 2035, ../sass/screen.scss */
 #busqueda-laboral-search input :-ms-input-placeholder {
   color: #99C1DA;
 }
 @media (max-width: 800px) {
-  /* line 2007, ../sass/screen.scss */
+  /* line 2008, ../sass/screen.scss */
   #busqueda-laboral-search input {
     max-width: 95px;
     min-width: 95%;
   }
 }
 
-/* line 2045, ../sass/screen.scss */
+/* line 2046, ../sass/screen.scss */
 #contacto h1 {
   font-family: 'Lato Heavy', serif;
   text-align: center;
@@ -2192,7 +2193,7 @@ select option {
   margin-bottom: 20px;
 }
 
-/* line 2055, ../sass/screen.scss */
+/* line 2056, ../sass/screen.scss */
 #revistas-listado {
   font-family: "Montserrat Semibold", sans-serif;
   color: #133548;
@@ -2208,27 +2209,27 @@ select option {
   align-items: flex-start;
 }
 @media (max-width: 500px) {
-  /* line 2055, ../sass/screen.scss */
+  /* line 2056, ../sass/screen.scss */
   #revistas-listado {
     font-size: 20px;
   }
 }
 
-/* line 2074, ../sass/screen.scss */
+/* line 2075, ../sass/screen.scss */
 #revistas-form .administracion-inputs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 2080, ../sass/screen.scss */
+/* line 2081, ../sass/screen.scss */
 #servicios-main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* line 2086, ../sass/screen.scss */
+/* line 2087, ../sass/screen.scss */
 #servicios-main-container #financiamiento,
 #servicios-main-container #sellados {
   display: flex;
@@ -2237,13 +2238,13 @@ select option {
   align-items: center;
 }
 @media (min-width: 600px) {
-  /* line 2086, ../sass/screen.scss */
+  /* line 2087, ../sass/screen.scss */
   #servicios-main-container #financiamiento,
   #servicios-main-container #sellados {
     flex-direction: row;
   }
 }
-/* line 2096, ../sass/screen.scss */
+/* line 2097, ../sass/screen.scss */
 #servicios-main-container #financiamiento div,
 #servicios-main-container #sellados div {
   display: flex;
@@ -2252,7 +2253,7 @@ select option {
   align-items: center;
 }
 @media (min-width: 600px) {
-  /* line 2096, ../sass/screen.scss */
+  /* line 2097, ../sass/screen.scss */
   #servicios-main-container #financiamiento div,
   #servicios-main-container #sellados div {
     align-items: flex-start;
@@ -2260,12 +2261,12 @@ select option {
   }
 }
 @media (min-width: 600px) {
-  /* line 2109, ../sass/screen.scss */
+  /* line 2110, ../sass/screen.scss */
   #servicios-main-container #sellados {
     flex-direction: row-reverse;
   }
 }
-/* line 2116, ../sass/screen.scss */
+/* line 2117, ../sass/screen.scss */
 #servicios-main-container .servicio-main-icon {
   height: 200px;
   width: 200px;
@@ -2276,7 +2277,7 @@ select option {
   margin: 10px;
 }
 @media (min-width: 600px) {
-  /* line 2116, ../sass/screen.scss */
+  /* line 2117, ../sass/screen.scss */
   #servicios-main-container .servicio-main-icon {
     height: 300px;
     width: 300px;
@@ -2286,24 +2287,24 @@ select option {
     border-radius: 300px;
   }
 }
-/* line 2136, ../sass/screen.scss */
+/* line 2137, ../sass/screen.scss */
 #servicios-main-container h1 {
   font-variant: small-caps;
 }
-/* line 2142, ../sass/screen.scss */
+/* line 2143, ../sass/screen.scss */
 #servicios-main-container h1, #servicios-main-container h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
 }
 @media (min-width: 600px) {
-  /* line 2142, ../sass/screen.scss */
+  /* line 2143, ../sass/screen.scss */
   #servicios-main-container h1, #servicios-main-container h2 {
     text-align: left;
   }
 }
 
-/* line 2153, ../sass/screen.scss */
+/* line 2154, ../sass/screen.scss */
 #contacto-container button {
   width: 110px;
   font-family: 'Lato Heavy', serif;
@@ -2323,13 +2324,13 @@ select option {
   text-decoration: none;
 }
 
-/* line 2172, ../sass/screen.scss */
+/* line 2173, ../sass/screen.scss */
 #contacto-container button:hover {
   color: white;
   background-color: #133548;
 }
 
-/* line 2180, ../sass/screen.scss */
+/* line 2181, ../sass/screen.scss */
 .administracion-slider {
   display: flex;
   flex-direction: row;
@@ -2338,21 +2339,22 @@ select option {
   margin-bottom: 10px;
 }
 
-/* line 2189, ../sass/screen.scss */
+/* line 2190, ../sass/screen.scss */
 .administracion-slider .administracion-input {
   padding-top: 0px !important;
 }
 
-/* line 2193, ../sass/screen.scss */
+/* line 2194, ../sass/screen.scss */
 .error-input {
   border-color: red !important;
 }
 
-/* line 2199, ../sass/screen.scss */
+/* line 2198, ../sass/screen.scss */
 .error-message {
   position: absolute;
   background: red;
   margin-top: 5px;
+  max-width: 315px;
   color: white;
   white-space: nowrap;
   padding: 5px;

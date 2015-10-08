@@ -1359,7 +1359,7 @@ text-align: right;
 }
 
 .issuu {
-  background-color: white;
+  background-color: transparent;
   margin-bottom: 10px;
   margin-top: 10px;
   text-align: center;
@@ -1789,7 +1789,8 @@ text-align: right;
     margin-bottom: 10px;
     text-align: justify;
     max-height: 400px;
-    overflow: auto;
+    min-height: 400px;
+    overflow: visible;
     font-size: 12px;
     line-height: 15px;
     color: #FFFFFF;
@@ -2194,12 +2195,11 @@ text-align: right;
   border-color: red !important;
 }
 
-
-
 .error-message {
   position: absolute;
   background: red;
   margin-top: 5px;
+  max-width: 315px;
   color: white;
   //width: 300px;
   white-space: nowrap;
