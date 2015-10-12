@@ -401,7 +401,6 @@ text-align: right;
   overflow: hidden;
 
   #slider-main {
-    //    margin-top: 200px;
     width: 100%;
     height: 100%;
     font-size: 25px;
@@ -414,7 +413,6 @@ text-align: right;
     #slide-03,
     #slide-04 {
       position: absolute;
-      //top: 100px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -530,13 +528,16 @@ text-align: right;
   margin-top: 24%;
   font-size: 100px;
   font-family: 'Lato Heavy', serif;
-  opacity: .4;
+  border-color: black;
+  text-shadow: 2px 2px black;
+  opacity: .7;
 }
 
 .slide-descr {
   font-size: 25px;
   font-family: 'Lato Regular', serif;
-  opacity: .4;
+  text-shadow: 2px 2px black;
+  opacity: .7;
 }
 
 #servicios {
@@ -1361,6 +1362,10 @@ text-align: right;
   div {
     margin: 5px;
   }
+  a{
+    margin-top: 4px;
+  }
+
 }
 
 .issuu {
