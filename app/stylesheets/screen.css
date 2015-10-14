@@ -459,7 +459,7 @@ select option {
 /* line 394, ../sass/screen.scss */
 #slider {
   position: absolute;
-  top: 0;
+  top: 120px;
   width: 100%;
   height: 600px;
   z-index: 0;
@@ -596,7 +596,7 @@ select option {
 
 /* line 547, ../sass/screen.scss */
 #servicios {
-  margin-top: 600px;
+  margin-top: 720px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -1256,20 +1256,20 @@ select option {
   }
 }
 /* line 1190, ../sass/screen.scss */
-#contacto-inner #contacto-container div {
+#contacto-inner #contacto-container .contacto-panel {
   max-width: 80%;
   min-width: 80%;
 }
 @media (min-width: 800px) {
   /* line 1190, ../sass/screen.scss */
-  #contacto-inner #contacto-container div {
+  #contacto-inner #contacto-container .contacto-panel {
     max-width: 350px;
     min-width: 350px;
   }
 }
 /* line 1197, ../sass/screen.scss */
-#contacto-inner #contacto-container div input[type=text],
-#contacto-inner #contacto-container div textarea {
+#contacto-inner #contacto-container .contacto-panel input[type=text],
+#contacto-inner #contacto-container .contacto-panel textarea {
   width: 90%;
   right: 5px;
   padding: 5px;
@@ -1278,14 +1278,14 @@ select option {
 }
 @media (min-width: 800px) {
   /* line 1197, ../sass/screen.scss */
-  #contacto-inner #contacto-container div input[type=text],
-  #contacto-inner #contacto-container div textarea {
+  #contacto-inner #contacto-container .contacto-panel input[type=text],
+  #contacto-inner #contacto-container .contacto-panel textarea {
     max-width: 350px;
   }
 }
 @media (min-width: 800px) {
   /* line 1209, ../sass/screen.scss */
-  #contacto-inner #contacto-container div #contacto-enviar-mobile {
+  #contacto-inner #contacto-container .contacto-panel #contacto-enviar-mobile {
     height: 0px;
     width: 0px;
     visibility: collapse;
@@ -1294,7 +1294,7 @@ select option {
 }
 @media (max-width: 800px) {
   /* line 1218, ../sass/screen.scss */
-  #contacto-inner #contacto-container div #contacto-enviar-desktop {
+  #contacto-inner #contacto-container .contacto-panel #contacto-enviar-desktop {
     height: 0px;
     width: 0px;
     visibility: collapse;
@@ -1478,7 +1478,7 @@ select option {
 /*SECCIONES DE ADMINISTRACION*/
 /* line 1387, ../sass/screen.scss */
 #ingreso {
-  margin-top: 100px;
+  margin-top: 120px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -1502,7 +1502,7 @@ select option {
   justify-content: center;
   flex-direction: column;
   max-width: 100%;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 @media (max-width: 600px) {
   /* line 1399, ../sass/screen.scss */
@@ -1649,7 +1649,6 @@ select option {
 .contacto-title,
 .servicios-title {
   width: 100% !important;
-  margin-top: 20px;
   font-size: 35px;
   font-family: "Montserrat Semibold", sans-serif;
   font-weight: 400;
@@ -2079,7 +2078,7 @@ select option {
   justify-content: center;
   flex-direction: column;
   max-width: 100%;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 /* line 1958, ../sass/screen.scss */
 #busquedas-laborales input,
@@ -2395,6 +2394,7 @@ select option {
   background: red;
   margin-top: 5px;
   max-width: 315px;
+  min-width: 0px;
   color: white;
   white-space: nowrap;
   padding: 5px;

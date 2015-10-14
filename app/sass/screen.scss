@@ -393,7 +393,7 @@ text-align: right;
 
 #slider {
   position: absolute;
-  top: 0;
+  top: 120px;
   width: 100%;
   height: 600px;
   z-index: 0;
@@ -545,7 +545,7 @@ text-align: right;
 }
 
 #servicios {
-  margin-top: 600px;
+  margin-top: 720px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -1187,7 +1187,7 @@ text-align: right;
       align-items: flex-start;
     }
 
-    div {
+    .contacto-panel {
       max-width: 80%;
       min-width: 80%;
       @media(min-width: 800px) {
@@ -1385,7 +1385,7 @@ text-align: right;
 
 /*SECCIONES DE ADMINISTRACION*/
 #ingreso {
-  margin-top: 100px;
+  margin-top: 120px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -1406,7 +1406,7 @@ text-align: right;
   justify-content: center;
   flex-direction: column;
   max-width: 100%;
-  margin-top: 100px;
+  margin-top: 120px;
   @media (max-width: 600px) {
     margin-top: 50px;
 
@@ -1537,7 +1537,7 @@ text-align: right;
 .servicios-title,
 {
   width: 100% !important;
-  margin-top: 20px;
+  //margin-top: 20px;
   font-size: 35px;
   font-family: "Montserrat Semibold", sans-serif;
   font-weight: 400;
@@ -1954,7 +1954,7 @@ text-align: right;
   justify-content: center;
   flex-direction: column;
   max-width: 100%;
-  margin-top: 100px;
+  margin-top: 120px;
   input {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -2228,6 +2228,7 @@ text-align: right;
   background: red;
   margin-top: 5px;
   max-width: 315px;
+  min-width: 0px;
   color: white;
   //width: 300px;
   white-space: nowrap;
@@ -2238,9 +2239,12 @@ text-align: right;
   font-size: 16px;
   box-shadow: 0px 0px 10px -3px black;
 
+
+
   -webkit-animation: show-error 0.4s;
   -o-animation: show-error 0.4s;
   animation: show-error 0.4s;
+
 
 }
 

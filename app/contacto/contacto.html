@@ -7,7 +7,7 @@
     </div>
     <div id="contacto-container">
 
-        <div>
+        <div class="contacto-panel">
             Nombre:
             <input ng-model="contactoCtrl.nombre" type="text" id="contacto-nombre">
             Email:
@@ -16,11 +16,11 @@
             <input ng-model="contactoCtrl.asunto"  type="text" id="contacto-asunto">
             <button id="contacto-enviar-desktop" ng-click="contactoCtrl.sendMail();">Enviar</button>
         </div>
-        <div>
+        <div class="contacto-panel">
             Escriba Aqui su consulta:
             <textarea ng-model="contactoCtrl.mensaje" name="" id="contacto-consulta" rows="10"></textarea>
         </div>
-        <div>
+        <div class="contacto-panel">
             <button id="contacto-enviar-mobile" ng-click="contactoCtrl.sendMail();">Enviar</button>
         </div>
     </div>
