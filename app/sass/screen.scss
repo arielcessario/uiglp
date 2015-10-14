@@ -1233,25 +1233,26 @@ text-align: right;
 
 .contacto-mensaje-enviado{
   //margin-top: 20px;
-  min-height: 90px;
-  max-height: 90px;
+  min-height: 35px;
+  max-height: 35px;
 }
 
 .contacto-original{
   //margin-top: 70px;
   min-height: 35px;
-  max-height: 90px;
+  max-height: 35px;
+  line-height: 40px;
 }
 
 .contacto-titulo-container{
-  margin-top: 50px;
+  margin-top: 39px;
 }
 
 
 #contacto-titulo{
   overflow: hidden;
-  min-height: 40px;
-  max-height: 80px;
+  min-height: 45px;
+  max-height: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1266,26 +1267,26 @@ text-align: right;
 }
 
 @-webkit-keyframes change-enviado {
-  0%   {margin-top:90px;}
-  15%  {margin-top:90px;}
-  25%  {margin-top:-90px;}
-  40%  {margin-top:-90px;}
-  50%  {margin-top:-90px;}
-  65%  {margin-top:-90px;}
-  75%  {margin-top:-90px;}
-  85%  {margin-top:-90px;}
-  100% {margin-top:90px;}
+  0%   {margin-top:45px;}
+  15%  {margin-top:45px;}
+  25%  {margin-top:-45px;}
+  40%  {margin-top:-45px;}
+  50%  {margin-top:-45px;}
+  65%  {margin-top:-45px;}
+  75%  {margin-top:-45px;}
+  85%  {margin-top:-45px;}
+  100% {margin-top:45px;}
 }
 @keyframes change-enviado {
-  0%   {margin-top:90px;}
-  15%  {margin-top:90px;}
-  25%  {margin-top:-90px;}
-  40%  {margin-top:-90px;}
-  50%  {margin-top:-90px;}
-  65%  {margin-top:-90px;}
-  75%  {margin-top:-90px;}
-  85%  {margin-top:-90px;}
-  100% {margin-top:90px;}
+  0%   {margin-top:45px;}
+  15%  {margin-top:45px;}
+  25%  {margin-top:-45px;}
+  40%  {margin-top:-45px;}
+  50%  {margin-top:-45px;}
+  65%  {margin-top:-45px;}
+  75%  {margin-top:-45px;}
+  85%  {margin-top:-45px;}
+  100% {margin-top:45px;}
 }
 
 
