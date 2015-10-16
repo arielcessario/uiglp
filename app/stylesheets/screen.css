@@ -624,7 +624,7 @@ select {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   /* line 565, ../sass/screen.scss */
   #servicios {
     margin-top: 600px;

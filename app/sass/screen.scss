@@ -567,7 +567,7 @@ text-align: right;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  @media (min-width: 800px) {
+  @media (max-width: 800px) {
     margin-top: 600px;
 
   }
