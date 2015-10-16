@@ -567,6 +567,10 @@ text-align: right;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  @media (min-width: 800px) {
+    margin-top: 600px;
+
+  }
   //  justify-content: center;
   span {
     text-align: center;
