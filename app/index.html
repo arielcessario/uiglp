@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="ac-ripple-button/ac-ripple-button.css">
 </head>
 
-<body ng-controller="AppController as appCtrl" id="main-body">
+<div ng-controller="AppController as appCtrl" id="main-body">
 <div class="header">
     <div class="menu-mobile menu-type-mobile">
         <div class="nav-button"
@@ -83,14 +83,11 @@
 
 
 
-    <h1>Teléfonos:</h1><br>
-    <h2>Administración: Tel.: 0221 423 - 4505</h2><br>
-    <h2>Depto. de Desarrollo Productivo:</h2>
-     <h2>Tel.: 0221 422 - 3916</h2><br>
+    <h1>Teléfonos: <h2>Administración: Tel.: 0221 423 - 4505 - Depto. de Desarrollo Productivo: Tel.: 0221 422 - 3916</h2></h1>
 
-    <h1>Escribanos:</h1><br>
-    <h2>uiglp@uiglp.org.ar</h2><br>
-    <h2>administracion@uiglp.org.ar</h2><br>
+    <h1>Escribanos:</h1>
+    <h2>uiglp@uiglp.org.ar - administracion@uiglp.org.ar</h2>
+
 
 
 </div>
@@ -111,6 +108,8 @@
     <div ng-click="appCtrl.goTo({nombre: 'INGRESO', path: '/ingreso'});">INGRESO</div>
 
 </div>
+
+<div class="acdesarrollos">Powered by: <A HREF="http://www.ac-desarrollos.com">AC-desarrollos</A></div>
 
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
