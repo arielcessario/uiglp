@@ -24,14 +24,19 @@
 
 
         function initialize() {
-            console.log('le');
+            var myLatLng = {lat: -34.9067806, lng: -57.9475211};
             var mapCanvas = document.getElementById('contacto-map');
             var mapOptions = {
-                center: new google.maps.LatLng(44.5403, -78.5463),
-                zoom: 8,
+                center: new google.maps.LatLng(-34.9067806, -57.9475211),
+                zoom: 13,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
-            var map = new google.maps.Map(mapCanvas, mapOptions)
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'UIGLP'
+            });
         }
 
         google.maps.event.addDomListener(window, 'load', initialize);
