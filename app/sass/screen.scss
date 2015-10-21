@@ -1243,15 +1243,19 @@ text-align: right;
           width: 0px;
           visibility: collapse;
           display: none;
-
         }
       }
-
     }
-
   }
-
 }
+
+
+#contacto-map{
+  height: 300px;
+  background-color: gray;
+  width: 100%;
+}
+
 
 .contacto-mensaje-enviado{
   //margin-top: 20px;
@@ -2276,7 +2280,6 @@ text-align: right;
 
 .acdesarrollos {
   text-align: left;
-  width: 100px;
   margin-left: 5px;
   font-family: 'Lato Regular', serif;
   font-size: 15px;
@@ -2302,6 +2305,8 @@ text-align: right;
 //que pongo acaaaaa//
 background-color: black;
   padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 

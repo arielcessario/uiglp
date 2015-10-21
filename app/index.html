@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="ac-ripple-button/ac-ripple-button.css">
 </head>
 
-<div ng-controller="AppController as appCtrl" id="main-body">
+<body ng-controller="AppController as appCtrl" id="main-body">
 <div class="header">
     <div class="menu-mobile menu-type-mobile">
         <div class="nav-button"
@@ -33,7 +33,7 @@
         <div class="bienvenidos">Bienvenidos</div>
         <div class="logo">
 
-            <img  src="img/logo.png" alt="logo" height="45px" width="45px">
+            <img src="img/logo.png" alt="logo" height="45px" width="45px">
 
 
         </div>
@@ -41,7 +41,7 @@
     <div class="menu-desktop menu-type-desktop">
 
         <div id="menu-desktop-logo" ng-click="appCtrl.goTo({nombre: 'INICIO', path: '/'});">
-            <img  src="img/logo.png" alt="logo" height="115px" width="115px">
+            <img src="img/logo.png" alt="logo" height="115px" width="115px">
         </div>
         <div id="menu-desktop-right">
             <div id="menu-desktop-upper"></div>
@@ -52,7 +52,8 @@
                          ng-class="{'menu-desktop-btn-selected':appCtrl.selectedPage.indexOf(link.nombre) > -1 }"
                          ripple-color="#ffffff"
                          ng-repeat="link in appCtrl.links"
-                         ng-click="appCtrl.goTo(link);"> {{link.nombre}}</div>
+                         ng-click="appCtrl.goTo(link);"> {{link.nombre}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -65,7 +66,8 @@
          ng-class="{'menu-desktop-btn-selected':appCtrl.selectedPage.indexOf(link.nombre) > -1 }"
          ripple-color="#ffffff"
          ng-repeat="link in appCtrl.links"
-         ng-click="appCtrl.goTo(link); appCtrl.menu_mobile_open=false;"> {{link.nombre}}</div>
+         ng-click="appCtrl.goTo(link); appCtrl.menu_mobile_open=false;"> {{link.nombre}}
+    </div>
 </div>
 
 <!--[if lt IE 7]>
@@ -79,37 +81,36 @@
 
 <div ng-view class="view-container" autoscroll="true"></div>
 
-<div id="contacto">
 
-
-
-    <h1>Teléfonos: <h2>Administración: Tel.: 0221 423 - 4505 - Depto. de Desarrollo Productivo: Tel.: 0221 422 - 3916</h2></h1>
-
-    <h1>Escribanos:</h1>
-    <h2>uiglp@uiglp.org.ar - administracion@uiglp.org.ar</h2>
-
-
-
-</div>
 <div id="footer">
 
     <div ng-click="appCtrl.goTo({nombre: 'INICIO', path: '/'});">INICIO</div>
     <a>|</a>
+
     <div ng-click="appCtrl.goTo({nombre: 'INSTITUCIONAL', path: '/institucional'});">INSTITUCIONAL</div>
     <a>|</a>
-    <div ng-click="appCtrl.goTo({nombre: 'BUSQUEDA LABORAL', path: '/busquedas_laborales'});">CLASIFICADOS</div>
+
+    <div ng-click="appCtrl.goTo({nombre: 'BUSQUEDA LABORAL', path: '/busquedas_laborales'});">BÚSQUEDA LABORAL</div>
     <a>|</a>
-    <div ng-click="appCtrl.goTo({nombre: 'NOTICIAS', path: '/noticias/0'});">AGENDA</div>
+
+    <div ng-click="appCtrl.goTo({nombre: 'NOTICIAS', path: '/noticias/0'});">NOTICIAS</div>
     <a>|</a>
+
     <div ng-click="appCtrl.goTo({nombre: 'CONTACTO', path: '/contacto'});">CONTACTO</div>
     <a>|</a>
+
     <div ng-click="appCtrl.goTo({nombre: 'REVISTA', path: '/revistas'});">REVISTA</div>
     <a>|</a>
+
     <div ng-click="appCtrl.goTo({nombre: 'INGRESO', path: '/ingreso'});">INGRESO</div>
 
 </div>
+<div id="contacto">
+    <h2>Administración: Tel.: 0221 423 - 4505 - Depto. de Desarrollo Productivo: Tel.: 0221 422 - 3916 -
+        uiglp@uiglp.org.ar - administracion@uiglp.org.ar</h2>
+</div>
 <div class="contenedor_ac">
-<div class="acdesarrollos">Powered by: <A HREF="http://www.ac-desarrollos.com">AC-desarrollos</A></div>
+    <div class="acdesarrollos">Powered by <A HREF="http://www.ac-desarrollos.com"> AC-desarrollos</A></div>
 </div>
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -139,5 +140,6 @@
 <script src="servicios/servicios.js"></script>
 <script src="revistas/revistas.js"></script>
 <script src="contacto/contacto.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 </body>
 </html>
