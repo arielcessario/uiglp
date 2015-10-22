@@ -1,10 +1,23 @@
 <div ng-controller="InstitucionalController as institucionalCtrl" id="institucional">
     <div id="institucional-titulo" class="institucional-title">
-        HOLA {{institucionalCtrl.usuario.nombre}}
 
+    </div>
 
-
-
+    <div id="institucional-main-container">
+        <div id="institucional-inner-container">
+            <div id="institucional-main-primero"
+                 ng-class="{'seccion-primera-selected':institucionalCtrl.seccion == 1,'seccion-deselected':institucionalCtrl.seccion != 1}"></div>
+            <div id="institucional-main-segundo"
+                 ng-class="{'seccion-segunda-selected':institucionalCtrl.seccion == 2,'seccion-deselected':institucionalCtrl.seccion != 2}"></div>
+            <div id="institucional-main-tercero"
+                 ng-class="{'seccion-tercera-selected':institucionalCtrl.seccion == 3,'seccion-deselected':institucionalCtrl.seccion != 3}"></div>
+        </div>
+        <div id="institucional-back"
+             ng-click="institucionalCtrl.seccion = (institucionalCtrl.seccion == 1)? 1:institucionalCtrl.seccion - 1;">
+            <span><</span></div>
+        <div id="institucional-forw"
+             ng-click="institucionalCtrl.seccion = (institucionalCtrl.seccion == 3)? 3:institucionalCtrl.seccion + 1;">
+            <span>></span></div>
     </div>
 
 

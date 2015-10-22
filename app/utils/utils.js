@@ -5,7 +5,7 @@
     angular.module('acUtils', ['ngRoute'])
         .config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/module', {
-                templateUrl: currentScriptPath.replace('.js', '.html'),
+                templateUrl: currentScriptPath.replace('.min.js', '.html'),
                 controller: 'AcUtils'
             });
         }])

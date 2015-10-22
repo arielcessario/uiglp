@@ -5,7 +5,7 @@
     angular.module('uiglp.nuevoUsuario', ['ngRoute'])
         .config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/nuevo_usuario', {
-                templateUrl: currentScriptPath.replace('.js', '.html'),
+                templateUrl: currentScriptPath.replace('.min.js', '.html'),
                 controller: 'NuevoUsuarioController',
                 data: {requiresLogin: false}
             });

@@ -6,7 +6,7 @@
     angular.module('uiglp.servicios', ['ngRoute'])
         .config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/servicios', {
-                templateUrl: currentScriptPath.replace('.js', '.html'),
+                templateUrl: currentScriptPath.replace('.min.js', '.html'),
                 controller: 'ServiciosController',
                 data: {requiresLogin:false}
             });
