@@ -224,7 +224,27 @@
 
             </div>
             <div id="institucional-main-tercero"
-                 ng-class="{'seccion-tercera-selected':institucionalCtrl.seccion == 3,'seccion-deselected':institucionalCtrl.seccion != 3}"></div>
+                 ng-class="{'seccion-tercera-selected':institucionalCtrl.seccion == 3,'seccion-deselected':institucionalCtrl.seccion != 3}">
+
+                <div class="acordeon-list">
+                    <div class="acordeon-line">
+
+                        <div class="acordeon-block">
+                            <input id="ac" type="checkbox" class="acordeon-title-check">
+                            <label for="ac"  class="acordeon-title-label">COMERCIO EXTERIOR</label>
+                            <p  class="acordeon-text">
+                                Analiza y genera políticas industriales relacionadas a: comercio interior, exportaciones, importaciones, transportes y servicios, prácticas desleales de comercio exterior y aduana, estudios de mercado, imagen corporativa, diseño de productos, packaging, misiones comerciales ferias y exposiciones.
+                                Entender en todo lo relativo a Comercio Exterior e Interior.
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
         </div>
         <div id="institucional-back"
              ng-click="institucionalCtrl.seccion = (institucionalCtrl.seccion == 1)? 1:institucionalCtrl.seccion - 1;">
