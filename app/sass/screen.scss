@@ -2650,25 +2650,44 @@ select {
     }
 
     .acordeon-title-label {
-      background-color: #17384B;
+      background-color: #00B6E7;
       width: 100%;
       display: block;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      border: 0px solid;
+      border-bottom: 1px solid white;
+
+
+      -webkit-transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out ;
+      -moz-transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out ;
+      -ms-transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out ;
+      -o-transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out ;
+      transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out ;
     }
 
     .acordeon-title-check ~ p {
-      background-color: blue;
       overflow: auto;
       max-height: 0px;
-      -webkit-transition: max-height 0.4s;
-      -moz-transition: max-height 0.4s;
-      -ms-transition: max-height 0.4s;
-      -o-transition: max-height 0.4s;
-      transition: max-height 0.4s;
+      background-color: black;
+      padding: 0px 10px 0px 10px;
+
+      -webkit-transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out ;
+      -moz-transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out ;
+      -ms-transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out ;
+      -o-transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out ;
+      transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out ;
     }
 
-    .acordeon-title-check:checked ~ p {
 
+    .acordeon-title-check:checked ~ p {
       max-height: 500px;
+      padding: 10px 10px 10px 10px;
+    }
+
+    .acordeon-title-check:checked ~ label {
+      background-color: #00718E !important;
     }
 
     .acordeon-text {
