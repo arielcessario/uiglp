@@ -2670,11 +2670,11 @@ select {
       transform-origin:  0% 0%;
       
       
-      -webkit-transition: all 1s;
-      -moz-transition: all 1s;
-      -ms-transition: all 1s;
-      -o-transition: all 1s;
-      transition: all 1s;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s;
     }
 
     .acordeon-title-check:checked ~ p {
