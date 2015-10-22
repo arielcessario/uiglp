@@ -7,7 +7,7 @@
             $routeProvider.when('/institucional', {
                 templateUrl: currentScriptPath.replace('.min.js', '.html'),
                 controller: 'InstitucionalController',
-                data: {requiresLogin:true}
+                data: {requiresLogin:false}
             });
         }])
         .controller('InstitucionalController', InstitucionalController);
