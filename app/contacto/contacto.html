@@ -1,34 +1,34 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-<div ng-controller="ContactoController as contactoCtrl" id="contacto-inner">
-    <div id="contacto-titulo" class="contacto-title">
-        <div ng-class="{'contacto-enviado': contactoCtrl.enviado}" class="contacto-titulo-container">
-            <div class="contacto-original">Contacto</div>
-            <div class="contacto-mensaje-enviado">Su Mensaje ha sido enviado</div>
-        </div>
-    </div>
-    <div id="contacto-container">
-
-        <div class="contacto-panel">
-            Nombre:
-            <input ng-model="contactoCtrl.nombre" type="text" id="contacto-nombre">
-            Email:
-            <input ng-model="contactoCtrl.email"  type="text" id="contacto-mail">
-            Asunto:
-            <input ng-model="contactoCtrl.asunto"  type="text" id="contacto-asunto">
-            <button id="contacto-enviar-desktop" ng-click="contactoCtrl.sendMail();">Enviar</button>
-        </div>
-        <div class="contacto-panel">
-            Escriba aqu&iacute su consulta:
-            <textarea ng-model="contactoCtrl.mensaje" name="" id="contacto-consulta" rows="10"></textarea>
-        </div>
-        <div class="contacto-panel">
-            <button id="contacto-enviar-mobile" ng-click="contactoCtrl.sendMail();">Enviar</button>
-        </div>
-    </div>
-
-    <div id="contacto-map">
-
-    </div>
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<div ng-controller="ContactoController as contactoCtrl" id="contacto-inner">
+    <div id="contacto-titulo" class="contacto-title">
+        <div ng-class="{'contacto-enviado': contactoCtrl.enviado}" class="contacto-titulo-container">
+            <div class="contacto-original">Contacto</div>
+            <div class="contacto-mensaje-enviado">Su Mensaje ha sido enviado</div>
+        </div>
+    </div>
+    <div id="contacto-container">
+
+        <div class="contacto-panel">
+            Nombre:
+            <input ng-model="contactoCtrl.nombre" type="text" id="contacto-nombre">
+            Email:
+            <input ng-model="contactoCtrl.email"  type="text" id="contacto-mail">
+            Asunto:
+            <input ng-model="contactoCtrl.asunto"  type="text" id="contacto-asunto">
+            <button id="contacto-enviar-desktop" ng-click="contactoCtrl.sendMail();">Enviar</button>
+        </div>
+        <div class="contacto-panel">
+            Escriba aqu&iacute su consulta:
+            <textarea ng-model="contactoCtrl.mensaje" name="" id="contacto-consulta" rows="10"></textarea>
+        </div>
+        <div class="contacto-panel">
+            <button id="contacto-enviar-mobile" ng-click="contactoCtrl.sendMail();">Enviar</button>
+        </div>
+    </div>
+
+    <div id="contacto-map">
+
+    </div>
+
 </div>
