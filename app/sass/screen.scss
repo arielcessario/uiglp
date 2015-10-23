@@ -1935,7 +1935,7 @@ select {
     text-align: justify;
     max-height: 400px;
     min-height: 200px;
-    overflow: scroll;
+    overflow-y: auto;
     font-size: 12px;
     line-height: 17px;
     color: #FFFFFF;
