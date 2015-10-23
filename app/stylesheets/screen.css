@@ -667,7 +667,6 @@ select {
   flex-direction: column;
   -webkit-align-items: center;
   align-items: center;
-  width: 100%;
 }
 @media (min-width: 1000px) {
   /* line 598, ../sass/screen.scss */
@@ -677,7 +676,7 @@ select {
     flex-direction: row;
     -webkit-justify-content: center;
     justify-content: center;
-    width: 95%;
+    width: 100%;
   }
 }
 /* line 619, ../sass/screen.scss */

@@ -603,8 +603,8 @@ select {
     flex-direction: column;
     -webkit-align-items: center;
     align-items: center;
-    width: 100%;
 
+    //width: 95%;
     @media (min-width: 1000px) {
 
       -webkit-flex-direction: row; /* works with row or column */
@@ -612,7 +612,7 @@ select {
 
       -webkit-justify-content: center;
       justify-content: center;
-      width: 95%;
+      width: 100%;
     }
 
     //    justify-content: center;
