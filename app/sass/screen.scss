@@ -1082,7 +1082,7 @@ select {
     max-width: 100%;
     overflow: hidden;
 
-    @media (min-width: 800px) {
+    @media (min-width: 1000px) {
       width: 1000px;
       max-width: 1000px;
     }
@@ -2797,7 +2797,7 @@ select {
       font-weight: bold;
       text-align: center;
       padding: 10px;
-       border: 0px solid;
+      border: 0px solid;
       border-bottom: 1px solid white;
       -webkit-transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out ;
       -moz-transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out ;

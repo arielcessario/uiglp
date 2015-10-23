@@ -1,11 +1,11 @@
 (function () {
     'use strict';
-    var scripts = document.getElementsByTagName("script")
+    var scripts = document.getElementsByTagName("script");
     var currentScriptPath = scripts[scripts.length - 1].src;
     angular.module('uiglp.ingreso', ['ngRoute', 'login.login'])
         .config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/ingreso', {
-                templateUrl: currentScriptPath.replace('.js', '.html'),
+                templateUrl: currentScriptPath.replace('.min.js', '.html'),
                 controller: 'IngresoController',
                 data: {requiresLogin: false}
             });

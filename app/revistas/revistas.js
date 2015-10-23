@@ -6,7 +6,7 @@
     angular.module('uiglp.revistas', ['ngRoute'])
         .config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/revistas', {
-                templateUrl: currentScriptPath.replace('.mi.js', '.html'),
+                templateUrl: currentScriptPath.replace('.js', '.html'),
                 controller: 'RevistasController',
                 data: {requiresLogin: false}
             });
