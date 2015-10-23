@@ -1585,7 +1585,7 @@ select {
   max-width: 100%;
   margin-top: 120px;
 }
-@media (max-width: 800px) {
+@media (max-width: 799px) {
   /* line 1486, ../sass/screen.scss */
   #administracion,
   #noticias,
