@@ -4,11 +4,11 @@
     var currentScriptPath = scripts[scripts.length - 1].src;
     angular.module('uiglp.institucional', ['ngRoute'])
         .config(['$routeProvider', function ($routeProvider) {
-            $routeProvider.when('/institucional', {
-                templateUrl: currentScriptPath.replace('.min.js', '.html'),
-                controller: 'InstitucionalController',
-                data: {requiresLogin:false}
-            });
+            //$routeProvider.when('/institucional', {
+            //    templateUrl: currentScriptPath.replace('.min.js', '.html'),
+            //    controller: 'InstitucionalController',
+            //    data: {requiresLogin:false}
+            //});
         }])
         .controller('InstitucionalController', InstitucionalController);
 

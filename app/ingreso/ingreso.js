@@ -2,13 +2,13 @@
     'use strict';
     var scripts = document.getElementsByTagName("script");
     var currentScriptPath = scripts[scripts.length - 1].src;
-    angular.module('uiglp.ingreso', ['ngRoute', 'login.login'])
+    angular.module('uiglp.ingreso', ['ngRoute', 'login.login',['utils/utils.min.js']])
         .config(['$routeProvider', function ($routeProvider) {
-            $routeProvider.when('/ingreso', {
-                templateUrl: currentScriptPath.replace('.min.js', '.html'),
-                controller: 'IngresoController',
-                data: {requiresLogin: false}
-            });
+            //$routeProvider.when('/ingreso', {
+            //    templateUrl: currentScriptPath.replace('.min.js', '.html'),
+            //    controller: 'IngresoController',
+            //    data: {requiresLogin: false}
+            //});
         }])
         .controller('IngresoController', IngresoController);
 

@@ -2,14 +2,14 @@
     'use strict';
     var scripts = document.getElementsByTagName("script");
     var currentScriptPath = scripts[scripts.length - 1].src;
-    angular.module('uiglp.busquedasLaborales', ['ngRoute'])
+    angular.module('uiglp.busquedasLaborales', ['ngRoute', ['ofertas_laborales/ofertas_laborales.min.js']])
         .config(['$routeProvider', function ($routeProvider) {
-            $routeProvider.when('/busquedas_laborales', {
-                templateUrl: currentScriptPath.replace('.min.js', '.html'),
-                controller: 'BusquedasLaboralesController',
-
-                data: {requiresLogin: false}
-            });
+            //$routeProvider.when('/busquedas_laborales', {
+            //    templateUrl: currentScriptPath.replace('.min.js', '.html'),
+            //    controller: 'BusquedasLaboralesController',
+            //
+            //    data: {requiresLogin: false}
+            //});
         }])
         .controller('BusquedasLaboralesController', BusquedasLaboralesController);
 

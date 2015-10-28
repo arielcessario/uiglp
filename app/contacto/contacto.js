@@ -3,13 +3,13 @@
     var scripts = document.getElementsByTagName("script");
     var currentScriptPath = scripts[scripts.length - 1].src;
     currentScriptPath = currentScriptPath.replace('.min', '');
-    angular.module('uiglp.contacto', ['ngRoute'])
+    angular.module('uiglp.contacto', ['ngRoute',['utils/utils.min.js']])
         .config(['$routeProvider', function ($routeProvider) {
-            $routeProvider.when('/contacto', {
-                templateUrl: currentScriptPath.replace('.js', '.html'),
-                controller: 'ContactoController',
-                data: {requiresLogin: false}
-            });
+            //$routeProvider.when('/contacto', {
+            //    templateUrl: currentScriptPath.replace('.js', '.html'),
+            //    controller: 'ContactoController',
+            //    data: {requiresLogin: false}
+            //});
         }])
         .controller('ContactoController', ContactoController);
 
@@ -23,24 +23,23 @@
 
 
 
-        function initialize() {
-            console.log('entra');
-            var myLatLng = {lat: -34.9067806, lng: -57.9475211};
-            var mapCanvas = document.getElementById('contacto-map');
-            var mapOptions = {
-                center: new google.maps.LatLng(-34.9067806, -57.9475211),
-                zoom: 13,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var map = new google.maps.Map(mapCanvas, mapOptions);
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'UIGLP'
-            });
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize());
+        //function initialize() {
+        //    var myLatLng = {lat: -34.9067806, lng: -57.9475211};
+        //    var mapCanvas = document.getElementById('contacto-map');
+        //    var mapOptions = {
+        //        center: new google.maps.LatLng(-34.9067806, -57.9475211),
+        //        zoom: 13,
+        //        mapTypeId: google.maps.MapTypeId.ROADMAP
+        //    };
+        //    var map = new google.maps.Map(mapCanvas, mapOptions);
+        //    var marker = new google.maps.Marker({
+        //        position: myLatLng,
+        //        map: map,
+        //        title: 'UIGLP'
+        //    });
+        //}
+        //
+        //google.maps.event.addDomListener(window, 'load', initialize());
 
 
 

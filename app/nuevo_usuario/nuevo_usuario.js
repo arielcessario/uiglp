@@ -2,13 +2,13 @@
     'use strict';
     var scripts = document.getElementsByTagName("script");
     var currentScriptPath = scripts[scripts.length - 1].src;
-    angular.module('uiglp.nuevoUsuario', ['ngRoute'])
+    angular.module('uiglp.nuevoUsuario', ['ngRoute',['utils/utils.min.js']])
         .config(['$routeProvider', function ($routeProvider) {
-            $routeProvider.when('/nuevo_usuario', {
-                templateUrl: currentScriptPath.replace('.js', '.html'),
-                controller: 'NuevoUsuarioController',
-                data: {requiresLogin: false}
-            });
+            //$routeProvider.when('/nuevo_usuario', {
+            //    templateUrl: currentScriptPath.replace('.js', '.html'),
+            //    controller: 'NuevoUsuarioController',
+            //    data: {requiresLogin: false}
+            //});
         }])
         .controller('NuevoUsuarioController', NuevoUsuarioController);
 

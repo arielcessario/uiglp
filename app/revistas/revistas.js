@@ -3,13 +3,13 @@
     var scripts = document.getElementsByTagName("script");
     var currentScriptPath = scripts[scripts.length - 1].src;
     currentScriptPath = currentScriptPath.replace('.min', '');
-    angular.module('uiglp.revistas', ['ngRoute'])
+    angular.module('uiglp.revistas', ['ngRoute',['revistas/issuu.min.js']])
         .config(['$routeProvider', function ($routeProvider) {
-            $routeProvider.when('/revistas', {
-                templateUrl: currentScriptPath.replace('.js', '.html'),
-                controller: 'RevistasController',
-                data: {requiresLogin: false}
-            });
+            //$routeProvider.when('/revistas', {
+            //    templateUrl: currentScriptPath.replace('.js', '.html'),
+            //    controller: 'RevistasController',
+            //    data: {requiresLogin: false}
+            //});
         }])
         .controller('RevistasController', RevistasController)
         .factory('RevistasService', RevistasService);
@@ -23,7 +23,7 @@
         vm.revistas = [];
         vm.links = [];
         RevistasService.get(function (data) {
-            console.log(data);
+            //console.log(data);
 
             vm.links = [];
             for (var i = 0; i < data.length; i++) {
@@ -39,7 +39,7 @@
 
     RevistasService.$inject = ['$http'];
     function RevistasService($http) {
-        var url = currentScriptPath.replace('.js', '.php');
+        var url = 'revistas/revistas.php';
         var service = {};
 
         service.get = get;

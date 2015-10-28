@@ -5,11 +5,11 @@
     currentScriptPath = currentScriptPath.replace('.min', '');
     angular.module('uiglp.servicios', ['ngRoute'])
         .config(['$routeProvider', function ($routeProvider) {
-            $routeProvider.when('/servicios', {
-                templateUrl: currentScriptPath.replace('.js', '.html'),
-                controller: 'ServiciosController',
-                data: {requiresLogin:false}
-            });
+            //$routeProvider.when('/servicios', {
+            //    templateUrl: currentScriptPath.replace('.js', '.html'),
+            //    controller: 'ServiciosController',
+            //    data: {requiresLogin:false}
+            //});
         }])
         .controller('ServiciosController', ServiciosController);
 
