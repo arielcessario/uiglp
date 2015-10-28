@@ -1575,7 +1575,7 @@ select option {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 799px) {
   /* line 1488, ../sass/screen.scss */
   #ingreso {
     margin-top: 50px;
@@ -2248,7 +2248,7 @@ select option {
   margin-bottom: 5px;
   padding: 5px;
 }
-@media (max-width: 800px) {
+@media (max-width: 799px) {
   /* line 2102, ../sass/screen.scss */
   #busquedas-laborales,
   #revistas,
