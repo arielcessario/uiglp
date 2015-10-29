@@ -186,7 +186,7 @@ select option {
   color: white;
   margin-left: 30px;
   margin-top: 15px;
-  font-family: 'Lato Heavy', serif;
+  font-family: 'Montserrat Semibold', serif;
   font-size: 25px;
   text-align: left;
 }
@@ -204,7 +204,7 @@ select option {
 
   .menu-desktop-btn {
     margin-top: 15px;
-    font-family: 'Lato Heavy', serif;
+    font-family: 'Montserrat Semibold', serif;
     line-height: 18px;
     padding: 5px;
     font-variant: all-petite-caps;
@@ -564,7 +564,7 @@ select option {
 .slide-titulo {
   margin-top: 250px;
   font-size: 100px;
-  font-family: 'Lato Heavy', serif;
+  font-family: 'Montserrat Semibold', serif;
   border-color: black;
   text-shadow: 2px 2px black;
   opacity: .7;
@@ -644,7 +644,7 @@ select option {
         .servicio-titulo {
           font-size: 30px;
           padding-bottom: 10px;
-          font-family: 'Lato Heavy', serif;
+          font-family: 'Montserrat Semibold', serif;
           font-variant: small-caps;
 
           @media (min-width: 800px) {
@@ -729,7 +729,7 @@ select option {
 
 .btn-leer-mas {
   width: 110px;
-  font-family: 'Lato Heavy', serif;
+  font-family: 'Montserrat Semibold', serif;
   color: #133548;
   font-size: 16px;
 
@@ -1099,9 +1099,11 @@ select option {
       -ms-flex-wrap: wrap;
       -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
-      width: 6000px;
-      max-width: 6000px;
+      justify-content: flex-start;
+      width: 4600px;
+      max-width: 4600px;
       max-height: 100%;
+      margin-left: -200px;
       .empresa {
         width: 180px;
         max-width: 180px;
@@ -1109,6 +1111,7 @@ select option {
         margin: 10px;
         align-content: center;
         text-align: center;
+
         img {
           //min-height: 140px;
           max-width: 150px;
@@ -1122,35 +1125,97 @@ select option {
   }
 }
 
+//.empresa.ng-enter,
+//.empresa.ng-leave {
+//  -webkit-transition: 10s cubic-bezier(.61,.62,.52,.51) all;
+//  -moz-transition: 10s cubic-bezier(.61,.62,.52,.51) all;
+//  -ms-transition: 10s cubic-bezier(.61,.62,.52,.51) all;
+//  -o-transition: 10s cubic-bezier(.61,.62,.52,.51) all;
+//  transition: 10s cubic-bezier(.61,.62,.52,.51) all;
+//  position: relative;
+//}
+
+
+
 .empresa.ng-enter,
-.empresa.ng-leave {
-  -webkit-transition: .4s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  -moz-transition: .4s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  -ms-transition: .4s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  -o-transition: .4s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  transition: .4s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+.empresa.ng-leave
+{
+  -webkit-transition: 5s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -moz-transition: 5s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -ms-transition: 5s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -o-transition: 5s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  transition: 5s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
   position: relative;
+  display: block;
+
+  img{
+    -webkit-transition: 10s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 10s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 10s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 10s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 10s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+
+  }
 }
 
-.empresa.ng-enter {
-  left: 0px;
-  width: 180px !important;
-}
-
-.empresa.ng-leave.ng-leave-active {
-  left: -300px;
-  width: 0px !important;
-}
-
+.empresa.ng-enter.ng-enter-active,
 .empresa.ng-leave {
-  left: 0px;
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
   width: 180px !important;
+  margin: 10px !important;
+  img{
+    width: 150px !important;
+  }
 }
 
-.empresa.ng-enter.ng-enter-active {
-  left: -300px;
+.empresa.ng-leave.ng-leave-active,
+.empresa.ng-enter {
+  opacity: 0;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
   width: 0px !important;
+  margin: 10px 0px 10px 0px !important;
+  img{
+    width: 0px !important;
+  }
 }
+
+
+//.empresa.ng-enter {
+//  //left: -180px;
+//
+//  padding-left: 0px;
+//  margin: 10px !important;
+//}
+//
+//.empresa.ng-leave.ng-leave-active {
+//  //left: -180px;
+//  padding-left: -180px;
+//  margin: 0px !important;
+//}
+//
+//.empresa.ng-leave {
+//  //left: -180px;
+//
+//  padding-left: 0px;
+//  margin: 10px !important;
+//}
+//
+//.empresa.ng-enter.ng-enter-active {
+//  //left: -180px;
+//  padding-left: -180px;
+//  margin: 0px !important;
+//}
 
 .empresa {
   //-webkit-animation-delay: time;
@@ -1223,7 +1288,7 @@ select option {
   align-items: center;
   padding-bottom: 40px;
   h1 {
-    font-family: 'Lato Heavy', serif;
+    font-family: 'Montserrat Semibold', serif;
     color: #133548;
     font-size: 26px;
     text-align: left;
@@ -1534,7 +1599,7 @@ select option {
 
 #financiamiento div h1,
 #sellados div h1 {
-  font-family: 'Lato Heavy', serif;
+  font-family: 'Montserrat Semibold', serif;
   color: #133548;
   font-size: 40px;
 
@@ -1556,7 +1621,7 @@ select option {
 #financiamiento div button,
 #sellados div button {
   width: 110px;
-  font-family: 'Lato Heavy', serif;
+  font-family: 'Montserrat Semibold', serif;
   background-color: white;
   color: #133548;
   font-size: 16px;
@@ -1939,7 +2004,7 @@ select option {
     font-size: 29px;
     line-height: 32px;
     color: #FFFFFF;
-    font-family: 'Lato Heavy', serif;
+    font-family: 'Montserrat Semibold', serif;
 
   }
   #noticias-panel-detalle {
@@ -1995,7 +2060,7 @@ select option {
       width: 110px;
       cursor: pointer;
       background-color: white;
-      font-family: 'Lato Heavy', serif;
+      font-family: 'Montserrat Semibold', serif;
       font-size: 16px;
       border: 1px solid #133548;
       -webkit-border-radius: 15px;
@@ -2034,7 +2099,7 @@ select option {
   }
   #noticias-comentarios-title {
     width: 90%;
-    font-family: 'Lato Heavy', serif;
+    font-family: 'Montserrat Semibold', serif;
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 10px;
@@ -2075,7 +2140,7 @@ select option {
 
 .noticias-comentario button {
   width: 80px;
-  font-family: 'Lato Heavy', serif;
+  font-family: 'Montserrat Semibold', serif;
   color: white;
   background-color: #3f6175;
   font-size: 12px;
@@ -2162,7 +2227,7 @@ select option {
 
     .busqueda-laboral-title {
 
-      font-family: 'Lato Heavy', serif;
+      font-family: 'Montserrat Semibold', serif;
       font-variant: small-caps;
       font-size: 38px;
       padding: 15px;
@@ -2228,7 +2293,7 @@ select option {
 }
 
 #contacto h1 {
-  font-family: 'Lato Heavy', serif;
+  font-family: 'Montserrat Semibold', serif;
   text-align: center;
   color: white;
   font-size: 20px;
@@ -2346,7 +2411,7 @@ select option {
 
 #contacto-container button {
   width: 110px;
-  font-family: 'Lato Heavy', serif;
+  font-family: 'Montserrat Semibold', serif;
   color: #133548;
   background-color: white;
   font-size: 16px;
@@ -2699,13 +2764,13 @@ select option {
   font-weight: normal;
   src: local('Montserrat Regular'), url('Montserrat-Regular.woff') format('woff');
 }
-
-@font-face {
-  font-family: 'Lato Heavy';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Lato Heavy'), url('Lato-Heavy.eot') format('eot');
-}
+//
+//@font-face {
+//  font-family: 'Lato Heavy';
+//  font-style: normal;
+//  font-weight: normal;
+//  src: local('Lato Heavy'), url('Lato-Heavy.eot') format('eot');
+//}
 
 @font-face {
   font-family: 'Lato Light';
