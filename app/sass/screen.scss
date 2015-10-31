@@ -356,6 +356,9 @@ select option {
       }
 
       .menu-desktop-btn {
+        //transition: opacity .5s ease-in-out;
+        //-moz-transition: opacity .5s ease-in-out;
+        //-webkit-transition: opacity .5s ease-in-out;
         cursor: pointer;
         font-family: 'Lato Regular', serif;
         font-weight: bolder;
@@ -367,17 +370,23 @@ select option {
         position: relative;
         color: white;
         opacity: 0.5;
-        transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -webkit-transition: opacity .5s ease-in-out;
         @media (max-width: 1000px) {
           font-size: 11px;
         }
 
       }
-      .menu-desktop-btn:hover,
-      .menu-desktop-btn-selected {
 
+      .menu-desktop-btn-selected{
+        color: white;
+        border-radius: 2px;
+        background-color: #406276;
+        opacity: 1;
+        -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.44);
+        -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.44);
+        box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.44);
+
+      }
+      .menu-desktop-btn:hover{
         color: white;
         border-radius: 2px;
         background-color: #406276;
