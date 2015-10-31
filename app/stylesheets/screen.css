@@ -390,18 +390,19 @@ select option {
   flex: 8;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
-/* line 326, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 .menu-desktop #menu-desktop-right #menu-desktop-upper {
   flex: 1;
 }
-/* line 331, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 .menu-desktop #menu-desktop-right #menu-desktop-lower {
   background-color: transparent;
   flex: 1;
   max-height: 35px;
   padding: 5px;
-  position: fixed;
+  margin-bottom: 50px;
   top: 33px;
   left: 0px;
   right: 0px;
@@ -409,8 +410,9 @@ select option {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
 }
-/* line 345, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 .menu-desktop #menu-desktop-right #menu-desktop-lower #menu-desktop-lower-inner {
   max-width: 1000px;
   width: 100%;
@@ -419,7 +421,7 @@ select option {
   justify-content: flex-end;
   align-items: flex-end;
 }
-/* line 354, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .menu-desktop #menu-desktop-right #menu-desktop-lower .menu-desktop-btn {
   cursor: pointer;
   font-family: 'Lato Regular', serif;
@@ -433,19 +435,19 @@ select option {
   color: white;
 }
 @media (max-width: 1000px) {
-  /* line 354, ../sass/screen.scss */
+  /* line 358, ../sass/screen.scss */
   .menu-desktop #menu-desktop-right #menu-desktop-lower .menu-desktop-btn {
     font-size: 11px;
   }
 }
-/* line 370, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 .menu-desktop #menu-desktop-right #menu-desktop-lower .menu-desktop-btn:hover,
 .menu-desktop #menu-desktop-right #menu-desktop-lower .menu-desktop-btn-selected {
   color: white;
   background-color: #406276;
 }
 
-/* line 382, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .section-title {
   display: flex;
   justify-content: center;
@@ -457,7 +459,7 @@ select option {
   font-size: 22px;
   background-color: #406276;
 }
-/* line 395, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 .section-title .decorator-01 {
   margin: 6px;
   height: 3px;
@@ -467,7 +469,7 @@ select option {
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-/* line 404, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .section-title .decorator-02 {
   margin: 6px;
   height: 6px;
@@ -477,7 +479,7 @@ select option {
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-/* line 413, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 .section-title .decorator-03 {
   margin: 6px;
   height: 9px;
@@ -488,7 +490,7 @@ select option {
   border-radius: 30px;
 }
 
-/* line 424, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 #slider {
   position: absolute;
   top: 120px;
@@ -499,12 +501,12 @@ select option {
   overflow: hidden;
 }
 @media (max-width: 800px) {
-  /* line 424, ../sass/screen.scss */
+  /* line 428, ../sass/screen.scss */
   #slider {
     top: 50px;
   }
 }
-/* line 437, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 #slider #slider-main {
   width: 100%;
   height: 100%;
@@ -512,7 +514,7 @@ select option {
   color: #ffffff;
   text-align: center;
 }
-/* line 445, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 #slider #slider-main #slide-01,
 #slider #slider-main #slide-02,
 #slider #slider-main #slide-03,
@@ -535,17 +537,17 @@ select option {
   -o-transition: all 0.4s;
   transition: all 0.4s;
 }
-/* line 481, ../sass/screen.scss */
+/* line 485, ../sass/screen.scss */
 #slider #slider-main .slide-shown-add {
   -webkit-animation: show-slide .4s;
   -o-animation: show-slide .4s;
   animation: show-slide .4s;
 }
-/* line 487, ../sass/screen.scss */
+/* line 491, ../sass/screen.scss */
 #slider #slider-main .slide-shown {
   opacity: 1 !important;
 }
-/* line 491, ../sass/screen.scss */
+/* line 495, ../sass/screen.scss */
 #slider #slider-main .slide-shown-remove {
   -webkit-animation: hide-slide .4s;
   -o-animation: hide-slide .4s;
@@ -587,7 +589,7 @@ select option {
     transform: translate3d(200%, 0, 0);
   }
 }
-/* line 536, ../sass/screen.scss */
+/* line 540, ../sass/screen.scss */
 #slider #slider-footer {
   min-height: 40px;
   height: 40px !important;
@@ -599,7 +601,7 @@ select option {
   border-top-width: 1px;
   border-top-color: white;
 }
-/* line 548, ../sass/screen.scss */
+/* line 552, ../sass/screen.scss */
 #slider #slider-footer div {
   margin: 10px;
   height: 18px;
@@ -609,12 +611,12 @@ select option {
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
-/* line 558, ../sass/screen.scss */
+/* line 562, ../sass/screen.scss */
 #slider #slider-footer .slider-footer-selected {
   background-color: white;
 }
 
-/* line 564, ../sass/screen.scss */
+/* line 568, ../sass/screen.scss */
 .slide-titulo {
   margin-top: 250px;
   font-size: 100px;
@@ -624,13 +626,13 @@ select option {
   opacity: .7;
 }
 @media (max-width: 450px) {
-  /* line 564, ../sass/screen.scss */
+  /* line 568, ../sass/screen.scss */
   .slide-titulo {
     font-size: 70px;
   }
 }
 
-/* line 578, ../sass/screen.scss */
+/* line 582, ../sass/screen.scss */
 .slide-descr {
   font-size: 25px;
   font-family: 'Lato Regular', serif;
@@ -638,13 +640,13 @@ select option {
   opacity: .7;
 }
 @media (max-width: 400px) {
-  /* line 578, ../sass/screen.scss */
+  /* line 582, ../sass/screen.scss */
   .slide-descr {
     font-size: 14px;
   }
 }
 
-/* line 589, ../sass/screen.scss */
+/* line 593, ../sass/screen.scss */
 #servicios {
   margin-top: 720px;
   background-color: #ffffff;
@@ -652,17 +654,17 @@ select option {
   flex-direction: column;
 }
 @media (max-width: 800px) {
-  /* line 589, ../sass/screen.scss */
+  /* line 593, ../sass/screen.scss */
   #servicios {
     margin-top: 649px;
   }
 }
-/* line 599, ../sass/screen.scss */
+/* line 603, ../sass/screen.scss */
 #servicios span {
   text-align: center;
   color: #ffffff;
 }
-/* line 603, ../sass/screen.scss */
+/* line 607, ../sass/screen.scss */
 #servicios #servicios-list {
   display: -webkit-flex;
   display: flex;
@@ -673,7 +675,7 @@ select option {
   align-items: center;
 }
 @media (min-width: 1000px) {
-  /* line 603, ../sass/screen.scss */
+  /* line 607, ../sass/screen.scss */
   #servicios #servicios-list {
     -webkit-flex-direction: row;
     /* works with row or column */
@@ -683,7 +685,7 @@ select option {
     width: 100%;
   }
 }
-/* line 624, ../sass/screen.scss */
+/* line 628, ../sass/screen.scss */
 #servicios #servicios-list #servicio-01,
 #servicios #servicios-list #servicio-02 {
   margin-top: 50px;
@@ -696,7 +698,7 @@ select option {
   width: 100%;
   max-width: 380px;
 }
-/* line 637, ../sass/screen.scss */
+/* line 641, ../sass/screen.scss */
 #servicios #servicios-list #servicio-01 .servicio-texto,
 #servicios #servicios-list #servicio-02 .servicio-texto {
   margin: 10px;
@@ -705,7 +707,7 @@ select option {
   max-width: 280px;
   color: #16374a;
 }
-/* line 644, ../sass/screen.scss */
+/* line 648, ../sass/screen.scss */
 #servicios #servicios-list #servicio-01 .servicio-texto .servicio-titulo,
 #servicios #servicios-list #servicio-02 .servicio-texto .servicio-titulo {
   font-size: 30px;
@@ -714,13 +716,13 @@ select option {
   font-variant: small-caps;
 }
 @media (min-width: 800px) {
-  /* line 644, ../sass/screen.scss */
+  /* line 648, ../sass/screen.scss */
   #servicios #servicios-list #servicio-01 .servicio-texto .servicio-titulo,
   #servicios #servicios-list #servicio-02 .servicio-texto .servicio-titulo {
     font-size: 34px;
   }
 }
-/* line 657, ../sass/screen.scss */
+/* line 661, ../sass/screen.scss */
 #servicios #servicios-list #servicio-01 .servicio-texto .servicio-detalle,
 #servicios #servicios-list #servicio-02 .servicio-texto .servicio-detalle {
   font-family: 'Lato Regular', serif;
@@ -729,14 +731,14 @@ select option {
   line-height: 22px;
 }
 @media (min-width: 800px) {
-  /* line 657, ../sass/screen.scss */
+  /* line 661, ../sass/screen.scss */
   #servicios #servicios-list #servicio-01 .servicio-texto .servicio-detalle,
   #servicios #servicios-list #servicio-02 .servicio-texto .servicio-detalle {
     font-size: 25px;
     min-width: 250px;
   }
 }
-/* line 673, ../sass/screen.scss */
+/* line 677, ../sass/screen.scss */
 #servicios #servicios-list #servicio-01 .servicio-icono,
 #servicios #servicios-list #servicio-02 .servicio-icono {
   border-radius: 150px;
@@ -746,7 +748,7 @@ select option {
   margin: 5px;
 }
 @media (min-width: 800px) {
-  /* line 673, ../sass/screen.scss */
+  /* line 677, ../sass/screen.scss */
   #servicios #servicios-list #servicio-01 .servicio-icono,
   #servicios #servicios-list #servicio-02 .servicio-icono {
     width: 180px;
@@ -754,14 +756,14 @@ select option {
     min-width: 180px;
   }
 }
-/* line 692, ../sass/screen.scss */
+/* line 696, ../sass/screen.scss */
 #servicios #servicios-list #servicios-action-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 @media (min-width: 800px) {
-  /* line 692, ../sass/screen.scss */
+  /* line 696, ../sass/screen.scss */
   #servicios #servicios-list #servicios-action-bar {
     -webkit-flex-direction: column;
     /* works with row or column */
@@ -770,7 +772,7 @@ select option {
     justify-content: center;
   }
 }
-/* line 706, ../sass/screen.scss */
+/* line 710, ../sass/screen.scss */
 #servicios #servicios-list #servicios-action-bar #servicios-separator {
   background-color: #133548;
   height: 3px;
@@ -779,7 +781,7 @@ select option {
   margin-right: 5px;
 }
 @media (min-width: 1000px) {
-  /* line 706, ../sass/screen.scss */
+  /* line 710, ../sass/screen.scss */
   #servicios #servicios-list #servicios-action-bar #servicios-separator {
     height: 200px;
     width: 2px;
@@ -788,7 +790,7 @@ select option {
   }
 }
 
-/* line 730, ../sass/screen.scss */
+/* line 734, ../sass/screen.scss */
 .btn-leer-mas {
   width: 110px;
   font-family: 'Montserrat Semibold', serif;
@@ -806,40 +808,40 @@ select option {
   text-decoration: none;
 }
 
-/* line 748, ../sass/screen.scss */
+/* line 752, ../sass/screen.scss */
 .btn-leer-mas:hover {
   color: white;
   background-color: #133548;
 }
 
-/* line 754, ../sass/screen.scss */
+/* line 758, ../sass/screen.scss */
 #noticias {
   background-color: white;
 }
 
-/* line 759, ../sass/screen.scss */
+/* line 763, ../sass/screen.scss */
 #noticias-main {
   background-color: #17384B;
 }
 
-/* line 764, ../sass/screen.scss */
+/* line 768, ../sass/screen.scss */
 .noticia p {
   text-align: justify;
 }
 
-/* line 768, ../sass/screen.scss */
+/* line 772, ../sass/screen.scss */
 #noticias,
 #noticias-main {
   display: flex;
   flex-direction: column;
 }
-/* line 774, ../sass/screen.scss */
+/* line 778, ../sass/screen.scss */
 #noticias span,
 #noticias-main span {
   text-align: center;
   color: #ffffff;
 }
-/* line 778, ../sass/screen.scss */
+/* line 782, ../sass/screen.scss */
 #noticias #noticias-list,
 #noticias-main #noticias-list {
   display: -webkit-flex;
@@ -853,7 +855,7 @@ select option {
   width: 100%;
 }
 @media (min-width: 800px) {
-  /* line 778, ../sass/screen.scss */
+  /* line 782, ../sass/screen.scss */
   #noticias #noticias-list,
   #noticias-main #noticias-list {
     -webkit-flex-direction: row;
@@ -863,7 +865,7 @@ select option {
     justify-content: center;
   }
 }
-/* line 802, ../sass/screen.scss */
+/* line 806, ../sass/screen.scss */
 #noticias #noticias-list .noticia,
 #noticias-main #noticias-list .noticia {
   width: 290px;
@@ -883,7 +885,7 @@ select option {
   justify-content: flex-start;
   align-items: center;
 }
-/* line 820, ../sass/screen.scss */
+/* line 824, ../sass/screen.scss */
 #noticias #noticias-list .noticia h2,
 #noticias-main #noticias-list .noticia h2 {
   width: 90%;
@@ -894,7 +896,7 @@ select option {
   color: #FFFFFF;
   color: white;
 }
-/* line 831, ../sass/screen.scss */
+/* line 835, ../sass/screen.scss */
 #noticias #noticias-list .noticia img,
 #noticias-main #noticias-list .noticia img {
   width: 90%;
@@ -909,7 +911,7 @@ select option {
   -moz-border-radius: 20px;
   border-radius: 20px;
 }
-/* line 845, ../sass/screen.scss */
+/* line 849, ../sass/screen.scss */
 #noticias #noticias-list .noticia p,
 #noticias-main #noticias-list .noticia p {
   font-family: 'Montserrat Light', serif;
@@ -923,7 +925,7 @@ select option {
   color: #FFFFFF;
   color: white;
 }
-/* line 858, ../sass/screen.scss */
+/* line 862, ../sass/screen.scss */
 #noticias #noticias-list .noticia .btn-leer-mas,
 #noticias-main #noticias-list .noticia .btn-leer-mas {
   max-width: 110px;
@@ -931,14 +933,14 @@ select option {
   font-size: 12px;
   border-color: white;
 }
-/* line 865, ../sass/screen.scss */
+/* line 869, ../sass/screen.scss */
 #noticias #noticias-list .noticia .btn-leer-mas:hover,
 #noticias-main #noticias-list .noticia .btn-leer-mas:hover {
   background-color: white;
   color: #133548;
 }
 
-/* line 876, ../sass/screen.scss */
+/* line 880, ../sass/screen.scss */
 #agendas {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#17384a+0,406276+100 */
   background: #17384a;
@@ -962,19 +964,19 @@ select option {
   display: flex;
   flex-direction: column;
 }
-/* line 892, ../sass/screen.scss */
+/* line 896, ../sass/screen.scss */
 #agendas #agendas-title {
   text-align: center;
   color: #17384B;
   background-color: white;
 }
-/* line 896, ../sass/screen.scss */
+/* line 900, ../sass/screen.scss */
 #agendas #agendas-title .decorator-01,
 #agendas #agendas-title .decorator-02,
 #agendas #agendas-title .decorator-03 {
   background-color: #17384B;
 }
-/* line 902, ../sass/screen.scss */
+/* line 906, ../sass/screen.scss */
 #agendas #agendas-list {
   display: -webkit-flex;
   display: flex;
@@ -986,7 +988,7 @@ select option {
   width: 100%;
 }
 @media (min-width: 800px) {
-  /* line 902, ../sass/screen.scss */
+  /* line 906, ../sass/screen.scss */
   #agendas #agendas-list {
     -webkit-flex-direction: row;
     /* works with row or column */
@@ -997,13 +999,13 @@ select option {
     align-items: center;
   }
 }
-/* line 927, ../sass/screen.scss */
+/* line 931, ../sass/screen.scss */
 #agendas #agendas-list .prev-m:hover,
 #agendas #agendas-list .sig-m:hover {
   color: #17384B;
   cursor: pointer;
 }
-/* line 933, ../sass/screen.scss */
+/* line 937, ../sass/screen.scss */
 #agendas #agendas-list #agenda-calendar-header {
   display: flex;
   flex-direction: row;
@@ -1015,12 +1017,12 @@ select option {
   margin-top: 10px;
   font-size: 20px;
 }
-/* line 943, ../sass/screen.scss */
+/* line 947, ../sass/screen.scss */
 #agendas #agendas-list #agenda-calendar-header span {
   margin-left: 30px;
   margin-right: 30px;
 }
-/* line 950, ../sass/screen.scss */
+/* line 954, ../sass/screen.scss */
 #agendas #agendas-list #agenda-calendar {
   border: 4px solid white;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFjM2U1MiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNmNjE3NSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -1038,7 +1040,7 @@ select option {
   min-width: 300px;
   min-height: 300px;
 }
-/* line 964, ../sass/screen.scss */
+/* line 968, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias {
   width: 300px;
   height: 300px;
@@ -1050,12 +1052,12 @@ select option {
   box-shadow: 5px 5px 10px black;
 }
 @media (min-width: 800px) {
-  /* line 964, ../sass/screen.scss */
+  /* line 968, ../sass/screen.scss */
   #agendas #agendas-list .agenda-dias {
     margin-right: 0px;
   }
 }
-/* line 977, ../sass/screen.scss */
+/* line 981, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias #agenda-calendar-container {
   background-color: white;
   padding-left: 10px;
@@ -1066,12 +1068,12 @@ select option {
   width: 85%;
   height: 75%;
 }
-/* line 988, ../sass/screen.scss */
+/* line 992, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias #agenda-calendar-container #calendario {
   width: 100%;
   height: 100%;
 }
-/* line 991, ../sass/screen.scss */
+/* line 995, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias #agenda-calendar-container #calendario #calendario-header {
   font-weight: bold;
   display: flex;
@@ -1080,25 +1082,25 @@ select option {
   min-height: 20px;
   min-width: 20px;
 }
-/* line 999, ../sass/screen.scss */
+/* line 1003, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias #agenda-calendar-container #calendario #calendario-dias {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-/* line 1004, ../sass/screen.scss */
+/* line 1008, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias #agenda-calendar-container #calendario #calendario-dias .calendario-dia-with-event {
   font-weight: bold;
   cursor: pointer;
 }
-/* line 1008, ../sass/screen.scss */
+/* line 1012, ../sass/screen.scss */
 #agendas #agendas-list .agenda-dias #agenda-calendar-container #calendario #calendario-dias .calendario-dia {
   min-height: 28px;
   min-width: 30px;
   text-align: center;
 }
-/* line 1019, ../sass/screen.scss */
+/* line 1023, ../sass/screen.scss */
 #agendas #agendas-list .agenda_imagen_contenedor {
   margin-right: 10px;
   margin-left: 10px;
@@ -1106,19 +1108,19 @@ select option {
   max-height: 300px;
   height: 300px;
 }
-/* line 1027, ../sass/screen.scss */
+/* line 1031, ../sass/screen.scss */
 #agendas #agendas-list img {
   min-height: 100%;
   width: 100%;
   background-color: #ffffff;
 }
 @media (min-width: 800px) {
-  /* line 1027, ../sass/screen.scss */
+  /* line 1031, ../sass/screen.scss */
   #agendas #agendas-list img {
     margin-left: 10px;
   }
 }
-/* line 1036, ../sass/screen.scss */
+/* line 1040, ../sass/screen.scss */
 #agendas #agendas-list #agenda-detail {
   width: 300px;
   height: 300px;
@@ -1132,18 +1134,18 @@ select option {
   box-shadow: 5px 5px 10px black;
 }
 @media (min-width: 800px) {
-  /* line 1036, ../sass/screen.scss */
+  /* line 1040, ../sass/screen.scss */
   #agendas #agendas-list #agenda-detail {
     margin-left: 10px;
     height: 300px;
   }
 }
-/* line 1052, ../sass/screen.scss */
+/* line 1056, ../sass/screen.scss */
 #agendas #agendas-list #agenda-detail h2 {
   font-weight: bold;
   font-size: 30px;
 }
-/* line 1056, ../sass/screen.scss */
+/* line 1060, ../sass/screen.scss */
 #agendas #agendas-list #agenda-detail #agenda-separator {
   width: 90%;
   height: 2px;
@@ -1151,25 +1153,25 @@ select option {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 1063, ../sass/screen.scss */
+/* line 1067, ../sass/screen.scss */
 #agendas #agendas-list #agenda-detail p {
   max-height: 190px;
   overflow: auto;
 }
 
-/* line 1073, ../sass/screen.scss */
+/* line 1077, ../sass/screen.scss */
 #empresas {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 1079, ../sass/screen.scss */
+/* line 1083, ../sass/screen.scss */
 #empresas #empresas-title {
   color: white;
   background-color: black;
 }
-/* line 1084, ../sass/screen.scss */
+/* line 1088, ../sass/screen.scss */
 #empresas #empresas-carrousel {
   height: 150px;
   background-color: transparent;
@@ -1178,13 +1180,13 @@ select option {
   overflow: hidden;
 }
 @media (min-width: 1000px) {
-  /* line 1084, ../sass/screen.scss */
+  /* line 1088, ../sass/screen.scss */
   #empresas #empresas-carrousel {
     width: 1000px;
     max-width: 1000px;
   }
 }
-/* line 1096, ../sass/screen.scss */
+/* line 1100, ../sass/screen.scss */
 #empresas #empresas-carrousel #empresas-list {
   display: flex;
   flex-direction: column;
@@ -1197,7 +1199,7 @@ select option {
   max-height: 100%;
   margin-left: -200px;
 }
-/* line 1107, ../sass/screen.scss */
+/* line 1111, ../sass/screen.scss */
 #empresas #empresas-carrousel #empresas-list .empresa {
   width: 180px;
   max-width: 180px;
@@ -1206,7 +1208,7 @@ select option {
   align-content: center;
   text-align: center;
 }
-/* line 1115, ../sass/screen.scss */
+/* line 1119, ../sass/screen.scss */
 #empresas #empresas-carrousel #empresas-list .empresa img {
   max-width: 150px;
   max-height: 50px;
@@ -1214,7 +1216,7 @@ select option {
   text-align: center;
 }
 
-/* line 1138, ../sass/screen.scss */
+/* line 1142, ../sass/screen.scss */
 .empresa.ng-enter,
 .empresa.ng-leave {
   -webkit-transition: 5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
@@ -1225,7 +1227,7 @@ select option {
   position: relative;
   display: block;
 }
-/* line 1148, ../sass/screen.scss */
+/* line 1152, ../sass/screen.scss */
 .empresa.ng-enter img,
 .empresa.ng-leave img {
   -webkit-transition: 10s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
@@ -1237,7 +1239,7 @@ select option {
   display: block;
 }
 
-/* line 1160, ../sass/screen.scss */
+/* line 1164, ../sass/screen.scss */
 .empresa.ng-enter.ng-enter-active,
 .empresa.ng-leave {
   opacity: 1;
@@ -1249,13 +1251,13 @@ select option {
   width: 180px !important;
   margin: 10px !important;
 }
-/* line 1170, ../sass/screen.scss */
+/* line 1174, ../sass/screen.scss */
 .empresa.ng-enter.ng-enter-active img,
 .empresa.ng-leave img {
   width: 150px !important;
 }
 
-/* line 1175, ../sass/screen.scss */
+/* line 1179, ../sass/screen.scss */
 .empresa.ng-leave.ng-leave-active,
 .empresa.ng-enter {
   opacity: 0;
@@ -1267,7 +1269,7 @@ select option {
   width: 0px !important;
   margin: 10px 0px 10px 0px !important;
 }
-/* line 1185, ../sass/screen.scss */
+/* line 1189, ../sass/screen.scss */
 .empresa.ng-leave.ng-leave-active img,
 .empresa.ng-enter img {
   width: 0px !important;
@@ -1312,7 +1314,7 @@ select option {
     transform: translate(0px, 0);
   }
 }
-/* line 1271, ../sass/screen.scss */
+/* line 1275, ../sass/screen.scss */
 #contacto {
   background-color: #133548;
   display: flex;
@@ -1322,21 +1324,21 @@ select option {
   padding: 10px;
 }
 
-/* line 1280, ../sass/screen.scss */
+/* line 1284, ../sass/screen.scss */
 #contacto-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 40px;
 }
-/* line 1286, ../sass/screen.scss */
+/* line 1290, ../sass/screen.scss */
 #contacto-inner h1 {
   font-family: 'Montserrat Semibold', serif;
   color: #133548;
   font-size: 26px;
   text-align: left;
 }
-/* line 1293, ../sass/screen.scss */
+/* line 1297, ../sass/screen.scss */
 #contacto-inner #contacto-container {
   font-family: 'Lato Regular', serif;
   color: #133548;
@@ -1348,27 +1350,34 @@ select option {
   width: 100%;
   text-align: left;
 }
-@media (min-width: 800px) {
-  /* line 1293, ../sass/screen.scss */
+@media (min-width: 1000px) {
+  /* line 1297, ../sass/screen.scss */
   #contacto-inner #contacto-container {
     flex-direction: row;
-    max-width: 800px;
+    max-width: 1000px;
     align-items: flex-start;
   }
 }
-/* line 1309, ../sass/screen.scss */
+/* line 1313, ../sass/screen.scss */
 #contacto-inner #contacto-container .contacto-panel {
   max-width: 80%;
   min-width: 80%;
 }
-@media (min-width: 800px) {
-  /* line 1309, ../sass/screen.scss */
+@media (min-width: 1000px) {
+  /* line 1313, ../sass/screen.scss */
   #contacto-inner #contacto-container .contacto-panel {
     max-width: 350px;
     min-width: 320px;
   }
 }
-/* line 1316, ../sass/screen.scss */
+@media (max-width: 999px) {
+  /* line 1313, ../sass/screen.scss */
+  #contacto-inner #contacto-container .contacto-panel {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* line 1325, ../sass/screen.scss */
 #contacto-inner #contacto-container .contacto-panel input[type=text],
 #contacto-inner #contacto-container .contacto-panel textarea {
   width: 90%;
@@ -1377,15 +1386,22 @@ select option {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-@media (min-width: 800px) {
-  /* line 1316, ../sass/screen.scss */
+@media (min-width: 1000px) {
+  /* line 1325, ../sass/screen.scss */
   #contacto-inner #contacto-container .contacto-panel input[type=text],
   #contacto-inner #contacto-container .contacto-panel textarea {
     max-width: 350px;
   }
 }
-@media (min-width: 800px) {
-  /* line 1328, ../sass/screen.scss */
+@media (max-width: 999px) {
+  /* line 1325, ../sass/screen.scss */
+  #contacto-inner #contacto-container .contacto-panel input[type=text],
+  #contacto-inner #contacto-container .contacto-panel textarea {
+    max-width: 90% !important;
+  }
+}
+@media (min-width: 1000px) {
+  /* line 1341, ../sass/screen.scss */
   #contacto-inner #contacto-container .contacto-panel #contacto-enviar-mobile {
     height: 0px;
     width: 0px;
@@ -1393,8 +1409,8 @@ select option {
     display: none;
   }
 }
-@media (max-width: 800px) {
-  /* line 1337, ../sass/screen.scss */
+@media (max-width: 999px) {
+  /* line 1350, ../sass/screen.scss */
   #contacto-inner #contacto-container .contacto-panel #contacto-enviar-desktop {
     height: 0px;
     width: 0px;
@@ -1402,21 +1418,30 @@ select option {
     display: none;
   }
 }
+@media (min-width: 1000px) {
+  /* line 1361, ../sass/screen.scss */
+  #contacto-inner .contacto-enviar-mobile {
+    height: 0px;
+    width: 0px;
+    visibility: collapse;
+    display: none;
+  }
+}
 
-/* line 1349, ../sass/screen.scss */
+/* line 1371, ../sass/screen.scss */
 #contacto-map {
   height: 300px;
   background-color: gray;
   width: 100%;
 }
 
-/* line 1355, ../sass/screen.scss */
+/* line 1377, ../sass/screen.scss */
 .contacto-mensaje-enviado {
   min-height: 35px;
   max-height: 35px;
 }
 
-/* line 1361, ../sass/screen.scss */
+/* line 1383, ../sass/screen.scss */
 .contacto-original {
   min-height: 35px;
   max-height: 35px;
@@ -1424,12 +1449,12 @@ select option {
   line-height: 50px;
 }
 
-/* line 1369, ../sass/screen.scss */
+/* line 1391, ../sass/screen.scss */
 .contacto-titulo-container {
   margin-top: 35px;
 }
 
-/* line 1373, ../sass/screen.scss */
+/* line 1395, ../sass/screen.scss */
 #contacto-titulo {
   overflow: hidden;
   min-height: 45px;
@@ -1439,7 +1464,7 @@ select option {
   align-items: center;
 }
 
-/* line 1383, ../sass/screen.scss */
+/* line 1405, ../sass/screen.scss */
 .contacto-enviado {
   animation: change-enviado 3s linear 0s normal none infinite;
   -webkit-animation: change-enviado 3s linear 0s normal none infinite;
@@ -1505,7 +1530,7 @@ select option {
     margin-top: 40px;
   }
 }
-/* line 1451, ../sass/screen.scss */
+/* line 1473, ../sass/screen.scss */
 #administracion table {
   font-family: "Montserrat Semibold", sans-serif;
   font-size: 15px;
@@ -1522,12 +1547,12 @@ select option {
   overflow: auto;
   display: block;
 }
-/* line 1468, ../sass/screen.scss */
+/* line 1490, ../sass/screen.scss */
 #administracion table tbody {
   min-width: 100%;
   display: table;
 }
-/* line 1473, ../sass/screen.scss */
+/* line 1495, ../sass/screen.scss */
 #administracion table th {
   border-bottom: .5px dotted white;
   border-left: .5px dotted white;
@@ -1536,21 +1561,21 @@ select option {
   font-size: 17px;
   margin-bottom: 15px;
 }
-/* line 1483, ../sass/screen.scss */
+/* line 1505, ../sass/screen.scss */
 #administracion table td {
   padding: 10px;
   font-family: 'Montserrat Light', serif;
   font-size: 14px;
   border-left: .5px dotted white;
 }
-/* line 1491, ../sass/screen.scss */
+/* line 1513, ../sass/screen.scss */
 #administracion table .administracion-row:hover,
 #administracion table .tr-selected {
   background-color: #1c3e52;
   color: white;
 }
 
-/* line 1509, ../sass/screen.scss */
+/* line 1531, ../sass/screen.scss */
 #footer {
   cursor: pointer;
   font-family: 'Lato Regular', serif;
@@ -1562,21 +1587,21 @@ select option {
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 1519, ../sass/screen.scss */
+/* line 1541, ../sass/screen.scss */
 #footer div {
   margin: 5px;
 }
-/* line 1523, ../sass/screen.scss */
+/* line 1545, ../sass/screen.scss */
 #footer a {
   margin-top: 4px;
 }
 
-/* line 1530, ../sass/screen.scss */
+/* line 1552, ../sass/screen.scss */
 #footer div:hover {
   color: white;
 }
 
-/* line 1535, ../sass/screen.scss */
+/* line 1557, ../sass/screen.scss */
 .issuu {
   background-color: transparent;
   margin-bottom: 10px;
@@ -1584,14 +1609,14 @@ select option {
   text-align: center;
 }
 @media (max-width: 500px) {
-  /* line 1535, ../sass/screen.scss */
+  /* line 1557, ../sass/screen.scss */
   .issuu {
     margin: 20px;
   }
 }
 
 /*SECCIONES DE ADMINISTRACION*/
-/* line 1547, ../sass/screen.scss */
+/* line 1569, ../sass/screen.scss */
 #ingreso {
   margin-top: 120px;
   max-width: 100%;
@@ -1601,13 +1626,13 @@ select option {
   justify-content: center;
 }
 @media (max-width: 799px) {
-  /* line 1547, ../sass/screen.scss */
+  /* line 1569, ../sass/screen.scss */
   #ingreso {
     margin-top: 50px;
   }
 }
 
-/* line 1559, ../sass/screen.scss */
+/* line 1581, ../sass/screen.scss */
 #administracion,
 #noticias,
 #servicios-inner,
@@ -1621,7 +1646,7 @@ select option {
   margin-top: 120px;
 }
 @media (max-width: 799px) {
-  /* line 1559, ../sass/screen.scss */
+  /* line 1581, ../sass/screen.scss */
   #administracion,
   #noticias,
   #servicios-inner,
@@ -1631,14 +1656,14 @@ select option {
   }
 }
 
-/* line 1588, ../sass/screen.scss */
+/* line 1610, ../sass/screen.scss */
 .administracion-separator,
 .nuevo-usuario-separator,
 #contacto-container {
   max-width: 1000px;
 }
 
-/* line 1594, ../sass/screen.scss */
+/* line 1616, ../sass/screen.scss */
 #financiamiento div h1,
 #sellados div h1 {
   font-family: 'Montserrat Semibold', serif;
@@ -1646,7 +1671,7 @@ select option {
   font-size: 40px;
 }
 
-/* line 1602, ../sass/screen.scss */
+/* line 1624, ../sass/screen.scss */
 #financiamiento div h2,
 #sellados div h2 {
   font-family: 'Montserrat Light', serif;
@@ -1655,7 +1680,7 @@ select option {
   line-height: 22px;
 }
 @media (max-width: 500px) {
-  /* line 1602, ../sass/screen.scss */
+  /* line 1624, ../sass/screen.scss */
   #financiamiento div h2,
   #sellados div h2 {
     padding: 20px;
@@ -1663,7 +1688,7 @@ select option {
   }
 }
 
-/* line 1615, ../sass/screen.scss */
+/* line 1637, ../sass/screen.scss */
 #financiamiento div button,
 #sellados div button {
   width: 110px;
@@ -1684,14 +1709,14 @@ select option {
   text-decoration: none;
 }
 
-/* line 1635, ../sass/screen.scss */
+/* line 1657, ../sass/screen.scss */
 #financiamiento div button:hover,
 #sellados div button:hover {
   color: white;
   background-color: #133548;
 }
 
-/* line 1642, ../sass/screen.scss */
+/* line 1664, ../sass/screen.scss */
 #administracion-form,
 #servicios-main-container,
 #nuevo-usuario-form,
@@ -1703,7 +1728,7 @@ select option {
   min-width: 320px;
 }
 @media (max-width: 500px) {
-  /* line 1642, ../sass/screen.scss */
+  /* line 1664, ../sass/screen.scss */
   #administracion-form,
   #servicios-main-container,
   #nuevo-usuario-form,
@@ -1717,13 +1742,13 @@ select option {
   }
 }
 
-/* line 1663, ../sass/screen.scss */
+/* line 1685, ../sass/screen.scss */
 #noticias-form {
   max-width: 1000px;
   min-width: 320px;
 }
 @media (max-width: 500px) {
-  /* line 1663, ../sass/screen.scss */
+  /* line 1685, ../sass/screen.scss */
   #noticias-form {
     margin-left: 10px;
     margin-right: 10px;
@@ -1731,17 +1756,17 @@ select option {
   }
 }
 
-/* line 1674, ../sass/screen.scss */
+/* line 1696, ../sass/screen.scss */
 #revistas-form {
   width: 100%;
 }
 
-/* line 1678, ../sass/screen.scss */
+/* line 1700, ../sass/screen.scss */
 #ingreso-form {
   width: 100%;
 }
 
-/* line 1682, ../sass/screen.scss */
+/* line 1704, ../sass/screen.scss */
 #administracion-form,
 #nuevo-usuario-form,
 #ingreso-form {
@@ -1749,7 +1774,7 @@ select option {
   flex-direction: column;
   justify-content: flex-start;
 }
-/* line 1688, ../sass/screen.scss */
+/* line 1710, ../sass/screen.scss */
 #administracion-form .administracion-inputs,
 #administracion-form .nuevo-usuario-inputs,
 #nuevo-usuario-form .administracion-inputs,
@@ -1761,7 +1786,7 @@ select option {
   flex-wrap: wrap;
 }
 
-/* line 1697, ../sass/screen.scss */
+/* line 1719, ../sass/screen.scss */
 #administracion-oferta,
 #administracion-noticias,
 #administracion-sliders {
@@ -1772,7 +1797,7 @@ select option {
   justify-content: flex-start;
 }
 
-/* line 1707, ../sass/screen.scss */
+/* line 1729, ../sass/screen.scss */
 .administracion-title,
 .nuevo-usuario-title,
 .noticias-title,
@@ -1782,7 +1807,7 @@ select option {
 .servicios-title,
 .institucional-title {
   width: 100% !important;
-  font-size: 35px;
+  font-size: 26px;
   font-family: "Montserrat Semibold", sans-serif;
   font-weight: 400;
   color: #17384B;
@@ -1796,7 +1821,7 @@ select option {
   display: flex;
   justify-content: center;
 }
-/* line 1727, ../sass/screen.scss */
+/* line 1749, ../sass/screen.scss */
 .administracion-title div,
 .nuevo-usuario-title div,
 .noticias-title div,
@@ -1809,7 +1834,7 @@ select option {
   max-width: 1000px;
 }
 @media (max-width: 600px) {
-  /* line 1707, ../sass/screen.scss */
+  /* line 1729, ../sass/screen.scss */
   .administracion-title,
   .nuevo-usuario-title,
   .noticias-title,
@@ -1822,7 +1847,7 @@ select option {
   }
 }
 
-/* line 1737, ../sass/screen.scss */
+/* line 1759, ../sass/screen.scss */
 .busqueda-laboral-fecha {
   font-size: 12px;
   color: white;
@@ -1830,19 +1855,19 @@ select option {
   font-weight: bolder;
 }
 
-/* line 1745, ../sass/screen.scss */
+/* line 1767, ../sass/screen.scss */
 .administracion-input,
 .nuevo-usuario-input {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-/* line 1750, ../sass/screen.scss */
+/* line 1772, ../sass/screen.scss */
 .administracion-input span,
 .nuevo-usuario-input span {
   margin: 5px;
 }
-/* line 1755, ../sass/screen.scss */
+/* line 1777, ../sass/screen.scss */
 .administracion-input input,
 .administracion-input select,
 .nuevo-usuario-input input,
@@ -1857,7 +1882,7 @@ select option {
   padding: 5px;
 }
 
-/* line 1771, ../sass/screen.scss */
+/* line 1793, ../sass/screen.scss */
 .administracion-input textarea {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -1871,13 +1896,13 @@ select option {
   padding: 5px;
 }
 
-/* line 1786, ../sass/screen.scss */
+/* line 1808, ../sass/screen.scss */
 .administracion-button-bar,
 .nuevo-usuario-button-bar {
   display: flex;
   flex-direction: row;
 }
-/* line 1792, ../sass/screen.scss */
+/* line 1814, ../sass/screen.scss */
 .administracion-button-bar button,
 .nuevo-usuario-button-bar button {
   background-color: transparent;
@@ -1885,13 +1910,13 @@ select option {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-/* line 1798, ../sass/screen.scss */
+/* line 1820, ../sass/screen.scss */
 .administracion-button-bar button:hover,
 .nuevo-usuario-button-bar button:hover {
   border-bottom-color: #17384B;
 }
 
-/* line 1803, ../sass/screen.scss */
+/* line 1825, ../sass/screen.scss */
 .administracion-separator,
 #servicios-inner-separator {
   width: 100%;
@@ -1902,7 +1927,7 @@ select option {
   margin-bottom: 50px;
 }
 
-/* line 1813, ../sass/screen.scss */
+/* line 1835, ../sass/screen.scss */
 .administracion-fotos {
   display: flex;
   flex-direction: row;
@@ -1910,7 +1935,7 @@ select option {
   margin-bottom: 10px;
 }
 
-/* line 1821, ../sass/screen.scss */
+/* line 1843, ../sass/screen.scss */
 .administracion-foto span {
   margin-bottom: 10px;
   color: #2f96b4;
@@ -1919,7 +1944,7 @@ select option {
   font-size: 15px;
 }
 
-/* line 1830, ../sass/screen.scss */
+/* line 1852, ../sass/screen.scss */
 .input-foto {
   height: 39px;
   width: 39px;
@@ -1928,13 +1953,13 @@ select option {
   margin-top: 5px;
   margin-left: 10px;
 }
-/* line 1838, ../sass/screen.scss */
+/* line 1860, ../sass/screen.scss */
 .input-foto input {
   opacity: 0;
   height: 39px;
   width: 39px;
 }
-/* line 1843, ../sass/screen.scss */
+/* line 1865, ../sass/screen.scss */
 .input-foto img {
   position: absolute;
   max-height: 38px;
@@ -1942,7 +1967,7 @@ select option {
   border-bottom: double 2px #133548;
 }
 
-/* line 1852, ../sass/screen.scss */
+/* line 1874, ../sass/screen.scss */
 .administracion-sub-title,
 .nuevo-usuario-sub-title,
 .revistas-sub-title {
@@ -1955,14 +1980,14 @@ select option {
 }
 
 /*NOTICIAS*/
-/* line 1864, ../sass/screen.scss */
+/* line 1886, ../sass/screen.scss */
 #noticias-filtro {
   display: flex;
   padding: 20px;
   flex-direction: row;
   justify-content: left;
 }
-/* line 1869, ../sass/screen.scss */
+/* line 1891, ../sass/screen.scss */
 #noticias-filtro select {
   margin-right: 2%;
   height: 32px;
@@ -1975,7 +2000,7 @@ select option {
   background-color: transparent;
 }
 
-/* line 1912, ../sass/screen.scss */
+/* line 1934, ../sass/screen.scss */
 #noticias-main {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#05090a+0,17384a+100 */
   background: #05090a;
@@ -1998,7 +2023,7 @@ select option {
   /* IE6-8 */
 }
 
-/* line 1927, ../sass/screen.scss */
+/* line 1949, ../sass/screen.scss */
 #noticias-form {
   max-width: 1000px;
   width: 100%;
@@ -2008,31 +2033,31 @@ select option {
   background-color: white;
 }
 
-/* line 1937, ../sass/screen.scss */
+/* line 1959, ../sass/screen.scss */
 #noticias-panel {
   margin: 35px;
 }
 @media (max-width: 500px) {
-  /* line 1937, ../sass/screen.scss */
+  /* line 1959, ../sass/screen.scss */
   #noticias-panel {
     margin: 20px;
   }
 }
 
 @media (min-width: 385px) {
-  /* line 1946, ../sass/screen.scss */
+  /* line 1968, ../sass/screen.scss */
   #noticias-panel-fotos {
     max-width: 50%;
   }
 }
-/* line 1950, ../sass/screen.scss */
+/* line 1972, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-main {
   overflow: hidden;
   margin-top: 10px;
   min-height: 200px;
   min-width: 320px;
 }
-/* line 1955, ../sass/screen.scss */
+/* line 1977, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-main img {
   margin-left: 15px;
   border-radius: 5px;
@@ -2042,17 +2067,17 @@ select option {
   min-width: 300px;
 }
 @media (max-width: 500px) {
-  /* line 1955, ../sass/screen.scss */
+  /* line 1977, ../sass/screen.scss */
   #noticias-panel-fotos #noticias-panel-fotos-main img {
     width: 92%;
     margin-left: 0px;
   }
 }
-/* line 1970, ../sass/screen.scss */
+/* line 1992, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-thumbs {
   margin-top: 5px;
 }
-/* line 1972, ../sass/screen.scss */
+/* line 1994, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-thumbs img {
   margin-left: 15px;
   cursor: pointer;
@@ -2062,19 +2087,19 @@ select option {
   border-radius: 2px;
 }
 @media (max-width: 500px) {
-  /* line 1972, ../sass/screen.scss */
+  /* line 1994, ../sass/screen.scss */
   #noticias-panel-fotos #noticias-panel-fotos-thumbs img {
     margin-left: 0px;
     margin-top: 5px;
   }
 }
 
-/* line 1988, ../sass/screen.scss */
+/* line 2010, ../sass/screen.scss */
 #noticias-panel-texto {
   color: white;
   padding: 5px;
 }
-/* line 1991, ../sass/screen.scss */
+/* line 2013, ../sass/screen.scss */
 #noticias-panel-texto #noticias-panel-titulo {
   width: 100%;
   margin-bottom: 15px;
@@ -2084,7 +2109,7 @@ select option {
   color: #FFFFFF;
   font-family: 'Montserrat Semibold', serif;
 }
-/* line 2002, ../sass/screen.scss */
+/* line 2024, ../sass/screen.scss */
 #noticias-panel-texto #noticias-panel-detalle {
   font-family: 'Montserrat Light', serif;
   width: 100%;
@@ -2099,21 +2124,21 @@ select option {
 }
 
 @media (min-width: 600px) {
-  /* line 2017, ../sass/screen.scss */
+  /* line 2039, ../sass/screen.scss */
   #noticias-panel {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
-/* line 2024, ../sass/screen.scss */
+/* line 2046, ../sass/screen.scss */
 #noticias-nuevo-comentario {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-/* line 2029, ../sass/screen.scss */
+/* line 2051, ../sass/screen.scss */
 #noticias-nuevo-comentario textarea {
   width: 100%;
   right: 5px;
@@ -2126,19 +2151,19 @@ select option {
   padding: 5px;
 }
 @media (max-width: 500px) {
-  /* line 2029, ../sass/screen.scss */
+  /* line 2051, ../sass/screen.scss */
   #noticias-nuevo-comentario textarea {
     width: 95%;
   }
 }
-/* line 2045, ../sass/screen.scss */
+/* line 2067, ../sass/screen.scss */
 #noticias-nuevo-comentario #noticias-button-container {
   width: 90%;
   position: relative;
   margin-top: -45px;
   margin-bottom: 20px;
 }
-/* line 2051, ../sass/screen.scss */
+/* line 2073, ../sass/screen.scss */
 #noticias-nuevo-comentario #noticias-button-container #noticias-nuevo-btn {
   width: 110px;
   cursor: pointer;
@@ -2154,7 +2179,7 @@ select option {
   text-align: center;
 }
 
-/* line 2069, ../sass/screen.scss */
+/* line 2091, ../sass/screen.scss */
 #noticias-nuevo-btn:hover {
   background-color: #133548;
   color: #133548;
@@ -2162,12 +2187,12 @@ select option {
   text-shadow: 1px 1px black;
 }
 
-/* line 2077, ../sass/screen.scss */
+/* line 2099, ../sass/screen.scss */
 #noticias-comentarios {
   background-color: #3f6175;
   color: white;
 }
-/* line 2081, ../sass/screen.scss */
+/* line 2103, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-list {
   max-width: 90%;
   display: flex;
@@ -2175,12 +2200,12 @@ select option {
   align-items: left;
 }
 @media (max-width: 500px) {
-  /* line 2081, ../sass/screen.scss */
+  /* line 2103, ../sass/screen.scss */
   #noticias-comentarios #noticias-comentarios-list {
     align-items: center;
   }
 }
-/* line 2092, ../sass/screen.scss */
+/* line 2114, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-title {
   width: 90%;
   font-family: 'Montserrat Semibold', serif;
@@ -2193,25 +2218,25 @@ select option {
   line-height: 30px;
 }
 @media (max-width: 400px) {
-  /* line 2092, ../sass/screen.scss */
+  /* line 2114, ../sass/screen.scss */
   #noticias-comentarios #noticias-comentarios-title {
     font-size: 32px;
     line-height: 34px;
   }
 }
-/* line 2110, ../sass/screen.scss */
+/* line 2132, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario {
   max-width: 90%;
   margin-bottom: 20px;
   margin-left: 10px;
 }
-/* line 2115, ../sass/screen.scss */
+/* line 2137, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-user {
   line-height: 20px;
   font-size: 18px;
   font-weight: bold;
 }
-/* line 2121, ../sass/screen.scss */
+/* line 2143, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-detalle {
   line-height: 17px;
   font-size: 15px;
@@ -2220,7 +2245,7 @@ select option {
   font-family: 'Montserrat Light', serif;
 }
 
-/* line 2133, ../sass/screen.scss */
+/* line 2155, ../sass/screen.scss */
 .noticias-comentario button {
   width: 80px;
   font-family: 'Montserrat Semibold', serif;
@@ -2240,13 +2265,13 @@ select option {
   text-decoration: none;
 }
 
-/* line 2152, ../sass/screen.scss */
+/* line 2174, ../sass/screen.scss */
 .noticias-comentario button:hover {
   background-color: #17384B;
 }
 
 /*BUSQUEDAS LABORALES*/
-/* line 2159, ../sass/screen.scss */
+/* line 2181, ../sass/screen.scss */
 #busquedas-laborales,
 #revistas,
 #contacto-inner,
@@ -2259,7 +2284,7 @@ select option {
   max-width: 100%;
   margin-top: 120px;
 }
-/* line 2170, ../sass/screen.scss */
+/* line 2192, ../sass/screen.scss */
 #busquedas-laborales input,
 #revistas input,
 #contacto-inner input,
@@ -2274,7 +2299,7 @@ select option {
   padding: 5px;
 }
 @media (max-width: 799px) {
-  /* line 2159, ../sass/screen.scss */
+  /* line 2181, ../sass/screen.scss */
   #busquedas-laborales,
   #revistas,
   #contacto-inner,
@@ -2282,14 +2307,14 @@ select option {
     margin-top: 50px;
   }
 }
-/* line 2186, ../sass/screen.scss */
+/* line 2208, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:nth-child(odd),
 #revistas .busqueda-laboral:nth-child(odd),
 #contacto-inner .busqueda-laboral:nth-child(odd),
 #nuevo-usuario .busqueda-laboral:nth-child(odd) {
   background-color: #17384B;
 }
-/* line 2191, ../sass/screen.scss */
+/* line 2213, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:hover,
 #revistas .busqueda-laboral:hover,
 #contacto-inner .busqueda-laboral:hover,
@@ -2300,7 +2325,7 @@ select option {
   -o-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
-/* line 2199, ../sass/screen.scss */
+/* line 2221, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral,
 #revistas .busqueda-laboral,
 #contacto-inner .busqueda-laboral,
@@ -2317,7 +2342,7 @@ select option {
   margin-bottom: 10px;
 }
 @media (max-width: 1000px) {
-  /* line 2199, ../sass/screen.scss */
+  /* line 2221, ../sass/screen.scss */
   #busquedas-laborales .busqueda-laboral,
   #revistas .busqueda-laboral,
   #contacto-inner .busqueda-laboral,
@@ -2326,7 +2351,7 @@ select option {
     margin-right: 20px;
   }
 }
-/* line 2220, ../sass/screen.scss */
+/* line 2242, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-title,
 #revistas .busqueda-laboral .busqueda-laboral-title,
 #contacto-inner .busqueda-laboral .busqueda-laboral-title,
@@ -2336,7 +2361,7 @@ select option {
   font-size: 38px;
   padding: 15px;
 }
-/* line 2227, ../sass/screen.scss */
+/* line 2249, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-texto,
 #revistas .busqueda-laboral .busqueda-laboral-texto,
 #contacto-inner .busqueda-laboral .busqueda-laboral-texto,
@@ -2348,7 +2373,7 @@ select option {
   margin-top: 15px;
   line-height: 18px;
 }
-/* line 2235, ../sass/screen.scss */
+/* line 2257, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-contacto,
 #revistas .busqueda-laboral .busqueda-laboral-contacto,
 #contacto-inner .busqueda-laboral .busqueda-laboral-contacto,
@@ -2356,7 +2381,7 @@ select option {
   padding: 5px;
 }
 
-/* line 2241, ../sass/screen.scss */
+/* line 2263, ../sass/screen.scss */
 #busqueda-laboral-search {
   width: 100%;
   background-color: #000000;
@@ -2366,7 +2391,7 @@ select option {
   align-items: center;
   min-height: 80px;
 }
-/* line 2249, ../sass/screen.scss */
+/* line 2271, ../sass/screen.scss */
 #busqueda-laboral-search input {
   background-color: transparent;
   max-width: 1000px;
@@ -2380,33 +2405,33 @@ select option {
   margin: 10px;
   padding: 5px;
 }
-/* line 2262, ../sass/screen.scss */
+/* line 2284, ../sass/screen.scss */
 #busqueda-laboral-search input ::-webkit-input-placeholder {
   color: #99C1DA;
 }
-/* line 2266, ../sass/screen.scss */
+/* line 2288, ../sass/screen.scss */
 #busqueda-laboral-search input :-moz-placeholder {
   /* Firefox 18- */
   color: #99C1DA;
 }
-/* line 2271, ../sass/screen.scss */
+/* line 2293, ../sass/screen.scss */
 #busqueda-laboral-search input ::-moz-placeholder {
   /* Firefox 19+ */
   color: #99C1DA;
 }
-/* line 2276, ../sass/screen.scss */
+/* line 2298, ../sass/screen.scss */
 #busqueda-laboral-search input :-ms-input-placeholder {
   color: #99C1DA;
 }
 @media (max-width: 800px) {
-  /* line 2249, ../sass/screen.scss */
+  /* line 2271, ../sass/screen.scss */
   #busqueda-laboral-search input {
     max-width: 95px;
     min-width: 95%;
   }
 }
 
-/* line 2287, ../sass/screen.scss */
+/* line 2309, ../sass/screen.scss */
 #contacto h1 {
   font-family: 'Montserrat Semibold', serif;
   text-align: center;
@@ -2416,7 +2441,7 @@ select option {
   margin-bottom: 10px;
 }
 
-/* line 2296, ../sass/screen.scss */
+/* line 2318, ../sass/screen.scss */
 #contacto h2 {
   font-family: 'Lato Regular', serif;
   text-align: center;
@@ -2426,7 +2451,7 @@ select option {
   line-height: 22px;
 }
 
-/* line 2306, ../sass/screen.scss */
+/* line 2328, ../sass/screen.scss */
 #revistas-listado {
   font-family: "Montserrat Semibold", sans-serif;
   color: #133548;
@@ -2442,27 +2467,27 @@ select option {
   align-items: flex-start;
 }
 @media (max-width: 500px) {
-  /* line 2306, ../sass/screen.scss */
+  /* line 2328, ../sass/screen.scss */
   #revistas-listado {
     font-size: 20px;
   }
 }
 
-/* line 2325, ../sass/screen.scss */
+/* line 2347, ../sass/screen.scss */
 #revistas-form .administracion-inputs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 2331, ../sass/screen.scss */
+/* line 2353, ../sass/screen.scss */
 #servicios-main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* line 2337, ../sass/screen.scss */
+/* line 2359, ../sass/screen.scss */
 #servicios-main-container #financiamiento,
 #servicios-main-container #sellados {
   display: flex;
@@ -2471,13 +2496,13 @@ select option {
   align-items: center;
 }
 @media (min-width: 600px) {
-  /* line 2337, ../sass/screen.scss */
+  /* line 2359, ../sass/screen.scss */
   #servicios-main-container #financiamiento,
   #servicios-main-container #sellados {
     flex-direction: row;
   }
 }
-/* line 2347, ../sass/screen.scss */
+/* line 2369, ../sass/screen.scss */
 #servicios-main-container #financiamiento div,
 #servicios-main-container #sellados div {
   display: flex;
@@ -2486,7 +2511,7 @@ select option {
   align-items: center;
 }
 @media (min-width: 600px) {
-  /* line 2347, ../sass/screen.scss */
+  /* line 2369, ../sass/screen.scss */
   #servicios-main-container #financiamiento div,
   #servicios-main-container #sellados div {
     align-items: flex-start;
@@ -2494,12 +2519,12 @@ select option {
   }
 }
 @media (min-width: 600px) {
-  /* line 2360, ../sass/screen.scss */
+  /* line 2382, ../sass/screen.scss */
   #servicios-main-container #sellados {
     flex-direction: row-reverse;
   }
 }
-/* line 2367, ../sass/screen.scss */
+/* line 2389, ../sass/screen.scss */
 #servicios-main-container .servicio-main-icon {
   height: 200px;
   width: 200px;
@@ -2510,7 +2535,7 @@ select option {
   margin: 10px;
 }
 @media (min-width: 600px) {
-  /* line 2367, ../sass/screen.scss */
+  /* line 2389, ../sass/screen.scss */
   #servicios-main-container .servicio-main-icon {
     height: 300px;
     width: 300px;
@@ -2520,24 +2545,24 @@ select option {
     border-radius: 300px;
   }
 }
-/* line 2387, ../sass/screen.scss */
+/* line 2409, ../sass/screen.scss */
 #servicios-main-container h1 {
   font-variant: small-caps;
 }
-/* line 2393, ../sass/screen.scss */
+/* line 2415, ../sass/screen.scss */
 #servicios-main-container h1, #servicios-main-container h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
 }
 @media (min-width: 600px) {
-  /* line 2393, ../sass/screen.scss */
+  /* line 2415, ../sass/screen.scss */
   #servicios-main-container h1, #servicios-main-container h2 {
     text-align: left;
   }
 }
 
-/* line 2404, ../sass/screen.scss */
+/* line 2426, ../sass/screen.scss */
 #contacto-container button {
   width: 110px;
   font-family: 'Montserrat Semibold', serif;
@@ -2557,13 +2582,13 @@ select option {
   text-decoration: none;
 }
 
-/* line 2423, ../sass/screen.scss */
+/* line 2445, ../sass/screen.scss */
 #contacto-container button:hover {
   color: white;
   background-color: #133548;
 }
 
-/* line 2431, ../sass/screen.scss */
+/* line 2453, ../sass/screen.scss */
 .administracion-slider {
   display: flex;
   flex-direction: row;
@@ -2572,7 +2597,7 @@ select option {
   margin-bottom: 10px;
 }
 
-/* line 2440, ../sass/screen.scss */
+/* line 2462, ../sass/screen.scss */
 .acdesarrollos {
   text-align: left;
   margin-left: 5px;
@@ -2580,7 +2605,7 @@ select option {
   font-size: 15px;
   color: darkorange;
 }
-/* line 2447, ../sass/screen.scss */
+/* line 2469, ../sass/screen.scss */
 .acdesarrollos a {
   font-family: 'Montserrat Light', serif;
   font-weight: bolder;
@@ -2590,12 +2615,12 @@ select option {
   color: white;
 }
 
-/* line 2459, ../sass/screen.scss */
+/* line 2481, ../sass/screen.scss */
 .acdesarrollos a:hover {
   color: #2f96b4;
 }
 
-/* line 2463, ../sass/screen.scss */
+/* line 2485, ../sass/screen.scss */
 .contenedor_ac {
   background-color: black;
   padding: 10px;
@@ -2603,17 +2628,17 @@ select option {
   justify-content: center;
 }
 
-/* line 2471, ../sass/screen.scss */
+/* line 2493, ../sass/screen.scss */
 .administracion-slider .administracion-input {
   padding-top: 0px !important;
 }
 
-/* line 2475, ../sass/screen.scss */
+/* line 2497, ../sass/screen.scss */
 .error-input {
   border-color: red !important;
 }
 
-/* line 2479, ../sass/screen.scss */
+/* line 2501, ../sass/screen.scss */
 .error-message {
   position: absolute;
   background: red;
@@ -2642,7 +2667,7 @@ select option {
   }
 }
 /*INSTITUCIONAL*/
-/* line 2512, ../sass/screen.scss */
+/* line 2534, ../sass/screen.scss */
 .institucional-title {
   display: flex;
   flex-direction: row;
@@ -2651,7 +2676,7 @@ select option {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
-/* line 2519, ../sass/screen.scss */
+/* line 2541, ../sass/screen.scss */
 .institucional-title button {
   border: 0px solid transparent;
   background-color: transparent;
@@ -2659,26 +2684,26 @@ select option {
   color: white;
   padding: 10px;
 }
-/* line 2527, ../sass/screen.scss */
+/* line 2549, ../sass/screen.scss */
 .institucional-title button:hover {
   background-color: #1D3541;
 }
-/* line 2531, ../sass/screen.scss */
+/* line 2553, ../sass/screen.scss */
 .institucional-title .button-selected-institucional {
   background-color: #1D3541;
 }
 
-/* line 2538, ../sass/screen.scss */
+/* line 2560, ../sass/screen.scss */
 #institucional-main-container {
   position: relative;
 }
 @media (max-width: 800px) {
-  /* line 2538, ../sass/screen.scss */
+  /* line 2560, ../sass/screen.scss */
   #institucional-main-container {
     max-width: 100% !important;
   }
 }
-/* line 2547, ../sass/screen.scss */
+/* line 2569, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container {
   display: flex;
   flex-direction: row;
@@ -2689,7 +2714,7 @@ select option {
   min-width: 100% !important;
   max-width: 100% !important;
 }
-/* line 2556, ../sass/screen.scss */
+/* line 2578, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero,
 #institucional-main-container #institucional-inner-container #institucional-main-segundo,
 #institucional-main-container #institucional-inner-container #institucional-main-tercero {
@@ -2701,14 +2726,14 @@ select option {
   padding-bottom: 20px;
 }
 @media (max-width: 1000px) {
-  /* line 2556, ../sass/screen.scss */
+  /* line 2578, ../sass/screen.scss */
   #institucional-main-container #institucional-inner-container #institucional-main-primero,
   #institucional-main-container #institucional-inner-container #institucional-main-segundo,
   #institucional-main-container #institucional-inner-container #institucional-main-tercero {
     width: 100%;
   }
 }
-/* line 2570, ../sass/screen.scss */
+/* line 2592, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero {
   margin-left: 0%;
   z-index: 300;
@@ -2717,7 +2742,7 @@ select option {
   padding-top: 4%;
   padding-bottom: 20px;
 }
-/* line 2577, ../sass/screen.scss */
+/* line 2599, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero h1 {
   font-family: "Montserrat Semibold", sans-serif, serif, sans-serif;
   font-size: 36px;
@@ -2726,14 +2751,14 @@ select option {
   text-align: center;
   margin-bottom: 50px;
 }
-/* line 2586, ../sass/screen.scss */
+/* line 2608, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero p {
   color: black;
   font-family: 'Lato Regular', serif;
   font-size: 17px;
   line-height: 23px;
 }
-/* line 2593, ../sass/screen.scss */
+/* line 2615, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero h2 {
   font-size: 20px;
   font-weight: bold;
@@ -2742,15 +2767,15 @@ select option {
   text-align: left;
   margin-bottom: 20px;
 }
-/* line 2602, ../sass/screen.scss */
+/* line 2624, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero .lista {
   display: list-item;
 }
-/* line 2604, ../sass/screen.scss */
+/* line 2626, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero .lista ul {
   list-style-type: disc !important;
 }
-/* line 2607, ../sass/screen.scss */
+/* line 2629, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero .lista ul li {
   list-style-type: disc;
   color: black;
@@ -2758,12 +2783,12 @@ select option {
   font-size: 17px;
   line-height: 23px;
 }
-/* line 2618, ../sass/screen.scss */
+/* line 2640, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-segundo {
   margin-left: -100%;
   z-index: 301;
 }
-/* line 2622, ../sass/screen.scss */
+/* line 2644, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-segundo .titulo-segundo {
   margin-top: 50px;
   font-family: "Montserrat Semibold", sans-serif, serif, sans-serif;
@@ -2773,12 +2798,12 @@ select option {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 2633, ../sass/screen.scss */
+/* line 2655, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-tercero {
   margin-left: -100%;
   z-index: 302;
 }
-/* line 2637, ../sass/screen.scss */
+/* line 2659, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-tercero .titulo-tercero {
   margin-top: 50px;
   font-family: "Montserrat Semibold", sans-serif, serif, sans-serif;
@@ -2832,7 +2857,7 @@ select option {
     opacity: 1;
   }
 }
-/* line 2694, ../sass/screen.scss */
+/* line 2716, ../sass/screen.scss */
 #institucional-main-container #institucional-back,
 #institucional-main-container #institucional-forw {
   background-color: #133548;
@@ -2853,32 +2878,32 @@ select option {
   -o-animation: flickerAnimation 4s infinite;
   animation: flickerAnimation 4s infinite;
 }
-/* line 2716, ../sass/screen.scss */
+/* line 2738, ../sass/screen.scss */
 #institucional-main-container #institucional-back span,
 #institucional-main-container #institucional-forw span {
   color: white;
   font-size: 25px;
   font-weight: bold;
 }
-/* line 2723, ../sass/screen.scss */
+/* line 2745, ../sass/screen.scss */
 #institucional-main-container #institucional-back {
   left: 0px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 2729, ../sass/screen.scss */
+/* line 2751, ../sass/screen.scss */
 #institucional-main-container #institucional-forw {
   right: 0px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-/* line 2735, ../sass/screen.scss */
+/* line 2757, ../sass/screen.scss */
 #institucional-main-container #institucional-back:hover,
 #institucional-main-container #institucional-forw:hover {
   background-color: #133548;
   opacity: 1;
 }
-/* line 2741, ../sass/screen.scss */
+/* line 2763, ../sass/screen.scss */
 #institucional-main-container .seccion-primera-selected {
   z-index: 305 !important;
   opacity: 1;
@@ -2888,7 +2913,7 @@ select option {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 2751, ../sass/screen.scss */
+/* line 2773, ../sass/screen.scss */
 #institucional-main-container .seccion-segunda-selected {
   z-index: 305 !important;
   opacity: 1;
@@ -2898,7 +2923,7 @@ select option {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 2763, ../sass/screen.scss */
+/* line 2785, ../sass/screen.scss */
 #institucional-main-container .seccion-tercera-selected {
   z-index: 305 !important;
   opacity: 1;
@@ -2908,11 +2933,11 @@ select option {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 2775, ../sass/screen.scss */
+/* line 2797, ../sass/screen.scss */
 #institucional-main-container .seccion-deselected {
   opacity: 0;
 }
-/* line 2780, ../sass/screen.scss */
+/* line 2802, ../sass/screen.scss */
 #institucional-main-container .seccion-deselected-add {
   -webkit-animation: seccion-deselect 1s;
   -o-animation: seccion-deselect 1s;
@@ -2964,14 +2989,14 @@ select option {
   font-weight: normal;
   src: local("Lato Black"), url("Lato-Black.woff") format("woff");
 }
-/* line 2848, ../sass/screen.scss */
+/* line 2870, ../sass/screen.scss */
 .intitucional-organigrama-container {
   display: flex;
   flex-direction: column;
   height: 100%;
   overflow-y: auto;
 }
-/* line 2853, ../sass/screen.scss */
+/* line 2875, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line {
   margin: 20px;
   display: flex;
@@ -2980,7 +3005,7 @@ select option {
   justify-content: center;
   align-items: center;
 }
-/* line 2860, ../sass/screen.scss */
+/* line 2882, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line .organigrama-box {
   width: 200px;
   height: 100px;
@@ -3012,7 +3037,7 @@ select option {
   align-items: center;
   margin: 8px 8px 8px 8px;
 }
-/* line 2882, ../sass/screen.scss */
+/* line 2904, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line .organigrama-box .organigrama-box-foto1,
 .intitucional-organigrama-container .organigrama-line .organigrama-box .organigrama-box-foto {
   height: 40px;
@@ -3025,7 +3050,7 @@ select option {
   -moz-box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.26);
   box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.26);
 }
-/* line 2894, ../sass/screen.scss */
+/* line 2916, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line .organigrama-box h1 {
   font-weight: bold;
   font-family: "Montserrat Semibold", sans-serif;
@@ -3034,7 +3059,7 @@ select option {
   color: white;
   text-transform: uppercase;
 }
-/* line 2903, ../sass/screen.scss */
+/* line 2925, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line .organigrama-box p {
   font-weight: bold;
   font-family: "Montserrat Light", sans-serif;
@@ -3046,22 +3071,22 @@ select option {
   line-height: 12px;
 }
 
-/* line 2918, ../sass/screen.scss */
+/* line 2940, ../sass/screen.scss */
 .organigrama-box-foto1 img {
   background-image: url("img/organi_1.png");
 }
 
 /***** ACORDEON *****/
-/* line 2925, ../sass/screen.scss */
+/* line 2947, ../sass/screen.scss */
 .acordeon-list .acordeon-line {
   width: 100%;
   color: white;
 }
-/* line 2928, ../sass/screen.scss */
+/* line 2950, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-check {
   display: none;
 }
-/* line 2932, ../sass/screen.scss */
+/* line 2954, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-label {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#17384a+0,090b0f+100 */
   background: #17384a;
@@ -3095,7 +3120,7 @@ select option {
   -o-transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out;
   transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out;
 }
-/* line 2958, ../sass/screen.scss */
+/* line 2980, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-check ~ p {
   overflow: auto;
   max-height: 0px;
@@ -3110,7 +3135,7 @@ select option {
   -o-transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
   transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
 }
-/* line 2973, ../sass/screen.scss */
+/* line 2995, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-check:checked ~ p {
   max-height: 500px;
   padding: 10px 30px 10px 30px;
@@ -3118,7 +3143,7 @@ select option {
   font-size: 14px;
   line-height: 18px;
 }
-/* line 2982, ../sass/screen.scss */
+/* line 3004, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-check:checked ~ label {
   background-color: #00718E !important;
 }
