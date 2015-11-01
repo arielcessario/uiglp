@@ -485,7 +485,7 @@ select option {
       position: absolute;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
       flex-direction: column;
       width: 100%;
       height: 100%;
@@ -602,6 +602,11 @@ select option {
   text-shadow: 2px 2px black;
   opacity: .7;
 
+  text-align: right;
+  margin-right: 20%;
+  width: 100%;
+
+
   @media(max-width: 450px) {
     font-size: 70px;
 
@@ -613,6 +618,9 @@ select option {
   font-family: 'Lato Regular', serif;
   text-shadow: 2px 2px black;
   opacity: .7;
+  width: 100%;
+  text-align: right;
+  margin-right: 20%;
   @media(max-width: 400px) {
     font-size: 14px;
 
