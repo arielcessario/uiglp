@@ -2605,6 +2605,8 @@ select option {
   padding-bottom: 0px !important;
   button{
     border: 0px solid rgba(0,0,0,0);
+    font-family: 'Roboto-Bold', serif;
+    font-size: 14px;
     background-color:lightgrey;
     font-weight: bold;
     color: black;
@@ -2613,6 +2615,11 @@ select option {
     transition: opacity .5s ease-in-out;
     -moz-transition: opacity .5s ease-in-out;
     -webkit-transition: opacity .5s ease-in-out;
+  @media(max-width: 400px){
+    font-size: 11px;
+  }
+
+
   }
 
   button:hover{
