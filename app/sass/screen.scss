@@ -1784,7 +1784,7 @@ select option {
   width: 100% !important;
   //margin-top: 20px;
   font-size: 26px;
-  font-family: "Montserrat Semibold", sans-serif;
+  font-family: "Roboto-Bold", sans-serif;
   font-weight: 400;
   color: #17384B;
   padding: 10px;
@@ -2181,7 +2181,7 @@ select option {
   }
   #noticias-comentarios-title {
     width: 90%;
-    font-family: 'Montserrat Semibold', serif;
+    font-family: 'Roboto-Bold', serif;
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 10px;
@@ -2605,6 +2605,8 @@ select option {
   padding-bottom: 0px !important;
   button{
     border: 0px solid rgba(0,0,0,0);
+    font-family: 'Roboto-Bold', serif;
+    font-size: 14px;
     background-color:lightgrey;
     font-weight: bold;
     color: black;
@@ -2613,6 +2615,11 @@ select option {
     transition: opacity .5s ease-in-out;
     -moz-transition: opacity .5s ease-in-out;
     -webkit-transition: opacity .5s ease-in-out;
+  @media(max-width: 400px){
+    font-size: 11px;
+  }
+
+
   }
 
   button:hover{
@@ -2673,7 +2680,7 @@ select option {
       padding-top: 4%;
       padding-bottom: 20px;
       h1 {
-        font-family: "Montserrat Semibold", sans-serif, serif, sans-serif;
+        font-family: "Roboto-Bold", sans-serif, serif, sans-serif;
         font-size: 36px;
         font-weight: bold;
         width: 100%;
@@ -2719,7 +2726,7 @@ select option {
 
       .titulo-segundo {
         margin-top: 50px;
-        font-family: "Montserrat Semibold", sans-serif, serif, sans-serif;
+        font-family: "Roboto-Bold", sans-serif, serif, sans-serif;
         font-size: 36px;
         font-variant: bold;
         width: 100%;
@@ -2734,7 +2741,7 @@ select option {
       z-index: 302;
       .titulo-tercero {
         margin-top: 50px;
-        font-family: "Montserrat Semibold", sans-serif, serif, sans-serif;
+        font-family: "Roboto-Bold", sans-serif, serif, sans-serif;
         font-size: 36px;
         font-variant: bold;
         width: 100%;
@@ -2940,6 +2947,12 @@ select option {
   font-style: normal;
   font-weight: normal;
   src: local('Lato Black'), url('Lato-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto-Bold'), url('Roboto-Bold.ttf') format('woff');
 }
 
 //**** ORGANIZATION CHART ****////
