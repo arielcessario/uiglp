@@ -311,7 +311,7 @@ select option {
 
     img {
       margin-left: 10px;
-
+      padding-bottom: 10px;
     }
   }
 
@@ -1365,7 +1365,7 @@ select option {
         font-size: 18px;
         font-weight: bolder;
         color: #133548;
-        margin-top: 10px;
+        margin-top: 25px;
         margin-bottom: 5px;
        }
 
@@ -1772,7 +1772,6 @@ select option {
 .revistas-title,
 .contacto-title,
 .servicios-title,
-.institucional-title,
 {
   width: 100% !important;
   //margin-top: 20px;
@@ -1788,6 +1787,25 @@ select option {
   div {
     width: 100%;
     max-width: 1000px;
+  }
+
+
+  #institucional-titulo{
+    width: 100% !important;
+    //margin-top: 20px;
+    font-size: 26px;
+    font-family: "Montserrat Semibold", sans-serif;
+    font-weight: 400;
+    color: #17384B;
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    div {
+      width: 100%;
+      max-width: 1000px;
+    }
+
   }
 
 
@@ -2583,7 +2601,7 @@ select option {
     font-weight: bold;
     color: black;
     padding: 10px;
-    opacity: 0.5;
+    opacity: 0.9;
     transition: opacity .5s ease-in-out;
     -moz-transition: opacity .5s ease-in-out;
     -webkit-transition: opacity .5s ease-in-out;
