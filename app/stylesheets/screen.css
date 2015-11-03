@@ -1815,21 +1815,24 @@ select option {
 /* line 1782, ../sass/screen.scss */
 #financiamiento div h1,
 #sellados div h1 {
-  font-family: 'Montserrat Semibold', serif;
+  font-family: 'Open Sans', serif;
+  font-weight: bold;
+  font-variant: small-caps;
   color: #133548;
   font-size: 40px;
 }
 
-/* line 1790, ../sass/screen.scss */
+/* line 1792, ../sass/screen.scss */
 #financiamiento div h2,
 #sellados div h2 {
-  font-family: 'Montserrat Light', serif;
+  font-family: 'Open Sans', serif;
+  font-weight: lighter;
   color: black;
   font-size: 16px;
   line-height: 22px;
 }
 @media (max-width: 500px) {
-  /* line 1790, ../sass/screen.scss */
+  /* line 1792, ../sass/screen.scss */
   #financiamiento div h2,
   #sellados div h2 {
     padding: 20px;
@@ -1837,7 +1840,7 @@ select option {
   }
 }
 
-/* line 1803, ../sass/screen.scss */
+/* line 1806, ../sass/screen.scss */
 #financiamiento div button,
 #sellados div button {
   width: 110px;
@@ -1858,14 +1861,14 @@ select option {
   text-decoration: none;
 }
 
-/* line 1823, ../sass/screen.scss */
+/* line 1826, ../sass/screen.scss */
 #financiamiento div button:hover,
 #sellados div button:hover {
   color: white;
   background-color: #133548;
 }
 
-/* line 1830, ../sass/screen.scss */
+/* line 1833, ../sass/screen.scss */
 #administracion-form,
 #servicios-main-container,
 #nuevo-usuario-form,
@@ -1877,7 +1880,7 @@ select option {
   min-width: 320px;
 }
 @media (max-width: 500px) {
-  /* line 1830, ../sass/screen.scss */
+  /* line 1833, ../sass/screen.scss */
   #administracion-form,
   #servicios-main-container,
   #nuevo-usuario-form,
@@ -1891,13 +1894,13 @@ select option {
   }
 }
 
-/* line 1851, ../sass/screen.scss */
+/* line 1854, ../sass/screen.scss */
 #noticias-form {
   max-width: 1000px;
   min-width: 320px;
 }
 @media (max-width: 500px) {
-  /* line 1851, ../sass/screen.scss */
+  /* line 1854, ../sass/screen.scss */
   #noticias-form {
     margin-left: 10px;
     margin-right: 10px;
@@ -1905,17 +1908,17 @@ select option {
   }
 }
 
-/* line 1862, ../sass/screen.scss */
+/* line 1865, ../sass/screen.scss */
 #revistas-form {
   width: 100%;
 }
 
-/* line 1866, ../sass/screen.scss */
+/* line 1869, ../sass/screen.scss */
 #ingreso-form {
   width: 100%;
 }
 
-/* line 1870, ../sass/screen.scss */
+/* line 1873, ../sass/screen.scss */
 #administracion-form,
 #nuevo-usuario-form,
 #ingreso-form {
@@ -1923,7 +1926,7 @@ select option {
   flex-direction: column;
   justify-content: flex-start;
 }
-/* line 1876, ../sass/screen.scss */
+/* line 1879, ../sass/screen.scss */
 #administracion-form .administracion-inputs,
 #administracion-form .nuevo-usuario-inputs,
 #nuevo-usuario-form .administracion-inputs,
@@ -1935,7 +1938,7 @@ select option {
   flex-wrap: wrap;
 }
 
-/* line 1885, ../sass/screen.scss */
+/* line 1888, ../sass/screen.scss */
 #administracion-oferta,
 #administracion-noticias,
 #administracion-sliders {
@@ -1946,7 +1949,7 @@ select option {
   justify-content: flex-start;
 }
 
-/* line 1895, ../sass/screen.scss */
+/* line 1898, ../sass/screen.scss */
 .administracion-title,
 .nuevo-usuario-title,
 .noticias-title,
@@ -1969,7 +1972,7 @@ select option {
   display: flex;
   justify-content: center;
 }
-/* line 1914, ../sass/screen.scss */
+/* line 1917, ../sass/screen.scss */
 .administracion-title div,
 .nuevo-usuario-title div,
 .noticias-title div,
@@ -1980,7 +1983,7 @@ select option {
   width: 100%;
   max-width: 1000px;
 }
-/* line 1920, ../sass/screen.scss */
+/* line 1923, ../sass/screen.scss */
 .administracion-title #institucional-titulo,
 .nuevo-usuario-title #institucional-titulo,
 .noticias-title #institucional-titulo,
@@ -1998,7 +2001,7 @@ select option {
   display: flex;
   justify-content: center;
 }
-/* line 1931, ../sass/screen.scss */
+/* line 1934, ../sass/screen.scss */
 .administracion-title #institucional-titulo div,
 .nuevo-usuario-title #institucional-titulo div,
 .noticias-title #institucional-titulo div,
@@ -2010,7 +2013,7 @@ select option {
   max-width: 1000px;
 }
 @media (max-width: 600px) {
-  /* line 1895, ../sass/screen.scss */
+  /* line 1898, ../sass/screen.scss */
   .administracion-title,
   .nuevo-usuario-title,
   .noticias-title,
@@ -2022,7 +2025,7 @@ select option {
   }
 }
 
-/* line 1946, ../sass/screen.scss */
+/* line 1949, ../sass/screen.scss */
 .busqueda-laboral-fecha {
   font-size: 12px;
   color: white;
@@ -2030,19 +2033,19 @@ select option {
   font-weight: bolder;
 }
 
-/* line 1954, ../sass/screen.scss */
+/* line 1957, ../sass/screen.scss */
 .administracion-input,
 .nuevo-usuario-input {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-/* line 1959, ../sass/screen.scss */
+/* line 1962, ../sass/screen.scss */
 .administracion-input span,
 .nuevo-usuario-input span {
   margin: 5px;
 }
-/* line 1964, ../sass/screen.scss */
+/* line 1967, ../sass/screen.scss */
 .administracion-input input,
 .administracion-input select,
 .nuevo-usuario-input input,
@@ -2057,7 +2060,7 @@ select option {
   padding: 5px;
 }
 
-/* line 1980, ../sass/screen.scss */
+/* line 1983, ../sass/screen.scss */
 .administracion-input textarea {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -2071,13 +2074,13 @@ select option {
   padding: 5px;
 }
 
-/* line 1995, ../sass/screen.scss */
+/* line 1998, ../sass/screen.scss */
 .administracion-button-bar,
 .nuevo-usuario-button-bar {
   display: flex;
   flex-direction: row;
 }
-/* line 2001, ../sass/screen.scss */
+/* line 2004, ../sass/screen.scss */
 .administracion-button-bar button,
 .nuevo-usuario-button-bar button {
   background-color: transparent;
@@ -2085,13 +2088,13 @@ select option {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-/* line 2007, ../sass/screen.scss */
+/* line 2010, ../sass/screen.scss */
 .administracion-button-bar button:hover,
 .nuevo-usuario-button-bar button:hover {
   border-bottom-color: #17384B;
 }
 
-/* line 2012, ../sass/screen.scss */
+/* line 2015, ../sass/screen.scss */
 .administracion-separator,
 #servicios-inner-separator {
   width: 100%;
@@ -2102,7 +2105,7 @@ select option {
   margin-bottom: 50px;
 }
 
-/* line 2022, ../sass/screen.scss */
+/* line 2025, ../sass/screen.scss */
 .administracion-fotos {
   display: flex;
   flex-direction: row;
@@ -2110,7 +2113,7 @@ select option {
   margin-bottom: 10px;
 }
 
-/* line 2030, ../sass/screen.scss */
+/* line 2033, ../sass/screen.scss */
 .administracion-foto span {
   margin-bottom: 10px;
   color: #2f96b4;
@@ -2119,7 +2122,7 @@ select option {
   font-size: 15px;
 }
 
-/* line 2039, ../sass/screen.scss */
+/* line 2042, ../sass/screen.scss */
 .input-foto {
   height: 39px;
   width: 39px;
@@ -2128,13 +2131,13 @@ select option {
   margin-top: 5px;
   margin-left: 10px;
 }
-/* line 2047, ../sass/screen.scss */
+/* line 2050, ../sass/screen.scss */
 .input-foto input {
   opacity: 0;
   height: 39px;
   width: 39px;
 }
-/* line 2052, ../sass/screen.scss */
+/* line 2055, ../sass/screen.scss */
 .input-foto img {
   position: absolute;
   max-height: 38px;
@@ -2142,7 +2145,7 @@ select option {
   border-bottom: double 2px #133548;
 }
 
-/* line 2061, ../sass/screen.scss */
+/* line 2064, ../sass/screen.scss */
 .administracion-sub-title,
 .nuevo-usuario-sub-title,
 .revistas-sub-title {
@@ -2155,14 +2158,14 @@ select option {
 }
 
 /*NOTICIAS*/
-/* line 2073, ../sass/screen.scss */
+/* line 2076, ../sass/screen.scss */
 #noticias-filtro {
   display: flex;
   padding: 20px;
   flex-direction: row;
   justify-content: left;
 }
-/* line 2078, ../sass/screen.scss */
+/* line 2081, ../sass/screen.scss */
 #noticias-filtro select {
   margin-right: 2%;
   height: 32px;
@@ -2175,7 +2178,7 @@ select option {
   background-color: transparent;
 }
 
-/* line 2121, ../sass/screen.scss */
+/* line 2124, ../sass/screen.scss */
 #noticias-main {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#05090a+0,17384a+100 */
   background: #05090a;
@@ -2198,7 +2201,7 @@ select option {
   /* IE6-8 */
 }
 
-/* line 2136, ../sass/screen.scss */
+/* line 2139, ../sass/screen.scss */
 #noticias-form {
   max-width: 1000px;
   width: 100%;
@@ -2208,31 +2211,31 @@ select option {
   background-color: white;
 }
 
-/* line 2146, ../sass/screen.scss */
+/* line 2149, ../sass/screen.scss */
 #noticias-panel {
   margin: 35px;
 }
 @media (max-width: 500px) {
-  /* line 2146, ../sass/screen.scss */
+  /* line 2149, ../sass/screen.scss */
   #noticias-panel {
     margin: 20px;
   }
 }
 
 @media (min-width: 385px) {
-  /* line 2155, ../sass/screen.scss */
+  /* line 2158, ../sass/screen.scss */
   #noticias-panel-fotos {
     max-width: 50%;
   }
 }
-/* line 2159, ../sass/screen.scss */
+/* line 2162, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-main {
   overflow: hidden;
   margin-top: 10px;
   min-height: 200px;
   min-width: 320px;
 }
-/* line 2164, ../sass/screen.scss */
+/* line 2167, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-main img {
   margin-left: 15px;
   border-radius: 5px;
@@ -2242,17 +2245,17 @@ select option {
   min-width: 300px;
 }
 @media (max-width: 500px) {
-  /* line 2164, ../sass/screen.scss */
+  /* line 2167, ../sass/screen.scss */
   #noticias-panel-fotos #noticias-panel-fotos-main img {
     width: 92%;
     margin-left: 0px;
   }
 }
-/* line 2179, ../sass/screen.scss */
+/* line 2182, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-thumbs {
   margin-top: 5px;
 }
-/* line 2181, ../sass/screen.scss */
+/* line 2184, ../sass/screen.scss */
 #noticias-panel-fotos #noticias-panel-fotos-thumbs img {
   margin-left: 15px;
   cursor: pointer;
@@ -2262,19 +2265,19 @@ select option {
   border-radius: 2px;
 }
 @media (max-width: 500px) {
-  /* line 2181, ../sass/screen.scss */
+  /* line 2184, ../sass/screen.scss */
   #noticias-panel-fotos #noticias-panel-fotos-thumbs img {
     margin-left: 0px;
     margin-top: 5px;
   }
 }
 
-/* line 2197, ../sass/screen.scss */
+/* line 2200, ../sass/screen.scss */
 #noticias-panel-texto {
   color: white;
   padding: 5px;
 }
-/* line 2200, ../sass/screen.scss */
+/* line 2203, ../sass/screen.scss */
 #noticias-panel-texto #noticias-panel-titulo {
   width: 100%;
   margin-bottom: 15px;
@@ -2284,7 +2287,7 @@ select option {
   color: #FFFFFF;
   font-family: 'Montserrat Semibold', serif;
 }
-/* line 2211, ../sass/screen.scss */
+/* line 2214, ../sass/screen.scss */
 #noticias-panel-texto #noticias-panel-detalle {
   font-family: 'Montserrat Light', serif;
   width: 100%;
@@ -2299,21 +2302,21 @@ select option {
 }
 
 @media (min-width: 600px) {
-  /* line 2226, ../sass/screen.scss */
+  /* line 2229, ../sass/screen.scss */
   #noticias-panel {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
-/* line 2233, ../sass/screen.scss */
+/* line 2236, ../sass/screen.scss */
 #noticias-nuevo-comentario {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-/* line 2238, ../sass/screen.scss */
+/* line 2241, ../sass/screen.scss */
 #noticias-nuevo-comentario textarea {
   width: 100%;
   right: 5px;
@@ -2326,19 +2329,19 @@ select option {
   padding: 5px;
 }
 @media (max-width: 500px) {
-  /* line 2238, ../sass/screen.scss */
+  /* line 2241, ../sass/screen.scss */
   #noticias-nuevo-comentario textarea {
     width: 95%;
   }
 }
-/* line 2254, ../sass/screen.scss */
+/* line 2257, ../sass/screen.scss */
 #noticias-nuevo-comentario #noticias-button-container {
   width: 90%;
   position: relative;
   margin-top: -45px;
   margin-bottom: 20px;
 }
-/* line 2260, ../sass/screen.scss */
+/* line 2263, ../sass/screen.scss */
 #noticias-nuevo-comentario #noticias-button-container #noticias-nuevo-btn {
   width: 110px;
   cursor: pointer;
@@ -2354,7 +2357,7 @@ select option {
   text-align: center;
 }
 
-/* line 2278, ../sass/screen.scss */
+/* line 2281, ../sass/screen.scss */
 #noticias-nuevo-btn:hover {
   background-color: #133548;
   color: #133548;
@@ -2362,12 +2365,12 @@ select option {
   text-shadow: 1px 1px black;
 }
 
-/* line 2286, ../sass/screen.scss */
+/* line 2289, ../sass/screen.scss */
 #noticias-comentarios {
   background-color: #3f6175;
   color: white;
 }
-/* line 2290, ../sass/screen.scss */
+/* line 2293, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-list {
   max-width: 90%;
   display: flex;
@@ -2375,12 +2378,12 @@ select option {
   align-items: left;
 }
 @media (max-width: 500px) {
-  /* line 2290, ../sass/screen.scss */
+  /* line 2293, ../sass/screen.scss */
   #noticias-comentarios #noticias-comentarios-list {
     align-items: center;
   }
 }
-/* line 2301, ../sass/screen.scss */
+/* line 2304, ../sass/screen.scss */
 #noticias-comentarios #noticias-comentarios-title {
   width: 90%;
   font-family: 'Open Sans', serif;
@@ -2393,25 +2396,25 @@ select option {
   line-height: 30px;
 }
 @media (max-width: 400px) {
-  /* line 2301, ../sass/screen.scss */
+  /* line 2304, ../sass/screen.scss */
   #noticias-comentarios #noticias-comentarios-title {
     font-size: 32px;
     line-height: 34px;
   }
 }
-/* line 2319, ../sass/screen.scss */
+/* line 2322, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario {
   max-width: 90%;
   margin-bottom: 20px;
   margin-left: 10px;
 }
-/* line 2324, ../sass/screen.scss */
+/* line 2327, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-user {
   line-height: 20px;
   font-size: 18px;
   font-weight: bold;
 }
-/* line 2330, ../sass/screen.scss */
+/* line 2333, ../sass/screen.scss */
 #noticias-comentarios .noticias-comentario .noticia-comentario-detalle {
   line-height: 17px;
   font-size: 15px;
@@ -2420,7 +2423,7 @@ select option {
   font-family: 'Montserrat Light', serif;
 }
 
-/* line 2342, ../sass/screen.scss */
+/* line 2345, ../sass/screen.scss */
 .noticias-comentario button {
   width: 80px;
   font-family: 'Montserrat Semibold', serif;
@@ -2440,13 +2443,13 @@ select option {
   text-decoration: none;
 }
 
-/* line 2361, ../sass/screen.scss */
+/* line 2364, ../sass/screen.scss */
 .noticias-comentario button:hover {
   background-color: #17384B;
 }
 
 /*BUSQUEDAS LABORALES*/
-/* line 2368, ../sass/screen.scss */
+/* line 2371, ../sass/screen.scss */
 #busquedas-laborales,
 #revistas,
 #contacto-inner,
@@ -2459,7 +2462,7 @@ select option {
   max-width: 100%;
   margin-top: 120px;
 }
-/* line 2379, ../sass/screen.scss */
+/* line 2382, ../sass/screen.scss */
 #busquedas-laborales input,
 #revistas input,
 #contacto-inner input,
@@ -2474,7 +2477,7 @@ select option {
   padding: 5px;
 }
 @media (max-width: 799px) {
-  /* line 2368, ../sass/screen.scss */
+  /* line 2371, ../sass/screen.scss */
   #busquedas-laborales,
   #revistas,
   #contacto-inner,
@@ -2482,14 +2485,14 @@ select option {
     margin-top: 50px;
   }
 }
-/* line 2395, ../sass/screen.scss */
+/* line 2398, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:nth-child(odd),
 #revistas .busqueda-laboral:nth-child(odd),
 #contacto-inner .busqueda-laboral:nth-child(odd),
 #nuevo-usuario .busqueda-laboral:nth-child(odd) {
   background-color: #17384B;
 }
-/* line 2400, ../sass/screen.scss */
+/* line 2403, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral:hover,
 #revistas .busqueda-laboral:hover,
 #contacto-inner .busqueda-laboral:hover,
@@ -2500,7 +2503,7 @@ select option {
   -o-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
-/* line 2408, ../sass/screen.scss */
+/* line 2411, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral,
 #revistas .busqueda-laboral,
 #contacto-inner .busqueda-laboral,
@@ -2517,7 +2520,7 @@ select option {
   margin-bottom: 10px;
 }
 @media (max-width: 1000px) {
-  /* line 2408, ../sass/screen.scss */
+  /* line 2411, ../sass/screen.scss */
   #busquedas-laborales .busqueda-laboral,
   #revistas .busqueda-laboral,
   #contacto-inner .busqueda-laboral,
@@ -2526,7 +2529,7 @@ select option {
     margin-right: 20px;
   }
 }
-/* line 2429, ../sass/screen.scss */
+/* line 2432, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-title,
 #revistas .busqueda-laboral .busqueda-laboral-title,
 #contacto-inner .busqueda-laboral .busqueda-laboral-title,
@@ -2535,7 +2538,7 @@ select option {
   font-size: 34px;
   padding: 15px;
 }
-/* line 2436, ../sass/screen.scss */
+/* line 2439, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-texto,
 #revistas .busqueda-laboral .busqueda-laboral-texto,
 #contacto-inner .busqueda-laboral .busqueda-laboral-texto,
@@ -2548,7 +2551,7 @@ select option {
   margin-top: 15px;
   line-height: 18px;
 }
-/* line 2445, ../sass/screen.scss */
+/* line 2448, ../sass/screen.scss */
 #busquedas-laborales .busqueda-laboral .busqueda-laboral-contacto,
 #revistas .busqueda-laboral .busqueda-laboral-contacto,
 #contacto-inner .busqueda-laboral .busqueda-laboral-contacto,
@@ -2556,7 +2559,7 @@ select option {
   padding: 5px;
 }
 
-/* line 2451, ../sass/screen.scss */
+/* line 2454, ../sass/screen.scss */
 #busqueda-laboral-search {
   width: 100%;
   background-color: #000000;
@@ -2566,7 +2569,7 @@ select option {
   align-items: center;
   min-height: 80px;
 }
-/* line 2459, ../sass/screen.scss */
+/* line 2462, ../sass/screen.scss */
 #busqueda-laboral-search input {
   background-color: transparent;
   max-width: 1000px;
@@ -2580,33 +2583,33 @@ select option {
   margin: 10px;
   padding: 5px;
 }
-/* line 2472, ../sass/screen.scss */
+/* line 2475, ../sass/screen.scss */
 #busqueda-laboral-search input ::-webkit-input-placeholder {
   color: #99C1DA;
 }
-/* line 2476, ../sass/screen.scss */
+/* line 2479, ../sass/screen.scss */
 #busqueda-laboral-search input :-moz-placeholder {
   /* Firefox 18- */
   color: #99C1DA;
 }
-/* line 2481, ../sass/screen.scss */
+/* line 2484, ../sass/screen.scss */
 #busqueda-laboral-search input ::-moz-placeholder {
   /* Firefox 19+ */
   color: #99C1DA;
 }
-/* line 2486, ../sass/screen.scss */
+/* line 2489, ../sass/screen.scss */
 #busqueda-laboral-search input :-ms-input-placeholder {
   color: #99C1DA;
 }
 @media (max-width: 800px) {
-  /* line 2459, ../sass/screen.scss */
+  /* line 2462, ../sass/screen.scss */
   #busqueda-laboral-search input {
     max-width: 95px;
     min-width: 95%;
   }
 }
 
-/* line 2497, ../sass/screen.scss */
+/* line 2500, ../sass/screen.scss */
 #contacto h1 {
   font-family: 'Montserrat Semibold', serif;
   text-align: center;
@@ -2614,7 +2617,7 @@ select option {
   font-size: 20px;
 }
 
-/* line 2504, ../sass/screen.scss */
+/* line 2507, ../sass/screen.scss */
 #contacto h2 {
   font-family: 'Lato Regular', serif;
   text-align: center;
@@ -2624,7 +2627,7 @@ select option {
   margin-top: 5px;
 }
 
-/* line 2513, ../sass/screen.scss */
+/* line 2516, ../sass/screen.scss */
 #revistas-listado {
   font-family: "Montserrat Semibold", sans-serif;
   color: #133548;
@@ -2640,27 +2643,27 @@ select option {
   align-items: flex-start;
 }
 @media (max-width: 500px) {
-  /* line 2513, ../sass/screen.scss */
+  /* line 2516, ../sass/screen.scss */
   #revistas-listado {
     font-size: 20px;
   }
 }
 
-/* line 2532, ../sass/screen.scss */
+/* line 2535, ../sass/screen.scss */
 #revistas-form .administracion-inputs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 2538, ../sass/screen.scss */
+/* line 2541, ../sass/screen.scss */
 #servicios-main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* line 2544, ../sass/screen.scss */
+/* line 2547, ../sass/screen.scss */
 #servicios-main-container #financiamiento,
 #servicios-main-container #sellados {
   display: flex;
@@ -2669,13 +2672,13 @@ select option {
   align-items: center;
 }
 @media (min-width: 600px) {
-  /* line 2544, ../sass/screen.scss */
+  /* line 2547, ../sass/screen.scss */
   #servicios-main-container #financiamiento,
   #servicios-main-container #sellados {
     flex-direction: row;
   }
 }
-/* line 2554, ../sass/screen.scss */
+/* line 2557, ../sass/screen.scss */
 #servicios-main-container #financiamiento div,
 #servicios-main-container #sellados div {
   display: flex;
@@ -2684,7 +2687,7 @@ select option {
   align-items: center;
 }
 @media (min-width: 600px) {
-  /* line 2554, ../sass/screen.scss */
+  /* line 2557, ../sass/screen.scss */
   #servicios-main-container #financiamiento div,
   #servicios-main-container #sellados div {
     align-items: flex-start;
@@ -2692,12 +2695,12 @@ select option {
   }
 }
 @media (min-width: 600px) {
-  /* line 2567, ../sass/screen.scss */
+  /* line 2570, ../sass/screen.scss */
   #servicios-main-container #sellados {
     flex-direction: row-reverse;
   }
 }
-/* line 2574, ../sass/screen.scss */
+/* line 2577, ../sass/screen.scss */
 #servicios-main-container .servicio-main-icon {
   height: 200px;
   width: 200px;
@@ -2708,7 +2711,7 @@ select option {
   margin: 10px;
 }
 @media (min-width: 600px) {
-  /* line 2574, ../sass/screen.scss */
+  /* line 2577, ../sass/screen.scss */
   #servicios-main-container .servicio-main-icon {
     height: 300px;
     width: 300px;
@@ -2718,24 +2721,24 @@ select option {
     border-radius: 300px;
   }
 }
-/* line 2594, ../sass/screen.scss */
+/* line 2597, ../sass/screen.scss */
 #servicios-main-container h1 {
   font-variant: small-caps;
 }
-/* line 2600, ../sass/screen.scss */
+/* line 2603, ../sass/screen.scss */
 #servicios-main-container h1, #servicios-main-container h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
 }
 @media (min-width: 600px) {
-  /* line 2600, ../sass/screen.scss */
+  /* line 2603, ../sass/screen.scss */
   #servicios-main-container h1, #servicios-main-container h2 {
     text-align: left;
   }
 }
 
-/* line 2611, ../sass/screen.scss */
+/* line 2614, ../sass/screen.scss */
 #contacto-container button {
   width: 110px;
   font-family: 'Montserrat Semibold', serif;
@@ -2755,13 +2758,13 @@ select option {
   text-decoration: none;
 }
 
-/* line 2630, ../sass/screen.scss */
+/* line 2633, ../sass/screen.scss */
 #contacto-container button:hover {
   color: white;
   background-color: #133548;
 }
 
-/* line 2638, ../sass/screen.scss */
+/* line 2641, ../sass/screen.scss */
 .administracion-slider {
   display: flex;
   flex-direction: row;
@@ -2770,7 +2773,7 @@ select option {
   margin-bottom: 10px;
 }
 
-/* line 2647, ../sass/screen.scss */
+/* line 2650, ../sass/screen.scss */
 .acdesarrollos {
   text-align: left;
   margin-left: 5px;
@@ -2778,7 +2781,7 @@ select option {
   font-size: 15px;
   color: darkorange;
 }
-/* line 2654, ../sass/screen.scss */
+/* line 2657, ../sass/screen.scss */
 .acdesarrollos a {
   font-family: 'Montserrat Light', serif;
   font-weight: bolder;
@@ -2788,12 +2791,12 @@ select option {
   color: white;
 }
 
-/* line 2666, ../sass/screen.scss */
+/* line 2669, ../sass/screen.scss */
 .acdesarrollos a:hover {
   color: #2f96b4;
 }
 
-/* line 2670, ../sass/screen.scss */
+/* line 2673, ../sass/screen.scss */
 .contenedor_ac {
   background-color: black;
   padding: 10px;
@@ -2801,17 +2804,17 @@ select option {
   justify-content: center;
 }
 
-/* line 2678, ../sass/screen.scss */
+/* line 2681, ../sass/screen.scss */
 .administracion-slider .administracion-input {
   padding-top: 0px !important;
 }
 
-/* line 2682, ../sass/screen.scss */
+/* line 2685, ../sass/screen.scss */
 .error-input {
   border-color: red !important;
 }
 
-/* line 2686, ../sass/screen.scss */
+/* line 2689, ../sass/screen.scss */
 .error-message {
   position: absolute;
   background: red;
@@ -2840,7 +2843,7 @@ select option {
   }
 }
 /*INSTITUCIONAL*/
-/* line 2719, ../sass/screen.scss */
+/* line 2722, ../sass/screen.scss */
 .institucional-title {
   display: flex;
   flex-direction: row;
@@ -2849,7 +2852,7 @@ select option {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
-/* line 2726, ../sass/screen.scss */
+/* line 2729, ../sass/screen.scss */
 .institucional-title button {
   border: 0px solid transparent;
   font-family: 'Roboto-Bold', serif;
@@ -2864,18 +2867,18 @@ select option {
   -webkit-transition: opacity .5s ease-in-out;
 }
 @media (max-width: 400px) {
-  /* line 2726, ../sass/screen.scss */
+  /* line 2729, ../sass/screen.scss */
   .institucional-title button {
     font-size: 11px;
   }
 }
-/* line 2745, ../sass/screen.scss */
+/* line 2748, ../sass/screen.scss */
 .institucional-title button:hover {
   background-color: #1D3541;
   color: white;
   opacity: 1;
 }
-/* line 2751, ../sass/screen.scss */
+/* line 2754, ../sass/screen.scss */
 .institucional-title .button-selected-institucional {
   background-color: #133548;
   color: white;
@@ -2885,17 +2888,17 @@ select option {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.39);
 }
 
-/* line 2763, ../sass/screen.scss */
+/* line 2766, ../sass/screen.scss */
 #institucional-main-container {
   position: relative;
 }
 @media (max-width: 800px) {
-  /* line 2763, ../sass/screen.scss */
+  /* line 2766, ../sass/screen.scss */
   #institucional-main-container {
     max-width: 100% !important;
   }
 }
-/* line 2772, ../sass/screen.scss */
+/* line 2775, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container {
   display: flex;
   flex-direction: row;
@@ -2906,7 +2909,7 @@ select option {
   min-width: 100% !important;
   max-width: 100% !important;
 }
-/* line 2781, ../sass/screen.scss */
+/* line 2784, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero,
 #institucional-main-container #institucional-inner-container #institucional-main-segundo,
 #institucional-main-container #institucional-inner-container #institucional-main-tercero {
@@ -2918,14 +2921,14 @@ select option {
   padding-bottom: 20px;
 }
 @media (max-width: 1000px) {
-  /* line 2781, ../sass/screen.scss */
+  /* line 2784, ../sass/screen.scss */
   #institucional-main-container #institucional-inner-container #institucional-main-primero,
   #institucional-main-container #institucional-inner-container #institucional-main-segundo,
   #institucional-main-container #institucional-inner-container #institucional-main-tercero {
     width: 100%;
   }
 }
-/* line 2795, ../sass/screen.scss */
+/* line 2798, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero {
   margin-left: 0%;
   z-index: 300;
@@ -2934,7 +2937,7 @@ select option {
   padding-top: 4%;
   padding-bottom: 20px;
 }
-/* line 2802, ../sass/screen.scss */
+/* line 2805, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero h1 {
   font-family: "Open Sans", sans-serif, serif, sans-serif;
   font-size: 36px;
@@ -2943,14 +2946,14 @@ select option {
   text-align: center;
   margin-bottom: 50px;
 }
-/* line 2811, ../sass/screen.scss */
+/* line 2814, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero p {
   color: black;
   font-family: 'Open Sans', serif;
   font-size: 17px;
   line-height: 23px;
 }
-/* line 2818, ../sass/screen.scss */
+/* line 2821, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero h2 {
   font-size: 20px;
   font-weight: bold;
@@ -2959,15 +2962,15 @@ select option {
   text-align: left;
   margin-bottom: 20px;
 }
-/* line 2827, ../sass/screen.scss */
+/* line 2830, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero .lista {
   display: list-item;
 }
-/* line 2829, ../sass/screen.scss */
+/* line 2832, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero .lista ul {
   list-style-type: disc !important;
 }
-/* line 2832, ../sass/screen.scss */
+/* line 2835, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero .lista ul li {
   list-style-type: disc;
   color: black;
@@ -2975,12 +2978,12 @@ select option {
   font-size: 17px;
   line-height: 23px;
 }
-/* line 2843, ../sass/screen.scss */
+/* line 2846, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-segundo {
   margin-left: -100%;
   z-index: 301;
 }
-/* line 2847, ../sass/screen.scss */
+/* line 2850, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-segundo .titulo-segundo {
   margin-top: 50px;
   font-family: "Open Sans", sans-serif, serif, sans-serif;
@@ -2990,12 +2993,12 @@ select option {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 2858, ../sass/screen.scss */
+/* line 2861, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-tercero {
   margin-left: -100%;
   z-index: 302;
 }
-/* line 2862, ../sass/screen.scss */
+/* line 2865, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-tercero .titulo-tercero {
   margin-top: 50px;
   font-family: "Open Sans", sans-serif;
@@ -3049,7 +3052,7 @@ select option {
     opacity: 1;
   }
 }
-/* line 2919, ../sass/screen.scss */
+/* line 2922, ../sass/screen.scss */
 #institucional-main-container #institucional-back,
 #institucional-main-container #institucional-forw {
   background-color: #133548;
@@ -3070,32 +3073,32 @@ select option {
   -o-animation: flickerAnimation 4s infinite;
   animation: flickerAnimation 4s infinite;
 }
-/* line 2941, ../sass/screen.scss */
+/* line 2944, ../sass/screen.scss */
 #institucional-main-container #institucional-back span,
 #institucional-main-container #institucional-forw span {
   color: white;
   font-size: 25px;
   font-weight: bold;
 }
-/* line 2948, ../sass/screen.scss */
+/* line 2951, ../sass/screen.scss */
 #institucional-main-container #institucional-back {
   left: 0px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 2954, ../sass/screen.scss */
+/* line 2957, ../sass/screen.scss */
 #institucional-main-container #institucional-forw {
   right: 0px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-/* line 2960, ../sass/screen.scss */
+/* line 2963, ../sass/screen.scss */
 #institucional-main-container #institucional-back:hover,
 #institucional-main-container #institucional-forw:hover {
   background-color: #133548;
   opacity: 1;
 }
-/* line 2966, ../sass/screen.scss */
+/* line 2969, ../sass/screen.scss */
 #institucional-main-container .seccion-primera-selected {
   z-index: 305 !important;
   opacity: 1;
@@ -3105,7 +3108,7 @@ select option {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 2976, ../sass/screen.scss */
+/* line 2979, ../sass/screen.scss */
 #institucional-main-container .seccion-segunda-selected {
   z-index: 305 !important;
   opacity: 1;
@@ -3115,7 +3118,7 @@ select option {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 2988, ../sass/screen.scss */
+/* line 2991, ../sass/screen.scss */
 #institucional-main-container .seccion-tercera-selected {
   z-index: 305 !important;
   opacity: 1;
@@ -3125,11 +3128,11 @@ select option {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 3000, ../sass/screen.scss */
+/* line 3003, ../sass/screen.scss */
 #institucional-main-container .seccion-deselected {
   opacity: 0;
 }
-/* line 3005, ../sass/screen.scss */
+/* line 3008, ../sass/screen.scss */
 #institucional-main-container .seccion-deselected-add {
   -webkit-animation: seccion-deselect 1s;
   -o-animation: seccion-deselect 1s;
@@ -3187,14 +3190,14 @@ select option {
   font-weight: normal;
   src: local("Roboto-Bold"), url("Roboto-Bold.ttf") format("woff");
 }
-/* line 3079, ../sass/screen.scss */
+/* line 3082, ../sass/screen.scss */
 .intitucional-organigrama-container {
   display: flex;
   flex-direction: column;
   height: 100%;
   overflow-y: auto;
 }
-/* line 3084, ../sass/screen.scss */
+/* line 3087, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line {
   margin: 20px;
   display: flex;
@@ -3203,7 +3206,7 @@ select option {
   justify-content: center;
   align-items: center;
 }
-/* line 3091, ../sass/screen.scss */
+/* line 3094, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line .organigrama-box {
   width: 200px;
   height: 100px;
@@ -3235,7 +3238,7 @@ select option {
   align-items: center;
   margin: 8px 8px 8px 8px;
 }
-/* line 3113, ../sass/screen.scss */
+/* line 3116, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line .organigrama-box .organigrama-box-foto1,
 .intitucional-organigrama-container .organigrama-line .organigrama-box .organigrama-box-foto {
   height: 40px;
@@ -3248,7 +3251,7 @@ select option {
   -moz-box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.26);
   box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.26);
 }
-/* line 3125, ../sass/screen.scss */
+/* line 3128, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line .organigrama-box h1 {
   font-weight: bold;
   font-family: "Montserrat Semibold", sans-serif;
@@ -3257,7 +3260,7 @@ select option {
   color: white;
   text-transform: uppercase;
 }
-/* line 3134, ../sass/screen.scss */
+/* line 3137, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line .organigrama-box p {
   font-weight: bold;
   font-family: "Montserrat Light", sans-serif;
@@ -3269,22 +3272,22 @@ select option {
   line-height: 12px;
 }
 
-/* line 3149, ../sass/screen.scss */
+/* line 3152, ../sass/screen.scss */
 .organigrama-box-foto1 img {
   background-image: url("img/organi_1.png");
 }
 
 /***** ACORDEON *****/
-/* line 3156, ../sass/screen.scss */
+/* line 3159, ../sass/screen.scss */
 .acordeon-list .acordeon-line {
   width: 100%;
   color: white;
 }
-/* line 3159, ../sass/screen.scss */
+/* line 3162, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-check {
   display: none;
 }
-/* line 3163, ../sass/screen.scss */
+/* line 3166, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-label {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#17384a+0,090b0f+100 */
   background: #17384a;
@@ -3318,7 +3321,7 @@ select option {
   -o-transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out;
   transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out;
 }
-/* line 3189, ../sass/screen.scss */
+/* line 3192, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-check ~ p {
   overflow: auto;
   max-height: 0px;
@@ -3333,7 +3336,7 @@ select option {
   -o-transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
   transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
 }
-/* line 3204, ../sass/screen.scss */
+/* line 3207, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-check:checked ~ p {
   max-height: 500px;
   padding: 10px 30px 10px 30px;
@@ -3341,7 +3344,7 @@ select option {
   font-size: 14px;
   line-height: 18px;
 }
-/* line 3213, ../sass/screen.scss */
+/* line 3216, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-check:checked ~ label {
   background-color: #00718E !important;
 }

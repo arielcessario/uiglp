@@ -1781,7 +1781,9 @@ select option {
 
 #financiamiento div h1,
 #sellados div h1 {
-  font-family: 'Montserrat Semibold', serif;
+  font-family: 'Open Sans', serif;
+  font-weight: bold;
+  font-variant: small-caps;
   color: #133548;
   font-size: 40px;
 
@@ -1789,7 +1791,8 @@ select option {
 
 #financiamiento div h2,
 #sellados div h2 {
-  font-family: 'Montserrat Light', serif;
+  font-family: 'Open Sans', serif;
+  font-weight: lighter;
   color: black;
   font-size: 16px;
   line-height: 22px;
