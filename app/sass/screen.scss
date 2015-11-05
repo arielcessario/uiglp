@@ -1785,6 +1785,11 @@ select option {
   max-width: 1000px;
 }
 
+#contacto-container{
+  min-height: 320px;
+
+}
+
 #financiamiento div h1,
 #sellados div h1 {
   font-family: 'Open Sans', serif;
@@ -1860,7 +1865,8 @@ select option {
 #noticias-form {
   max-width: 1000px;
   min-width: 320px;
-  @media(max-width: 500px) {
+  min-height: 450px;
+  @media(max-width: 800px) {
     margin-left: 10px;
     margin-right: 10px;
     max-width: 100%;
@@ -1872,8 +1878,27 @@ select option {
   width: 100%;
 }
 
-#ingreso-form {
+#ingreso-form,
+#nuevo-usuario-form {
   width: 100%;
+  min-height: 700px;
+
+  p{
+    font-family: "Open Sans";
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    line-height: 25px;
+    color: #133548;
+  }
+
+  h1{
+    font-family: "Open Sans";
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #133548;
+  }
 }
 
 #administracion-form,
@@ -1889,6 +1914,11 @@ select option {
     flex-wrap: wrap;
 
   }
+}
+
+#nuevo-usuario-form{
+  min-height: 700px;
+
 }
 
 #administracion-oferta,
@@ -2525,6 +2555,7 @@ select option {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  min-height: 800px;
   width: 100%;
   max-width: 1000px;
   display: flex;
