@@ -3,7 +3,7 @@
     var scripts = document.getElementsByTagName("script");
     var currentScriptPath = scripts[scripts.length - 1].src;
     currentScriptPath = currentScriptPath.replace('.min', '');
-    angular.module('uiglp.contacto', ['ngRoute',['utils/utils.min.js']])
+    angular.module('uiglp.contacto', ['ngRoute', ['utils/utils.min.js']])
         .config(['$routeProvider', function ($routeProvider) {
             //$routeProvider.when('/contacto', {
             //    templateUrl: currentScriptPath.replace('.js', '.html'),
@@ -15,12 +15,27 @@
 
 
     ContactoController.$inject = ['LoginService', 'LoginState', 'store', '$http', '$timeout', 'AcUtilsService'];
-    function ContactoController(LoginService, LoginState, store, $http, $timeout,AcUtilsService) {
+    function ContactoController(LoginService, LoginState, store, $http, $timeout, AcUtilsService) {
 
         var vm = this;
         vm.enviado = false;
         vm.sendMail = sendMail;
 
+
+        fuckFacebook(document, 'script', 'facebook-jssdk');
+
+        function fuckFacebook(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5";
+            fjs.parentNode.insertBefore(js, fjs);
+
+
+        };
 
 
         //function initialize() {
@@ -40,7 +55,6 @@
         //}
         //
         //google.maps.event.addDomListener(window, 'load', initialize());
-
 
 
         function sendMail() {
@@ -79,21 +93,21 @@
             return $http.post('./contacto/contact.php',
                 {'email': vm.email, 'nombre': vm.nombre, 'mensaje': vm.mensaje, 'asunto': vm.asunto})
                 .success(
-                function (data) {
-                    console.log(data);
-                    vm.enviado = true;
-                    $timeout(hideMessage, 3000);
-                    function hideMessage(){
-                        vm.enviado = false;
-                    }
+                    function (data) {
+                        console.log(data);
+                        vm.enviado = true;
+                        $timeout(hideMessage, 3000);
+                        function hideMessage() {
+                            vm.enviado = false;
+                        }
 
-                    vm.email = '';
-                    vm.nombre = '';
-                    vm.mensaje = '';
-                    vm.asunto = '';
+                        vm.email = '';
+                        vm.nombre = '';
+                        vm.mensaje = '';
+                        vm.asunto = '';
 
-                    //goog_report_conversion('http://www.ac-desarrollos.com/#');
-                })
+                        //goog_report_conversion('http://www.ac-desarrollos.com/#');
+                    })
                 .error(function (data) {
                     console.log(data);
                 });
