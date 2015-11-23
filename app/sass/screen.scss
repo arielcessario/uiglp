@@ -810,7 +810,7 @@ select option {
 
           font-family: 'Open Sans', serif;
           font-size: 18px;
-          font-weight: light;
+          //font-weight: light;
           color: black;
           line-height: 22px;
 
@@ -1847,7 +1847,7 @@ select option {
 #revistas-form,
 #busquedas-laborales-form,
 #ingreso-form,
-#institucional-main-container,
+#institucional-main-container
 {
   max-width: 1000px;
   min-width: 320px;
@@ -1937,7 +1937,7 @@ select option {
 .busquedas-laborales-title,
 .revistas-title,
 .contacto-title,
-.servicios-title,
+.servicios-title
 {
   width: 100% !important;
   //margin-top: 20px;
@@ -2032,7 +2032,7 @@ select option {
 }
 
 .administracion-button-bar,
-.nuevo-usuario-button-bar,
+.nuevo-usuario-button-bar
 {
   display: flex;
   flex-direction: row;
@@ -2821,7 +2821,7 @@ select option {
     max-width: 100% !important;
     #institucional-main-primero,
     #institucional-main-segundo,
-    #institucional-main-tercero, {
+    #institucional-main-tercero {
       color: #133548;
       wwidth: 1000px;
       max-width: 100%;
@@ -2833,7 +2833,7 @@ select option {
       }
 
     }
-    #institucional-main-primero, {
+    #institucional-main-primero {
       margin-left: 0%;
       z-index: 300;
       padding-left: 10%;
@@ -2881,7 +2881,7 @@ select option {
       }
     }
 
-    #institucional-main-segundo, {
+    #institucional-main-segundo {
       margin-left: -100%;
       z-index: 301;
 
@@ -2896,7 +2896,7 @@ select option {
       }
     }
 
-    #institucional-main-tercero, {
+    #institucional-main-tercero {
 
       margin-left: -100%;
       z-index: 302;
@@ -2958,7 +2958,7 @@ select option {
   }
 
   #institucional-back,
-  #institucional-forw, {
+  #institucional-forw {
 
     background-color: #133548;
     -webkit-box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.26);
