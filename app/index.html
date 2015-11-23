@@ -39,7 +39,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -190,84 +190,84 @@
          (c) 2010-2015 Google, Inc. http://angularjs.org
          License: MIT
          */
-                (function () {
-                    'use strict';
-                    function d(b) {
-                        return function () {
-                            var a = arguments[0], e;
-                            e = "[" + (b ? b + ":" : "") + a + "] http://errors.angularjs.org/1.4.4/" + (b ? b + "/" : "") + a;
-                            for (a = 1; a < arguments.length; a++) {
-                                e = e + (1 == a ? "?" : "&") + "p" + (a - 1) + "=";
-                                var d = encodeURIComponent, c;
-                                c = arguments[a];
-                                c = "function" == typeof c ? c.toString().replace(/ \{[\s\S]*$/, "") : "undefined" == typeof c ? "undefined" : "string" != typeof c ? JSON.stringify(c) : c;
-                                e += d(c)
-                            }
-                            return Error(e)
-                        }
+        (function () {
+            'use strict';
+            function d(b) {
+                return function () {
+                    var a = arguments[0], e;
+                    e = "[" + (b ? b + ":" : "") + a + "] http://errors.angularjs.org/1.4.4/" + (b ? b + "/" : "") + a;
+                    for (a = 1; a < arguments.length; a++) {
+                        e = e + (1 == a ? "?" : "&") + "p" + (a - 1) + "=";
+                        var d = encodeURIComponent, c;
+                        c = arguments[a];
+                        c = "function" == typeof c ? c.toString().replace(/ \{[\s\S]*$/, "") : "undefined" == typeof c ? "undefined" : "string" != typeof c ? JSON.stringify(c) : c;
+                        e += d(c)
                     }
+                    return Error(e)
+                }
+            }
 
-                    (function (b) {
-                        function a(c, a, b) {
-                            return c[a] || (c[a] = b())
-                        }
+            (function (b) {
+                function a(c, a, b) {
+                    return c[a] || (c[a] = b())
+                }
 
-                        var e = d("$injector"), n = d("ng");
-                        b = a(b, "angular", Object);
-                        b.$minErr = b.$minErr || d;
-                        return a(b, "module", function () {
-                            var c = {};
-                            return function (b, d, h) {
-                                if ("hasOwnProperty" === b)throw n("badname", "module");
-                                d && c.hasOwnProperty(b) && (c[b] = null);
-                                return a(c, b, function () {
-                                    function c(a, b, d, e) {
-                                        e || (e = f);
-                                        return function () {
-                                            e[d || "push"]([a, b, arguments]);
-                                            return g
-                                        }
-                                    }
-
-                                    function a(c, e) {
-                                        return function (a, d) {
-                                            d && "function" === typeof d && (d.$moduleName = b);
-                                            f.push([c, e, arguments]);
-                                            return g
-                                        }
-                                    }
-
-                                    if (!d)throw e("nomod", b);
-                                    var f = [], k = [], l = [], m = c("$injector", "invoke", "push",
-                                            k), g = {
-                                        _invokeQueue: f,
-                                        _configBlocks: k,
-                                        _runBlocks: l,
-                                        requires: d,
-                                        name: b,
-                                        provider: a("$provide", "provider"),
-                                        factory: a("$provide", "factory"),
-                                        service: a("$provide", "service"),
-                                        value: c("$provide", "value"),
-                                        constant: c("$provide", "constant", "unshift"),
-                                        decorator: a("$provide", "decorator"),
-                                        animation: a("$animateProvider", "register"),
-                                        filter: a("$filterProvider", "register"),
-                                        controller: a("$controllerProvider", "register"),
-                                        directive: a("$compileProvider", "directive"),
-                                        config: m,
-                                        run: function (a) {
-                                            l.push(a);
-                                            return this
-                                        }
-                                    };
-                                    h && m(h);
+                var e = d("$injector"), n = d("ng");
+                b = a(b, "angular", Object);
+                b.$minErr = b.$minErr || d;
+                return a(b, "module", function () {
+                    var c = {};
+                    return function (b, d, h) {
+                        if ("hasOwnProperty" === b)throw n("badname", "module");
+                        d && c.hasOwnProperty(b) && (c[b] = null);
+                        return a(c, b, function () {
+                            function c(a, b, d, e) {
+                                e || (e = f);
+                                return function () {
+                                    e[d || "push"]([a, b, arguments]);
                                     return g
-                                })
+                                }
                             }
+
+                            function a(c, e) {
+                                return function (a, d) {
+                                    d && "function" === typeof d && (d.$moduleName = b);
+                                    f.push([c, e, arguments]);
+                                    return g
+                                }
+                            }
+
+                            if (!d)throw e("nomod", b);
+                            var f = [], k = [], l = [], m = c("$injector", "invoke", "push",
+                                    k), g = {
+                                _invokeQueue: f,
+                                _configBlocks: k,
+                                _runBlocks: l,
+                                requires: d,
+                                name: b,
+                                provider: a("$provide", "provider"),
+                                factory: a("$provide", "factory"),
+                                service: a("$provide", "service"),
+                                value: c("$provide", "value"),
+                                constant: c("$provide", "constant", "unshift"),
+                                decorator: a("$provide", "decorator"),
+                                animation: a("$animateProvider", "register"),
+                                filter: a("$filterProvider", "register"),
+                                controller: a("$controllerProvider", "register"),
+                                directive: a("$compileProvider", "directive"),
+                                config: m,
+                                run: function (a) {
+                                    l.push(a);
+                                    return this
+                                }
+                            };
+                            h && m(h);
+                            return g
                         })
-                    })(window)
-                })(window);
+                    }
+                })
+            })(window)
+        })(window);
         //# sourceMappingURL=bower_components/angular-loader/angular-loader.min.js.map
 
         //@@NG_LOADER_END@@
@@ -358,12 +358,12 @@
                         'bower_components/ac-angular-slider-manager/slider-manager.min.js'], 'segundo');
 
 
-                        $script.ready('segundo', function () {
-                            $script(['app.min.js'], 'tercero');
+                    $script.ready('segundo', function () {
+                        $script(['app.min.js'], 'tercero');
 
-                            $script.ready('tercero', function () {
-                                angular.bootstrap(document, ['uiglp']);
-                            });
+                        $script.ready('tercero', function () {
+                            angular.bootstrap(document, ['uiglp']);
+                        });
                     });
                 }
         );
@@ -441,7 +441,8 @@
 
                          ng-class="{'menu-desktop-btn-selected':appCtrl.selectedPage.indexOf('BUSQUEDA LABORAL') > -1 }"
 
-                         ng-click="appCtrl.goTo({nombre: 'BUSQUEDA LABORAL', path: '/busquedas_laborales'});"> BUSQUEDA LABORAL
+                         ng-click="appCtrl.goTo({nombre: 'BUSQUEDA LABORAL', path: '/busquedas_laborales'});"> BUSQUEDA
+                        LABORAL
 
                     </div>
                     <div class="menu-desktop-btn ac-ripple"
@@ -619,11 +620,14 @@
 <!--<script src="contacto/contacto.min.js"></script>-->
 
 <!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
+<div id="fb-root" style="width: 280px;
+height: 350px;
+background-color: #e5e5e5;"></div>
+<script>(function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
+    js = d.createElement(s);
+    js.id = id;
     js.src = "http://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
