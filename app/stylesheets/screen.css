@@ -3191,7 +3191,7 @@ select option {
   font-family: 'Lato Regular';
   font-style: normal;
   font-weight: normal;
-  src: local("Lato Regular"), url("Lato-Regular.woff") format("woff");
+  src: local("Lato Regular"), url("Lato-Regular.ttf") format("woff");
 }
 @font-face {
   font-family: 'Montserrat Regular';
