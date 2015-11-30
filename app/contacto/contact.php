@@ -23,10 +23,10 @@ function sendMail($email, $nombre, $mensaje, $asunto){
 
     $mail->From = $email;
     $mail->FromName = $nombre;
-    $mail->addAddress('uiglp@uiglp.org.ar');     // Add a recipient
-//    $mail->addAddress('arielcessario@gmail.com');     // Add a recipient
-//    $mail->addAddress('juan.dilello@gmail.com');               // Name is optional
-//    $mail->addAddress('diegoyankelevich@gmail.com');               // Name is optional
+//    $mail->addAddress('uiglp@uiglp.org.ar');     // Add a recipient
+    $mail->addAddress('arielcessario@gmail.com');     // Add a recipient
+    $mail->addAddress('juan.dilello@gmail.com');               // Name is optional
+    $mail->addAddress('diegoyankelevich@gmail.com');               // Name is optional
 //    $mail->addReplyTo('info@example.com', 'Information');
 //    $mail->addCC('cc@example.com');
 //    $mail->addBCC('bcc@example.com');
