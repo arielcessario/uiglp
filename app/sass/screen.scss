@@ -914,9 +914,6 @@ select option {
 
 }
 
-.noticia p {
-  text-align: justify;
-}
 
 #noticias,
 #noticias-main {
@@ -995,11 +992,11 @@ select option {
         border-radius: 20px;
       }
 
-      p {
+      .text-main-noticia {
+        text-align: justify;
         font-family: 'Montserrat Light', serif;
         width: 90%;
         margin-bottom: 10px;
-        text-align: left;
         height: 154px;
         overflow: auto;
         font-size: 12px;
@@ -1213,9 +1210,11 @@ select option {
         margin-top: 10px;
         margin-bottom: 10px;
       }
-      p {
-        max-height: 190px;
+      .text-main-evento {
+        font-family: 'Lato Regular', serif;
+        height: 200px;
         overflow: auto;
+        min-width: 100%;
       }
 
     }
