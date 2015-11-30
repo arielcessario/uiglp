@@ -1001,11 +1001,13 @@ select option {
         color: white;
         font-size: 12px;
         border-color: white;
+        min-height: 28px;
       }
 
       .btn-leer-mas:hover {
         background-color: white;
         color: #133548;
+        min-height: 28px;
 
       }
 
