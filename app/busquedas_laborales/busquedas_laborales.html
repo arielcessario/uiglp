@@ -7,6 +7,7 @@
     </div>
     <div id="busqueda-laboral-search">
         <input type="text" placeholder="Ingrese los terminos relacionados a su búsqueda..." ng-model="busquedasLaboralesCtrl.filter">
+        <span style="color:white; margin-bottom: 10px;">Para cargar una nueva búsqueda laboral, ingrese con su mail y contraseña</span>
     </div>
     <div id="busquedas-laborales-form">
         <div class="busqueda-laboral" ng-repeat="busqueda in busquedasLaboralesCtrl.busquedas | filter:busquedasLaboralesCtrl.filter">

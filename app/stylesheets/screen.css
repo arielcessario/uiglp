@@ -2947,8 +2947,9 @@ select option {
   max-height: 1200px;
   min-width: 100% !important;
   max-width: 100% !important;
+  text-align: justify;
 }
-/* line 2822, ../sass/screen.scss */
+/* line 2823, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero,
 #institucional-main-container #institucional-inner-container #institucional-main-segundo,
 #institucional-main-container #institucional-inner-container #institucional-main-tercero {
@@ -2960,14 +2961,14 @@ select option {
   padding-bottom: 20px;
 }
 @media (max-width: 1000px) {
-  /* line 2822, ../sass/screen.scss */
+  /* line 2823, ../sass/screen.scss */
   #institucional-main-container #institucional-inner-container #institucional-main-primero,
   #institucional-main-container #institucional-inner-container #institucional-main-segundo,
   #institucional-main-container #institucional-inner-container #institucional-main-tercero {
     width: 100%;
   }
 }
-/* line 2836, ../sass/screen.scss */
+/* line 2837, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero {
   margin-left: 0%;
   z-index: 300;
@@ -2976,7 +2977,7 @@ select option {
   padding-top: 4%;
   padding-bottom: 20px;
 }
-/* line 2843, ../sass/screen.scss */
+/* line 2844, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero h1 {
   font-family: "Open Sans", sans-serif, serif, sans-serif;
   font-size: 36px;
@@ -2985,14 +2986,14 @@ select option {
   text-align: center;
   margin-bottom: 50px;
 }
-/* line 2852, ../sass/screen.scss */
+/* line 2853, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero p {
   color: black;
   font-family: 'Open Sans', serif;
   font-size: 17px;
   line-height: 23px;
 }
-/* line 2859, ../sass/screen.scss */
+/* line 2860, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero h2 {
   font-size: 20px;
   font-weight: bold;
@@ -3001,15 +3002,15 @@ select option {
   text-align: left;
   margin-bottom: 20px;
 }
-/* line 2868, ../sass/screen.scss */
+/* line 2869, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero .lista {
   display: list-item;
 }
-/* line 2870, ../sass/screen.scss */
+/* line 2871, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero .lista ul {
   list-style-type: disc !important;
 }
-/* line 2873, ../sass/screen.scss */
+/* line 2874, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-primero .lista ul li {
   list-style-type: disc;
   color: black;
@@ -3017,12 +3018,12 @@ select option {
   font-size: 17px;
   line-height: 23px;
 }
-/* line 2884, ../sass/screen.scss */
+/* line 2885, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-segundo {
   margin-left: -100%;
   z-index: 301;
 }
-/* line 2888, ../sass/screen.scss */
+/* line 2889, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-segundo .titulo-segundo {
   margin-top: 50px;
   font-family: "Open Sans", sans-serif, serif, sans-serif;
@@ -3032,12 +3033,12 @@ select option {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 2899, ../sass/screen.scss */
+/* line 2900, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-tercero {
   margin-left: -100%;
   z-index: 302;
 }
-/* line 2903, ../sass/screen.scss */
+/* line 2904, ../sass/screen.scss */
 #institucional-main-container #institucional-inner-container #institucional-main-tercero .titulo-tercero {
   margin-top: 50px;
   font-family: "Open Sans", sans-serif;
@@ -3091,7 +3092,7 @@ select option {
     opacity: 1;
   }
 }
-/* line 2960, ../sass/screen.scss */
+/* line 2961, ../sass/screen.scss */
 #institucional-main-container #institucional-back,
 #institucional-main-container #institucional-forw {
   background-color: #133548;
@@ -3112,32 +3113,32 @@ select option {
   -o-animation: flickerAnimation 4s infinite;
   animation: flickerAnimation 4s infinite;
 }
-/* line 2982, ../sass/screen.scss */
+/* line 2983, ../sass/screen.scss */
 #institucional-main-container #institucional-back span,
 #institucional-main-container #institucional-forw span {
   color: white;
   font-size: 25px;
   font-weight: bold;
 }
-/* line 2989, ../sass/screen.scss */
+/* line 2990, ../sass/screen.scss */
 #institucional-main-container #institucional-back {
   left: 0px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 2995, ../sass/screen.scss */
+/* line 2996, ../sass/screen.scss */
 #institucional-main-container #institucional-forw {
   right: 0px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-/* line 3001, ../sass/screen.scss */
+/* line 3002, ../sass/screen.scss */
 #institucional-main-container #institucional-back:hover,
 #institucional-main-container #institucional-forw:hover {
   background-color: #133548;
   opacity: 1;
 }
-/* line 3007, ../sass/screen.scss */
+/* line 3008, ../sass/screen.scss */
 #institucional-main-container .seccion-primera-selected {
   z-index: 305 !important;
   opacity: 1;
@@ -3147,7 +3148,7 @@ select option {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 3017, ../sass/screen.scss */
+/* line 3018, ../sass/screen.scss */
 #institucional-main-container .seccion-segunda-selected {
   z-index: 305 !important;
   opacity: 1;
@@ -3157,7 +3158,7 @@ select option {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 3029, ../sass/screen.scss */
+/* line 3030, ../sass/screen.scss */
 #institucional-main-container .seccion-tercera-selected {
   z-index: 305 !important;
   opacity: 1;
@@ -3167,11 +3168,11 @@ select option {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 3041, ../sass/screen.scss */
+/* line 3042, ../sass/screen.scss */
 #institucional-main-container .seccion-deselected {
   opacity: 0;
 }
-/* line 3046, ../sass/screen.scss */
+/* line 3047, ../sass/screen.scss */
 #institucional-main-container .seccion-deselected-add {
   -webkit-animation: seccion-deselect 1s;
   -o-animation: seccion-deselect 1s;
@@ -3229,14 +3230,14 @@ select option {
   font-weight: normal;
   src: local("Roboto-Bold"), url("Roboto-Bold.ttf") format("woff");
 }
-/* line 3120, ../sass/screen.scss */
+/* line 3121, ../sass/screen.scss */
 .intitucional-organigrama-container {
   display: flex;
   flex-direction: column;
   height: 100%;
   overflow-y: auto;
 }
-/* line 3125, ../sass/screen.scss */
+/* line 3126, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line {
   margin: 20px;
   display: flex;
@@ -3245,7 +3246,7 @@ select option {
   justify-content: center;
   align-items: center;
 }
-/* line 3132, ../sass/screen.scss */
+/* line 3133, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line .organigrama-box {
   width: 200px;
   height: 100px;
@@ -3277,7 +3278,7 @@ select option {
   align-items: center;
   margin: 8px 8px 8px 8px;
 }
-/* line 3154, ../sass/screen.scss */
+/* line 3155, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line .organigrama-box .organigrama-box-foto1,
 .intitucional-organigrama-container .organigrama-line .organigrama-box .organigrama-box-foto {
   height: 40px;
@@ -3290,7 +3291,7 @@ select option {
   -moz-box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.26);
   box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.26);
 }
-/* line 3166, ../sass/screen.scss */
+/* line 3167, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line .organigrama-box h1 {
   font-weight: bold;
   font-family: "Montserrat Semibold", sans-serif;
@@ -3299,7 +3300,7 @@ select option {
   color: white;
   text-transform: uppercase;
 }
-/* line 3175, ../sass/screen.scss */
+/* line 3176, ../sass/screen.scss */
 .intitucional-organigrama-container .organigrama-line .organigrama-box p {
   font-weight: bold;
   font-family: "Montserrat Light", sans-serif;
@@ -3311,22 +3312,22 @@ select option {
   line-height: 12px;
 }
 
-/* line 3190, ../sass/screen.scss */
+/* line 3191, ../sass/screen.scss */
 .organigrama-box-foto1 img {
   background-image: url("img/organi_1.png");
 }
 
 /***** ACORDEON *****/
-/* line 3197, ../sass/screen.scss */
+/* line 3198, ../sass/screen.scss */
 .acordeon-list .acordeon-line {
   width: 100%;
   color: white;
 }
-/* line 3200, ../sass/screen.scss */
+/* line 3201, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-check {
   display: none;
 }
-/* line 3204, ../sass/screen.scss */
+/* line 3205, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-label {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#17384a+0,090b0f+100 */
   background: #17384a;
@@ -3361,7 +3362,7 @@ select option {
   -o-transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out;
   transition: background-color 0.4s ease-in-out, padding 0.4s ease-in-out;
 }
-/* line 3231, ../sass/screen.scss */
+/* line 3232, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-check ~ p {
   overflow: auto;
   max-height: 0px;
@@ -3376,7 +3377,7 @@ select option {
   -o-transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
   transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
 }
-/* line 3246, ../sass/screen.scss */
+/* line 3247, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-check:checked ~ p {
   max-height: 500px;
   padding: 10px 30px 10px 30px;
@@ -3384,7 +3385,7 @@ select option {
   font-size: 14px;
   line-height: 18px;
 }
-/* line 3255, ../sass/screen.scss */
+/* line 3256, ../sass/screen.scss */
 .acordeon-list .acordeon-line .acordeon-title-check:checked ~ label {
   background-color: #00718E !important;
 }

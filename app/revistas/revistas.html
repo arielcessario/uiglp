@@ -1,19 +1,1 @@
-<div ng-controller="RevistasController as revistasCtrl" id="revistas">
-    <div id="revistas-titulo" class="revistas-title">
-        <div>Revistas</div>
-    </div>
-
-    <div id="revistas-listado">
-        <div ng-repeat="link in revistasCtrl.links">
-            <div>{{link.nombre}}</div>
-            <iframe class="issuu"
-                    width="300"
-                    height="200"
-                    ng-src="{{link.link}}" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-
-    </div>
-
-
-</div>
+<div ng-controller="RevistasController as revistasCtrl" id="revistas">    <div id="revistas-titulo" class="revistas-title">        <div>Revistas</div>    </div>    <div id="revistas-listado">        <div style="width: 100%; text-align: center; font-size: 24px;">PROXIMAMENTE</div>        <br>        <div ng-repeat="link in revistasCtrl.links">            <div>{{link.nombre}}</div>            <iframe class="issuu"                    width="300"                    height="200"                    ng-src="{{link.link}}" frameborder="0" allowfullscreen></iframe>        </div>    </div></div>
