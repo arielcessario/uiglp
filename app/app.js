@@ -163,7 +163,7 @@ angular.module('uiglp', ['oc.lazyLoad',
                 resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
                     loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
-                        return $ocLazyLoad.load('noticias/noticias.js');
+                        return $ocLazyLoad.load('noticias/noticias.min.js');
                     }]
                 }
             });
