@@ -2236,6 +2236,7 @@ select option {
 #noticias-panel-texto {
   color: white;
   padding: 5px;
+  min-width: 60%;
   #noticias-panel-titulo {
 
     width: 100%;
@@ -2266,6 +2267,7 @@ select option {
   @media (min-width: 600px) {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 
