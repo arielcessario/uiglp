@@ -1422,6 +1422,11 @@ select option {
   padding: 10px;
 }
 
+#servicios-contacto{
+  background-color: red;
+}
+
+
 #contacto-inner {
   //background-color: #133548;
   display: flex;
@@ -1480,9 +1485,7 @@ select option {
         }
       }
 
-      #servicios-contacto{
-        background-color: red;
-      }
+
 
       .textoareaconsulta {
         height: 100px;
