@@ -719,7 +719,7 @@ select option {
   font-family: 'Lato Regular', serif;
   text-shadow: 2px 2px black;
   opacity: .7;
-  width: 100%;
+  width: 60%;
   text-align: right;
   margin-right: 20%;
   @media(max-width: 400px) {
@@ -1478,6 +1478,10 @@ select option {
         @media(max-width: 999px) {
           max-width: 90% !important;
         }
+      }
+
+      #servicios-contacto{
+        background-color: red;
       }
 
       .textoareaconsulta {
