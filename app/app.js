@@ -36,7 +36,6 @@ angular.module('uiglp', ['oc.lazyLoad',
             //});
 
 
-
             jwtInterceptorProvider.tokenGetter = function (store) {
                 return store.get('jwt');
 
@@ -49,7 +48,7 @@ angular.module('uiglp', ['oc.lazyLoad',
                 controller: 'RevistasController',
                 data: {requiresLogin: false},
                 resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
-                    loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
                         return $ocLazyLoad.load('revistas/revistas.min.js');
                     }]
@@ -234,15 +233,28 @@ function AppController(LoginState, $location, $rootScope, $scope, LinksService, 
     vm.selectedPage = 'INICIO';
     vm.menu_mobile_open = false;
     vm.links = LinksService.links;
+    vm.supported_browser = true;
 
     $scope.$on('links', function (event, args) {
         vm.links = LinksService.links;
     });
 
 
+    var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+    var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+    var is_edge = navigator.userAgent.toLowerCase().indexOf('edge') > -1;
+
+    // Verifico si es algún navegador soportado o no
+    vm.supported_browser = (is_chrome || is_firefox) && !is_edge;
+
+    if(!vm.supported_browser){
+        console.log('Browser not supported');
+        alert('Esta página se encuentra optimizada para Chrome o Firefox, recomendamos actualizar a alguno de estos exploradores');
+    }else{
+        console.log('Browser is supported');
+    }
+
     //store.remove('jwt');
-
-
 
 
     for (var i = 0; i < vm.links.length; i++) {

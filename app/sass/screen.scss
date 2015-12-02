@@ -871,7 +871,11 @@ select option {
 
 }
 
-.btn-leer-mas {
+#contacto-enviar-desktop{
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.btn-leer-mas, #contacto-enviar-desktop {
   width: 110px;
   font-family: 'Montserrat Semibold', serif;
   color: #133548;
@@ -1432,6 +1436,7 @@ select option {
   textarea{
     margin-left: 10px;
     margin-right: 10px;
+    padding: 4px;
     width: 90%;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
