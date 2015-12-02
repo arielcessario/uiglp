@@ -996,7 +996,7 @@ select option {
         color: rgb(255, 255, 255);
       }
 
-      .btn-leer-mas {
+      .btn-leer-mas{
         max-width: 110px;
         color: white;
         font-size: 12px;
@@ -1423,9 +1423,45 @@ select option {
 }
 
 #servicios-contacto{
-  background-color: red;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  max-width: 100%;
+  min-width: 450px;
+  input,
+  textarea{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 90%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #17384B;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0);
+
+
+  }
+
 }
 
+.titulo-form-servicios{
+  margin-bottom: 40px;
+  padding: 10px;
+  line-height: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  text-align: left;
+
+}
+
+.textos-form-servicios{
+  text-align: left;
+  margin: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+
+}
 
 #contacto-inner {
   //background-color: #133548;
@@ -1455,6 +1491,8 @@ select option {
       max-width: 1000px;
       align-items: flex-start;
     }
+
+
 
     .contacto-panel {
       max-width: 80%;
