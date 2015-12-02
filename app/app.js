@@ -243,9 +243,10 @@ function AppController(LoginState, $location, $rootScope, $scope, LinksService, 
     var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
     var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
     var is_edge = navigator.userAgent.toLowerCase().indexOf('edge') > -1;
+    var is_trident = navigator.userAgent.toLowerCase().indexOf('trident') > -1;
 
     // Verifico si es algún navegador soportado o no
-    vm.supported_browser = (is_chrome || is_firefox) && !is_edge;
+    vm.supported_browser = (is_chrome || is_firefox) && !is_edge && !is_trident;
 
     if(!vm.supported_browser){
         console.log('Browser not supported');
