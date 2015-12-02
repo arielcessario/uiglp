@@ -21,9 +21,11 @@
         vm.email = '';
         vm.mensaje= '';
         vm.enviarMail = enviarMail;
+        vm.enviando = false;
 
 
         function enviarMail(){
+            vm.enviando = true;
             var conErrores = false;
             if (vm.email == undefined || vm.email.trim().length == 0 || !AcUtilsService.validateEmail(vm.email)) {
                 AcUtilsService.validations('servicio-contacto-mail', 'El mail no es válido');
@@ -55,11 +57,12 @@
             //}
 
             //console.log(vm.mail);
-            return $http.post('./contacto/contact.php',
+            return $http.post('./servicios/contact.php',
                 {'email': vm.email, 'nombre': vm.nombre, 'mensaje': vm.mensaje, 'asunto': vm.asunto})
                 .success(
                     function (data) {
                         vm.enviado = true;
+                        vm.enviando = false;
                         $timeout(hideMessage, 3000);
                         function hideMessage() {
                             vm.enviado = false;

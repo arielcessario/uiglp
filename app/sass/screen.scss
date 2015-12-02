@@ -1431,7 +1431,7 @@ select option {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   max-width: 100%;
-  min-width: 450px;
+  min-width: 360px;
   input,
   textarea{
     margin-left: 10px;
@@ -1444,10 +1444,22 @@ select option {
     border: 1px solid #17384B;
     max-width: 500px;
     background-color: rgba(0, 0, 0, 0);
-
-
   }
 
+}
+
+.servicio-contacto-mensaje{
+  opacity: 0;
+  font-size: 18px;
+  -webkit-transition: all 1s ;
+  -moz-transition: all 1s ;
+  -ms-transition: all 1s ;
+  -o-transition: all 1s ;
+  transition: all 1s ;
+}
+
+.servicio-contacto-mensaje-shown{
+  opacity: 1;
 }
 
 @-webkit-keyframes fadeinleft {
