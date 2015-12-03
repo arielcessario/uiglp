@@ -871,8 +871,8 @@ select option {
 
 }
 
-#contacto-enviar-desktop{
-  background-color: rgba(0,0,0,0) !important;
+#contacto-enviar-desktop {
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .btn-leer-mas, #contacto-enviar-desktop {
@@ -1000,7 +1000,7 @@ select option {
         color: rgb(255, 255, 255);
       }
 
-      .btn-leer-mas{
+      .btn-leer-mas {
         max-width: 110px;
         color: white;
         font-size: 12px;
@@ -1426,14 +1426,14 @@ select option {
   padding: 10px;
 }
 
-#servicios-contacto{
+#servicios-contacto {
   padding: 10px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   max-width: 100%;
   min-width: 360px;
   input,
-  textarea{
+  textarea {
     margin-left: 10px;
     margin-right: 10px;
     padding: 4px;
@@ -1448,17 +1448,17 @@ select option {
 
 }
 
-.servicio-contacto-mensaje{
+.servicio-contacto-mensaje {
   opacity: 0;
   font-size: 18px;
-  -webkit-transition: all 1s ;
-  -moz-transition: all 1s ;
-  -ms-transition: all 1s ;
-  -o-transition: all 1s ;
-  transition: all 1s ;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
-.servicio-contacto-mensaje-shown{
+.servicio-contacto-mensaje-shown {
   opacity: 1;
 }
 
@@ -1479,7 +1479,7 @@ select option {
   }
 }
 
-.titulo-form-servicios{
+.titulo-form-servicios {
   -webkit-animation: fadeinleft 800ms ease-in-out;
   -moz-animation: fadeinleft 800ms ease-in-out;
   -o-animation: fadeinleft 800ms ease-in-out;
@@ -1493,7 +1493,7 @@ select option {
 
 }
 
-.textos-form-servicios{
+.textos-form-servicios {
   text-align: left;
   margin: 10px;
   font-family: "Open Sans", sans-serif;
@@ -1530,8 +1530,6 @@ select option {
       align-items: flex-start;
     }
 
-
-
     .contacto-panel {
       max-width: 80%;
       min-width: 80%;
@@ -1560,8 +1558,6 @@ select option {
           max-width: 90% !important;
         }
       }
-
-
 
       .textoareaconsulta {
         height: 100px;
@@ -2746,6 +2742,25 @@ select option {
 }
 
 //SLIDER
+
+#slider-small-screen {
+  visibility: collapse;
+  display: none;
+  @media (max-width: 450px) {
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 70;
+    @include background-image(linear-gradient(rgba(#081118, 1), rgba(#133648, 1)));
+    img{
+      width: 90%;
+    }
+  }
+}
 
 .administracion-slider {
   display: flex;
