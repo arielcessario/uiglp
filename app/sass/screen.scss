@@ -2755,9 +2755,9 @@ select option {
     align-items: center;
     justify-content: center;
     z-index: 70;
-    @include background-image(linear-gradient(rgba(#081118, 1), rgba(#133648, 1)));
+    @include background-image(linear-gradient(rgba(#081118, .9), rgba(#133648, .9)));
     img{
-      width: 90%;
+      width: 50%;
     }
   }
 }
