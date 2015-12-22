@@ -1030,8 +1030,8 @@ select option {
 /* line 975, ../sass/screen.scss */
 #noticias #noticias-list .noticia .foto_noticia,
 #noticias-main #noticias-list .noticia .foto_noticia {
-  width: 254px;
-  height: 150px;
+  width: 250px;
+  height: 200px;
   margin-bottom: 15px;
   margin-top: 10px;
   border: 4px solid white;
@@ -1044,8 +1044,8 @@ select option {
 /* line 986, ../sass/screen.scss */
 #noticias #noticias-list .noticia .foto_noticia img,
 #noticias-main #noticias-list .noticia .foto_noticia img {
-  height: 100vmax;
-  height: 100vmax;
+  height: auto;
+  width: 100%;
   vertical-align: middle;
 }
 /* line 995, ../sass/screen.scss */
