@@ -962,32 +962,37 @@ select option {
       align-items: center;
 
       h2 {
-
         width: 90%;
-        margin-bottom: 5px;
+        max-height: 5em;
+        margin-bottom: 3px;
         text-align: left;
-        font-size: 25px;
-        line-height: 25px;
+        font-size: 23px;
+        line-height: 24px;
         color: #FFFFFF;
-        color: rgb(255, 255, 255);
+        overflow: auto;
+        text-transform: uppercase;
       }
 
+
+
       .foto_noticia{
-        width: 250px;
-        height: 200px;
+        width: 90%;
+        height: 12em;
         margin-bottom: 15px;
         margin-top: 10px;
         border: 4px solid white;
         outline: 0;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        border-radius: 20px;
+        -webkit-border-radius: .6em;
+        -moz-border-radius: .6em;
+        border-radius: .6em;
         overflow: hidden;
         img {
-          height: auto;
-          width: 100%;
-          vertical-align: middle;
-        }
+          position: relative;
+          height: 100%;
+          left: 50%;
+          @include translateX(-50%);
+
+         }
       }
 
 
@@ -998,20 +1003,21 @@ select option {
         font-family: 'Montserrat Light', serif;
         width: 90%;
         margin-bottom: 10px;
-        height: 154px;
+        height: 20%;
         overflow: auto;
         font-size: 12px;
         line-height: 15px;
         color: #FFFFFF;
-        color: rgb(255, 255, 255);
       }
 
       .btn-leer-mas {
+        position: relative;
         max-width: 110px;
         color: white;
         font-size: 12px;
         border-color: white;
         min-height: 28px;
+        bottom: 0px;
       }
 
       .btn-leer-mas:hover {
