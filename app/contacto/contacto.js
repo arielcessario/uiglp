@@ -11,7 +11,8 @@
             //    data: {requiresLogin: false}
             //});
         }])
-        .controller('ContactoController', ContactoController);
+        .controller('ContactoController', ContactoController)
+        .factory('ContactoService', ContactoService);
 
 
     ContactoController.$inject = ['LoginService', 'LoginState', 'store', '$http', '$timeout', 'AcUtilsService'];
@@ -107,6 +108,30 @@
                         vm.asunto = '';
 
                         //goog_report_conversion('http://www.ac-desarrollos.com/#');
+                    })
+                .error(function (data) {
+                    console.log(data);
+                });
+        }
+    }
+
+    ContactoService.$inject = ['$http'];
+    function ContactoService($http) {
+
+        var service = this;
+        service.sendMail = sendMail;
+
+        return service;
+
+        function sendMail(email, nombre, mensaje, asunto, callback) {
+
+            //console.log(vm.mail);
+            return $http.post('./contacto/contact.php',
+                {'email': email, 'nombre': nombre, 'mensaje': mensaje, 'asunto': asunto})
+                .success(
+                    function (data) {
+                        console.log(data);
+                        callback(data);
                     })
                 .error(function (data) {
                     console.log(data);
